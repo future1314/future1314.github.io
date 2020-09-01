@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-08-31T13:01:59.850Z</updated>
+  <updated>2020-09-01T05:20:46.156Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,18 +17,372 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://github.com/future1314/2020/08/31/hello-world/"/>
-    <id>https://github.com/future1314/2020/08/31/hello-world/</id>
-    <published>2020-08-31T13:01:59.850Z</published>
-    <updated>2020-08-31T13:01:59.850Z</updated>
+    <title>Mac配置.bash_profile，重启终端后配置失效</title>
+    <link href="https://github.com/future1314/2020/08/31/osop7e/"/>
+    <id>https://github.com/future1314/2020/08/31/osop7e/</id>
+    <published>2020-08-31T06:59:23.000Z</published>
+    <updated>2020-09-01T05:20:46.156Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;使用的终端是 zsh，zsh 加载的是 ~/.zshrc 文件，而 ‘.zshrc’ 文件中并没有定义任务环境变量&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>语雀自动同步到hexo博客(转摘)</title>
+    <link href="https://github.com/future1314/2020/08/31/wcu8bq/"/>
+    <id>https://github.com/future1314/2020/08/31/wcu8bq/</id>
+    <published>2020-08-31T02:44:20.000Z</published>
+    <updated>2020-09-01T05:20:46.356Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.yuque.com/hxfqg9&quot;&gt;yichen 的信安知识库&lt;/a&gt;/&lt;a href=&quot;https://www.yuque.com/hxfqg9/web&quot;&gt;web 方向&lt;/a&gt;/&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试语雀--变量“无法”引用&amp;amp;yq 文本加密</title>
+    <link href="https://github.com/future1314/2020/08/30/rzt7w7/"/>
+    <id>https://github.com/future1314/2020/08/30/rzt7w7/</id>
+    <published>2020-08-30T13:07:06.000Z</published>
+    <updated>2020-09-01T05:20:46.360Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;测试通过！&lt;/p&gt;
+&lt;p&gt;有的时候云函数回调用失败！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;变量需要在源 blog</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>报错 git push -u origin master</title>
+    <link href="https://github.com/future1314/2020/08/30/drkrdi/"/>
+    <id>https://github.com/future1314/2020/08/30/drkrdi/</id>
+    <published>2020-08-30T09:12:53.000Z</published>
+    <updated>2020-09-01T05:20:46.840Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1884  2020-08-28 17:29:45 root git clone &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>再不行我就先不搞了</title>
+    <link href="https://github.com/future1314/2020/08/30/ro0z5g/"/>
+    <id>https://github.com/future1314/2020/08/30/ro0z5g/</id>
+    <published>2020-08-29T16:37:05.000Z</published>
+    <updated>2020-09-01T05:20:46.848Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;太费事了&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>语雀测试</title>
+    <link href="https://github.com/future1314/2020/08/29/glv0gn/"/>
+    <id>https://github.com/future1314/2020/08/29/glv0gn/</id>
+    <published>2020-08-29T14:45:00.000Z</published>
+    <updated>2020-09-01T05:20:46.852Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;测试触发云函数&lt;br&gt;第</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>服务器搭建</title>
+    <link href="https://github.com/future1314/2020/03/22/pxds7y/"/>
+    <id>https://github.com/future1314/2020/03/22/pxds7y/</id>
+    <published>2020-03-22T04:50:51.000Z</published>
+    <updated>2020-09-01T05:20:46.916Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;华为云+宝塔面板 服务器小白保姆级配置&lt;/p&gt;
+&lt;h3 id=&quot;78-88-一年服务器&quot;&gt;&lt;a href=&quot;#78-88-一年服务器&quot; class=&quot;headerlink&quot; title=&quot;78.88 一年服务器&quot;&gt;&lt;/a&gt;78.88 一年服务器&lt;/h3&gt;&lt;p&gt;【2 核</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试-1</title>
+    <link href="https://github.com/future1314/2020/03/22/poq8z2/"/>
+    <id>https://github.com/future1314/2020/03/22/poq8z2/</id>
+    <published>2020-03-22T03:59:58.000Z</published>
+    <updated>2020-09-01T05:20:47.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;首先说明我是 Java 开发，我的范围只适合 Java 开发的，其他方向我不太了解，并且很多公司侧重点也不一样，比如字节不侧重语言，侧重操作系统四大金刚那些，也看公司吧，就像考不同的学校，会有不同的大纲，因为我是本科生，都比较侧重基础&lt;/p&gt;
+&lt;p&gt;Java：Java</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>面试经验</title>
+    <link href="https://github.com/future1314/2020/03/22/il73gx/"/>
+    <id>https://github.com/future1314/2020/03/22/il73gx/</id>
+    <published>2020-03-22T03:59:26.000Z</published>
+    <updated>2020-09-01T05:20:47.088Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>代码</title>
+    <link href="https://github.com/future1314/2020/03/15/ugxy0c/"/>
+    <id>https://github.com/future1314/2020/03/15/ugxy0c/</id>
+    <published>2020-03-15T09:28:07.000Z</published>
+    <updated>2020-09-01T05:20:47.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果想在接口中新增一个方法，但又不想子类强制实现该方法时，可以给该方法加上 default</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>鸡汤</title>
+    <link href="https://github.com/future1314/2020/03/14/bfeage/"/>
+    <id>https://github.com/future1314/2020/03/14/bfeage/</id>
+    <published>2020-03-14T09:18:24.000Z</published>
+    <updated>2020-09-01T05:20:47.100Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;千学不如一看，千看不如一练。&lt;br&gt;**&lt;/strong&gt;古之立大事者，不唯有超世之才，亦必有坚韧不拔之志。**&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个不注意小事情的人，永远不会成功大事业。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;今天应做的事没有做，明</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO</title>
+    <link href="https://github.com/future1314/2020/03/12/nio/"/>
+    <id>https://github.com/future1314/2020/03/12/nio/</id>
+    <published>2020-03-12T12:51:25.000Z</published>
+    <updated>2020-09-01T05:20:47.100Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构</title>
+    <link href="https://github.com/future1314/2020/03/12/nms3u7/"/>
+    <id>https://github.com/future1314/2020/03/12/nms3u7/</id>
+    <published>2020-03-12T12:50:34.000Z</published>
+    <updated>2020-09-01T05:20:47.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数据结构&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>缓存</title>
+    <link href="https://github.com/future1314/2020/03/12/cache/"/>
+    <id>https://github.com/future1314/2020/03/12/cache/</id>
+    <published>2020-03-12T12:50:18.000Z</published>
+    <updated>2020-09-01T05:20:47.104Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微服务</title>
+    <link href="https://github.com/future1314/2020/03/12/microserv/"/>
+    <id>https://github.com/future1314/2020/03/12/microserv/</id>
+    <published>2020-03-12T12:49:53.000Z</published>
+    <updated>2020-09-01T05:20:47.104Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据库</title>
+    <link href="https://github.com/future1314/2020/03/12/db/"/>
+    <id>https://github.com/future1314/2020/03/12/db/</id>
+    <published>2020-03-12T12:49:10.000Z</published>
+    <updated>2020-09-01T05:20:47.108Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>读书笔记</title>
+    <link href="https://github.com/future1314/2020/03/11/gumxz2/"/>
+    <id>https://github.com/future1314/2020/03/11/gumxz2/</id>
+    <published>2020-03-11T12:49:23.000Z</published>
+    <updated>2020-09-01T05:20:47.108Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>近期学习计划</title>
+    <link href="https://github.com/future1314/2020/03/11/eruyyn/"/>
+    <id>https://github.com/future1314/2020/03/11/eruyyn/</id>
+    <published>2020-03-11T12:48:55.000Z</published>
+    <updated>2020-09-01T05:20:47.112Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java培训资料-极客</title>
+    <link href="https://github.com/future1314/2020/03/11/irbzty/"/>
+    <id>https://github.com/future1314/2020/03/11/irbzty/</id>
+    <published>2020-03-11T12:41:07.000Z</published>
+    <updated>2020-09-01T05:20:47.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java培训资料-拉勾</title>
+    <link href="https://github.com/future1314/2020/03/11/hqrxuk/"/>
+    <id>https://github.com/future1314/2020/03/11/hqrxuk/</id>
+    <published>2020-03-11T11:55:25.000Z</published>
+    <updated>2020-09-01T05:20:47.132Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a</summary>
         
       
     
