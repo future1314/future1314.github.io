@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-09-01T07:26:45.393Z</updated>
+  <updated>2020-09-01T07:41:26.898Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>主题上传不上去  git rm -r --cached halo/</title>
+    <link href="https://github.com/future1314/2020/09/01/dq6307/"/>
+    <id>https://github.com/future1314/2020/09/01/dq6307/</id>
+    <published>2020-09-01T07:30:19.000Z</published>
+    <updated>2020-09-01T07:41:26.898Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;spring@springdeMacBook-Pro halo % touch a&lt;br&gt;spring@springdeMacBook-Pro halo % git status&lt;br&gt;On branch master&lt;br&gt;Your branch is up to</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Mac配置.bash_profile，重启终端后配置失效</title>
     <link href="https://github.com/future1314/2020/08/31/osop7e/"/>
     <id>https://github.com/future1314/2020/08/31/osop7e/</id>
     <published>2020-08-31T06:59:23.000Z</published>
-    <updated>2020-09-01T07:26:45.393Z</updated>
+    <updated>2020-09-01T07:41:26.906Z</updated>
     
     
       
@@ -43,7 +64,7 @@
     <link href="https://github.com/future1314/2020/08/31/wcu8bq/"/>
     <id>https://github.com/future1314/2020/08/31/wcu8bq/</id>
     <published>2020-08-31T02:44:20.000Z</published>
-    <updated>2020-09-01T07:26:45.601Z</updated>
+    <updated>2020-09-01T07:41:27.082Z</updated>
     
     
       
@@ -64,7 +85,7 @@
     <link href="https://github.com/future1314/2020/08/30/rzt7w7/"/>
     <id>https://github.com/future1314/2020/08/30/rzt7w7/</id>
     <published>2020-08-30T13:07:06.000Z</published>
-    <updated>2020-09-01T07:26:45.605Z</updated>
+    <updated>2020-09-01T07:41:27.086Z</updated>
     
     
       
@@ -87,7 +108,7 @@
     <link href="https://github.com/future1314/2020/08/30/drkrdi/"/>
     <id>https://github.com/future1314/2020/08/30/drkrdi/</id>
     <published>2020-08-30T09:12:53.000Z</published>
-    <updated>2020-09-01T07:26:46.145Z</updated>
+    <updated>2020-09-01T07:41:27.534Z</updated>
     
     
       
@@ -108,7 +129,7 @@
     <link href="https://github.com/future1314/2020/08/30/ro0z5g/"/>
     <id>https://github.com/future1314/2020/08/30/ro0z5g/</id>
     <published>2020-08-29T16:37:05.000Z</published>
-    <updated>2020-09-01T07:26:46.157Z</updated>
+    <updated>2020-09-01T07:41:27.542Z</updated>
     
     
       
@@ -130,7 +151,7 @@
     <link href="https://github.com/future1314/2020/08/29/glv0gn/"/>
     <id>https://github.com/future1314/2020/08/29/glv0gn/</id>
     <published>2020-08-29T14:45:00.000Z</published>
-    <updated>2020-09-01T07:26:46.157Z</updated>
+    <updated>2020-09-01T07:41:27.546Z</updated>
     
     
       
@@ -151,7 +172,7 @@
     <link href="https://github.com/future1314/2020/03/22/pxds7y/"/>
     <id>https://github.com/future1314/2020/03/22/pxds7y/</id>
     <published>2020-03-22T04:50:51.000Z</published>
-    <updated>2020-09-01T07:26:46.233Z</updated>
+    <updated>2020-09-01T07:41:27.594Z</updated>
     
     
       
@@ -173,7 +194,7 @@
     <link href="https://github.com/future1314/2020/03/22/poq8z2/"/>
     <id>https://github.com/future1314/2020/03/22/poq8z2/</id>
     <published>2020-03-22T03:59:58.000Z</published>
-    <updated>2020-09-01T07:26:46.429Z</updated>
+    <updated>2020-09-01T07:41:27.774Z</updated>
     
     
       
@@ -195,7 +216,7 @@
     <link href="https://github.com/future1314/2020/03/22/il73gx/"/>
     <id>https://github.com/future1314/2020/03/22/il73gx/</id>
     <published>2020-03-22T03:59:26.000Z</published>
-    <updated>2020-09-01T07:26:46.433Z</updated>
+    <updated>2020-09-01T07:41:27.774Z</updated>
     
     
     
@@ -208,7 +229,7 @@
     <link href="https://github.com/future1314/2020/03/15/ugxy0c/"/>
     <id>https://github.com/future1314/2020/03/15/ugxy0c/</id>
     <published>2020-03-15T09:28:07.000Z</published>
-    <updated>2020-09-01T07:26:46.437Z</updated>
+    <updated>2020-09-01T07:41:27.778Z</updated>
     
     
       
@@ -229,7 +250,7 @@
     <link href="https://github.com/future1314/2020/03/14/bfeage/"/>
     <id>https://github.com/future1314/2020/03/14/bfeage/</id>
     <published>2020-03-14T09:18:24.000Z</published>
-    <updated>2020-09-01T07:26:46.441Z</updated>
+    <updated>2020-09-01T07:41:27.782Z</updated>
     
     
       
@@ -252,7 +273,7 @@
     <link href="https://github.com/future1314/2020/03/12/nio/"/>
     <id>https://github.com/future1314/2020/03/12/nio/</id>
     <published>2020-03-12T12:51:25.000Z</published>
-    <updated>2020-09-01T07:26:46.445Z</updated>
+    <updated>2020-09-01T07:41:27.786Z</updated>
     
     
     
@@ -265,7 +286,7 @@
     <link href="https://github.com/future1314/2020/03/12/nms3u7/"/>
     <id>https://github.com/future1314/2020/03/12/nms3u7/</id>
     <published>2020-03-12T12:50:34.000Z</published>
-    <updated>2020-09-01T07:26:46.445Z</updated>
+    <updated>2020-09-01T07:41:27.786Z</updated>
     
     
       
@@ -287,7 +308,7 @@
     <link href="https://github.com/future1314/2020/03/12/cache/"/>
     <id>https://github.com/future1314/2020/03/12/cache/</id>
     <published>2020-03-12T12:50:18.000Z</published>
-    <updated>2020-09-01T07:26:46.449Z</updated>
+    <updated>2020-09-01T07:41:27.790Z</updated>
     
     
     
@@ -300,7 +321,7 @@
     <link href="https://github.com/future1314/2020/03/12/microserv/"/>
     <id>https://github.com/future1314/2020/03/12/microserv/</id>
     <published>2020-03-12T12:49:53.000Z</published>
-    <updated>2020-09-01T07:26:46.449Z</updated>
+    <updated>2020-09-01T07:41:27.790Z</updated>
     
     
     
@@ -313,7 +334,7 @@
     <link href="https://github.com/future1314/2020/03/12/db/"/>
     <id>https://github.com/future1314/2020/03/12/db/</id>
     <published>2020-03-12T12:49:10.000Z</published>
-    <updated>2020-09-01T07:26:46.449Z</updated>
+    <updated>2020-09-01T07:41:27.790Z</updated>
     
     
     
@@ -326,7 +347,7 @@
     <link href="https://github.com/future1314/2020/03/11/gumxz2/"/>
     <id>https://github.com/future1314/2020/03/11/gumxz2/</id>
     <published>2020-03-11T12:49:23.000Z</published>
-    <updated>2020-09-01T07:26:46.453Z</updated>
+    <updated>2020-09-01T07:41:27.794Z</updated>
     
     
     
@@ -339,7 +360,7 @@
     <link href="https://github.com/future1314/2020/03/11/eruyyn/"/>
     <id>https://github.com/future1314/2020/03/11/eruyyn/</id>
     <published>2020-03-11T12:48:55.000Z</published>
-    <updated>2020-09-01T07:26:46.453Z</updated>
+    <updated>2020-09-01T07:41:27.794Z</updated>
     
     
     
@@ -352,7 +373,7 @@
     <link href="https://github.com/future1314/2020/03/11/irbzty/"/>
     <id>https://github.com/future1314/2020/03/11/irbzty/</id>
     <published>2020-03-11T12:41:07.000Z</published>
-    <updated>2020-09-01T07:26:46.461Z</updated>
+    <updated>2020-09-01T07:41:27.802Z</updated>
     
     
       
@@ -361,28 +382,6 @@
         
     <summary type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java培训资料-拉勾</title>
-    <link href="https://github.com/future1314/2020/03/11/hqrxuk/"/>
-    <id>https://github.com/future1314/2020/03/11/hqrxuk/</id>
-    <published>2020-03-11T11:55:25.000Z</published>
-    <updated>2020-09-01T07:26:46.477Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a</summary>
         
       
     
