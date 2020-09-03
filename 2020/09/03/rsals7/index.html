@@ -4,32 +4,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="读书笔记, future">
-    <meta name="description" content="插入封面图片，点击图片，设置图片大小
-关于本书插入「表格」
+    <meta name="keywords" content="内存模型, future">
+    <meta name="description" content="
 
+JVM 内存模型的具体设计
 
+1. 堆（Heap）
 
-书名
-《菊次郎与佐纪》
-作者
-北野武日本
+2. 程序计数器（Program Counter Register）
 
+3. 方法区（Method Area）
 
+4.虚拟机栈（VM stack）
 
-出版社
-译林出版社
-阅读日期
-2019 年 2 月
-
-
-豆瓣评分
-8.1
-我的评分
-☆☆☆☆
-
-
-内容简介在此处输入文本你将读">
+5.本地方法栈（Native M">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -37,7 +25,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>读书笔记 | future</title>
+    <title>内存模型 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -366,13 +354,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">读书笔记</h1>
+                    <h1 class="description center-align post-title">内存模型</h1>
                 </div>
             </div>
         </div>
@@ -502,7 +490,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-11
+                    2020-09-03
                 </div>
                 
 
@@ -516,14 +504,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    407
+                    979
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -534,43 +522,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id=""><a href="#" class="headerlink" title=""></a><img src="https://cdn.nlark.com/yuque/0/2019/png/215718/1567507815646-d739438a-8ffd-4107-9d87-130e2104446a.png#align=left&display=inline&height=232&name=image.png&originHeight=1553&originWidth=1080&size=367334&status=done&width=161" alt="image.png"></h4><p><em>插入封面图片，点击图片，设置图片大小</em></p>
-<h4 id="关于本书"><a href="#关于本书" class="headerlink" title="关于本书"></a>关于本书</h4><p>插入「表格」</p>
-<table>
-<thead>
-<tr>
-<th><strong>书名</strong></th>
-<th><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25944034/">《菊次郎与佐纪》</a></th>
-<th><strong>作者</strong></th>
-<th>北野武日本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>出版社</strong></td>
-<td>译林出版社</td>
-<td><strong>阅读日期</strong></td>
-<td>2019 年 2 月</td>
-</tr>
-<tr>
-<td><strong>豆瓣评分</strong></td>
-<td>8.1</td>
-<td><strong>我的评分</strong></td>
-<td>☆☆☆☆</td>
-</tr>
-</tbody></table>
-<h4 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h4><p>在此处输入文本<br>你将读到的是北野武的出身、父母、兄弟和家庭的故事。<br>但请放心，这绝非一个自我感觉良好的人写的那种“优良课外读物”。<br>相反，北野武用搞笑到甚至刻薄方式描绘这些人和事，让我们在笑与泪的交织中，看到真情和真实，看到那么多情、柔软的心。</p>
-<h4 id="书摘"><a href="#书摘" class="headerlink" title="书摘"></a>书摘</h4><p>在此处输入文本</p>
+                <hr>
 <ul>
-<li>你将读到的是北野武的出身、父母、兄弟和家庭的故事。</li>
-<li>但请放心，这绝非一个自我感觉良好的人写的那种“优良课外读物”。很喜欢这句 ← 方便打标签的状态卡片</li>
-<li>相反，北野武用搞笑到甚至刻薄方式描绘这些人和事，让我们在笑与泪的交织中，看到真情和真实，看到那么多情、柔软的心。</li>
+<li><p><a href="#m69Bp">JVM 内存模型的具体设计</a></p>
+</li>
+<li><p><a href="#TE5qQ">1. 堆（Heap）</a></p>
+</li>
+<li><p><a href="#5nAju">2. 程序计数器（Program Counter Register）</a></p>
+</li>
+<li><p><a href="#ClBVw">3. 方法区（Method Area）</a></p>
+</li>
+<li><p><a href="#2sdpJ">4.虚拟机栈（VM stack）</a></p>
+</li>
+<li><p><a href="#nnVDR">5.本地方法栈（Native Method Stack）</a></p>
+</li>
 </ul>
-<h4 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h4><p>在此处输入文本</p>
-<ul>
-<li>你将读到的是北野武的出身、父母、兄弟和家庭的故事。</li>
-<li>但请放心，这绝非一个自我感觉良好的人写的那种“优良课外读物”。</li>
-<li>相反，北野武用搞笑到甚至刻薄方式描绘这些人和事，让我们在笑与泪的交织中，看到真情和真实，看到那么多情、柔软的心。</li>
-</ul>
+<h3 id="3-方法区（Method-Area）"><a href="#3-方法区（Method-Area）" class="headerlink" title="3. 方法区（Method Area）"></a>3. 方法区（Method Area）</h3><p>很多开发者都习惯将方法区称为“永久代”，其实这两者并不是等价的。<br>HotSpot 虚拟机使用永久代来实现方法区，但在其它虚拟机中，不存在永久代一说。因此，方法区只是 JVM 中规范的一部分，可以说，在 HotSpot 虚拟机中，设计人员使用了永久代来实现了 JVM 规范的方法区。<br>方法区主要是用来存放已被虚拟机加载的类相关信息，包括类信息、运行时常量池、字符串常量池。类信息又包括了类的版本、字段、方法、接口和父类等信息。<br>JVM 在执行某个类的时候，必须经过加载、连接、初始化，而连接又包括验证、准备、解析三个阶段。在加载类的时候，JVM 会先加载 class 文件，而在 class 文件中除了有类的版本、字段、方法和接口等描述信息外，还有一项信息是常量池(Constant Pool Table)，用于存放编译期间生成的各种字面量和符号引用。<br>字面量包括字符串（String a=“b”）、基本类型的常量（final 修饰的变量），符号引用则包括类和方法的全限定名（例如 String 这个类，它的全限定名就是 Java/lang/String）、字段的名称和描述符以及方法的名称和描述符。<br>而<strong>当类加载到内存中后，JVM 就会将 class 文件常量池中的内容存放到运行时的常量池中；在解析阶段，JVM 会把符号引用替换为直接引用（对象的索引值）</strong>。<br>例如，类中的一个字符串常量在 class 文件中时，存放在 class 文件常量池中的；在 JVM 加载完类之后，JVM 会将这个字符串常量放到运行时常量池中，并在解析阶段，指定该字符串对象的索引值。运行时常量池是全局共享的，多个类共用一个运行时常量池，class 文件中常量池多个相同的字符串在运行时常量池只会存在一份。<br>方法区与堆空间类似，也是一个共享内存区，<strong>所以方法区是线程共享的。假如两个线程都试图访问方法区中的同一个类信息，而这个类还没有装入 JVM，那么此时就只允许一个线程去加载它，另一个线程必须等待。</strong><br>在 HotSpot 虚拟机、Java7 版本中已经将永久代的静态变量和运行时常量池转移到了堆中，其余部分则存储在 JVM 的非堆内存中，而 Java8 版本已经将方法区中实现的永久代去掉了，并用元空间（class metadata）代替了之前的永久代，并且元空间的存储位置是本地内存。<strong>之前永久代的类的元数据存储在了元空间</strong>，<strong>永久代的静态变量（class static variables）以及运行时常量池（runtime constant pool）则跟 Java7 一样，转移到了堆中</strong>。</p>
+<h3 id="4-虚拟机栈（VM-stack）"><a href="#4-虚拟机栈（VM-stack）" class="headerlink" title="4.虚拟机栈（VM stack）"></a>4.虚拟机栈（VM stack）</h3><p>当创建一个线程时，会在虚拟机栈中申请一个<strong>线程栈，用来保存方法的局部变量、操作数栈、动态链接方法和返回地址等信息，并参与方法的调用和返回</strong>。每一个方法的调用都伴随着栈帧的入栈操作，方法的返回则是栈帧的出栈操作。</p>
+<h3 id="5-本地方法栈（Native-Method-Stack）"><a href="#5-本地方法栈（Native-Method-Stack）" class="headerlink" title="5.本地方法栈（Native Method Stack）"></a>5.本地方法栈（Native Method Stack）</h3><p>本地方法栈则用于管理本地方法的调用。但本地方法并不是用 Java 实现的，而是由 C 语言实现的。</p>
 
             </div>
             <hr/>
@@ -596,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/11/chrh36/">https://github.com/future1314/2020/03/11/chrh36/</a>
+                    <a href="https://github.com/future1314/2020/09/03/rsals7/">https://github.com/future1314/2020/09/03/rsals7/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -801,31 +770,43 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/11/hqrxuk/">
+                <a href="/2020/09/03/rsals7/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Java培训资料-拉勾"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Java培训资料-拉勾">
+                        <!-- <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="内存模型"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="内存模型">
                         
-                        <span class="card-title">Java培训资料-拉勾</span>
+                        <span class="card-title">内存模型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-https://kaiwu.lagou.com/member/share?wxinfo=2&amp;shareId=5ae64c163008a1c2e7730eb72a69267be6555d3b837055aca9ab3f6a729df
+
+JVM 内存模型的具体设计
+
+1. 堆（Heap）
+
+2. 程序计数器（Program Counter Register）
+
+3. 方法区（Method Area）
+
+4.虚拟机栈（VM stack）
+
+5.本地方法栈（Native M
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -834,6 +815,7 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;shareId=5ae64c163008a1c2e7730e
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -844,28 +826,26 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;shareId=5ae64c163008a1c2e7730e
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/11/wrbzgy/">
+                <a href="/2020/09/03/tz4aem/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="学习计划"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/11.jpg" class="responsive-img" alt="学习计划">
+                        <!-- <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Happens-before规则"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="Happens-before规则">
                         
-                        <span class="card-title">学习计划</span>
+                        <span class="card-title">Happens-before规则</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习重点插入「脑图」并进行编辑
-学习资源课堂 PPT嵌入「本地文件」，在文档中可预览此文件：
-
-脑图（XMind、Mind Manager、Mind Node）设计文件（PhotoShop、Sketch、Axure)办公文件（PDF、PPT
+                            ##
+title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias/featureimages/11.jpgtoc: truemathjax: fa
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                             </span>
                         <span class="publish-author">
                             
