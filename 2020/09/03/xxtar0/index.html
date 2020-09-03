@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="代码, future">
-    <meta name="description" content="如果想在接口中新增一个方法，但又不想子类强制实现该方法时，可以给该方法加上 default 关键字，这个在实际工作中，也经常使用到，算是重构的小技巧吧。
-">
+    <meta name="keywords" content="网络I/O模型优化, future">
+    <meta name="description" content="网络 I/O 模型优化1.阻塞式 I/O在整个 socket 通信工作流程中，socket 的默认状态是阻塞的。当发出一个不能立即完成的套接字调用时，其进程将被阻塞，被系统挂起，进入睡眠状态，一直等待相应的操作响应。
+2.非阻塞式 I/O我">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>代码 | future</title>
+    <title>网络I/O模型优化 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -343,13 +343,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">代码</h1>
+                    <h1 class="description center-align post-title">网络I/O模型优化</h1>
                 </div>
             </div>
         </div>
@@ -479,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-15
+                    2020-09-03
                 </div>
                 
 
@@ -493,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    62
+                    504
                 </div>
                 
 
@@ -511,7 +511,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>如果想在接口中新增一个方法，但又不想子类强制实现该方法时，可以给该方法加上 default 关键字，这个在实际工作中，也经常使用到，算是重构的小技巧吧。</p>
+                <h2 id="网络-I-O-模型优化"><a href="#网络-I-O-模型优化" class="headerlink" title="网络 I/O 模型优化"></a>网络 I/O 模型优化</h2><h3 id="1-阻塞式-I-O"><a href="#1-阻塞式-I-O" class="headerlink" title="1.阻塞式 I/O"></a>1.阻塞式 I/O</h3><p>在整个 socket 通信工作流程中，socket 的默认状态是阻塞的。<strong>当发出一个不能立即完成的套接字调用时，其进程将被阻塞，被系统挂起，进入睡眠状态，一直等待相应的操作响应</strong>。</p>
+<h3 id="2-非阻塞式-I-O"><a href="#2-非阻塞式-I-O" class="headerlink" title="2.非阻塞式 I/O"></a>2.非阻塞式 I/O</h3><p>我们需要设置一个线程对该操作进行轮询检查，这也是最传统的非阻塞 I/O 模型。</p>
+<h3 id="3-I-O-复用"><a href="#3-I-O-复用" class="headerlink" title="3. I/O 复用"></a>3. I/O 复用</h3><p>如果使用用户线程轮询查看一个 I/O 操作的状态，在大量请求的情况下，这对于 CPU 的使用率无疑是种灾难。<br><strong>Linux 提供了 I/O 复用函数 select/poll/epoll：<br>**<br>**select()函数</strong>：它的用途是，在超时时间内，监听用户感兴趣的文件描述符上的可读可写和异常事件的发生。<br><strong>调用后 select() 函数会阻塞，直到有描述符就绪或者超时，函数返回。</strong><br>**<br><strong>poll()函数</strong>：在每次调用<strong>select()**函数之前，系统需要把一个 fd 从用户态拷贝到内核态，这样就给系统带来了一定的性能开销。再有</strong>单个进程监视的 fd 数量默认是 1024。**<br><strong>poll() 管理多个描述符也是通过轮询，根据描述符的状态进行处理，但 poll() 没有最大文件描述符数量的限制。</strong><br>poll() 和 select() 存在一个相同的<strong>缺点</strong>，那就是包含大量文件描述符的数组被整体复制到用户态和内核的地址空间之间，而无论这些文件描述符是否就绪，他们的开销都会随着文件描述符数量的增加而线性增大。</p>
+<p><strong>epoll()函数</strong>：<strong>select/poll 是顺序扫描 fd 是否就绪，而且支持的 fd 数量不宜过大</strong>，<strong>epoll 使用事件驱动的方式代替轮询扫描 fd，**</strong>epoll 的性能更胜一筹，而且不会受到 fd 数量的限制。**<br>**</p>
 
             </div>
             <hr/>
@@ -537,7 +540,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/15/ugxy0c/">https://github.com/future1314/2020/03/15/ugxy0c/</a>
+                    <a href="https://github.com/future1314/2020/09/03/xxtar0/">https://github.com/future1314/2020/09/03/xxtar0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -742,30 +745,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/22/il73gx/">
+                <a href="/2020/09/03/xxtar0/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="面试经验"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="面试经验">
+                        <!-- <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化">
                         
-                        <span class="card-title">面试经验</span>
+                        <span class="card-title">网络I/O模型优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            网络 I/O 模型优化1.阻塞式 I/O在整个 socket 通信工作流程中，socket 的默认状态是阻塞的。当发出一个不能立即完成的套接字调用时，其进程将被阻塞，被系统挂起，进入睡眠状态，一直等待相应的操作响应。
+2.非阻塞式 I/O我
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -774,6 +779,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -784,28 +790,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/14/bfeage/">
+                <a href="/2020/09/03/hogz4t/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="鸡汤"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="鸡汤">
+                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线程数大小"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="线程数大小">
                         
-                        <span class="card-title">鸡汤</span>
+                        <span class="card-title">线程数大小</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            千学不如一看，千看不如一练。**古之立大事者，不唯有超世之才，亦必有坚韧不拔之志。**
-一个不注意小事情的人，永远不会成功大事业。
-今天应做的事没有做，明天再早也是耽误了。**低头要有勇气，抬头要有底气。
-
+                            一般多线程执行的任务类型可以分为CPU 密集型和 I/O 密集型，根据不同的任务类型，我们计算线程数的方法也不一样。CPU 密集型任务**：这种任务消耗的主要是 CPU 资源，可以将线程数设置为N（CPU 核心数）+1，比 CPU 核心数多
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
                             </span>
                         <span class="publish-author">
                             
