@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微服务, future">
-    <meta name="description" content="微服务 | future">
+    <meta name="keywords" content="Happens-before规则, future">
+    <meta name="description" content="##
+title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias/featureimages/11.jpgtoc: truemathjax: fa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>微服务 | future</title>
+    <title>Happens-before规则 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +343,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">微服务</h1>
+                    <h1 class="description center-align post-title">Happens-before规则</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-12
+                    2020-09-03
                 </div>
                 
 
@@ -492,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    356
                 </div>
                 
 
@@ -510,7 +511,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>##</p>
+<h2 id="title-Happens-before-规则"><a href="#title-Happens-before-规则" class="headerlink" title="title: Happens-before 规则"></a>title: Happens-before 规则</h2><p>author: future<br>top: true<br>cover: false<br>coverImg: /medias/featureimages/11.jpg<br>toc: true<br>mathjax: false<br>summary: Happens-before 规则<br>categories:</p>
+<ul>
+<li>Hexo</li>
+</ul>
+<p>tags:</p>
+<ul>
+<li>Github Actions</li>
+<li>持续集成</li>
+<li>语雀</li>
+<li>Hexo</li>
+<li>CI/CD</li>
+</ul>
+<p>urlname: Happens-before</p>
+<p>date: 2020-03-02 23:15:33</p>
+<p>img:</p>
+<p>password:</p>
+<p>updated:</p>
+<hr>
+<h2 id="Happens-before-规则"><a href="#Happens-before-规则" class="headerlink" title="Happens-before 规则"></a>Happens-before 规则</h2><p>Happens-before 规则来规范线程的执行顺序：</p>
+<ul>
+<li>程序次序规则：在单线程中，代码的执行是有序的，虽然可能会存在运行指令的重排序，但最终执行的结果和顺序执行的结果是一致的；</li>
+<li>锁定规则：一个锁处于被一个线程锁定占用状态，那么只有当这个线程释放锁之后，其它线程才能再次获取锁操作；</li>
+<li>volatile 变量规则：如果一个线程正在写 volatile 变量，其它线程读取该变量会发生在写入之后；</li>
+<li>线程启动规则：Thread 对象的 start()方法先行发生于此线程的其它每一个动作；</li>
+<li>线程终结规则：线程中的所有操作都先行发生于对此线程的终止检测；</li>
+<li>对象终结规则：一个对象的初始化完成先行发生于它的 finalize()方法的开始；</li>
+<li>传递性：如果操作 A happens-before 操作 B，操作 B happens-before 操作 C，那么操作 A happens-before 操作 C；</li>
+<li>线程中断规则：对线程 interrupt()方法的调用先行发生于被中断线程的代码检测到中断事件的发生。</li>
+</ul>
+
             </div>
             <hr/>
 
@@ -535,7 +566,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/12/microserv/">https://github.com/future1314/2020/03/12/microserv/</a>
+                    <a href="https://github.com/future1314/2020/09/03/tz4aem/">https://github.com/future1314/2020/09/03/tz4aem/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -740,30 +771,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/12/cache/">
+                <a href="/2020/09/03/tz4aem/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="缓存"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="缓存">
+                        <!-- <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Happens-before规则"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="Happens-before规则">
                         
-                        <span class="card-title">缓存</span>
+                        <span class="card-title">Happens-before规则</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ##
+title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias/featureimages/11.jpgtoc: truemathjax: fa
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -772,6 +805,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -782,25 +816,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/12/db/">
+                <a href="/2020/09/02/eq45ui/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="数据库"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="数据库">
+                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="堆的信息"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="堆的信息">
                         
-                        <span class="card-title">数据库</span>
+                        <span class="card-title">堆的信息</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            [root@aliyun ~]# jps1476 WrapperSimpleApp27788 halo-latest.jar25245 Jps[root@aliyun ~]#[root@aliyun ~]#** jmap -heap 277
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-02
                             </span>
                         <span class="publish-author">
                             
