@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="锁优化, future">
-    <meta name="description" content="垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因">
+    <meta name="keywords" content="软件工程师-职业发展路径, future">
+    <meta name="description" content="1.关于职业规划很程序员每天都在写代码，每天都很忙，而当面试官问他：“你的职业规划是什么？”程序员答：“没有”。那如果让你选择一个角色你会选择什么？比如技术主管。程序员答：“ＣＥＯ吧”。我。。。。。。我们应该给自己制定一个职业规划，对未来的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>锁优化 | future</title>
+    <title>软件工程师-职业发展路径 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">锁优化</h1>
+                    <h1 class="description center-align post-title">软件工程师-职业发展路径</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-05
                 </div>
                 
 
@@ -492,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    222
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -510,11 +510,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="垃圾回收会导致上下文切换"><a href="#垃圾回收会导致上下文切换" class="headerlink" title="垃圾回收会导致上下文切换"></a>垃圾回收会导致上下文切换</h3><p>很多 <strong>JVM 垃圾回收器</strong>（serial 收集器、ParNew 收集器）在回收旧对象时，会产生<strong>内存碎片</strong>，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而<strong>移动内存对象就意味着这些对象所在的内存地址会发生变化</strong>，因此在移动对象前需要暂停线程，在移动完成后需要再次唤醒该线程。因此减少 JVM 垃圾回收的频率可以有效地减少上下文切换。</p>
-<p>Executors.newCachedThreadPool，只适合处理大量且耗时短的非阻塞任务。</p>
-<h2 id="竞争锁优化"><a href="#竞争锁优化" class="headerlink" title="竞争锁优化"></a><a href="#R0KWu">竞争锁优化</a></h2><h3 id="1-减少锁的持有时间"><a href="#1-减少锁的持有时间" class="headerlink" title="1.减少锁的持有时间"></a><a href="#JeIgg">1.减少锁的持有时间</a></h3><p>同步的代码要尽量少。</p>
-<h3 id="2-降低锁的粒度"><a href="#2-降低锁的粒度" class="headerlink" title="2.降低锁的粒度"></a><a href="#wjdvJ">2.降低锁的粒度</a></h3><p>锁分离(读写锁)；锁分段。</p>
-<h3 id="3-非阻塞乐观锁替代竞争锁"><a href="#3-非阻塞乐观锁替代竞争锁" class="headerlink" title="3.非阻塞乐观锁替代竞争锁"></a><a href="#lCdUa">3.非阻塞乐观锁替代竞争锁</a></h3><p>cas 代替 sync。</p>
+                <h1 id="1-关于职业规划"><a href="#1-关于职业规划" class="headerlink" title="1.关于职业规划"></a>1.关于职业规划</h1><p>很程序员每天都在写代码，每天都很忙，而当面试官问他：“你的职业规划是什么？”程序员答：“没有”。那如果让你选择一个角色你会选择什么？比如技术主管。程序员答：“ＣＥＯ吧”。我。。。。。。<br>我们应该给自己制定一个职业规划，对未来的工作要有一个方向，当方向对的时候，你会少走很多弯路。就像小时候别人问你，你长大后的梦想是什么，我家隔壁的小明答到：“我想当一个数学家”。这是一个很好的梦想！虽然后来小明只当了超市里的会计——收银员。</p>
+<h1 id="2-程序员的成长过程"><a href="#2-程序员的成长过程" class="headerlink" title="2. 程序员的成长过程"></a>2. 程序员的成长过程</h1><p><strong>程序小白</strong><br>第一阶段：刚毕业到公司，每天就是打杂，总做一些简单又重复的事情，这就是程序员所说的“搬砖工”。搬砖工其实没什么，成长都是从这里开始，当你多年以后，回过头看，你会发现曾经搬的砖其实对自己很有用。<br><strong>（你的工资水平大概在 3K~5K 左右）</strong><br><strong>初级程序员</strong><br>第二阶段：终于，小白不再是自己，从现在开始你可以说自己是一个程序员了，但是你能做的还是一些简单的事情。写代码的时候还是会依靠复制粘贴的方式完成代码的编写，通常一个方法写了几百行代码，恨不得一个方法可以将所有的功能都实现。他们不考虑程序的质量，代码也写的很乱，也没有注释，他们只要求程序能够运行就好。所以，你需要继续努力，继续学习。<br><strong>（你的工资水平大概在 6K~8K 左右）</strong><br><strong>中级程序员</strong><br>到了这个阶段，你已经掌握了较好的技术，你可以靠自己去做一些项目了，不在需要靠复制粘贴别人的代码了，开始关注代码的质量，代码的规范，把该注释的地方，注释好，开始做很多实用的项目。<br><strong>（你的工资水平大概在 10K~20K 左右）</strong><br><strong>高级程序员</strong><br>到了这个阶段，你的技术已经非常棒了，很多人开始走设计路线，你比如系统设计等等。公司会有很多的技术难题需要靠你去解决，这个时候是属于大神级别了。<br><strong>（你的工资水平大概在 20K~30K 左右）</strong><br><strong>转折点</strong><br>再往上走，就面临一个转折点了，或者叫“换乘站”，你需要考虑自己走哪个方向，一个路线是走管理路线，另一个路线是走技术路线。走管理路线的话，你需要有较好的管理能力；而走技术路线，你的技术要过硬，要有牛逼的技术。</p>
+<h1 id="3-程序员需要不断的学习"><a href="#3-程序员需要不断的学习" class="headerlink" title="3. 程序员需要不断的学习"></a>3. 程序员需要不断的学习</h1><p>序员的人生，是一个不断学习，不断提升的过程，这当中包含了心酸，也包含了成就。有人说程序员吃的是“青春饭”，只有年轻人可以胜任，当年龄大了，就干不动，干不过年轻人了。小编却认为，老程序员干不过年轻程序员，哪要看在哪方面，可别忘了，老程序员有很好的工作经验，项目经验。我们只要记住一句话就好：“活到老，学到老”。</p>
+<h1 id="4-架构师"><a href="#4-架构师" class="headerlink" title="4. 架构师"></a>4. 架构师</h1><p>听很多人说，架构师薪资很棒，年薪百万，当然只有少数人能达到这个水平，但是还是很高的薪资哦。理想还是要有的，万一实现了呢。我们确实要有理想，因为有理想才能有动力，你才知道自己想要什么，你就会去努力，去拼搏。就像中国富豪王健林说的那样“我们先给自己定一个小目标，比如说，先挣它一个亿”。在很多人看来这是天文数字，可是你不努力，你怎么知道自己实现不了呢。有很多事情，只有去尝试，你才知道行不行！</p>
+<h1 id="5-学习需要学会交流"><a href="#5-学习需要学会交流" class="headerlink" title="5. 学习需要学会交流"></a>5. 学习需要学会交流</h1><p>所以，努力吧。希望我们可以相互学习，共同进步。技术，只有当交流的时候，才会变的更好！我很期待和网友们进行技术交流， 不说为中国技术进步做努力吧。就说帮助身边的人，帮助你我他。我们共同学习，共同交流，共同进步。谢谢！</p>
 
             </div>
             <hr/>
@@ -540,7 +540,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/xu92ar/">https://github.com/future1314/2020/09/04/xu92ar/</a>
+                    <a href="https://github.com/future1314/2020/09/05/oy20xn/">https://github.com/future1314/2020/09/05/oy20xn/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -745,9 +745,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/09/05/oy20xn/">
+                    <div class="card-image">
+                        
+                        
+                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="软件工程师-职业发展路径"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="软件工程师-职业发展路径">
+                        
+                        <span class="card-title">软件工程师-职业发展路径</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1.关于职业规划很程序员每天都在写代码，每天都很忙，而当面试官问他：“你的职业规划是什么？”程序员答：“没有”。那如果让你选择一个角色你会选择什么？比如技术主管。程序员答：“ＣＥＯ吧”。我。。。。。。我们应该给自己制定一个职业规划，对未来的
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            future
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/09/04/isxwy0/">
                     <div class="card-image">
@@ -763,45 +803,6 @@
                     <div class="summary block-with-text">
                         
                             状态线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。****多处理器，处理器提供了总线锁定和缓存锁定两个机制来保证复杂内存操作的原子性。当处理
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            future
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/09/04/zgykxe/">
-                    <div class="card-image">
-                        
-                        
-                        <!-- <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优">
-                        
-                        <span class="card-title">gc 调优</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            GC 调优策略1. 降低 Minor GC 频率由于新生代空间较小，Eden 区很快被填满，就会导致频繁 Minor GC，因此我们可以通过增大新生代空间来降低 Minor GC 的频率。
-单次 Minor GC 时间更多取决于 GC 后存
                         
                     </div>
                     <div class="publish-info">
