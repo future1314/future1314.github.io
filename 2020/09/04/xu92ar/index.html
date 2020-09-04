@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java培训资料-拉勾, future">
-    <meta name="description" content="
-https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7730eb72a69267be6555d3b837055aca9ab3f6a729df">
+    <meta name="keywords" content="锁优化, future">
+    <meta name="description" content="垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java培训资料-拉勾 | future</title>
+    <title>锁优化 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -343,13 +342,13 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java培训资料-拉勾</h1>
+                    <h1 class="description center-align post-title">锁优化</h1>
                 </div>
             </div>
         </div>
@@ -479,7 +478,7 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-11
+                    2020-09-04
                 </div>
                 
 
@@ -493,7 +492,7 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    150
+                    222
                 </div>
                 
 
@@ -511,52 +510,11 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><p><a target="_blank" rel="noopener" href="https://kaiwu.lagou.com/member/share?wxinfo=2&shareId=5ae64c163008a1c2e7730eb72a69267be6555d3b837055aca9ab3f6a729df09c">https://kaiwu.lagou.com/member/share?wxinfo=2&amp;shareId=5ae64c163008a1c2e7730eb72a69267be6555d3b837055aca9ab3f6a729df09c</a></p>
-<p>领取后加我[吃瓜]确认无误奖励红包 🧧<br>或者微信扫描下面的二维码领取 VIP，免费看技术课程，并且有 10 元红包哦。截止到 24 点哈！！！</p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1597677025894-eb519783-243d-4aa7-99ed-66c0b565d0b3.png#align=left&display=inline&height=260&margin=%5Bobject%20Object%5D&name=%25E4%25BA%258C%25E7%25BB%25B4%25E7%25A0%2581%25E5%259B%25BE%25E7%2589%2587_8%25E6%259C%258817%25E6%2597%25A523%25E6%2597%25B609%25E5%2588%258659%25E7%25A7%2592.png&originHeight=260&originWidth=260&size=4297&status=done&style=none&width=260" alt="%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%9B%BE%E7%89%87_8%E6%9C%8817%E6%97%A523%E6%97%B609%E5%88%8659%E7%A7%92.png"></p>
-</li>
-<li><p>或者微信扫描下面的二维码领取VIP，免费看技术课程，并且有10元红包哦。截止到24点哈！！！</p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1597677037906-95629b89-04f3-43a3-9632-405c570b503a.png#align=left&display=inline&height=260&margin=%5Bobject%20Object%5D&name=53287a329d61453d5e7fd069029f374e.png&originHeight=260&originWidth=260&size=2855&status=done&style=none&width=260" alt="53287a329d61453d5e7fd069029f374e.png"></p>
-</li>
-<li></li>
-<li><p><strong>Java 面试(**</strong>一元羊毛*<strong>*)</strong></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://t.lagou.com/mR63RmReR0609">https://t.lagou.com/mR63RmReR0609</a>** 1 元秒杀**｜开发必看：分布式技术一站式通关!从面试到实战，全面掌握分布式技术</p>
-</li>
-<li><p><strong><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1585734366339-8ec5639e-0249-4cd2-b094-774a07fc573c.png?x-oss-process=image/format,png#align=left&display=inline&height=640&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1280&originWidth=811&size=3117790&status=done&style=none&width=405.5" alt="image.png"></strong></p>
-</li>
-<li><p><strong><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1584571436392-59f01dd8-2aa8-4752-ad51-a5e3a168ae45.png#align=left&display=inline&height=640&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1280&originWidth=720&size=713538&status=done&style=none&width=360" alt="image.png"></strong></p>
-</li>
-</ul>
-<ol>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928112711-22c171bc-44c1-49f0-ab35-fbd545466441.png?x-oss-process=image/format,png#align=left&display=inline&height=640&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928135117-db0e8722-8629-4353-b8a5-07433f68de4a.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928154341-d22f4357-fa73-4b6d-b837-5b14be1a0890.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928173651-224a98a6-8603-4d86-b953-c9e4ebccab73.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928192212-55ce1e05-1d81-483e-b554-68d014886426.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928204251-14f07d1a-bf6c-46f5-a59c-34b2470e9962.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928214501-5c9069c7-b7ee-46cd-b89e-d0fe4c91b017.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928234753-beac49a3-8e6e-47ac-98d8-7c912b13b78c.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928254578-96cf7247-7930-420d-a006-d8cd231e4805.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928264631-f90a6e2b-a532-453f-aa97-c98e0309035d.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1583928283635-64329903-de1e-4ee8-a257-6d6828f357cf.png?x-oss-process=image/format,png#align=left&display=inline&height=640&name=image.png&originHeight=1280&originWidth=720&size=2768326&status=done&style=none&width=360" alt="image.png"></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.yuque.com/51cto/training/irbzty">https://www.yuque.com/51cto/training/irbzty</a></p>
-</li>
-</ol>
+                <h3 id="垃圾回收会导致上下文切换"><a href="#垃圾回收会导致上下文切换" class="headerlink" title="垃圾回收会导致上下文切换"></a>垃圾回收会导致上下文切换</h3><p>很多 <strong>JVM 垃圾回收器</strong>（serial 收集器、ParNew 收集器）在回收旧对象时，会产生<strong>内存碎片</strong>，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而<strong>移动内存对象就意味着这些对象所在的内存地址会发生变化</strong>，因此在移动对象前需要暂停线程，在移动完成后需要再次唤醒该线程。因此减少 JVM 垃圾回收的频率可以有效地减少上下文切换。</p>
+<p>Executors.newCachedThreadPool，只适合处理大量且耗时短的非阻塞任务。</p>
+<h2 id="竞争锁优化"><a href="#竞争锁优化" class="headerlink" title="竞争锁优化"></a><a href="#R0KWu">竞争锁优化</a></h2><h3 id="1-减少锁的持有时间"><a href="#1-减少锁的持有时间" class="headerlink" title="1.减少锁的持有时间"></a><a href="#JeIgg">1.减少锁的持有时间</a></h3><p>同步的代码要尽量少。</p>
+<h3 id="2-降低锁的粒度"><a href="#2-降低锁的粒度" class="headerlink" title="2.降低锁的粒度"></a><a href="#wjdvJ">2.降低锁的粒度</a></h3><p>锁分离(读写锁)；锁分段。</p>
+<h3 id="3-非阻塞乐观锁替代竞争锁"><a href="#3-非阻塞乐观锁替代竞争锁" class="headerlink" title="3.非阻塞乐观锁替代竞争锁"></a><a href="#lCdUa">3.非阻塞乐观锁替代竞争锁</a></h3><p>cas 代替 sync。</p>
 
             </div>
             <hr/>
@@ -582,7 +540,7 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/11/hqrxuk/">https://github.com/future1314/2020/03/11/hqrxuk/</a>
+                    <a href="https://github.com/future1314/2020/09/04/xu92ar/">https://github.com/future1314/2020/09/04/xu92ar/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -787,52 +745,31 @@ https://kaiwu.lagou.com/member/share?wxinfo=2&amp;amp;shareId=5ae64c163008a1c2e7
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/11/irbzty/">
+                <a href="/2020/09/04/xu92ar/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Java培训资料-极客"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Java培训资料-极客">
+                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化">
                         
-                        <span class="card-title">Java培训资料-极客</span>
+                        <span class="card-title">锁优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://www.yuque.com/51cto/training/hqrxuk
-
-
-
+                            垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -841,6 +778,7 @@ https://www.yuque.com/51cto/training/hqrxuk
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -851,49 +789,26 @@ https://www.yuque.com/51cto/training/hqrxuk
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/11/chrh36/">
+                <a href="/2020/09/04/zgykxe/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="读书笔记"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="读书笔记">
+                        <!-- <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优">
                         
-                        <span class="card-title">读书笔记</span>
+                        <span class="card-title">gc 调优</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            插入封面图片，点击图片，设置图片大小
-关于本书插入「表格」
-
-
-
-书名
-《菊次郎与佐纪》
-作者
-北野武日本
-
-
-
-出版社
-译林出版社
-阅读日期
-2019 年 2 月
-
-
-豆瓣评分
-8.1
-我的评分
-☆☆☆☆
-
-
-内容简介在此处输入文本你将读
+                            GC 调优策略1. 降低 Minor GC 频率由于新生代空间较小，Eden 区很快被填满，就会导致频繁 Minor GC，因此我们可以通过增大新生代空间来降低 Minor GC 的频率。
+单次 Minor GC 时间更多取决于 GC 后存
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
                             </span>
                         <span class="publish-author">
                             
