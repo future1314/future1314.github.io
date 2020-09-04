@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-09-04T03:04:14.294Z</updated>
+  <updated>2020-09-04T03:13:02.799Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,54 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>StringBuffer</title>
+    <link href="https://github.com/future1314/2020/09/04/gaqcd1/"/>
+    <id>https://github.com/future1314/2020/09/04/gaqcd1/</id>
+    <published>2020-09-04T03:12:32.000Z</published>
+    <updated>2020-09-04T03:13:02.799Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于 StringBuffer 中的 append 方法被 Synchronized</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>类</title>
+    <link href="https://github.com/future1314/2020/09/04/we5szc/"/>
+    <id>https://github.com/future1314/2020/09/04/we5szc/</id>
+    <published>2020-09-04T02:57:30.000Z</published>
+    <updated>2020-09-04T03:13:02.823Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;类编译，加载，链接，初始化。&lt;/p&gt;
+&lt;h3 id=&quot;类连接&quot;&gt;&lt;a href=&quot;#类连接&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>mmap零拷贝</title>
     <link href="https://github.com/future1314/2020/09/04/ailstm/"/>
     <id>https://github.com/future1314/2020/09/04/ailstm/</id>
     <published>2020-09-04T02:43:51.000Z</published>
-    <updated>2020-09-04T03:04:14.294Z</updated>
+    <updated>2020-09-04T03:13:02.827Z</updated>
     
     
       
@@ -42,7 +85,7 @@
     <link href="https://github.com/future1314/2020/09/03/rbw833/"/>
     <id>https://github.com/future1314/2020/09/03/rbw833/</id>
     <published>2020-09-03T14:30:26.000Z</published>
-    <updated>2020-09-04T03:04:14.342Z</updated>
+    <updated>2020-09-04T03:13:02.871Z</updated>
     
     
       
@@ -65,7 +108,7 @@
     <link href="https://github.com/future1314/2020/09/03/xxtar0/"/>
     <id>https://github.com/future1314/2020/09/03/xxtar0/</id>
     <published>2020-09-03T14:20:34.000Z</published>
-    <updated>2020-09-04T03:04:14.374Z</updated>
+    <updated>2020-09-04T03:13:02.899Z</updated>
     
     
       
@@ -86,7 +129,7 @@
     <link href="https://github.com/future1314/2020/09/03/hogz4t/"/>
     <id>https://github.com/future1314/2020/09/03/hogz4t/</id>
     <published>2020-09-03T13:46:51.000Z</published>
-    <updated>2020-09-04T03:04:14.390Z</updated>
+    <updated>2020-09-04T03:13:02.915Z</updated>
     
     
       
@@ -107,7 +150,7 @@
     <link href="https://github.com/future1314/2020/09/03/lmvdl2/"/>
     <id>https://github.com/future1314/2020/09/03/lmvdl2/</id>
     <published>2020-09-03T06:27:33.000Z</published>
-    <updated>2020-09-04T03:04:14.398Z</updated>
+    <updated>2020-09-04T03:13:02.919Z</updated>
     
     
       
@@ -128,7 +171,7 @@
     <link href="https://github.com/future1314/2020/09/03/rsals7/"/>
     <id>https://github.com/future1314/2020/09/03/rsals7/</id>
     <published>2020-09-03T02:00:24.000Z</published>
-    <updated>2020-09-04T03:04:14.446Z</updated>
+    <updated>2020-09-04T03:13:02.971Z</updated>
     
     
       
@@ -155,7 +198,7 @@
     <link href="https://github.com/future1314/2020/09/03/tz4aem/"/>
     <id>https://github.com/future1314/2020/09/03/tz4aem/</id>
     <published>2020-09-03T01:33:15.000Z</published>
-    <updated>2020-09-04T03:04:14.478Z</updated>
+    <updated>2020-09-04T03:13:02.995Z</updated>
     
     
       
@@ -178,7 +221,7 @@
     <link href="https://github.com/future1314/2020/09/02/eq45ui/"/>
     <id>https://github.com/future1314/2020/09/02/eq45ui/</id>
     <published>2020-09-02T09:14:51.000Z</published>
-    <updated>2020-09-04T03:04:14.502Z</updated>
+    <updated>2020-09-04T03:13:03.011Z</updated>
     
     
       
@@ -199,7 +242,7 @@
     <link href="https://github.com/future1314/2020/09/01/tcnwt9/"/>
     <id>https://github.com/future1314/2020/09/01/tcnwt9/</id>
     <published>2020-09-01T08:59:41.000Z</published>
-    <updated>2020-09-04T03:04:14.506Z</updated>
+    <updated>2020-09-04T03:13:03.015Z</updated>
     
     
       
@@ -221,7 +264,7 @@
     <link href="https://github.com/future1314/2020/09/01/dq6307/"/>
     <id>https://github.com/future1314/2020/09/01/dq6307/</id>
     <published>2020-09-01T07:30:19.000Z</published>
-    <updated>2020-09-04T03:04:14.594Z</updated>
+    <updated>2020-09-04T03:13:03.083Z</updated>
     
     
       
@@ -242,7 +285,7 @@
     <link href="https://github.com/future1314/2020/08/31/osop7e/"/>
     <id>https://github.com/future1314/2020/08/31/osop7e/</id>
     <published>2020-08-31T06:59:23.000Z</published>
-    <updated>2020-09-04T03:04:14.602Z</updated>
+    <updated>2020-09-04T03:13:03.099Z</updated>
     
     
       
@@ -264,7 +307,7 @@
     <link href="https://github.com/future1314/2020/08/31/wcu8bq/"/>
     <id>https://github.com/future1314/2020/08/31/wcu8bq/</id>
     <published>2020-08-31T02:44:20.000Z</published>
-    <updated>2020-09-04T03:04:14.786Z</updated>
+    <updated>2020-09-04T03:13:03.255Z</updated>
     
     
       
@@ -285,7 +328,7 @@
     <link href="https://github.com/future1314/2020/08/30/rzt7w7/"/>
     <id>https://github.com/future1314/2020/08/30/rzt7w7/</id>
     <published>2020-08-30T13:07:06.000Z</published>
-    <updated>2020-09-04T03:04:14.794Z</updated>
+    <updated>2020-09-04T03:13:03.259Z</updated>
     
     
       
@@ -308,7 +351,7 @@
     <link href="https://github.com/future1314/2020/08/30/drkrdi/"/>
     <id>https://github.com/future1314/2020/08/30/drkrdi/</id>
     <published>2020-08-30T09:12:53.000Z</published>
-    <updated>2020-09-04T03:04:15.178Z</updated>
+    <updated>2020-09-04T03:13:03.651Z</updated>
     
     
       
@@ -329,7 +372,7 @@
     <link href="https://github.com/future1314/2020/08/30/ro0z5g/"/>
     <id>https://github.com/future1314/2020/08/30/ro0z5g/</id>
     <published>2020-08-29T16:37:05.000Z</published>
-    <updated>2020-09-04T03:04:15.186Z</updated>
+    <updated>2020-09-04T03:13:03.659Z</updated>
     
     
       
@@ -351,7 +394,7 @@
     <link href="https://github.com/future1314/2020/08/29/glv0gn/"/>
     <id>https://github.com/future1314/2020/08/29/glv0gn/</id>
     <published>2020-08-29T14:45:00.000Z</published>
-    <updated>2020-09-04T03:04:15.190Z</updated>
+    <updated>2020-09-04T03:13:03.663Z</updated>
     
     
       
@@ -372,7 +415,7 @@
     <link href="https://github.com/future1314/2020/03/22/pxds7y/"/>
     <id>https://github.com/future1314/2020/03/22/pxds7y/</id>
     <published>2020-03-22T04:50:51.000Z</published>
-    <updated>2020-09-04T03:04:15.226Z</updated>
+    <updated>2020-09-04T03:13:03.747Z</updated>
     
     
       
@@ -394,7 +437,7 @@
     <link href="https://github.com/future1314/2020/03/22/poq8z2/"/>
     <id>https://github.com/future1314/2020/03/22/poq8z2/</id>
     <published>2020-03-22T03:59:58.000Z</published>
-    <updated>2020-09-04T03:04:15.382Z</updated>
+    <updated>2020-09-04T03:13:03.891Z</updated>
     
     
       
@@ -403,40 +446,6 @@
         
     <summary type="html">&lt;p&gt;首先说明我是 Java 开发，我的范围只适合 Java 开发的，其他方向我不太了解，并且很多公司侧重点也不一样，比如字节不侧重语言，侧重操作系统四大金刚那些，也看公司吧，就像考不同的学校，会有不同的大纲，因为我是本科生，都比较侧重基础&lt;/p&gt;
 &lt;p&gt;Java：Java</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>面试经验</title>
-    <link href="https://github.com/future1314/2020/03/22/il73gx/"/>
-    <id>https://github.com/future1314/2020/03/22/il73gx/</id>
-    <published>2020-03-22T03:59:26.000Z</published>
-    <updated>2020-09-04T03:04:15.382Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>代码</title>
-    <link href="https://github.com/future1314/2020/03/15/ugxy0c/"/>
-    <id>https://github.com/future1314/2020/03/15/ugxy0c/</id>
-    <published>2020-03-15T09:28:07.000Z</published>
-    <updated>2020-09-04T03:04:15.386Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;如果想在接口中新增一个方法，但又不想子类强制实现该方法时，可以给该方法加上 default</summary>
         
       
     
