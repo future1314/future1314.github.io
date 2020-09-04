@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jvm参数, future">
-    <meta name="description" content="-XX:+DoEscapeAnalysis 开启逃逸分析（jdk1.8 默认开启，其它版本未测试）-XX:-DoEscapeAnalysis 关闭逃逸分析-XX:+EliminateLocks 开启锁消除（jdk1.8 默认开启，其它版本未">
+    <meta name="keywords" content="jvm 命令, future">
+    <meta name="description" content="jstat
+S0C：年轻代中 To Survivor 的容量（单位 KB）；
+
+S1C：年轻代中 From Survivor 的容量（单位 KB）；
+
+S0U：年轻代中 To Survivor 目前已使用空间（单位 KB）；
+
+S1U：年轻">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>jvm参数 | future</title>
+    <title>jvm 命令 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +349,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">jvm参数</h1>
+                    <h1 class="description center-align post-title">jvm 命令</h1>
                 </div>
             </div>
         </div>
@@ -492,7 +499,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    234
+                    288
                 </div>
                 
 
@@ -510,9 +517,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>-XX:+DoEscapeAnalysis 开启逃逸分析（jdk1.8 默认开启，其它版本未测试）<br>-XX:-DoEscapeAnalysis 关闭逃逸分析<br>-XX:+EliminateLocks 开启锁消除（jdk1.8 默认开启，其它版本未测试）<br>-XX:-EliminateLocks 关闭锁消除<br>-XX:+EliminateAllocations 开启标量替换（jdk1.8 默认开启，其它版本未测试）<br>-XX:-EliminateAllocations 关闭就可以了</p>
-<p>-XX:+PrintCompilation //在控制台打印编译过程信息<br>-XX:+UnlockDiagnosticVMOptions //解锁对 JVM 进行诊断的选项参数。默认是关闭的，开启后支持一些特定参数对 JVM 进行诊断<br>-XX:+PrintInlining //将内联方法打印出来</p>
-<p>-XX:+PrintGC 输出 GC 日志<br>-XX:+PrintGCDetails 输出 GC 的详细日志<br>-XX:+PrintGCTimeStamps 输出 GC 的时间戳（以基准时间的形式）<br>-XX:+PrintGCDateStamps 输出 GC 的时间戳（以日期的形式，如 2013-05-04T21:53:59.234+0800）<br>-XX:+PrintHeapAtGC 在进行 GC 的前后打印出堆的信息<br>-Xloggc:../logs/gc.log 日志文件的输出路径</p>
+                <h1 id="jstat"><a href="#jstat" class="headerlink" title="jstat"></a>jstat</h1><ul>
+<li><p>S0C：年轻代中 To Survivor 的容量（单位 KB）；</p>
+</li>
+<li><p>S1C：年轻代中 From Survivor 的容量（单位 KB）；</p>
+</li>
+<li><p>S0U：年轻代中 To Survivor 目前已使用空间（单位 KB）；</p>
+</li>
+<li><p>S1U：年轻代中 From Survivor 目前已使用空间（单位 KB）；</p>
+</li>
+<li><p>EC：年轻代中 Eden 的容量（单位 KB）；</p>
+</li>
+<li><p>EU：年轻代中 Eden 目前已使用空间（单位 KB）；</p>
+</li>
+<li><p>OC：Old 代的容量（单位 KB）；</p>
+</li>
+<li><p>OU：Old 代目前已使用空间（单位 KB）；</p>
+</li>
+<li><p>MC：Metaspace 的容量（单位 KB）；</p>
+</li>
+<li><p>MU：Metaspace 目前已使用空间（单位 KB）；</p>
+</li>
+<li><p>YGC：从应用程序启动到采样时年轻代中 gc 次数；</p>
+</li>
+<li><p>YGCT：从应用程序启动到采样时年轻代中 gc 所用时间(s)；</p>
+</li>
+<li><p>FGC：从应用程序启动到采样时 old 代（全 gc）gc 次数；</p>
+</li>
+<li><p>FGCT：从应用程序启动到采样时 old 代（全 gc）gc 所用时间(s)；</p>
+</li>
+<li><p>GCT：从应用程序启动到采样时 gc 用的总时间(s)。</p>
+</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token punctuation">[</span>root<span class="token annotation punctuation">@aliyun</span> <span class="token operator">~</span><span class="token punctuation">]</span># jstat <span class="token operator">-</span>gc <span class="token number">27788</span>
+ S0C    S1C    S0U    S1U      EC       EU        OC         OU       MC     MU    CCSC   CCSU   YGC     YGCT    FGC    FGCT     GCT
+<span class="token number">8704.0</span> <span class="token number">8704.0</span> <span class="token number">3301.0</span>  <span class="token number">0.0</span>   <span class="token number">69952.0</span>  <span class="token number">67721.2</span>   <span class="token number">174784.0</span>   <span class="token number">105202.2</span>  <span class="token number">104140.0</span> <span class="token number">98328.1</span> <span class="token number">13272.0</span> <span class="token number">12227.3</span>    <span class="token number">176</span>    <span class="token number">2.736</span>   <span class="token number">4</span>      <span class="token number">0.421</span>    <span class="token number">3.158</span>
+<span class="token punctuation">[</span>root<span class="token annotation punctuation">@aliyun</span> <span class="token operator">~</span><span class="token punctuation">]</span>#</code></pre>
+<hr>
 
             </div>
             <hr/>
@@ -538,7 +579,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/gc91c3/">https://github.com/future1314/2020/09/04/gc91c3/</a>
+                    <a href="https://github.com/future1314/2020/09/04/dkrt72/">https://github.com/future1314/2020/09/04/dkrt72/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -743,9 +784,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/09/04/dkrt72/">
+                    <div class="card-image">
+                        
+                        
+                        <!-- <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="jvm 命令"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="jvm 命令">
+                        
+                        <span class="card-title">jvm 命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            jstat
+S0C：年轻代中 To Survivor 的容量（单位 KB）；
+
+S1C：年轻代中 From Survivor 的容量（单位 KB）；
+
+S0U：年轻代中 To Survivor 目前已使用空间（单位 KB）；
+
+S1U：年轻
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            future
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/09/04/csa1em/">
                     <div class="card-image">
@@ -761,45 +849,6 @@
                     <div class="summary block-with-text">
                         
                             跳跃表跳跃表是基于链表扩展实现的一种特殊链表，类似于树的实现，跳跃表不仅实现了横向链表，还实现了垂直方向的分层索引。一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据，每一层由下往上依次通过一个指针指向上层
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            future
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/09/04/gaqcd1/">
-                    <div class="card-image">
-                        
-                        
-                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="StringBuffer"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="StringBuffer">
-                        
-                        <span class="card-title">StringBuffer</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            由于 StringBuffer 中的 append 方法被 Synchronized 关键字修饰，会使用到锁，从而导致性能下降。
-
                         
                     </div>
                     <div class="publish-info">
