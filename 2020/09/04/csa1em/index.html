@@ -492,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    532
+                    652
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -514,6 +514,8 @@
 <h3 id="ConcurrentSkipListMap"><a href="#ConcurrentSkipListMap" class="headerlink" title="ConcurrentSkipListMap"></a>ConcurrentSkipListMap</h3><p><strong>ConcurrentSkipListMap</strong>是基于 TreeMap 的设计原理实现的，略有不同的是<strong>前者基于跳表实现</strong>，后者基于<strong>红黑树</strong>实现，<strong>ConcurrentSkipListMap 的特点是存取平均时间复杂度是**</strong>O（log（n））<strong>，适用于大数据量存取的场景，</strong>最常见的是基于跳跃表实现的数据量比较大的缓存。**</p>
 <h3 id="Hashtable"><a href="#Hashtable" class="headerlink" title="Hashtable"></a>Hashtable</h3><p><strong>Hashtable 使用 Synchronized 同步锁修饰了 put、get、remove 等方法。</strong></p>
 <h3 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h3><p>该容器在数据量比较大的时候，链表会转换为红黑树。<strong>红黑树在并发情况下，删除和插入过程中有个平衡的过程，会牵涉到大量节点，因此竞争锁资源的代价相对比较高。</strong><br><strong>在 JDK1.7 中，ConcurrentHashMap 就使用了分段锁 Segment 减小了锁粒度，最终优化了锁的并发操作。</strong><br><strong>JDK1.8 中 ConcurrentHashMap 做了大量的改动，摒弃了 Segment 的概念</strong>。由于 Synchronized 锁在 Java6 之后的性能已经得到了很大的提升，所以<strong>在 JDK1.8 中，Java 重新启用了 Synchronized 同步锁，通过 Synchronized 实现**</strong>HashEntry*<strong>*作为锁粒度。</strong><br>与 JDK1.7 的 put 方法一样，<strong>JDK1.8 在添加元素时</strong>，在没有哈希冲突的情况下，会使用<strong>CAS 进行添加元素操作</strong>；如果有冲突，则通过 Synchronized 将链表锁定，再执行接下来的操作。</p>
+<h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p><strong>Vector 也是基于 Synchronized 同步锁实现的线程安全</strong>，Synchronized 关键字几乎修饰了所有对外暴露的方法，所以在读远大于写的操作场景中，Vector 将会发生大量锁竞争，从而给系统带来性能开销。</p>
+<h3 id="CopyOnWriteArrayList"><a href="#CopyOnWriteArrayList" class="headerlink" title="CopyOnWriteArrayList"></a>CopyOnWriteArrayList</h3><p><strong>CopyOnWriteArrayList</strong>是 java.util.concurrent 包提供的方法，它实现了<strong>读操作无锁，写操作则通过操作底层数组的新副本来实现</strong>，是一种读写分离的并发策略。</p>
 
             </div>
             <hr/>
@@ -1003,7 +1005,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">21.3k</span>&nbsp;字
+                class="white-color">21.4k</span>&nbsp;字
             
             
             
