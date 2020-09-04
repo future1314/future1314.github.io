@@ -504,7 +504,7 @@ JVM 内存模型的具体设计
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    979
+                    1.1k
                 </div>
                 
 
@@ -540,6 +540,7 @@ JVM 内存模型的具体设计
 <h3 id="3-方法区（Method-Area）"><a href="#3-方法区（Method-Area）" class="headerlink" title="3. 方法区（Method Area）"></a>3. 方法区（Method Area）</h3><p>很多开发者都习惯将方法区称为“永久代”，其实这两者并不是等价的。<br>HotSpot 虚拟机使用永久代来实现方法区，但在其它虚拟机中，不存在永久代一说。因此，方法区只是 JVM 中规范的一部分，可以说，在 HotSpot 虚拟机中，设计人员使用了永久代来实现了 JVM 规范的方法区。<br>方法区主要是用来存放已被虚拟机加载的类相关信息，包括类信息、运行时常量池、字符串常量池。类信息又包括了类的版本、字段、方法、接口和父类等信息。<br>JVM 在执行某个类的时候，必须经过加载、连接、初始化，而连接又包括验证、准备、解析三个阶段。在加载类的时候，JVM 会先加载 class 文件，而在 class 文件中除了有类的版本、字段、方法和接口等描述信息外，还有一项信息是常量池(Constant Pool Table)，用于存放编译期间生成的各种字面量和符号引用。<br>字面量包括字符串（String a=“b”）、基本类型的常量（final 修饰的变量），符号引用则包括类和方法的全限定名（例如 String 这个类，它的全限定名就是 Java/lang/String）、字段的名称和描述符以及方法的名称和描述符。<br>而<strong>当类加载到内存中后，JVM 就会将 class 文件常量池中的内容存放到运行时的常量池中；在解析阶段，JVM 会把符号引用替换为直接引用（对象的索引值）</strong>。<br>例如，类中的一个字符串常量在 class 文件中时，存放在 class 文件常量池中的；在 JVM 加载完类之后，JVM 会将这个字符串常量放到运行时常量池中，并在解析阶段，指定该字符串对象的索引值。运行时常量池是全局共享的，多个类共用一个运行时常量池，class 文件中常量池多个相同的字符串在运行时常量池只会存在一份。<br>方法区与堆空间类似，也是一个共享内存区，<strong>所以方法区是线程共享的。假如两个线程都试图访问方法区中的同一个类信息，而这个类还没有装入 JVM，那么此时就只允许一个线程去加载它，另一个线程必须等待。</strong><br>在 HotSpot 虚拟机、Java7 版本中已经将永久代的静态变量和运行时常量池转移到了堆中，其余部分则存储在 JVM 的非堆内存中，而 Java8 版本已经将方法区中实现的永久代去掉了，并用元空间（class metadata）代替了之前的永久代，并且元空间的存储位置是本地内存。<strong>之前永久代的类的元数据存储在了元空间</strong>，<strong>永久代的静态变量（class static variables）以及运行时常量池（runtime constant pool）则跟 Java7 一样，转移到了堆中</strong>。</p>
 <h3 id="4-虚拟机栈（VM-stack）"><a href="#4-虚拟机栈（VM-stack）" class="headerlink" title="4.虚拟机栈（VM stack）"></a>4.虚拟机栈（VM stack）</h3><p>当创建一个线程时，会在虚拟机栈中申请一个<strong>线程栈，用来保存方法的局部变量、操作数栈、动态链接方法和返回地址等信息，并参与方法的调用和返回</strong>。每一个方法的调用都伴随着栈帧的入栈操作，方法的返回则是栈帧的出栈操作。</p>
 <h3 id="5-本地方法栈（Native-Method-Stack）"><a href="#5-本地方法栈（Native-Method-Stack）" class="headerlink" title="5.本地方法栈（Native Method Stack）"></a>5.本地方法栈（Native Method Stack）</h3><p>本地方法栈则用于管理本地方法的调用。但本地方法并不是用 Java 实现的，而是由 C 语言实现的。</p>
+<p><strong>垃圾回收的重点就是关注堆和方法区中的内存了</strong>，堆中的回收主要是对象的回收，<strong>方法区的回收主要是废弃常量和无用的类的回收。</strong><br>**<br><strong>程序计数器、虚拟机栈和本地方法栈这 3 个区域是线程私有的。</strong></p>
 
             </div>
             <hr/>
@@ -1030,7 +1031,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">22.6k</span>&nbsp;字
+                class="white-color">22.7k</span>&nbsp;字
             
             
             
