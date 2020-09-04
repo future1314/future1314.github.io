@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="读书笔记, future">
-    <meta name="description" content="读书笔记 | future">
+    <meta name="keywords" content="常用的数据结构, future">
+    <meta name="description" content="跳跃表跳跃表是基于链表扩展实现的一种特殊链表，类似于树的实现，跳跃表不仅实现了横向链表，还实现了垂直方向的分层索引。一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据，每一层由下往上依次通过一个指针指向上层">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>读书笔记 | future</title>
+    <title>常用的数据结构 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">读书笔记</h1>
+                    <h1 class="description center-align post-title">常用的数据结构</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-11
+                    2020-09-04
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    532
                 </div>
                 
 
@@ -510,7 +510,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h3 id="跳跃表"><a href="#跳跃表" class="headerlink" title="跳跃表"></a>跳跃表</h3><p><strong>跳跃表是基于链表扩展实现的一种特殊链表</strong>，类似于树的实现，跳跃表不仅实现了横向链表，还<strong>实现了垂直方向的分层索引。</strong><br><strong>一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据</strong>，每一层由下往上依次通过一个指针指向上层相同值的元素，每层数据依次减少，等到了最顶层就只会保留部分数据了。<br><strong>跳跃表</strong>的这种结构，是利用了<strong>空间换时间</strong>的方法来提高了查询效率。<strong>程序总是从最顶层开始查询访问，通过判断元素值来缩小查询范围</strong>。</p>
+<h3 id="ConcurrentSkipListMap"><a href="#ConcurrentSkipListMap" class="headerlink" title="ConcurrentSkipListMap"></a>ConcurrentSkipListMap</h3><p><strong>ConcurrentSkipListMap</strong>是基于 TreeMap 的设计原理实现的，略有不同的是<strong>前者基于跳表实现</strong>，后者基于<strong>红黑树</strong>实现，<strong>ConcurrentSkipListMap 的特点是存取平均时间复杂度是**</strong>O（log（n））<strong>，适用于大数据量存取的场景，</strong>最常见的是基于跳跃表实现的数据量比较大的缓存。**</p>
+<h3 id="Hashtable"><a href="#Hashtable" class="headerlink" title="Hashtable"></a>Hashtable</h3><p><strong>Hashtable 使用 Synchronized 同步锁修饰了 put、get、remove 等方法。</strong></p>
+<h3 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h3><p>该容器在数据量比较大的时候，链表会转换为红黑树。<strong>红黑树在并发情况下，删除和插入过程中有个平衡的过程，会牵涉到大量节点，因此竞争锁资源的代价相对比较高。</strong><br><strong>在 JDK1.7 中，ConcurrentHashMap 就使用了分段锁 Segment 减小了锁粒度，最终优化了锁的并发操作。</strong><br><strong>JDK1.8 中 ConcurrentHashMap 做了大量的改动，摒弃了 Segment 的概念</strong>。由于 Synchronized 锁在 Java6 之后的性能已经得到了很大的提升，所以<strong>在 JDK1.8 中，Java 重新启用了 Synchronized 同步锁，通过 Synchronized 实现**</strong>HashEntry*<strong>*作为锁粒度。</strong><br>与 JDK1.7 的 put 方法一样，<strong>JDK1.8 在添加元素时</strong>，在没有哈希冲突的情况下，会使用<strong>CAS 进行添加元素操作</strong>；如果有冲突，则通过 Synchronized 将链表锁定，再执行接下来的操作。</p>
+
             </div>
             <hr/>
 
@@ -535,7 +539,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/11/gumxz2/">https://github.com/future1314/2020/03/11/gumxz2/</a>
+                    <a href="https://github.com/future1314/2020/09/04/csa1em/">https://github.com/future1314/2020/09/04/csa1em/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -740,30 +744,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/12/db/">
+                <a href="/2020/09/04/csa1em/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="数据库"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="数据库">
+                        <!-- <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="常用的数据结构"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="常用的数据结构">
                         
-                        <span class="card-title">数据库</span>
+                        <span class="card-title">常用的数据结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            跳跃表跳跃表是基于链表扩展实现的一种特殊链表，类似于树的实现，跳跃表不仅实现了横向链表，还实现了垂直方向的分层索引。一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据，每一层由下往上依次通过一个指针指向上层
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -772,6 +777,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -782,25 +788,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/11/eruyyn/">
+                <a href="/2020/09/04/gc91c3/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="近期学习计划"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="近期学习计划">
+                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="jvm参数"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="jvm参数">
                         
-                        <span class="card-title">近期学习计划</span>
+                        <span class="card-title">jvm参数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            -XX:+DoEscapeAnalysis 开启逃逸分析（jdk1.8 默认开启，其它版本未测试）-XX:-DoEscapeAnalysis 关闭逃逸分析-XX:+EliminateLocks 开启锁消除（jdk1.8 默认开启，其它版本未
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
                             </span>
                         <span class="publish-author">
                             
