@@ -4,12 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="I/O操作, future">
-    <meta name="description" content="I/O 操作分为磁盘 I/O 操作和网络 I/O 操作。InputStream 的 read 操作：
-
-JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读请求；
-内核向硬件发送读指令，并等待读就绪；
-内核把将要读取">
+    <meta name="keywords" content="多线程, future">
+    <meta name="description" content="状态线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。********Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +13,7 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>I/O操作 | future</title>
+    <title>多线程 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -346,13 +342,13 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/22.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">I/O操作</h1>
+                    <h1 class="description center-align post-title">多线程</h1>
                 </div>
             </div>
         </div>
@@ -482,7 +478,7 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-03
+                    2020-09-04
                 </div>
                 
 
@@ -496,14 +492,14 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    705
+                    137
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -514,18 +510,9 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>I/O 操作分为磁盘 I/O 操作和网络 I/O 操作。<br>InputStream 的 read 操作：</p>
-<ul>
-<li>JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读请求；</li>
-<li>内核向硬件发送读指令，并等待读就绪；</li>
-<li>内核把将要读取的数据复制到指向的内核缓存中；</li>
-<li>操作系统内核将数据复制到用户空间缓冲区，然后 read 系统调用返回。</li>
-</ul>
-<p>在这个过程中，数据先从外部设备复制到内核空间，再从内核空间复制到用户空间，这就<strong>发生了两次内存复制操作</strong>。这种操作会导致不必要的数据拷贝和上下文切换，从而降低 I/O 的性能。</p>
-<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p><strong>如果没有数据就绪，这个读取操作将会一直被挂起，用户线程将会处于阻塞状态。</strong></p>
-<h2 id="优化-I-O-操作"><a href="#优化-I-O-操作" class="headerlink" title="优化 I/O 操作"></a>优化 I/O 操作</h2><h3 id="1-使用缓冲区优化读写流操作"><a href="#1-使用缓冲区优化读写流操作" class="headerlink" title="1. 使用缓冲区优化读写流操作"></a>1. 使用缓冲区优化读写流操作</h3><p>NIO 与传统 I/O 不同，它是基于块（Block）的，它以块为基本单位处理数据。在 NIO 中，最为重要的两个组件是缓冲区（Buffer）和通道（Channel）。Buffer 是一块连续的内存块，是 NIO 读写数据的中转地。Channel 表示缓冲数据的源头或者目的地，它用于读取缓冲或者写入数据，是访问缓冲的接口。<br>传统 I/O 和 NIO 的最大区别就是传统 I/O 是面向流，NIO 是面向 Buffer。Buffer 可以将文件一次性读入内存再做后续处理，而传统的方式是边读文件边处理数据。</p>
-<h3 id="2-使用-DirectBuffer-减少内存复制"><a href="#2-使用-DirectBuffer-减少内存复制" class="headerlink" title="2. 使用 DirectBuffer 减少内存复制"></a>2. 使用 DirectBuffer 减少内存复制</h3><p>NIO 的 Buffer 除了做了缓冲块优化之外，还提供了一个可以直接访问物理内存的类 DirectBuffer。</p>
-<h3 id="3-多路复用器（Selector）"><a href="#3-多路复用器（Selector）" class="headerlink" title="3. 多路复用器（Selector）"></a>3. 多路复用器（Selector）</h3><p>Selector 是 Java NIO 编程的基础。用于检查一个或多个 NIO Channel 的状态是否处于可读、可写。<br>Selector 是基于<strong>事件驱动</strong>实现的，我们可以在 Selector 中注册 accpet、read 监听事件，Selector 会不断轮询注册在其上的 Channel，如果某个 Channel 上面发生监听事件，这个 Channel 就处于就绪状态，然后进行 I/O 操作。<br><strong>一个线程使用一个 Selector，通过轮询的方式，可以监听多个 Channel 上的事件</strong>。我们可以<strong>在注册 Channel 时设置该通道为非阻塞，当 Channel 上没有 I/O 操作时，该线程就不会一直等待了，而是会不断轮询所有 Channel，从而避免发生阻塞。</strong><br>**<br>目前操作系统的 I/O 多路复用机制都使用了 epoll，相比传统的 select 机制，epoll 没有最大连接句柄 1024 的限制。所以 Selector 在理论上可以轮询成千上万的客户端。</p>
+                <h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。<br>**<br>**<br>**<br>**<br>Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程中系统的上下文切换频率。<br>[root@aliyun ~]# vmstat 26571<br>procs ———–memory———- —swap– —–io—- -system– ——cpu—–<br>r   b   swpd   free   buff   cache   si   so    bi    bo   in   cs us sy id wa st<br>2  0      0   82800 133624 537868    0    0     4    13   12   25  1  0 99  0  0<br><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1599227584883-fec6985f-f6f8-4ef6-86ca-5d216cc23359.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=177&originWidth=746&size=191086&status=done&style=none&width=746" alt="image.png"><br>如果是监视某个应用的上下文切换，可以使用 pidstat 命令监控进程的 上下文切换。<br> pidstat -w -l -p *<em>26571\</em>* 1 100</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/282505/1595921713500-ef983e78-c5e3-46f3-abe1-bbdc74c1f384.jpeg#align=left&display=inline&height=582&margin=%5Bobject%20Object%5D&originHeight=582&originWidth=1564&size=0&status=done&style=none&width=1564"></p>
+<p>**</p>
 
             </div>
             <hr/>
@@ -551,7 +538,7 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/03/rbw833/">https://github.com/future1314/2020/09/03/rbw833/</a>
+                    <a href="https://github.com/future1314/2020/09/04/isxwy0/">https://github.com/future1314/2020/09/04/isxwy0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -756,31 +743,31 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/04/ailstm/">
+                <a href="/2020/09/04/isxwy0/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mmap零拷贝"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="mmap零拷贝">
+                        <!-- <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="多线程"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="多线程">
                         
-                        <span class="card-title">mmap零拷贝</span>
+                        <span class="card-title">多线程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DirectBuffer 只优化了用户空间内部的拷贝。MappedByteBuffer，跟 DirectBuffer 不同的是，MappedByteBuffer 是通过本地类调用mmap进行文件内存映射的，省去了向用户态的内存复制。
-
+                            状态线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。********Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -789,6 +776,7 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -799,26 +787,25 @@ JVM 会发出 read()系统调用，并通过 read 系统调用向内核发起读
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/03/xxtar0/">
+                <a href="/2020/09/04/xu92ar/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化">
+                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化">
                         
-                        <span class="card-title">网络I/O模型优化</span>
+                        <span class="card-title">锁优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            网络 I/O 模型优化1.阻塞式 I/O在整个 socket 通信工作流程中，socket 的默认状态是阻塞的。当发出一个不能立即完成的套接字调用时，其进程将被阻塞，被系统挂起，进入睡眠状态，一直等待相应的操作响应。
-2.非阻塞式 I/O我
+                            垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
                             </span>
                         <span class="publish-author">
                             
