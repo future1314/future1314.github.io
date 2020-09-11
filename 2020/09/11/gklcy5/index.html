@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="多线程, future">
-    <meta name="description" content="状态线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。****多处理器，处理器提供了总线锁定和缓存锁定两个机制来保证复杂内存操作的原子性。当处理">
+    <meta name="keywords" content="算法-todo, future">
+    <meta name="description" content="https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
+https://leetcode-cn.com/leetbook/detail/top-inte">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>多线程 | future</title>
+    <title>算法-todo | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +343,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/22.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">多线程</h1>
+                    <h1 class="description center-align post-title">算法-todo</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-11
                 </div>
                 
 
@@ -492,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    374
+                    30
                 </div>
                 
 
@@ -510,9 +511,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。<br>**<br>**<br>多处理器，处理器提供了<strong>总线锁定</strong>和<strong>缓存锁定</strong>两个机制来保证复杂内存操作的原子性。<br>当处理器要操作一个共享变量的时候，其在总线上会发出一个 Lock 信号，这时其它处理器就不能操作共享变量了，该处理器会独享此共享内存中的变量。但总线锁定在阻塞其它处理器获取该共享变量的操作请求时，也可能会导致大量阻塞，从而增加系统的性能开销。<br>于是，后来的<strong>处理器都提供了缓存锁定机制，也就说当某个处理器对缓存中的共享变量进行了操作，就会通知其它处理器放弃存储该共享资源或者重新读取该共享资源。</strong>目前最新的处理器都支持缓存锁定机制。<br>**<br>Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程中系统的上下文切换频率。<br>[root@aliyun ~]# vmstat 2 <strong>//时间间隔</strong><br>procs ———–memory———- —swap– —–io—- -system– ——cpu—–<br>r   b   swpd   free   buff   cache   si   so    bi    bo   in   cs us sy id wa st<br>2  0      0   82800 133624 537868    0    0     4    13   12   25  1  0 99  0  0<br><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1599227584883-fec6985f-f6f8-4ef6-86ca-5d216cc23359.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=177&originWidth=746&size=191086&status=done&style=none&width=746" alt="image.png"><br>如果是监视某个应用的上下文切换，可以使用 pidstat 命令监控进程的 上下文切换。<br> pidstat -w -l -p <strong>26571</strong> 1 100</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/282505/1595921713500-ef983e78-c5e3-46f3-abe1-bbdc74c1f384.jpeg#align=left&display=inline&height=582&margin=%5Bobject%20Object%5D&originHeight=582&originWidth=1564&size=0&status=done&style=none&width=1564"></p>
-<p>**</p>
+                <p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/">https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/</a></p>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/detail/top-interview-questions-hard/">https://leetcode-cn.com/leetbook/detail/top-interview-questions-hard/</a></p>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/">https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/</a></p>
 
             </div>
             <hr/>
@@ -538,7 +539,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/isxwy0/">https://github.com/future1314/2020/09/04/isxwy0/</a>
+                    <a href="https://github.com/future1314/2020/09/11/gklcy5/">https://github.com/future1314/2020/09/11/gklcy5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -743,30 +744,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/05/oy20xn/">
+                <a href="/2020/09/11/gklcy5/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="软件工程师-职业发展路径"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="软件工程师-职业发展路径">
+                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo">
                         
-                        <span class="card-title">软件工程师-职业发展路径</span>
+                        <span class="card-title">算法-todo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.关于职业规划很程序员每天都在写代码，每天都很忙，而当面试官问他：“你的职业规划是什么？”程序员答：“没有”。那如果让你选择一个角色你会选择什么？比如技术主管。程序员答：“ＣＥＯ吧”。我。。。。。。我们应该给自己制定一个职业规划，对未来的
+                            https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
+https://leetcode-cn.com/leetbook/detail/top-inte
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -775,6 +778,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -785,25 +789,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/04/xu92ar/">
+                <a href="/2020/09/11/htcng7/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="锁优化">
+                        <!-- <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="240. 搜索二维矩阵 II"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="240. 搜索二维矩阵 II">
                         
-                        <span class="card-title">锁优化</span>
+                        <span class="card-title">240. 搜索二维矩阵 II</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因
+                            编写一个高效的算法来搜索  m x n  矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：每行的元素从左到右升序排列。每列的元素从上到下升序排列。示例:现有矩阵 matrix 如下：[ [1,   4,  7, 11,
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
                             </span>
                         <span class="publish-author">
                             
