@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="锁优化, future">
-    <meta name="description" content="垃圾回收会导致上下文切换很多 JVM 垃圾回收器（serial 收集器、ParNew 收集器）在回收旧对象时，会产生内存碎片，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而移动内存对象就意味着这些对象所在的内存地址会发生变化，因">
+    <meta name="keywords" content="21. 合并两个有序链表, future">
+    <meta name="description" content="合并两个有序链表将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 示例：输入：1-&amp;gt;2-&amp;gt;4, 1-&amp;gt;3-&amp;gt;4输出：1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>锁优化 | future</title>
+    <title>21. 合并两个有序链表 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">锁优化</h1>
+                    <h1 class="description center-align post-title">21. 合并两个有序链表</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-11
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    222
+                    265
                 </div>
                 
 
@@ -510,11 +510,42 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="垃圾回收会导致上下文切换"><a href="#垃圾回收会导致上下文切换" class="headerlink" title="垃圾回收会导致上下文切换"></a>垃圾回收会导致上下文切换</h3><p>很多 <strong>JVM 垃圾回收器</strong>（serial 收集器、ParNew 收集器）在回收旧对象时，会产生<strong>内存碎片</strong>，从而需要进行内存整理，在这个过程中就需要移动存活的对象。而<strong>移动内存对象就意味着这些对象所在的内存地址会发生变化</strong>，因此在移动对象前需要暂停线程，在移动完成后需要再次唤醒该线程。因此减少 JVM 垃圾回收的频率可以有效地减少上下文切换。</p>
-<p>Executors.newCachedThreadPool，只适合处理大量且耗时短的非阻塞任务。</p>
-<h2 id="竞争锁优化"><a href="#竞争锁优化" class="headerlink" title="竞争锁优化"></a><a href="#R0KWu">竞争锁优化</a></h2><h3 id="1-减少锁的持有时间"><a href="#1-减少锁的持有时间" class="headerlink" title="1.减少锁的持有时间"></a><a href="#JeIgg">1.减少锁的持有时间</a></h3><p>同步的代码要尽量少。</p>
-<h3 id="2-降低锁的粒度"><a href="#2-降低锁的粒度" class="headerlink" title="2.降低锁的粒度"></a><a href="#wjdvJ">2.降低锁的粒度</a></h3><p>锁分离(读写锁)；锁分段。</p>
-<h3 id="3-非阻塞乐观锁替代竞争锁"><a href="#3-非阻塞乐观锁替代竞争锁" class="headerlink" title="3.非阻塞乐观锁替代竞争锁"></a><a href="#lCdUa">3.非阻塞乐观锁替代竞争锁</a></h3><p>cas 代替 sync。</p>
+                <p>合并两个有序链表<br>将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 <br>示例：<br>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</p>
+<p>作者：力扣 (LeetCode)<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnbp2/">https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnbp2/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for singly-linked list.
+ * public class ListNode &amp;#123;
+ *     int val;
+ *     ListNode next;
+ *     ListNode() &amp;#123;&amp;#125;
+ *     ListNode(int val) &amp;#123; this.val = val; &amp;#125;
+ *     ListNode(int val, ListNode next) &amp;#123; this.val = val; this.next = next; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//pass</span>
+    <span class="token keyword">public</span> ListNode <span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>ListNode l1<span class="token punctuation">,</span> ListNode l2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ListNode root <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>l1<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> l2<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>l2<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> l1<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>val<span class="token operator">&lt;=</span>l2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>val<span class="token operator">=</span>l1<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>next<span class="token operator">=</span><span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>next<span class="token punctuation">,</span>l2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>val<span class="token operator">></span>l2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>val<span class="token operator">=</span>l2<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>next<span class="token operator">=</span><span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>l1<span class="token punctuation">,</span>l2<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -540,7 +571,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/xu92ar/">https://github.com/future1314/2020/09/04/xu92ar/</a>
+                    <a href="https://github.com/future1314/2020/09/11/sp63al/">https://github.com/future1314/2020/09/11/sp63al/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -745,30 +776,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/04/isxwy0/">
+                <a href="/2020/09/11/sp63al/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="多线程"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="多线程">
+                        <!-- <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="21. 合并两个有序链表"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="21. 合并两个有序链表">
                         
-                        <span class="card-title">多线程</span>
+                        <span class="card-title">21. 合并两个有序链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            状态线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。****多处理器，处理器提供了总线锁定和缓存锁定两个机制来保证复杂内存操作的原子性。当处理
+                            合并两个有序链表将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 示例：输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4输出：1-&gt;1-&gt;2-&gt;3-&gt;4-
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -777,6 +809,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -787,26 +820,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/04/zgykxe/">
+                <a href="/2020/09/11/vr783s/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="gc 调优">
+                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点">
                         
-                        <span class="card-title">gc 调优</span>
+                        <span class="card-title">237. 删除链表中的节点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            GC 调优策略1. 降低 Minor GC 频率由于新生代空间较小，Eden 区很快被填满，就会导致频繁 Minor GC，因此我们可以通过增大新生代空间来降低 Minor GC 的频率。
-单次 Minor GC 时间更多取决于 GC 后存
+                            删除链表中的节点请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。现有一个链表 – head = [4,5,1,9]，它可以表示为:示例 1：输入：head = [4,5,1,9], nod
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
                             </span>
                         <span class="publish-author">
                             
