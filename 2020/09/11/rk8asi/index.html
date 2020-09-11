@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="240. 搜索二维矩阵 II, future">
-    <meta name="description" content="编写一个高效的算法来搜索  m x n  矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：每行的元素从左到右升序排列。每列的元素从上到下升序排列。示例:现有矩阵 matrix 如下：[ [1,   4,  7, 11,">
+    <meta name="keywords" content="234. 回文链表, future">
+    <meta name="description" content="回文链表请判断一个链表是否为回文链表。示例 1:输入: 1-&amp;gt;2输出: false示例 2:输入: 1-&amp;gt;2-&amp;gt;2-&amp;gt;1输出: true进阶：你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？解析：见">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>240. 搜索二维矩阵 II | future</title>
+    <title>234. 回文链表 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">240. 搜索二维矩阵 II</h1>
+                    <h1 class="description center-align post-title">234. 回文链表</h1>
                 </div>
             </div>
         </div>
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    213
+                    327
                 </div>
                 
 
@@ -510,28 +510,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>编写一个高效的算法来搜索  m x n  矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：<br>每行的元素从左到右升序排列。<br>每列的元素从上到下升序排列。<br>示例:<br>现有矩阵 matrix 如下：<br>[<br> [1,   4,  7, 11, 15],<br> [2,   5,  8, 12, 19],<br> [3,   6,  9, 16, 22],<br> [10, 13, 14, 17, 24],<br> [18, 21, 23, 26, 30]<br>]<br>给定 target = 5，返回  true。<br>给定  target = 20，返回  false。</p>
-<hr>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">// 借鉴了org 但是又不一样</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">searchMatrix</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> matrix<span class="token punctuation">,</span> <span class="token keyword">int</span> target<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// int row = matrix.length-1;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>matrix<span class="token operator">==</span>null<span class="token operator">||</span>matrix<span class="token punctuation">.</span>length<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                <p>回文链表<br><strong>请判断一个链表是否为回文链表。</strong><br>示例 1:<br>输入: 1-&gt;2<br>输出: false<br>示例 2:<br>输入: 1-&gt;2-&gt;2-&gt;1<br>输出: true<br>进阶：<br><strong>你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</strong><br>解析：见 org 第三种解法<br>作者：力扣 (LeetCode)<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnv1oc/">https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnv1oc/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for singly-linked list.
+ * public class ListNode &amp;#123;
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) &amp;#123; val = x; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// org 时间空间复杂度都是 O(n)</span>
+    <span class="token comment" spellcheck="true">// equals [-129,-129]</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isPalindrome</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> res    <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ListNode cur <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>cur <span class="token operator">!=</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            res<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> row <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> col <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>row <span class="token operator">&lt;=</span>matrix<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> col<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>target<span class="token operator">></span>matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                    row<span class="token operator">++</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-                <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>target<span class="token operator">&lt;</span> matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                    col<span class="token operator">--</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//找到了 就没有必要col——了</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-                <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> front<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> tail <span class="token operator">=</span>res<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>front<span class="token operator">&lt;=</span>tail<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>res<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>front<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>tail<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            front<span class="token operator">++</span><span class="token punctuation">;</span>
+            tail<span class="token operator">--</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// //第一次 提交 针对奇数个元素 不成立。</span>
+    <span class="token comment" spellcheck="true">// public boolean isPalindrome(ListNode head) &amp;#123;</span>
+    <span class="token comment" spellcheck="true">//     if(head==null)&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//         return false;</span>
+    <span class="token comment" spellcheck="true">//     &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//     Stack&lt;Integer> res    = new Stack&lt;Integer>();</span>
+    <span class="token comment" spellcheck="true">//     ListNode cur = head;</span>
+    <span class="token comment" spellcheck="true">//     while(cur!=null)&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//         if(!res.isEmpty()&amp;&amp;res.peek() == cur.val)&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//             res.pop();</span>
+    <span class="token comment" spellcheck="true">//         &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//         else&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//             res.add(cur.val);</span>
+    <span class="token comment" spellcheck="true">//         &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//         cur = cur.next;</span>
+    <span class="token comment" spellcheck="true">//     &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//     return res.isEmpty();</span>
+    <span class="token comment" spellcheck="true">// &amp;#125;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
@@ -558,7 +585,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/11/htcng7/">https://github.com/future1314/2020/09/11/htcng7/</a>
+                    <a href="https://github.com/future1314/2020/09/11/rk8asi/">https://github.com/future1314/2020/09/11/rk8asi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -763,31 +790,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/11/gklcy5/">
+                <a href="/2020/09/11/rk8asi/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo">
+                        <!-- <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="234. 回文链表"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="234. 回文链表">
                         
-                        <span class="card-title">算法-todo</span>
+                        <span class="card-title">234. 回文链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
-https://leetcode-cn.com/leetbook/detail/top-inte
+                            回文链表请判断一个链表是否为回文链表。示例 1:输入: 1-&gt;2输出: false示例 2:输入: 1-&gt;2-&gt;2-&gt;1输出: true进阶：你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？解析：见
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -796,6 +823,7 @@ https://leetcode-cn.com/leetbook/detail/top-inte
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -806,20 +834,22 @@ https://leetcode-cn.com/leetbook/detail/top-inte
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/11/szqy8n/">
+                <a href="/2020/09/11/gkr4ov/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="88. 合并两个有序数组"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="88. 合并两个有序数组">
+                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表">
                         
-                        <span class="card-title">88. 合并两个有序数组</span>
+                        <span class="card-title">206. 反转链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://leetcode-cn.com/leetbook/read/top-interview-questions/xmi2l7/https://leetcode-cn.com/leetbook/read/top-interview
+                            反转一个单链表。
+示例:输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
+
                         
                     </div>
                     <div class="publish-info">
