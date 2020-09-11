@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-09-11T14:14:56.115Z</updated>
+  <updated>2020-09-11T15:04:40.906Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>101. 对称二叉树</title>
+    <link href="https://github.com/future1314/2020/09/11/gdtian/"/>
+    <id>https://github.com/future1314/2020/09/11/gdtian/</id>
+    <published>2020-09-11T14:29:37.000Z</published>
+    <updated>2020-09-11T15:04:40.906Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;给定一个二叉树，检查它是否是镜像对称的。&lt;/strong&gt;&lt;br&gt;例如，二叉树 &lt;code&gt;[1,2,2,3,4,4,3]&lt;/code&gt; 是对称的。&lt;br&gt;    1&lt;br&gt;   / &lt;br&gt;  2   2&lt;br&gt; / \ / &lt;br&gt;3  4 4</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>二叉树的最大深度</title>
     <link href="https://github.com/future1314/2020/09/11/yhcvpb/"/>
     <id>https://github.com/future1314/2020/09/11/yhcvpb/</id>
     <published>2020-09-11T13:53:45.000Z</published>
-    <updated>2020-09-11T14:14:56.115Z</updated>
+    <updated>2020-09-11T15:04:40.918Z</updated>
     
     
       
@@ -42,7 +63,7 @@
     <link href="https://github.com/future1314/2020/09/11/rk8asi/"/>
     <id>https://github.com/future1314/2020/09/11/rk8asi/</id>
     <published>2020-09-11T13:34:29.000Z</published>
-    <updated>2020-09-11T14:14:56.127Z</updated>
+    <updated>2020-09-11T15:04:40.930Z</updated>
     
     
       
@@ -63,7 +84,7 @@
     <link href="https://github.com/future1314/2020/09/11/gkr4ov/"/>
     <id>https://github.com/future1314/2020/09/11/gkr4ov/</id>
     <published>2020-09-11T09:50:20.000Z</published>
-    <updated>2020-09-11T14:14:56.139Z</updated>
+    <updated>2020-09-11T15:04:40.942Z</updated>
     
     
       
@@ -85,7 +106,7 @@
     <link href="https://github.com/future1314/2020/09/11/sp63al/"/>
     <id>https://github.com/future1314/2020/09/11/sp63al/</id>
     <published>2020-09-11T08:27:02.000Z</published>
-    <updated>2020-09-11T14:14:56.147Z</updated>
+    <updated>2020-09-11T15:04:40.950Z</updated>
     
     
       
@@ -106,7 +127,7 @@
     <link href="https://github.com/future1314/2020/09/11/vr783s/"/>
     <id>https://github.com/future1314/2020/09/11/vr783s/</id>
     <published>2020-09-11T07:33:27.000Z</published>
-    <updated>2020-09-11T14:14:56.167Z</updated>
+    <updated>2020-09-11T15:04:40.966Z</updated>
     
     
       
@@ -127,7 +148,7 @@
     <link href="https://github.com/future1314/2020/09/11/gklcy5/"/>
     <id>https://github.com/future1314/2020/09/11/gklcy5/</id>
     <published>2020-09-11T07:31:26.000Z</published>
-    <updated>2020-09-11T14:14:56.171Z</updated>
+    <updated>2020-09-11T15:04:40.970Z</updated>
     
     
       
@@ -148,7 +169,7 @@
     <link href="https://github.com/future1314/2020/09/11/htcng7/"/>
     <id>https://github.com/future1314/2020/09/11/htcng7/</id>
     <published>2020-09-11T03:35:14.000Z</published>
-    <updated>2020-09-11T14:14:56.183Z</updated>
+    <updated>2020-09-11T15:04:40.986Z</updated>
     
     
       
@@ -169,7 +190,7 @@
     <link href="https://github.com/future1314/2020/09/11/szqy8n/"/>
     <id>https://github.com/future1314/2020/09/11/szqy8n/</id>
     <published>2020-09-11T03:28:44.000Z</published>
-    <updated>2020-09-11T14:14:56.199Z</updated>
+    <updated>2020-09-11T15:04:40.998Z</updated>
     
     
       
@@ -190,7 +211,7 @@
     <link href="https://github.com/future1314/2020/09/07/yogcmu/"/>
     <id>https://github.com/future1314/2020/09/07/yogcmu/</id>
     <published>2020-09-07T14:31:48.000Z</published>
-    <updated>2020-09-11T14:14:56.203Z</updated>
+    <updated>2020-09-11T15:04:41.002Z</updated>
     
     
       
@@ -211,7 +232,7 @@
     <link href="https://github.com/future1314/2020/09/07/sxm775/"/>
     <id>https://github.com/future1314/2020/09/07/sxm775/</id>
     <published>2020-09-07T14:15:27.000Z</published>
-    <updated>2020-09-11T14:14:56.323Z</updated>
+    <updated>2020-09-11T15:04:41.122Z</updated>
     
     
       
@@ -232,7 +253,7 @@
     <link href="https://github.com/future1314/2020/09/05/oy20xn/"/>
     <id>https://github.com/future1314/2020/09/05/oy20xn/</id>
     <published>2020-09-04T22:32:50.000Z</published>
-    <updated>2020-09-11T14:14:56.383Z</updated>
+    <updated>2020-09-11T15:04:41.178Z</updated>
     
     
       
@@ -253,7 +274,7 @@
     <link href="https://github.com/future1314/2020/09/04/isxwy0/"/>
     <id>https://github.com/future1314/2020/09/04/isxwy0/</id>
     <published>2020-09-04T13:45:11.000Z</published>
-    <updated>2020-09-11T14:14:56.407Z</updated>
+    <updated>2020-09-11T15:04:41.198Z</updated>
     
     
       
@@ -274,7 +295,7 @@
     <link href="https://github.com/future1314/2020/09/04/xu92ar/"/>
     <id>https://github.com/future1314/2020/09/04/xu92ar/</id>
     <published>2020-09-04T13:34:55.000Z</published>
-    <updated>2020-09-11T14:14:56.419Z</updated>
+    <updated>2020-09-11T15:04:41.210Z</updated>
     
     
       
@@ -295,7 +316,7 @@
     <link href="https://github.com/future1314/2020/09/04/zgykxe/"/>
     <id>https://github.com/future1314/2020/09/04/zgykxe/</id>
     <published>2020-09-04T13:21:36.000Z</published>
-    <updated>2020-09-11T14:14:56.439Z</updated>
+    <updated>2020-09-11T15:04:41.234Z</updated>
     
     
       
@@ -316,7 +337,7 @@
     <link href="https://github.com/future1314/2020/09/04/dkrt72/"/>
     <id>https://github.com/future1314/2020/09/04/dkrt72/</id>
     <published>2020-09-04T03:59:25.000Z</published>
-    <updated>2020-09-11T14:14:56.455Z</updated>
+    <updated>2020-09-11T15:04:41.250Z</updated>
     
     
       
@@ -338,7 +359,7 @@
     <link href="https://github.com/future1314/2020/09/04/csa1em/"/>
     <id>https://github.com/future1314/2020/09/04/csa1em/</id>
     <published>2020-09-04T03:40:10.000Z</published>
-    <updated>2020-09-11T14:14:56.483Z</updated>
+    <updated>2020-09-11T15:04:41.278Z</updated>
     
     
       
@@ -359,7 +380,7 @@
     <link href="https://github.com/future1314/2020/09/04/gc91c3/"/>
     <id>https://github.com/future1314/2020/09/04/gc91c3/</id>
     <published>2020-09-04T03:15:52.000Z</published>
-    <updated>2020-09-11T14:14:56.499Z</updated>
+    <updated>2020-09-11T15:04:41.290Z</updated>
     
     
       
@@ -380,7 +401,7 @@
     <link href="https://github.com/future1314/2020/09/04/gaqcd1/"/>
     <id>https://github.com/future1314/2020/09/04/gaqcd1/</id>
     <published>2020-09-04T03:12:32.000Z</published>
-    <updated>2020-09-11T14:14:56.503Z</updated>
+    <updated>2020-09-11T15:04:41.298Z</updated>
     
     
       
@@ -401,7 +422,7 @@
     <link href="https://github.com/future1314/2020/09/04/we5szc/"/>
     <id>https://github.com/future1314/2020/09/04/we5szc/</id>
     <published>2020-09-04T02:57:30.000Z</published>
-    <updated>2020-09-11T14:14:56.515Z</updated>
+    <updated>2020-09-11T15:04:41.318Z</updated>
     
     
       
@@ -410,27 +431,6 @@
         
     <summary type="html">&lt;p&gt;类编译，加载，链接，初始化。&lt;/p&gt;
 &lt;h3 id=&quot;类连接&quot;&gt;&lt;a href=&quot;#类连接&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>mmap零拷贝</title>
-    <link href="https://github.com/future1314/2020/09/04/ailstm/"/>
-    <id>https://github.com/future1314/2020/09/04/ailstm/</id>
-    <published>2020-09-04T02:43:51.000Z</published>
-    <updated>2020-09-11T14:14:56.519Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;DirectBuffer 只优化了用户空间内部的拷贝。&lt;br&gt;MappedByteBuffer，跟 DirectBuffer 不同的是，MappedByteBuffer</summary>
         
       
     
