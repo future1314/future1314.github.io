@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据库, future">
-    <meta name="description" content="数据库 | future">
+    <meta name="keywords" content="237. 删除链表中的节点, future">
+    <meta name="description" content="删除链表中的节点请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。现有一个链表 – head = [4,5,1,9]，它可以表示为:示例 1：输入：head = [4,5,1,9], nod">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>数据库 | future</title>
+    <title>237. 删除链表中的节点 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据库</h1>
+                    <h1 class="description center-align post-title">237. 删除链表中的节点</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-12
+                    2020-09-11
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    299
                 </div>
                 
 
@@ -510,7 +510,23 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>删除链表中的节点<br>请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。<br>现有一个链表 – head = [4,5,1,9]，它可以表示为:<br>示例 1：<br>输入：head = [4,5,1,9], node = 5<br>输出：[4,1,9]<br>解释：给定你链表中值为  5  的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.<br>示例 2：<br>输入：head = [4,5,1,9], node = 1<br>输出：[4,5,9]<br>解释：给定你链表中值为  1  的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.<br>提示：<br>链表至少包含两个节点。<br>链表中所有节点的值都是唯一的。<br>给定的节点为非末尾节点并且一定是链表中的一个有效节点。<br>不要从你的函数中返回任何结果。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for singly-linked list.
+ * public class ListNode &amp;#123;
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) &amp;#123; val = x; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//org</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>ListNode node<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            node<span class="token punctuation">.</span>val <span class="token operator">=</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
+            node<span class="token punctuation">.</span>next<span class="token operator">=</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+
             </div>
             <hr/>
 
@@ -535,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/12/db/">https://github.com/future1314/2020/03/12/db/</a>
+                    <a href="https://github.com/future1314/2020/09/11/vr783s/">https://github.com/future1314/2020/09/11/vr783s/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -740,30 +756,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/12/microserv/">
+                <a href="/2020/09/11/vr783s/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="微服务"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg" class="responsive-img" alt="微服务">
+                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点">
                         
-                        <span class="card-title">微服务</span>
+                        <span class="card-title">237. 删除链表中的节点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            删除链表中的节点请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。现有一个链表 – head = [4,5,1,9]，它可以表示为:示例 1：输入：head = [4,5,1,9], nod
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -772,6 +789,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -782,25 +800,26 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/11/gumxz2/">
+                <a href="/2020/09/11/gklcy5/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="读书笔记"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="读书笔记">
+                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="算法-todo">
                         
-                        <span class="card-title">读书笔记</span>
+                        <span class="card-title">算法-todo</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
+https://leetcode-cn.com/leetbook/detail/top-inte
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
                             </span>
                         <span class="publish-author">
                             
