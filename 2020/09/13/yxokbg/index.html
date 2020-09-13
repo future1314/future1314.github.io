@@ -4,17 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Mac配置.bash_profile，重启终端后配置失效, future">
-    <meta name="description" content="原因使用的终端是 zsh，zsh 加载的是 ~/.zshrc 文件，而 ‘.zshrc’ 文件中并没有定义任务环境变量
-解决1、终端中执行命令，打开.zshrc 文件：
-
-
-
-open -e ~/.zshrc
-
-
-
-2、在~/.zshrc ">
+    <meta name="keywords" content="102. 二叉树的层序遍历, future">
+    <meta name="description" content="二叉树的层序遍历给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+示例：二叉树：[3,9,20,null,null,15,7], 3  /   9  20   /     15   7返回其层次遍">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +14,7 @@ open -e ~/.zshrc
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Mac配置.bash_profile，重启终端后配置失效 | future</title>
+    <title>102. 二叉树的层序遍历 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -351,13 +343,13 @@ open -e ~/.zshrc
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Mac配置.bash_profile，重启终端后配置失效</h1>
+                    <h1 class="description center-align post-title">102. 二叉树的层序遍历</h1>
                 </div>
             </div>
         </div>
@@ -487,7 +479,7 @@ open -e ~/.zshrc
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-31
+                    2020-09-13
                 </div>
                 
 
@@ -501,7 +493,7 @@ open -e ~/.zshrc
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    77
+                    299
                 </div>
                 
 
@@ -519,31 +511,49 @@ open -e ~/.zshrc
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>使用的终端是 zsh，zsh 加载的是 ~/.zshrc 文件，而 ‘.zshrc’ 文件中并没有定义任务环境变量</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>1、终端中执行命令，打开.zshrc 文件：</p>
-<table>
-<thead>
-<tr>
-<th><code>open -e ~/.zshrc</code></th>
-</tr>
-</thead>
-</table>
-<p>2、在~/.zshrc 文件最后，增加一行：</p>
-<table>
-<thead>
-<tr>
-<th><code>source ~/.bash_profile</code></th>
-</tr>
-</thead>
-</table>
-<p>3、执行命令，使其立即生效</p>
-<table>
-<thead>
-<tr>
-<th><code>source ~/.zshrc </code></th>
-</tr>
-</thead>
-</table>
+                <p>二叉树的层序遍历<br>给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。</p>
+<p>示例：<br>二叉树：[3,9,20,null,null,15,7],<br> 3<br>  / <br>  9  20<br>   /  <br>   15   7<br>返回其层次遍历结果：</p>
+<p>[<br> [3],<br> [9,20],<br> [15,7]<br>]</p>
+<p>[3,9,20,null,null,15,7]<br>[[3],[9,20],[15,7]]</p>
+<p>[1,2,3,4,5]<br>[[1],[2,3],[4,5]]</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for a binary tree node.
+ * public class TreeNode &amp;#123;
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) &amp;#123; val = x; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//queue 还是stack</span>
+    List<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Integer<span class="token operator">>></span> res <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Integer<span class="token operator">>></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> List<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Integer<span class="token operator">>></span> <span class="token function">levelOrder</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//Stack&lt;TreeNode> stack= new Stack&lt;TreeNode>();//stack.remove(0);</span>
+        LinkedList<span class="token operator">&lt;</span>TreeNode<span class="token operator">></span> stack <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>TreeNode<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//remove();或者remove(0)</span>
+        stack<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//stack.size() 都可以</span>
+            List<span class="token operator">&lt;</span>Integer<span class="token operator">></span> list <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            TreeNode node <span class="token operator">=</span>null<span class="token punctuation">;</span>
+            <span class="token keyword">int</span> size <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//一定要放外面 否则stack.size()的值是变化的。</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>size<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                node <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token operator">!=</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//放循环里面，不然丢数据。</span>
+                   stack<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token operator">!=</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                   stack<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            res<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -569,7 +579,7 @@ open -e ~/.zshrc
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/08/31/osop7e/">https://github.com/future1314/2020/08/31/osop7e/</a>
+                    <a href="https://github.com/future1314/2020/09/13/yxokbg/">https://github.com/future1314/2020/09/13/yxokbg/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -774,30 +784,32 @@ open -e ~/.zshrc
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/01/dq6307/">
+                <a href="/2020/09/13/yxokbg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="主题上传不上去  git rm -r --cached halo/"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="主题上传不上去  git rm -r --cached halo/">
+                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="102. 二叉树的层序遍历"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="102. 二叉树的层序遍历">
                         
-                        <span class="card-title">主题上传不上去  git rm -r --cached halo/</span>
+                        <span class="card-title">102. 二叉树的层序遍历</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            spring@springdeMacBook-Pro halo % touch aspring@springdeMacBook-Pro halo % git statusOn branch masterYour branch is up t
+                            二叉树的层序遍历给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+示例：二叉树：[3,9,20,null,null,15,7], 3  /   9  20   /     15   7返回其层次遍
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -806,6 +818,7 @@ open -e ~/.zshrc
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -816,27 +829,26 @@ open -e ~/.zshrc
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/08/31/wcu8bq/">
+                <a href="/2020/09/12/zsmdhg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="语雀自动同步到hexo博客(转摘)"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="语雀自动同步到hexo博客(转摘)">
+                        <!-- <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="免费储存每个月10G-图床🛏️"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="免费储存每个月10G-图床🛏️">
                         
-                        <span class="card-title">语雀自动同步到hexo博客(转摘)</span>
+                        <span class="card-title">免费储存每个月10G-图床🛏️</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            yichen 的信安知识库/web 方向/语雀自动同步到 hexo 博客/
-语雀自动同步到 hexo 博客
-hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀实现
+                            https://portal.qiniu.com/signup?code=1h9i9v7apthzmhttps://portal.qiniu.com/signup?code=1h9i9v7apthzm
+测试 okhttp://cdn.top
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-12
                             </span>
                         <span class="publish-author">
                             
