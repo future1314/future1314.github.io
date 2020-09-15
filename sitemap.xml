@@ -394,7 +394,14 @@
   </url>
   
   <url>
-    <loc>https://github.com/future1314/404/index.html</loc>
+    <loc>https://github.com/future1314/articles/index.html</loc>
+    
+    <lastmod>2020-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/future1314/categories/index.html</loc>
     
     <lastmod>2020-09-15</lastmod>
     
@@ -408,14 +415,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/future1314/articles/index.html</loc>
-    
-    <lastmod>2020-09-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://github.com/future1314/categories/index.html</loc>
+    <loc>https://github.com/future1314/404/index.html</loc>
     
     <lastmod>2020-09-15</lastmod>
     
