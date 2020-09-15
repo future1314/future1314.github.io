@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-09-15T07:14:11.135Z</updated>
+  <updated>2020-09-15T07:35:06.298Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>108. 将有序数组转换为二叉搜索树</title>
+    <link href="https://github.com/future1314/2020/09/15/gqd000/"/>
+    <id>https://github.com/future1314/2020/09/15/gqd000/</id>
+    <published>2020-09-15T07:29:17.000Z</published>
+    <updated>2020-09-15T07:35:06.298Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;将有序数组转换为二叉搜索树&lt;br&gt;将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。&lt;br&gt;本题中，一个高度平衡二叉树是指一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。&lt;/p&gt;
+&lt;p&gt;示例:&lt;br&gt;给定有序数组:</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>102. 二叉树的层序遍历</title>
     <link href="https://github.com/future1314/2020/09/13/yxokbg/"/>
     <id>https://github.com/future1314/2020/09/13/yxokbg/</id>
     <published>2020-09-13T01:08:01.000Z</published>
-    <updated>2020-09-15T07:14:11.135Z</updated>
+    <updated>2020-09-15T07:35:06.314Z</updated>
     
     
       
@@ -43,7 +65,7 @@
     <link href="https://github.com/future1314/2020/09/12/zsmdhg/"/>
     <id>https://github.com/future1314/2020/09/12/zsmdhg/</id>
     <published>2020-09-12T08:33:34.000Z</published>
-    <updated>2020-09-15T07:14:11.143Z</updated>
+    <updated>2020-09-15T07:35:06.322Z</updated>
     
     
       
@@ -64,7 +86,7 @@
     <link href="https://github.com/future1314/2020/09/11/gdtian/"/>
     <id>https://github.com/future1314/2020/09/11/gdtian/</id>
     <published>2020-09-11T14:29:37.000Z</published>
-    <updated>2020-09-15T07:14:11.159Z</updated>
+    <updated>2020-09-15T07:35:06.338Z</updated>
     
     
       
@@ -85,7 +107,7 @@
     <link href="https://github.com/future1314/2020/09/11/yhcvpb/"/>
     <id>https://github.com/future1314/2020/09/11/yhcvpb/</id>
     <published>2020-09-11T13:53:45.000Z</published>
-    <updated>2020-09-15T07:14:11.175Z</updated>
+    <updated>2020-09-15T07:35:06.350Z</updated>
     
     
       
@@ -106,7 +128,7 @@
     <link href="https://github.com/future1314/2020/09/11/rk8asi/"/>
     <id>https://github.com/future1314/2020/09/11/rk8asi/</id>
     <published>2020-09-11T13:34:29.000Z</published>
-    <updated>2020-09-15T07:14:11.187Z</updated>
+    <updated>2020-09-15T07:35:06.362Z</updated>
     
     
       
@@ -127,7 +149,7 @@
     <link href="https://github.com/future1314/2020/09/11/gkr4ov/"/>
     <id>https://github.com/future1314/2020/09/11/gkr4ov/</id>
     <published>2020-09-11T09:50:20.000Z</published>
-    <updated>2020-09-15T07:14:11.195Z</updated>
+    <updated>2020-09-15T07:35:06.370Z</updated>
     
     
       
@@ -149,7 +171,7 @@
     <link href="https://github.com/future1314/2020/09/11/sp63al/"/>
     <id>https://github.com/future1314/2020/09/11/sp63al/</id>
     <published>2020-09-11T08:27:02.000Z</published>
-    <updated>2020-09-15T07:14:11.207Z</updated>
+    <updated>2020-09-15T07:35:06.382Z</updated>
     
     
       
@@ -170,7 +192,7 @@
     <link href="https://github.com/future1314/2020/09/11/vr783s/"/>
     <id>https://github.com/future1314/2020/09/11/vr783s/</id>
     <published>2020-09-11T07:33:27.000Z</published>
-    <updated>2020-09-15T07:14:11.227Z</updated>
+    <updated>2020-09-15T07:35:06.398Z</updated>
     
     
       
@@ -191,7 +213,7 @@
     <link href="https://github.com/future1314/2020/09/11/gklcy5/"/>
     <id>https://github.com/future1314/2020/09/11/gklcy5/</id>
     <published>2020-09-11T07:31:26.000Z</published>
-    <updated>2020-09-15T07:14:11.235Z</updated>
+    <updated>2020-09-15T07:35:06.402Z</updated>
     
     
       
@@ -212,7 +234,7 @@
     <link href="https://github.com/future1314/2020/09/11/htcng7/"/>
     <id>https://github.com/future1314/2020/09/11/htcng7/</id>
     <published>2020-09-11T03:35:14.000Z</published>
-    <updated>2020-09-15T07:14:11.247Z</updated>
+    <updated>2020-09-15T07:35:06.418Z</updated>
     
     
       
@@ -233,7 +255,7 @@
     <link href="https://github.com/future1314/2020/09/11/szqy8n/"/>
     <id>https://github.com/future1314/2020/09/11/szqy8n/</id>
     <published>2020-09-11T03:28:44.000Z</published>
-    <updated>2020-09-15T07:14:11.267Z</updated>
+    <updated>2020-09-15T07:35:06.430Z</updated>
     
     
       
@@ -254,7 +276,7 @@
     <link href="https://github.com/future1314/2020/09/07/yogcmu/"/>
     <id>https://github.com/future1314/2020/09/07/yogcmu/</id>
     <published>2020-09-07T14:31:48.000Z</published>
-    <updated>2020-09-15T07:14:11.271Z</updated>
+    <updated>2020-09-15T07:35:06.434Z</updated>
     
     
       
@@ -275,7 +297,7 @@
     <link href="https://github.com/future1314/2020/09/07/sxm775/"/>
     <id>https://github.com/future1314/2020/09/07/sxm775/</id>
     <published>2020-09-07T14:15:27.000Z</published>
-    <updated>2020-09-15T07:14:11.399Z</updated>
+    <updated>2020-09-15T07:35:06.558Z</updated>
     
     
       
@@ -296,7 +318,7 @@
     <link href="https://github.com/future1314/2020/09/05/oy20xn/"/>
     <id>https://github.com/future1314/2020/09/05/oy20xn/</id>
     <published>2020-09-04T22:32:50.000Z</published>
-    <updated>2020-09-15T07:14:11.455Z</updated>
+    <updated>2020-09-15T07:35:06.618Z</updated>
     
     
       
@@ -317,7 +339,7 @@
     <link href="https://github.com/future1314/2020/09/04/isxwy0/"/>
     <id>https://github.com/future1314/2020/09/04/isxwy0/</id>
     <published>2020-09-04T13:45:11.000Z</published>
-    <updated>2020-09-15T07:14:11.475Z</updated>
+    <updated>2020-09-15T07:35:06.638Z</updated>
     
     
       
@@ -338,7 +360,7 @@
     <link href="https://github.com/future1314/2020/09/04/xu92ar/"/>
     <id>https://github.com/future1314/2020/09/04/xu92ar/</id>
     <published>2020-09-04T13:34:55.000Z</published>
-    <updated>2020-09-15T07:14:11.491Z</updated>
+    <updated>2020-09-15T07:35:06.650Z</updated>
     
     
       
@@ -359,7 +381,7 @@
     <link href="https://github.com/future1314/2020/09/04/zgykxe/"/>
     <id>https://github.com/future1314/2020/09/04/zgykxe/</id>
     <published>2020-09-04T13:21:36.000Z</published>
-    <updated>2020-09-15T07:14:11.511Z</updated>
+    <updated>2020-09-15T07:35:06.670Z</updated>
     
     
       
@@ -380,7 +402,7 @@
     <link href="https://github.com/future1314/2020/09/04/dkrt72/"/>
     <id>https://github.com/future1314/2020/09/04/dkrt72/</id>
     <published>2020-09-04T03:59:25.000Z</published>
-    <updated>2020-09-15T07:14:11.527Z</updated>
+    <updated>2020-09-15T07:35:06.690Z</updated>
     
     
       
@@ -402,7 +424,7 @@
     <link href="https://github.com/future1314/2020/09/04/csa1em/"/>
     <id>https://github.com/future1314/2020/09/04/csa1em/</id>
     <published>2020-09-04T03:40:10.000Z</published>
-    <updated>2020-09-15T07:14:11.563Z</updated>
+    <updated>2020-09-15T07:35:06.718Z</updated>
     
     
       
@@ -410,27 +432,6 @@
         
         
     <summary type="html">&lt;h3 id=&quot;跳跃表&quot;&gt;&lt;a href=&quot;#跳跃表&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>jvm参数</title>
-    <link href="https://github.com/future1314/2020/09/04/gc91c3/"/>
-    <id>https://github.com/future1314/2020/09/04/gc91c3/</id>
-    <published>2020-09-04T03:15:52.000Z</published>
-    <updated>2020-09-15T07:14:11.575Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;-XX:+DoEscapeAnalysis 开启逃逸分析（jdk1.8 默认开启，其它版本未测试）&lt;br&gt;-XX:-DoEscapeAnalysis 关闭逃逸分析&lt;br&gt;-XX:+EliminateLocks 开启锁消除（jdk1.8</summary>
         
       
     

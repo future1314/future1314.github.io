@@ -4,11 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="测试语雀--变量“无法”引用&amp;amp;yq 文本加密, future">
-    <meta name="description" content="测试通过！
-有的时候云函数回调用失败！
-变量需要在源 blog 里。
-">
+    <meta name="keywords" content="108. 将有序数组转换为二叉搜索树, future">
+    <meta name="description" content="将有序数组转换为二叉搜索树将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。本题中，一个高度平衡二叉树是指一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。
+示例:给定有序数组: [-10,-3,0,5,9],
+一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>测试语雀--变量“无法”引用&amp;amp;yq 文本加密 | future</title>
+    <title>108. 将有序数组转换为二叉搜索树 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -351,7 +350,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">测试语雀--变量“无法”引用&amp;amp;yq 文本加密</h1>
+                    <h1 class="description center-align post-title">108. 将有序数组转换为二叉搜索树</h1>
                 </div>
             </div>
         </div>
@@ -481,7 +480,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-30
+                    2020-09-15
                 </div>
                 
 
@@ -495,7 +494,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    24
+                    304
                 </div>
                 
 
@@ -513,9 +512,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>测试通过！</p>
-<p>有的时候云函数回调用失败！</p>
-<p><strong>变量需要在源 blog 里。</strong></p>
+                <p>将有序数组转换为二叉搜索树<br>将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。<br>本题中，一个高度平衡二叉树是指一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。</p>
+<p>示例:<br>给定有序数组: [-10,-3,0,5,9],</p>
+<p>一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：</p>
+<p>0<br>    / <br>   -3   9<br>  /   /<br>-10  5</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for a binary tree node.
+ * public class TreeNode &amp;#123;
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) &amp;#123; val = x; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> TreeNode <span class="token function">sortedArrayToBST</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span>length<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">helper</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>nums<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> TreeNode <span class="token function">helper</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">,</span><span class="token keyword">int</span> start<span class="token punctuation">,</span><span class="token keyword">int</span> end<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>start <span class="token operator">></span> end<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">else</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>start<span class="token operator">+</span>end<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
+            TreeNode root <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>val  <span class="token operator">=</span>nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            root<span class="token punctuation">.</span>left <span class="token operator">=</span><span class="token function">helper</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span>start<span class="token punctuation">,</span>mid<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//-1</span>
+            root<span class="token punctuation">.</span>right<span class="token operator">=</span><span class="token function">helper</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span>mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/future1314/images@master/img/%E6%88%AA%E5%B1%8F2020-09-15%20%E4%B8%8B%E5%8D%883.31.12.jpg">https://cdn.jsdelivr.net/gh/future1314/images@master/img/%E6%88%AA%E5%B1%8F2020-09-15%20%E4%B8%8B%E5%8D%883.31.12.jpg</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/future1314/images@master/img/%E6%88%AA%E5%B1%8F2020-09-15%20%E4%B8%8B%E5%8D%883.30.49.jpg">https://cdn.jsdelivr.net/gh/future1314/images@master/img/%E6%88%AA%E5%B1%8F2020-09-15%20%E4%B8%8B%E5%8D%883.30.49.jpg</a></p>
 
             </div>
             <hr/>
@@ -541,7 +574,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/08/30/rzt7w7/">https://github.com/future1314/2020/08/30/rzt7w7/</a>
+                    <a href="https://github.com/future1314/2020/09/15/gqd000/">https://github.com/future1314/2020/09/15/gqd000/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -746,32 +779,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/08/31/wcu8bq/">
+                <a href="/2020/09/15/gqd000/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="语雀自动同步到hexo博客(转摘)"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="语雀自动同步到hexo博客(转摘)">
+                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="108. 将有序数组转换为二叉搜索树"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="108. 将有序数组转换为二叉搜索树">
                         
-                        <span class="card-title">语雀自动同步到hexo博客(转摘)</span>
+                        <span class="card-title">108. 将有序数组转换为二叉搜索树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            yichen 的信安知识库/web 方向/语雀自动同步到 hexo 博客/
-语雀自动同步到 hexo 博客
-hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀实现
+                            将有序数组转换为二叉搜索树将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。本题中，一个高度平衡二叉树是指一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。
+示例:给定有序数组: [-10,-3,0,5,9],
+一
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -780,6 +814,7 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -790,25 +825,26 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/08/30/drkrdi/">
+                <a href="/2020/09/13/yxokbg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="报错 git push -u origin master"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="报错 git push -u origin master">
+                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="102. 二叉树的层序遍历"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="102. 二叉树的层序遍历">
                         
-                        <span class="card-title">报错 git push -u origin master</span>
+                        <span class="card-title">102. 二叉树的层序遍历</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1884  2020-08-28 17:29:45 root git clone https://gitee.com/yadong.zhang/DBlog.git1885  2020-08-28 17:29:51 root ls -l188
+                            二叉树的层序遍历给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+示例：二叉树：[3,9,20,null,null,15,7], 3  /   9  20   /     15   7返回其层次遍
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-13
                             </span>
                         <span class="publish-author">
                             
