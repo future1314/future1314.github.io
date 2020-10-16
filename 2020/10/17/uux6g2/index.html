@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="类, future">
-    <meta name="description" content="类编译，加载，链接，初始化。
-类连接类在加载进来之后，会进行连接、初始化，最后才会被使用。在连接过程中，又包括验证、准备和解析三个部分。验证：验证类符合 Java 规范和 JVM 规范，在保证符合规范的前提下，避免危害虚拟机安全。准备：为类">
+    <meta name="keywords" content="196. 删除重复的电子邮箱, future">
+    <meta name="description" content="196. 删除重复的电子邮箱难度简单 288编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 *Id **最小  *的那个。+—-+——————+| Id | Email            |+—">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>类 | future</title>
+    <title>196. 删除重复的电子邮箱 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -343,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">类</h1>
+                    <h1 class="description center-align post-title">196. 删除重复的电子邮箱</h1>
                 </div>
             </div>
         </div>
@@ -479,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-10-17
                 </div>
                 
 
@@ -493,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    275
+                    250
                 </div>
                 
 
@@ -511,9 +510,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>类编译，加载，链接，初始化。</p>
-<h3 id="类连接"><a href="#类连接" class="headerlink" title="类连接"></a>类连接</h3><p>类在加载进来之后，会进行连接、初始化，最后才会被使用。在连接过程中，又包括验证、准备和解析三个部分。<br><strong>验证：</strong>验证类符合 Java 规范和 JVM 规范，在保证符合规范的前提下，避免危害虚拟机安全。<br><strong>准备：</strong>为类的静态变量分配内存，初始化为系统的初始值。对于 final static 修饰的变量，直接赋值为用户的定义值。例如，private final static int value=123，会在准备阶段分配内存，并初始化值为 123，而如果是 private static int value=123，这个阶段 value 的值仍然为 0。<br><strong>解析：</strong>将符号引用转为直接引用的过程。<br>**<br>javap 反编译命令，查看 class 文件。</p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><strong>初始化类的静态变量和静态代码块为用户自定义的值，初始化的顺序和 Java 源码从上到下的顺序一致。</strong><br>**<br><strong>JVM 会保证 <clinit>() 方法的线程安全，保证同一时间只有一个线程执行。</strong><br>**<br>**</p>
+                <h4 id="196-删除重复的电子邮箱"><a href="#196-删除重复的电子邮箱" class="headerlink" title="196. 删除重复的电子邮箱"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/delete-duplicate-emails/">196. 删除重复的电子邮箱</a></h4><p>难度简单 288<br>编写一个 SQL 查询，来删除 <code>Person</code> 表中所有重复的电子邮箱，重复的邮箱里只保留 *<em>Id **</em>最小  *的那个。<br>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#111;&#104;&#x6e;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;">&#x6a;&#111;&#104;&#x6e;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;</a> |<br>| 2  | <a href="mailto:&#98;&#x6f;&#x62;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#109;">&#98;&#x6f;&#x62;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#109;</a>  |<br>| 3  | <a href="mailto:&#x6a;&#x6f;&#104;&#110;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x6f;&#104;&#110;&#x40;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;</a> |<br>+—-+——————+<br>Id 是这个表的主键。</p>
+<p>例如，在运行你的查询语句之后，上面的 <code>Person</code> 表应返回以下几行:<br>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#111;&#104;&#x6e;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">&#x6a;&#111;&#104;&#x6e;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;</a> |<br>| 2  | <a href="mailto:&#98;&#x6f;&#98;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;">&#98;&#x6f;&#98;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#109;</a>  |<br>+—-+——————+</p>
+<p><strong>提示：</strong></p>
+<ul>
+<li>执行 SQL 之后，输出是整个 <code>Person</code> 表。</li>
+<li>使用 <code>delete</code> 语句。</li>
+</ul>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span> p1<span class="token punctuation">.</span><span class="token operator">*</span>
+<span class="token keyword">FROM</span> Person p1<span class="token punctuation">,</span>
+     Person p2
+<span class="token keyword">WHERE</span>
+    p1<span class="token punctuation">.</span>Email <span class="token operator">=</span> p2<span class="token punctuation">.</span>Email <span class="token operator">AND</span> p1<span class="token punctuation">.</span>Id <span class="token operator">></span> p2<span class="token punctuation">.</span>Id
+<span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span>  <span class="token keyword">from</span> Person <span class="token keyword">where</span> id <span class="token operator">not</span> <span class="token operator">in</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">min</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> mid <span class="token keyword">from</span> Person <span class="token keyword">group</span> <span class="token keyword">by</span> email<span class="token punctuation">)</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>下面这个就报错</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span>  <span class="token keyword">from</span> Person <span class="token keyword">where</span> id <span class="token operator">not</span> <span class="token operator">in</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">min</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> mid <span class="token keyword">from</span> Person  <span class="token keyword">group</span> <span class="token keyword">by</span> email<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -539,7 +553,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/we5szc/">https://github.com/future1314/2020/09/04/we5szc/</a>
+                    <a href="https://github.com/future1314/2020/10/17/uux6g2/">https://github.com/future1314/2020/10/17/uux6g2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,31 +758,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/04/gaqcd1/">
+                <a href="/2020/10/17/uux6g2/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="StringBuffer"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="StringBuffer">
+                        <!-- <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="196. 删除重复的电子邮箱"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="196. 删除重复的电子邮箱">
                         
-                        <span class="card-title">StringBuffer</span>
+                        <span class="card-title">196. 删除重复的电子邮箱</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            由于 StringBuffer 中的 append 方法被 Synchronized 关键字修饰，会使用到锁，从而导致性能下降。
-
+                            196. 删除重复的电子邮箱难度简单 288编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 *Id **最小  *的那个。+—-+——————+| Id | Email            |+—
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -777,6 +791,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -787,26 +802,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/04/ailstm/">
+                <a href="/2020/10/08/vemvga/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="mmap零拷贝"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="mmap零拷贝">
+                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="好习惯"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="好习惯">
                         
-                        <span class="card-title">mmap零拷贝</span>
+                        <span class="card-title">好习惯</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DirectBuffer 只优化了用户空间内部的拷贝。MappedByteBuffer，跟 DirectBuffer 不同的是，MappedByteBuffer 是通过本地类调用mmap进行文件内存映射的，省去了向用户态的内存复制。
-
+                            #好习惯 1.坚持每天读书自学. 2.每天至少 30 分钟有氧运动. 3.和有成功思维的人建立人际关系. 4.追求自己设定的目标. 5.梦想先行.目标紧随其后. 6.避免浪费时间. 7.每天睡够 7-8 个小时. 8.提前起床.养成早起习惯
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-08
                             </span>
                         <span class="publish-author">
                             
