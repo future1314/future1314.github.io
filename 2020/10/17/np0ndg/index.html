@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="21. 合并两个有序链表, future">
-    <meta name="description" content="合并两个有序链表将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 示例：输入：1-&amp;gt;2-&amp;gt;4, 1-&amp;gt;3-&amp;gt;4输出：1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-">
+    <meta name="keywords" content="182. 查找重复的电子邮箱, future">
+    <meta name="description" content="182. 查找重复的电子邮箱难度简单 234 收藏分享切换为英文接收动态反馈SQL 架构编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。示例：+—-+———+| Id | Email   |+—-+———+| 1  | ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>21. 合并两个有序链表 | future</title>
+    <title>182. 查找重复的电子邮箱 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">21. 合并两个有序链表</h1>
+                    <h1 class="description center-align post-title">182. 查找重复的电子邮箱</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-11
+                    2020-10-17
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    265
+                    155
                 </div>
                 
 
@@ -510,42 +510,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>合并两个有序链表<br>将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 <br>示例：<br>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</p>
-<p>作者：力扣 (LeetCode)<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnbp2/">https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnbp2/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
- * Definition for singly-linked list.
- * public class ListNode &amp;#123;
- *     int val;
- *     ListNode next;
- *     ListNode() &amp;#123;&amp;#125;
- *     ListNode(int val) &amp;#123; this.val = val; &amp;#125;
- *     ListNode(int val, ListNode next) &amp;#123; this.val = val; this.next = next; &amp;#125;
- * &amp;#125;
- */</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//pass</span>
-    <span class="token keyword">public</span> ListNode <span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>ListNode l1<span class="token punctuation">,</span> ListNode l2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        ListNode root <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>l1<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> l2<span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>l2<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> l1<span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>val<span class="token operator">&lt;=</span>l2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            root<span class="token punctuation">.</span>val<span class="token operator">=</span>l1<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
-            root<span class="token punctuation">.</span>next<span class="token operator">=</span><span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>next<span class="token punctuation">,</span>l2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>l1<span class="token punctuation">.</span>val<span class="token operator">></span>l2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            root<span class="token punctuation">.</span>val<span class="token operator">=</span>l2<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
-            root<span class="token punctuation">.</span>next<span class="token operator">=</span><span class="token function">mergeTwoLists</span><span class="token punctuation">(</span>l1<span class="token punctuation">,</span>l2<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> root<span class="token punctuation">;</span>
-
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+                <h4 id="182-查找重复的电子邮箱"><a href="#182-查找重复的电子邮箱" class="headerlink" title="182. 查找重复的电子邮箱"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/duplicate-emails/">182. 查找重复的电子邮箱</a></h4><p>难度简单 234 收藏分享切换为英文接收动态反馈<br><a href="">SQL 架构</a><br>编写一个 SQL 查询，查找 <code>Person</code> 表中所有重复的电子邮箱。<br><strong>示例：</strong><br>+—-+———+<br>| Id | Email   |<br>+—-+———+<br>| 1  | <a href="mailto:&#97;&#x40;&#98;&#46;&#x63;&#111;&#x6d;">&#97;&#x40;&#98;&#46;&#x63;&#111;&#x6d;</a> |<br>| 2  | <a href="mailto:&#99;&#64;&#x64;&#x2e;&#99;&#111;&#x6d;">&#99;&#64;&#x64;&#x2e;&#99;&#111;&#x6d;</a> |<br>| 3  | <a href="mailto:&#x61;&#64;&#x62;&#x2e;&#99;&#111;&#109;">&#x61;&#64;&#x62;&#x2e;&#99;&#111;&#109;</a> |<br>+—-+———+</p>
+<p>根据以上输入，你的查询应返回以下结果：<br>+———+<br>| Email   |<br>+———+<br>| <a href="mailto:&#x61;&#64;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#x61;&#64;&#x62;&#x2e;&#x63;&#x6f;&#109;</a> |<br>+———+</p>
+<p><strong>说明：</strong>所有电子邮箱都是小写字母。<br>ok</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token keyword">distinct</span> p1<span class="token punctuation">.</span>email
+<span class="token keyword">FROM</span> Person p1<span class="token punctuation">,</span>
+     Person p2
+<span class="token keyword">WHERE</span>
+    p1<span class="token punctuation">.</span>Email <span class="token operator">=</span> p2<span class="token punctuation">.</span>Email <span class="token operator">AND</span> p1<span class="token punctuation">.</span>Id <span class="token operator">></span> p2<span class="token punctuation">.</span>Id<span class="token punctuation">;</span></code></pre>
+<p>ok</p>
+<pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> p1<span class="token punctuation">.</span>email <span class="token keyword">FROM</span> Person p1 <span class="token keyword">group</span> <span class="token keyword">by</span> email <span class="token keyword">having</span><span class="token punctuation">(</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token number">1</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -571,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/11/sp63al/">https://github.com/future1314/2020/09/11/sp63al/</a>
+                    <a href="https://github.com/future1314/2020/10/17/np0ndg/">https://github.com/future1314/2020/10/17/np0ndg/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -776,32 +750,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/11/gkr4ov/">
+                <a href="/2020/10/17/np0ndg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表">
+                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱">
                         
-                        <span class="card-title">206. 反转链表</span>
+                        <span class="card-title">182. 查找重复的电子邮箱</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            反转一个单链表。
-示例:输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
-
+                            182. 查找重复的电子邮箱难度简单 234 收藏分享切换为英文接收动态反馈SQL 架构编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。示例：+—-+———+| Id | Email   |+—-+———+| 1  | 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -810,6 +783,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -820,25 +794,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/11/vr783s/">
+                <a href="/2020/10/17/uux6g2/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="237. 删除链表中的节点">
+                        <!-- <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="196. 删除重复的电子邮箱"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="196. 删除重复的电子邮箱">
                         
-                        <span class="card-title">237. 删除链表中的节点</span>
+                        <span class="card-title">196. 删除重复的电子邮箱</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            删除链表中的节点请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。传入函数的唯一参数为 要被删除的节点 。现有一个链表 – head = [4,5,1,9]，它可以表示为:示例 1：输入：head = [4,5,1,9], nod
+                            196. 删除重复的电子邮箱难度简单 288编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 *Id **最小  *的那个。+—-+——————+| Id | Email            |+—
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
                             </span>
                         <span class="publish-author">
                             
