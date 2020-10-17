@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="剑指 Offer 63. 股票的最大利润, future">
-    <meta name="description" content="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
-class Solution &amp;amp;#123;
-    public int maxProfit(int">
+    <meta name="keywords" content="136. 只出现一次的数字, future">
+    <meta name="description" content="136. 只出现一次的数字难度简单 1541给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。说明：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？示例 1:输入: [2,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ class Solution &amp;amp;#123;
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>剑指 Offer 63. 股票的最大利润 | future</title>
+    <title>136. 只出现一次的数字 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -344,13 +342,13 @@ class Solution &amp;amp;#123;
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">剑指 Offer 63. 股票的最大利润</h1>
+                    <h1 class="description center-align post-title">136. 只出现一次的数字</h1>
                 </div>
             </div>
         </div>
@@ -494,7 +492,7 @@ class Solution &amp;amp;#123;
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    256
+                    152
                 </div>
                 
 
@@ -512,24 +510,17 @@ class Solution &amp;amp;#123;
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/</a></p>
-<pre class=" language-sql"><code class="language-sql">class Solution <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> maxProfit<span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-        <span class="token keyword">int</span> max<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//prices[0]</span>
-        <span class="token keyword">int</span> tmp<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>prices<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">;</span>i<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>prices<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">+</span><span class="token operator">+</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-                tmp<span class="token operator">=</span>prices<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span>prices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                max<span class="token operator">=</span>tmp<span class="token operator">></span>max?tmp:max<span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-        <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-        <span class="token keyword">return</span> max<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span></code></pre>
-<h4 id="剑指-Offer-63-股票的最大利润"><a href="#剑指-Offer-63-股票的最大利润" class="headerlink" title="剑指 Offer 63. 股票的最大利润"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/">剑指 Offer 63. 股票的最大利润</a></h4><p>难度中等 60<br>假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？</p>
-<p><strong>示例 1:</strong><br><strong>输入:</strong> [7,1,5,3,6,4]<br><strong>输出:</strong> 5<br>**解释: **在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。<br>      注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。</p>
-<p><strong>示例 2:</strong><br><strong>输入:</strong> [7,6,4,3,1]<br><strong>输出:</strong> 0<br>**解释: **在这种情况下, 没有交易完成, 所以最大利润为 0。</p>
-<p><strong>限制：</strong><br><code>0 &lt;= 数组长度 &lt;= 10^5</code></p>
+                <h4 id="136-只出现一次的数字"><a href="#136-只出现一次的数字" class="headerlink" title="136. 只出现一次的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/single-number/">136. 只出现一次的数字</a></h4><p>难度简单 1541<br>给定一个<strong>非空</strong>整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。<br><strong>说明：</strong><br>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？<br><strong>示例 1:</strong><br><strong>输入:</strong> [2,2,1]<br><strong>输出:</strong> 1</p>
+<p><strong>示例  2:</strong><br><strong>输入:</strong> [4,1,2,1,2]<br><strong>输出:</strong> 4</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">singleNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            res<span class="token operator">^=</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -555,7 +546,7 @@ class Solution &amp;amp;#123;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/10/17/ql2ymf/">https://github.com/future1314/2020/10/17/ql2ymf/</a>
+                    <a href="https://github.com/future1314/2020/10/17/fvr2rk/">https://github.com/future1314/2020/10/17/fvr2rk/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -760,9 +751,10 @@ class Solution &amp;amp;#123;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/10/17/fvr2rk/">
                     <div class="card-image">
@@ -781,9 +773,9 @@ class Solution &amp;amp;#123;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -792,6 +784,7 @@ class Solution &amp;amp;#123;
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -802,20 +795,22 @@ class Solution &amp;amp;#123;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/17/np0ndg/">
+                <a href="/2020/10/17/ql2ymf/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱">
+                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="剑指 Offer 63. 股票的最大利润"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="剑指 Offer 63. 股票的最大利润">
                         
-                        <span class="card-title">182. 查找重复的电子邮箱</span>
+                        <span class="card-title">剑指 Offer 63. 股票的最大利润</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            182. 查找重复的电子邮箱难度简单 234 收藏分享切换为英文接收动态反馈SQL 架构编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。示例：+—-+———+| Id | Email   |+—-+———+| 1  | 
+                            https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
+class Solution &amp;#123;
+    public int maxProfit(int
                         
                     </div>
                     <div class="publish-info">
