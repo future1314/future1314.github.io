@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-10-17T06:18:45.056Z</updated>
+  <updated>2020-10-17T06:34:27.432Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>剑指 Offer 56 - I. 数组中数字出现的次数</title>
+    <link href="https://github.com/future1314/2020/10/17/ex2ksi/"/>
+    <id>https://github.com/future1314/2020/10/17/ex2ksi/</id>
+    <published>2020-10-17T06:32:05.000Z</published>
+    <updated>2020-10-17T06:34:27.432Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot; language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;class Solution &lt;span class=&quot;token entity&quot; title=&quot;&amp;#123;&quot;&gt;&amp;amp;#123;&lt;/span&gt;
+    public</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>136. 只出现一次的数字</title>
     <link href="https://github.com/future1314/2020/10/17/fvr2rk/"/>
     <id>https://github.com/future1314/2020/10/17/fvr2rk/</id>
     <published>2020-10-17T00:22:10.000Z</published>
-    <updated>2020-10-17T06:18:45.056Z</updated>
+    <updated>2020-10-17T06:34:27.448Z</updated>
     
     
       
@@ -42,7 +64,7 @@
     <link href="https://github.com/future1314/2020/10/17/ql2ymf/"/>
     <id>https://github.com/future1314/2020/10/17/ql2ymf/</id>
     <published>2020-10-17T00:06:19.000Z</published>
-    <updated>2020-10-17T06:18:45.072Z</updated>
+    <updated>2020-10-17T06:34:27.468Z</updated>
     
     
       
@@ -63,7 +85,7 @@
     <link href="https://github.com/future1314/2020/10/17/np0ndg/"/>
     <id>https://github.com/future1314/2020/10/17/np0ndg/</id>
     <published>2020-10-16T23:48:05.000Z</published>
-    <updated>2020-10-17T06:18:45.092Z</updated>
+    <updated>2020-10-17T06:34:27.484Z</updated>
     
     
       
@@ -84,7 +106,7 @@
     <link href="https://github.com/future1314/2020/10/17/uux6g2/"/>
     <id>https://github.com/future1314/2020/10/17/uux6g2/</id>
     <published>2020-10-16T23:31:18.000Z</published>
-    <updated>2020-10-17T06:18:45.112Z</updated>
+    <updated>2020-10-17T06:34:27.508Z</updated>
     
     
       
@@ -105,7 +127,7 @@
     <link href="https://github.com/future1314/2020/10/08/vemvga/"/>
     <id>https://github.com/future1314/2020/10/08/vemvga/</id>
     <published>2020-10-07T23:23:31.000Z</published>
-    <updated>2020-10-17T06:18:45.124Z</updated>
+    <updated>2020-10-17T06:34:27.516Z</updated>
     
     
       
@@ -126,7 +148,7 @@
     <link href="https://github.com/future1314/2020/10/07/dzla6s/"/>
     <id>https://github.com/future1314/2020/10/07/dzla6s/</id>
     <published>2020-10-07T01:15:53.000Z</published>
-    <updated>2020-10-17T06:18:45.164Z</updated>
+    <updated>2020-10-17T06:34:27.560Z</updated>
     
     
       
@@ -147,7 +169,7 @@
     <link href="https://github.com/future1314/2020/10/04/mga4wb/"/>
     <id>https://github.com/future1314/2020/10/04/mga4wb/</id>
     <published>2020-10-04T07:21:01.000Z</published>
-    <updated>2020-10-17T06:18:45.168Z</updated>
+    <updated>2020-10-17T06:34:27.564Z</updated>
     
     
       
@@ -168,7 +190,7 @@
     <link href="https://github.com/future1314/2020/10/01/zgdoen/"/>
     <id>https://github.com/future1314/2020/10/01/zgdoen/</id>
     <published>2020-10-01T11:14:31.000Z</published>
-    <updated>2020-10-17T06:18:45.180Z</updated>
+    <updated>2020-10-17T06:34:27.576Z</updated>
     
     
       
@@ -191,7 +213,7 @@
     <link href="https://github.com/future1314/2020/09/23/vss5oa/"/>
     <id>https://github.com/future1314/2020/09/23/vss5oa/</id>
     <published>2020-09-23T12:23:47.000Z</published>
-    <updated>2020-10-17T06:18:45.184Z</updated>
+    <updated>2020-10-17T06:34:27.576Z</updated>
     
     
       
@@ -212,7 +234,7 @@
     <link href="https://github.com/future1314/2020/09/15/gqd000/"/>
     <id>https://github.com/future1314/2020/09/15/gqd000/</id>
     <published>2020-09-15T07:29:17.000Z</published>
-    <updated>2020-10-17T06:18:45.196Z</updated>
+    <updated>2020-10-17T06:34:27.592Z</updated>
     
     
       
@@ -234,7 +256,7 @@
     <link href="https://github.com/future1314/2020/09/13/yxokbg/"/>
     <id>https://github.com/future1314/2020/09/13/yxokbg/</id>
     <published>2020-09-13T01:08:01.000Z</published>
-    <updated>2020-10-17T06:18:45.216Z</updated>
+    <updated>2020-10-17T06:34:27.608Z</updated>
     
     
       
@@ -256,7 +278,7 @@
     <link href="https://github.com/future1314/2020/09/12/zsmdhg/"/>
     <id>https://github.com/future1314/2020/09/12/zsmdhg/</id>
     <published>2020-09-12T08:33:34.000Z</published>
-    <updated>2020-10-17T06:18:45.224Z</updated>
+    <updated>2020-10-17T06:34:27.612Z</updated>
     
     
       
@@ -277,7 +299,7 @@
     <link href="https://github.com/future1314/2020/09/11/gdtian/"/>
     <id>https://github.com/future1314/2020/09/11/gdtian/</id>
     <published>2020-09-11T14:29:37.000Z</published>
-    <updated>2020-10-17T06:18:45.236Z</updated>
+    <updated>2020-10-17T06:34:27.624Z</updated>
     
     
       
@@ -298,7 +320,7 @@
     <link href="https://github.com/future1314/2020/09/11/yhcvpb/"/>
     <id>https://github.com/future1314/2020/09/11/yhcvpb/</id>
     <published>2020-09-11T13:53:45.000Z</published>
-    <updated>2020-10-17T06:18:45.248Z</updated>
+    <updated>2020-10-17T06:34:27.632Z</updated>
     
     
       
@@ -319,7 +341,7 @@
     <link href="https://github.com/future1314/2020/09/11/rk8asi/"/>
     <id>https://github.com/future1314/2020/09/11/rk8asi/</id>
     <published>2020-09-11T13:34:29.000Z</published>
-    <updated>2020-10-17T06:18:45.256Z</updated>
+    <updated>2020-10-17T06:34:27.648Z</updated>
     
     
       
@@ -340,7 +362,7 @@
     <link href="https://github.com/future1314/2020/09/11/gkr4ov/"/>
     <id>https://github.com/future1314/2020/09/11/gkr4ov/</id>
     <published>2020-09-11T09:50:20.000Z</published>
-    <updated>2020-10-17T06:18:45.268Z</updated>
+    <updated>2020-10-17T06:34:27.668Z</updated>
     
     
       
@@ -362,7 +384,7 @@
     <link href="https://github.com/future1314/2020/09/11/sp63al/"/>
     <id>https://github.com/future1314/2020/09/11/sp63al/</id>
     <published>2020-09-11T08:27:02.000Z</published>
-    <updated>2020-10-17T06:18:45.276Z</updated>
+    <updated>2020-10-17T06:34:27.680Z</updated>
     
     
       
@@ -383,7 +405,7 @@
     <link href="https://github.com/future1314/2020/09/11/vr783s/"/>
     <id>https://github.com/future1314/2020/09/11/vr783s/</id>
     <published>2020-09-11T07:33:27.000Z</published>
-    <updated>2020-10-17T06:18:45.288Z</updated>
+    <updated>2020-10-17T06:34:27.704Z</updated>
     
     
       
@@ -404,7 +426,7 @@
     <link href="https://github.com/future1314/2020/09/11/gklcy5/"/>
     <id>https://github.com/future1314/2020/09/11/gklcy5/</id>
     <published>2020-09-11T07:31:26.000Z</published>
-    <updated>2020-10-17T06:18:45.296Z</updated>
+    <updated>2020-10-17T06:34:27.712Z</updated>
     
     
       
@@ -412,27 +434,6 @@
         
         
     <summary type="html">&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>240. 搜索二维矩阵 II</title>
-    <link href="https://github.com/future1314/2020/09/11/htcng7/"/>
-    <id>https://github.com/future1314/2020/09/11/htcng7/</id>
-    <published>2020-09-11T03:35:14.000Z</published>
-    <updated>2020-10-17T06:18:45.312Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;编写一个高效的算法来搜索  m x n  矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：&lt;br&gt;每行的元素从左到右升序排列。&lt;br&gt;每列的元素从上到下升序排列。&lt;br&gt;示例:&lt;br&gt;现有矩阵 matrix 如下：&lt;br&gt;[&lt;br&gt; [1,   4,</summary>
         
       
     
