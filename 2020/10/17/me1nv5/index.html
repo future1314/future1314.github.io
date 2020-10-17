@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="语雀测试, future">
-    <meta name="description" content="测试触发云函数第 3.次修改的沙发上
-">
+    <meta name="keywords" content="剑指 Offer 15.二进制中1的个数, future">
+    <meta name="description" content="剑指 Offer 15. 二进制中 1 的个数难度简单 62请实现一个函数，输入一个整数，输出该数二进制表示中 1 的个数。例如，把 9  表示成二进制是 1001，有 2 位是 1。因此，如果输入 9，则该函数输出 2。示例 1：输入：0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>语雀测试 | future</title>
+    <title>剑指 Offer 15.二进制中1的个数 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -343,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">语雀测试</h1>
+                    <h1 class="description center-align post-title">剑指 Offer 15.二进制中1的个数</h1>
                 </div>
             </div>
         </div>
@@ -479,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-29
+                    2020-10-17
                 </div>
                 
 
@@ -493,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    16
+                    239
                 </div>
                 
 
@@ -511,7 +510,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>测试触发云函数<br>第 3.次修改的沙发上</p>
+                <h4 id="剑指-Offer-15-二进制中-1-的个数"><a href="#剑指-Offer-15-二进制中-1-的个数" class="headerlink" title="剑指 Offer 15. 二进制中 1 的个数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/">剑指 Offer 15. 二进制中 1 的个数</a></h4><p>难度简单 62<br>请实现一个函数，输入一个整数，输出该数二进制表示中 1 的个数。例如，把 9  表示成二进制是 1001，有 2 位是 1。因此，如果输入 9，则该函数输出 2。<br><strong>示例 1：</strong><br><strong>输入：</strong>00000000000000000000000000001011<br><strong>输出：</strong>3<br><strong>解释：</strong>输入的二进制串 <code>**00000000000000000000000000001011** 中，共有三位为 &#39;1&#39;。</code><br><strong>示例 2：</strong><br><strong>输入：</strong>00000000000000000000000010000000<br><strong>输出：</strong>1<br><strong>解释：</strong>输入的二进制串 <strong>00000000000000000000000010000000</strong> 中，共有一位为 ‘1’。</p>
+<p><strong>示例 3：</strong><br><strong>输入：</strong>11111111111111111111111111111101<br><strong>输出：</strong>31<br><strong>解释：</strong>输入的二进制串 <strong>11111111111111111111111111111101</strong> 中，共有 31 位为 ‘1’。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 为啥不对呢</span>
+    <span class="token comment" spellcheck="true">// public int hammingWeight(int n) &amp;#123;</span>
+    <span class="token comment" spellcheck="true">//     int tmp=1;</span>
+    <span class="token comment" spellcheck="true">//     int res=0;</span>
+    <span class="token comment" spellcheck="true">//     for(int i=0;i&lt;64;i++)&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//         if((n&amp;tmp)==1)&amp;#123;</span>
+    <span class="token comment" spellcheck="true">//             res++;</span>
+    <span class="token comment" spellcheck="true">//         &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//         tmp&lt;&lt;=1;</span>
+    <span class="token comment" spellcheck="true">//     &amp;#125;</span>
+    <span class="token comment" spellcheck="true">//     return res;</span>
+    <span class="token comment" spellcheck="true">// &amp;#125;</span>
+    <span class="token comment" spellcheck="true">// 借鉴 org</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">hammingWeight</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            res<span class="token operator">++</span><span class="token punctuation">;</span>
+            n<span class="token operator">&amp;=</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -537,7 +560,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/08/29/glv0gn/">https://github.com/future1314/2020/08/29/glv0gn/</a>
+                    <a href="https://github.com/future1314/2020/10/17/me1nv5/">https://github.com/future1314/2020/10/17/me1nv5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -742,31 +765,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/08/30/ro0z5g/">
+                <a href="/2020/10/17/me1nv5/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="再不行我就先不搞了"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="再不行我就先不搞了">
+                        <!-- <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="剑指 Offer 15.二进制中1的个数"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="剑指 Offer 15.二进制中1的个数">
                         
-                        <span class="card-title">再不行我就先不搞了</span>
+                        <span class="card-title">剑指 Offer 15.二进制中1的个数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            太费事了
-
+                            剑指 Offer 15. 二进制中 1 的个数难度简单 62请实现一个函数，输入一个整数，输出该数二进制表示中 1 的个数。例如，把 9  表示成二进制是 1001，有 2 位是 1。因此，如果输入 9，则该函数输出 2。示例 1：输入：0
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -775,6 +798,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -785,26 +809,29 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/22/pxds7y/">
+                <a href="/2020/10/17/ex2ksi/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="服务器搭建"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="服务器搭建">
+                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="剑指 Offer 56 - I. 数组中数字出现的次数"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="剑指 Offer 56 - I. 数组中数字出现的次数">
                         
-                        <span class="card-title">服务器搭建</span>
+                        <span class="card-title">剑指 Offer 56 - I. 数组中数字出现的次数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            华为云+宝塔面板 服务器小白保姆级配置
-78.88 一年服务器【2 核 4G 云服务器低至 331 元/年，限时抢购】华为云开年回馈用户，产品低至 1 折，您的专属链接：https://activity.huaweicloud.com/20
+                            class Solution &amp;#123;
+    public int[] singleNumbers(int[] nums) &amp;#123;
+        int res=0;
+        int tmp=1;
+  
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
                             </span>
                         <span class="publish-author">
                             
