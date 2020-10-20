@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="面试经验, future">
-    <meta name="description" content="面试经验 | future">
+    <meta name="keywords" content="206. 反转链表, future">
+    <meta name="description" content="206. 反转链表难度简单 1288反转一个单链表。示例:输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL输出: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL进阶:你可以迭代或递归地反转链">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>面试经验 | future</title>
+    <title>206. 反转链表 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">面试经验</h1>
+                    <h1 class="description center-align post-title">206. 反转链表</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-22
+                    2020-10-20
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    162
                 </div>
                 
 
@@ -510,7 +510,35 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-linked-list/">206. 反转链表</a><br>难度简单 1288<br>反转一个单链表。<br><strong>示例:</strong><br><strong>输入:</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL<br><strong>输出:</strong> 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL<br><strong>进阶:</strong><br>你可以迭代或递归地反转链表。你能否用两种方法解决这道题？</p>
+<p>####</p>
+<pre class=" language-java"><code class="language-java">     <span class="token comment" spellcheck="true">// 借鉴 org</span>
+    <span class="token keyword">public</span> ListNode <span class="token function">reverseList</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>head<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        ListNode pre<span class="token operator">=</span>null<span class="token punctuation">;</span>
+        ListNode cur<span class="token operator">=</span>head<span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// ListNode next=head.next;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>cur<span class="token operator">!=</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            ListNode next<span class="token operator">=</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            cur<span class="token punctuation">.</span>next<span class="token operator">=</span>pre<span class="token punctuation">;</span>
+            pre<span class="token operator">=</span>cur<span class="token punctuation">;</span>
+            cur<span class="token operator">=</span>next<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//next=next.next;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> pre<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> ListNode <span class="token function">reverseList1</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>head<span class="token operator">==</span>null<span class="token operator">||</span>head<span class="token punctuation">.</span>next<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        ListNode p<span class="token operator">=</span><span class="token function">reverseList1</span><span class="token punctuation">(</span>head<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        head<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token operator">=</span>head<span class="token punctuation">;</span>
+        head<span class="token punctuation">.</span>next<span class="token operator">=</span>null<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+
             </div>
             <hr/>
 
@@ -535,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/03/22/il73gx/">https://github.com/future1314/2020/03/22/il73gx/</a>
+                    <a href="https://github.com/future1314/2020/10/20/lsfhh6/">https://github.com/future1314/2020/10/20/lsfhh6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -740,31 +768,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/22/poq8z2/">
+                <a href="/2020/10/20/lsfhh6/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="面试-1"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="面试-1">
+                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表">
                         
-                        <span class="card-title">面试-1</span>
+                        <span class="card-title">206. 反转链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            首先说明我是 Java 开发，我的范围只适合 Java 开发的，其他方向我不太了解，并且很多公司侧重点也不一样，比如字节不侧重语言，侧重操作系统四大金刚那些，也看公司吧，就像考不同的学校，会有不同的大纲，因为我是本科生，都比较侧重基础
-Ja
+                            206. 反转链表难度简单 1288反转一个单链表。示例:输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -773,6 +801,7 @@ Ja
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -783,26 +812,26 @@ Ja
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/15/ugxy0c/">
+                <a href="/2020/10/19/rflmac/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="代码"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="代码">
+                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="19. 删除链表的倒数第N个节点"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="19. 删除链表的倒数第N个节点">
                         
-                        <span class="card-title">代码</span>
+                        <span class="card-title">19. 删除链表的倒数第N个节点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            如果想在接口中新增一个方法，但又不想子类强制实现该方法时，可以给该方法加上 default 关键字，这个在实际工作中，也经常使用到，算是重构的小技巧吧。
-
+                            19. 删除链表的倒数第 N 个节点难度中等 1064给定一个链表，删除链表的倒数第 n *个节点，并且返回链表的头结点。*示例：**给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.
+当删除了倒数第二个
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-19
                             </span>
                         <span class="publish-author">
                             
