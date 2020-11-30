@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2020-11-08T09:17:02.508Z</updated>
+  <updated>2020-11-30T18:15:24.159Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,117 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>架构师</title>
+    <link href="https://github.com/future1314/2020/11/17/wgxn86/"/>
+    <id>https://github.com/future1314/2020/11/17/wgxn86/</id>
+    <published>2020-11-17T13:52:28.000Z</published>
+    <updated>2020-11-30T18:15:24.159Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;50-80K·14 薪&lt;/p&gt;
+&lt;h3 id=&quot;职位详情&quot;&gt;&lt;a href=&quot;#职位详情&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>redis</title>
+    <link href="https://github.com/future1314/2020/11/16/ts7g1h/"/>
+    <id>https://github.com/future1314/2020/11/16/ts7g1h/</id>
+    <published>2020-11-16T08:16:34.000Z</published>
+    <updated>2020-11-30T18:15:24.163Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;keys–&amp;gt;scan cursor.//一直到返回的 cursor 为</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux</title>
+    <link href="https://github.com/future1314/2020/11/16/za9ktu/"/>
+    <id>https://github.com/future1314/2020/11/16/za9ktu/</id>
+    <published>2020-11-16T07:48:03.000Z</published>
+    <updated>2020-11-30T18:15:24.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;端口占用&quot;&gt;&lt;a href=&quot;#端口占用&quot; class=&quot;headerlink&quot; title=&quot;端口占用&quot;&gt;&lt;/a&gt;端口占用&lt;/h2&gt;&lt;p&gt;1，lsof -i:端口号&lt;br&gt;2，netstat -tunlp|grep</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>589. N叉树的前序遍历</title>
+    <link href="https://github.com/future1314/2020/11/14/mugyru/"/>
+    <id>https://github.com/future1314/2020/11/14/mugyru/</id>
+    <published>2020-11-14T15:55:03.000Z</published>
+    <updated>2020-11-30T18:15:24.203Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;589-N-叉树的前序遍历&quot;&gt;&lt;a href=&quot;#589-N-叉树的前序遍历&quot; class=&quot;headerlink&quot; title=&quot;589. N 叉树的前序遍历&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>559. N叉树的最大深度</title>
+    <link href="https://github.com/future1314/2020/11/14/tu7xc8/"/>
+    <id>https://github.com/future1314/2020/11/14/tu7xc8/</id>
+    <published>2020-11-14T15:13:01.000Z</published>
+    <updated>2020-11-30T18:15:24.215Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;559-N-叉树的最大深度&quot;&gt;&lt;a href=&quot;#559-N-叉树的最大深度&quot; class=&quot;headerlink&quot; title=&quot;559. N 叉树的最大深度&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>104. 二叉树的最大深度</title>
     <link href="https://github.com/future1314/2020/10/23/vlc7q6/"/>
     <id>https://github.com/future1314/2020/10/23/vlc7q6/</id>
     <published>2020-10-23T15:37:24.000Z</published>
-    <updated>2020-11-08T09:17:02.508Z</updated>
+    <updated>2020-11-30T18:15:24.227Z</updated>
     
     
       
@@ -42,7 +148,7 @@
     <link href="https://github.com/future1314/2020/10/23/np31e9/"/>
     <id>https://github.com/future1314/2020/10/23/np31e9/</id>
     <published>2020-10-23T15:31:35.000Z</published>
-    <updated>2020-11-08T09:17:02.524Z</updated>
+    <updated>2020-11-30T18:15:24.235Z</updated>
     
     
       
@@ -63,7 +169,7 @@
     <link href="https://github.com/future1314/2020/10/20/lsfhh6/"/>
     <id>https://github.com/future1314/2020/10/20/lsfhh6/</id>
     <published>2020-10-20T01:42:58.000Z</published>
-    <updated>2020-11-08T09:17:02.532Z</updated>
+    <updated>2020-11-30T18:15:24.247Z</updated>
     
     
       
@@ -84,7 +190,7 @@
     <link href="https://github.com/future1314/2020/10/19/rflmac/"/>
     <id>https://github.com/future1314/2020/10/19/rflmac/</id>
     <published>2020-10-19T12:58:09.000Z</published>
-    <updated>2020-11-08T09:17:02.548Z</updated>
+    <updated>2020-11-30T18:15:24.259Z</updated>
     
     
       
@@ -105,7 +211,7 @@
     <link href="https://github.com/future1314/2020/10/18/snc9wb/"/>
     <id>https://github.com/future1314/2020/10/18/snc9wb/</id>
     <published>2020-10-18T01:13:30.000Z</published>
-    <updated>2020-11-08T09:17:02.580Z</updated>
+    <updated>2020-11-30T18:15:24.283Z</updated>
     
     
       
@@ -126,7 +232,7 @@
     <link href="https://github.com/future1314/2020/10/17/me1nv5/"/>
     <id>https://github.com/future1314/2020/10/17/me1nv5/</id>
     <published>2020-10-17T07:33:03.000Z</published>
-    <updated>2020-11-08T09:17:02.604Z</updated>
+    <updated>2020-11-30T18:15:24.299Z</updated>
     
     
       
@@ -147,7 +253,7 @@
     <link href="https://github.com/future1314/2020/10/17/ex2ksi/"/>
     <id>https://github.com/future1314/2020/10/17/ex2ksi/</id>
     <published>2020-10-17T06:32:05.000Z</published>
-    <updated>2020-11-08T09:17:02.620Z</updated>
+    <updated>2020-11-30T18:15:24.311Z</updated>
     
     
       
@@ -169,7 +275,7 @@
     <link href="https://github.com/future1314/2020/10/17/fvr2rk/"/>
     <id>https://github.com/future1314/2020/10/17/fvr2rk/</id>
     <published>2020-10-17T00:22:10.000Z</published>
-    <updated>2020-11-08T09:17:02.628Z</updated>
+    <updated>2020-11-30T18:15:24.319Z</updated>
     
     
       
@@ -190,7 +296,7 @@
     <link href="https://github.com/future1314/2020/10/17/ql2ymf/"/>
     <id>https://github.com/future1314/2020/10/17/ql2ymf/</id>
     <published>2020-10-17T00:06:19.000Z</published>
-    <updated>2020-11-08T09:17:02.644Z</updated>
+    <updated>2020-11-30T18:15:24.335Z</updated>
     
     
       
@@ -211,7 +317,7 @@
     <link href="https://github.com/future1314/2020/10/17/np0ndg/"/>
     <id>https://github.com/future1314/2020/10/17/np0ndg/</id>
     <published>2020-10-16T23:48:05.000Z</published>
-    <updated>2020-11-08T09:17:02.660Z</updated>
+    <updated>2020-11-30T18:15:24.347Z</updated>
     
     
       
@@ -232,7 +338,7 @@
     <link href="https://github.com/future1314/2020/10/17/uux6g2/"/>
     <id>https://github.com/future1314/2020/10/17/uux6g2/</id>
     <published>2020-10-16T23:31:18.000Z</published>
-    <updated>2020-11-08T09:17:02.676Z</updated>
+    <updated>2020-11-30T18:15:24.359Z</updated>
     
     
       
@@ -253,7 +359,7 @@
     <link href="https://github.com/future1314/2020/10/08/vemvga/"/>
     <id>https://github.com/future1314/2020/10/08/vemvga/</id>
     <published>2020-10-07T23:23:31.000Z</published>
-    <updated>2020-11-08T09:17:02.684Z</updated>
+    <updated>2020-11-30T18:15:24.371Z</updated>
     
     
       
@@ -274,7 +380,7 @@
     <link href="https://github.com/future1314/2020/10/07/dzla6s/"/>
     <id>https://github.com/future1314/2020/10/07/dzla6s/</id>
     <published>2020-10-07T01:15:53.000Z</published>
-    <updated>2020-11-08T09:17:02.728Z</updated>
+    <updated>2020-11-30T18:15:24.411Z</updated>
     
     
       
@@ -295,7 +401,7 @@
     <link href="https://github.com/future1314/2020/10/04/mga4wb/"/>
     <id>https://github.com/future1314/2020/10/04/mga4wb/</id>
     <published>2020-10-04T07:21:01.000Z</published>
-    <updated>2020-11-08T09:17:02.736Z</updated>
+    <updated>2020-11-30T18:15:24.415Z</updated>
     
     
       
@@ -316,7 +422,7 @@
     <link href="https://github.com/future1314/2020/10/01/zgdoen/"/>
     <id>https://github.com/future1314/2020/10/01/zgdoen/</id>
     <published>2020-10-01T11:14:31.000Z</published>
-    <updated>2020-11-08T09:17:02.744Z</updated>
+    <updated>2020-11-30T18:15:24.427Z</updated>
     
     
       
@@ -326,114 +432,6 @@
     <summary type="html">&lt;p&gt;心理学上有一种常见的症状，叫“自证预言”。&lt;/p&gt;
 &lt;p&gt;如果你觉得自己“可以”，就会慢慢发现自己越来越可以，这种正向能量会像燎原的火一样无限蔓延。&lt;/p&gt;
 &lt;p&gt;人格力量，正是点燃这种正能量的第一个火种，当你点亮它，你会发现，其实你就是自己向往的那个闪闪发光的偶像。&lt;/p</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>自律</title>
-    <link href="https://github.com/future1314/2020/09/24/zz6bhx/"/>
-    <id>https://github.com/future1314/2020/09/24/zz6bhx/</id>
-    <published>2020-09-23T22:21:10.000Z</published>
-    <updated>2020-11-08T09:17:02.748Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;“不自律的人生是一种怎么样的体验？”&lt;br&gt;“被命运反复羞辱，却毫无还手之力。”&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>热爱生命</title>
-    <link href="https://github.com/future1314/2020/09/23/vss5oa/"/>
-    <id>https://github.com/future1314/2020/09/23/vss5oa/</id>
-    <published>2020-09-23T12:23:47.000Z</published>
-    <updated>2020-11-08T09:17:02.752Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre&gt;&lt;code&gt; </summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>108. 将有序数组转换为二叉搜索树</title>
-    <link href="https://github.com/future1314/2020/09/15/gqd000/"/>
-    <id>https://github.com/future1314/2020/09/15/gqd000/</id>
-    <published>2020-09-15T07:29:17.000Z</published>
-    <updated>2020-11-08T09:17:02.768Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;将有序数组转换为二叉搜索树&lt;br&gt;将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。&lt;br&gt;本题中，一个高度平衡二叉树是指一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。&lt;/p&gt;
-&lt;p&gt;示例:&lt;br&gt;给定有序数组:</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>102. 二叉树的层序遍历</title>
-    <link href="https://github.com/future1314/2020/09/13/yxokbg/"/>
-    <id>https://github.com/future1314/2020/09/13/yxokbg/</id>
-    <published>2020-09-13T01:08:01.000Z</published>
-    <updated>2020-11-08T09:17:02.784Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;二叉树的层序遍历&lt;br&gt;给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。&lt;/p&gt;
-&lt;p&gt;示例：&lt;br&gt;二叉树：[3,9,20,null,null,15,7],&lt;br&gt; 3&lt;br&gt;  / &lt;br&gt;  9  20&lt;br&gt;   /</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>免费储存每个月10G-图床🛏️</title>
-    <link href="https://github.com/future1314/2020/09/12/zsmdhg/"/>
-    <id>https://github.com/future1314/2020/09/12/zsmdhg/</id>
-    <published>2020-09-12T08:33:34.000Z</published>
-    <updated>2020-11-08T09:17:02.788Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://portal.qiniu.com/signup?code=1h9i9v7apthzm&quot;&gt;https://portal.qiniu.com/signup?code=1h9i9v7apthzm&lt;/a&gt;&lt;br&gt;&lt;a</summary>
         
       
     
