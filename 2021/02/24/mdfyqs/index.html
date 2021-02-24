@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="234. 回文链表, future">
-    <meta name="description" content="回文链表请判断一个链表是否为回文链表。示例 1:输入: 1-&amp;gt;2输出: false示例 2:输入: 1-&amp;gt;2-&amp;gt;2-&amp;gt;1输出: true进阶：你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？解析：见">
+    <meta name="keywords" content="7. 整数反转, future">
+    <meta name="description" content="7. 整数反转 考虑溢出class Solution &amp;amp;#123;
+    public int reverse(int x) &amp;amp;#123;
+        int ans = 0;
+        while (x != ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>234. 回文链表 | future</title>
+    <title>7. 整数反转 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +345,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">234. 回文链表</h1>
+                    <h1 class="description center-align post-title">7. 整数反转</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +481,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-11
+                    2021-02-24
                 </div>
                 
 
@@ -492,7 +495,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    327
+                    95
                 </div>
                 
 
@@ -510,56 +513,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>回文链表<br><strong>请判断一个链表是否为回文链表。</strong><br>示例 1:<br>输入: 1-&gt;2<br>输出: false<br>示例 2:<br>输入: 1-&gt;2-&gt;2-&gt;1<br>输出: true<br>进阶：<br><strong>你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</strong><br>解析：见 org 第三种解法<br>作者：力扣 (LeetCode)<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnv1oc/">https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnv1oc/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
- * Definition for singly-linked list.
- * public class ListNode &amp;#123;
- *     int val;
- *     ListNode next;
- *     ListNode(int x) &amp;#123; val = x; &amp;#125;
- * &amp;#125;
- */</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">// org 时间空间复杂度都是 O(n)</span>
-    <span class="token comment" spellcheck="true">// equals [-129,-129]</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isPalindrome</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> res    <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        ListNode cur <span class="token operator">=</span> head<span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>cur <span class="token operator">!=</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            res<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            cur <span class="token operator">=</span> cur<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+                <h4 id="7-整数反转-考虑溢出"><a href="#7-整数反转-考虑溢出" class="headerlink" title="7. 整数反转 考虑溢出"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-integer/">7. 整数反转</a> 考虑溢出</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>x <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> pop <span class="token operator">=</span> x <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ans <span class="token operator">></span> Integer<span class="token punctuation">.</span>MAX_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">||</span> <span class="token punctuation">(</span>ans <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MAX_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> pop <span class="token operator">></span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ans <span class="token operator">&lt;</span> Integer<span class="token punctuation">.</span>MIN_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">||</span> <span class="token punctuation">(</span>ans <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MIN_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> pop <span class="token operator">&lt;</span> <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            ans <span class="token operator">=</span> ans <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> pop<span class="token punctuation">;</span>
+            x <span class="token operator">/=</span> <span class="token number">10</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> front<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> tail <span class="token operator">=</span>res<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>front<span class="token operator">&lt;=</span>tail<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>res<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>front<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>tail<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            front<span class="token operator">++</span><span class="token punctuation">;</span>
-            tail<span class="token operator">--</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">// //第一次 提交 针对奇数个元素 不成立。</span>
-    <span class="token comment" spellcheck="true">// public boolean isPalindrome(ListNode head) &amp;#123;</span>
-    <span class="token comment" spellcheck="true">//     if(head==null)&amp;#123;</span>
-    <span class="token comment" spellcheck="true">//         return false;</span>
-    <span class="token comment" spellcheck="true">//     &amp;#125;</span>
-    <span class="token comment" spellcheck="true">//     Stack&lt;Integer> res    = new Stack&lt;Integer>();</span>
-    <span class="token comment" spellcheck="true">//     ListNode cur = head;</span>
-    <span class="token comment" spellcheck="true">//     while(cur!=null)&amp;#123;</span>
-    <span class="token comment" spellcheck="true">//         if(!res.isEmpty()&amp;&amp;res.peek() == cur.val)&amp;#123;</span>
-    <span class="token comment" spellcheck="true">//             res.pop();</span>
-    <span class="token comment" spellcheck="true">//         &amp;#125;</span>
-    <span class="token comment" spellcheck="true">//         else&amp;#123;</span>
-    <span class="token comment" spellcheck="true">//             res.add(cur.val);</span>
-    <span class="token comment" spellcheck="true">//         &amp;#125;</span>
-    <span class="token comment" spellcheck="true">//         cur = cur.next;</span>
-    <span class="token comment" spellcheck="true">//     &amp;#125;</span>
-    <span class="token comment" spellcheck="true">//     return res.isEmpty();</span>
-    <span class="token comment" spellcheck="true">// &amp;#125;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">x</th>
+<th align="left">pop</th>
+<th align="left">ans</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1234</td>
+<td align="left"></td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">123</td>
+<td align="left">4</td>
+<td align="left">4</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">43</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">432</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">4321</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -585,7 +587,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/11/rk8asi/">https://github.com/future1314/2020/09/11/rk8asi/</a>
+                    <a href="https://github.com/future1314/2021/02/24/mdfyqs/">https://github.com/future1314/2021/02/24/mdfyqs/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -790,30 +792,34 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/11/yhcvpb/">
+                <a href="/2021/02/24/mdfyqs/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="二叉树的最大深度"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="二叉树的最大深度">
+                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="7. 整数反转"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="7. 整数反转">
                         
-                        <span class="card-title">二叉树的最大深度</span>
+                        <span class="card-title">7. 整数反转</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            二叉树的最大深度给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明:  叶子节点是指没有子节点的节点。示例：给定二叉树 [3,9,20,null,null,15,7]， **  3****   / 
+                            7. 整数反转 考虑溢出class Solution &amp;#123;
+    public int reverse(int x) &amp;#123;
+        int ans = 0;
+        while (x != 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -822,6 +828,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -832,27 +839,27 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/11/gkr4ov/">
+                <a href="/2021/02/24/uibzpg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="206. 反转链表">
+                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="19. 删除链表的倒数第 N 个结点"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="19. 删除链表的倒数第 N 个结点">
                         
-                        <span class="card-title">206. 反转链表</span>
+                        <span class="card-title">19. 删除链表的倒数第 N 个结点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            反转一个单链表。
-示例:输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
-
+                            19. 删除链表的倒数第 N 个结点链表的长度用到哑节点遍历到 L−n+1 个节点时，它的下一个节点就是我们需要删除的节点，只需要修改一次指针，就能完成删除操作。
+class Solution &amp;#123;
+    public L
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
                             </span>
                         <span class="publish-author">
                             
