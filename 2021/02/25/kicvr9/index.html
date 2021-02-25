@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="linux, future">
-    <meta name="description" content="端口占用1，lsof -i:端口号2，netstat -tunlp|grep 端口号这两个命令都可以查看端口被什么进程占用。https://jingyan.baidu.com/article/656db9183861cde381249c87">
+    <meta name="keywords" content="25. Reverse Nodes in k-Group, future">
+    <meta name="description" content="25. Reverse Nodes in k-Groupk 个一组反转链表
+public ListNode reverseKGroup(ListNode head, int k) &amp;amp;#123;
+        ListNode ha">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>linux | future</title>
+    <title>25. Reverse Nodes in k-Group | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +344,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">linux</h1>
+                    <h1 class="description center-align post-title">25. Reverse Nodes in k-Group</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +480,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-16
+                    2021-02-25
                 </div>
                 
 
@@ -492,7 +494,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    278
+                    198
                 </div>
                 
 
@@ -510,20 +512,50 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><p>1，lsof -i:端口号<br>2，netstat -tunlp|grep 端口号<br>这两个命令都可以查看端口被什么进程占用。<br><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/656db9183861cde381249c87.html">https://jingyan.baidu.com/article/656db9183861cde381249c87.html</a></p>
-<hr>
-<p>可以查看一下 CPU 信息：在命令行里输入：<strong>cat /proc/cpuinfo</strong><br>这里可以看到 cpu cores : 1</p>
-<hr>
-<h2 id="top-jstack-分析-cpu-过高原因"><a href="#top-jstack-分析-cpu-过高原因" class="headerlink" title="top+jstack 分析 cpu 过高原因"></a>top+jstack 分析 cpu 过高原因</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/u/8b798dab407e">二月夜</a>关注<br>2017.11.24 19:16:44 字数 97 阅读 439</p>
-<ol>
-<li>用 ps -ef | grep tomcat 查出 tomcat 运行的进程 id</li>
-<li>用<strong>top -Hp pid 查询进程下所有线程的运行情况</strong>（shift+p 按 cpu 排序，shift+m 按内存排序）<br>top -Hp 30316</li>
-<li>找到 cpu 最高的 pid，用 printf ‘%x\n’ pid 转换为 16 进制</li>
-<li>用 jstack 进程 id | grep 16 进制线程 id 找到线程信息<br>jstack 30316 | grep -A 20772a</li>
-</ol>
-<hr>
-<h2 id="查看登录信息"><a href="#查看登录信息" class="headerlink" title="查看登录信息"></a>查看登录信息</h2><p>[root@aliyun log]# last<br>last: /var/log/wtmp: No such file or directory<br>Perhaps this file was removed by the operator to prevent logging last info.<br>[root@aliyun log]#<br>[root@aliyun log]#<br>[root@aliyun log]# touch wtmp<br>[root@aliyun log]# last<br>wtmp begins Tue Nov 17 15:54:31 2020<br>**//新开一个终端然后登陆**<br>[root@aliyun log]# last<br>blog     pts/2        120.245.114.111  Tue Nov 17 15:54   still logged in<br>wtmp begins Tue Nov 17 15:54:52 2020<br>[root@aliyun log]#</p>
-<hr>
+                <h4 id="25-Reverse-Nodes-in-k-Group"><a href="#25-Reverse-Nodes-in-k-Group" class="headerlink" title="25. Reverse Nodes in k-Group"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/">25. Reverse Nodes in k-Group</a></h4><p>k 个一组反转链表</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> ListNode <span class="token function">reverseKGroup</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ListNode hair <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hair<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        ListNode pre <span class="token operator">=</span> hair<span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>head <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            ListNode tail <span class="token operator">=</span> pre<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// 查看剩余部分长度是否大于等于 k</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                tail <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>tail <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span> hair<span class="token punctuation">.</span>next<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            ListNode nex <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            ListNode<span class="token punctuation">[</span><span class="token punctuation">]</span> reverse <span class="token operator">=</span> <span class="token function">myReverse</span><span class="token punctuation">(</span>head<span class="token punctuation">,</span> tail<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            head <span class="token operator">=</span> reverse<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            tail <span class="token operator">=</span> reverse<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// 把子链表重新接回原链表</span>
+            pre<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+            tail<span class="token punctuation">.</span>next <span class="token operator">=</span> nex<span class="token punctuation">;</span>
+            pre <span class="token operator">=</span> tail<span class="token punctuation">;</span>
+            head <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> hair<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> ListNode<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">myReverse</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">,</span> ListNode tail<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ListNode prev <span class="token operator">=</span> tail<span class="token punctuation">.</span>next<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//</span>
+        ListNode p <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>prev <span class="token operator">!=</span> tail<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            ListNode nex <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+            p<span class="token punctuation">.</span>next <span class="token operator">=</span> prev<span class="token punctuation">;</span>
+            prev <span class="token operator">=</span> p<span class="token punctuation">;</span>
+            p <span class="token operator">=</span> nex<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>tail<span class="token punctuation">,</span> head<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+作者：LeetCode<span class="token operator">-</span>Solution
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>reverse<span class="token operator">-</span>nodes<span class="token operator">-</span>in<span class="token operator">-</span>k<span class="token operator">-</span>group<span class="token operator">/</span>solution<span class="token operator">/</span>k<span class="token operator">-</span>ge<span class="token operator">-</span>yi<span class="token operator">-</span>zu<span class="token operator">-</span>fan<span class="token operator">-</span>zhuan<span class="token operator">-</span>lian<span class="token operator">-</span>biao<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>solutio<span class="token operator">/</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -549,7 +581,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/11/16/za9ktu/">https://github.com/future1314/2020/11/16/za9ktu/</a>
+                    <a href="https://github.com/future1314/2021/02/25/kicvr9/">https://github.com/future1314/2021/02/25/kicvr9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -754,31 +786,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/11/16/ts7g1h/">
+                <a href="/2021/02/25/kicvr9/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="redis"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="redis">
+                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="25. Reverse Nodes in k-Group"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="25. Reverse Nodes in k-Group">
                         
-                        <span class="card-title">redis</span>
+                        <span class="card-title">25. Reverse Nodes in k-Group</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            keys–&gt;scan cursor.//一直到返回的 cursor 为 0.
-
+                            25. Reverse Nodes in k-Groupk 个一组反转链表
+public ListNode reverseKGroup(ListNode head, int k) &amp;#123;
+        ListNode ha
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -787,6 +821,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -797,29 +832,27 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/mugyru/">
+                <a href="/2021/02/25/oayupi/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="589. N叉树的前序遍历"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="589. N叉树的前序遍历">
+                        <!-- <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="206. Reverse Linked List"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/11.jpg" class="responsive-img" alt="206. Reverse Linked List">
                         
-                        <span class="card-title">589. N叉树的前序遍历</span>
+                        <span class="card-title">206. Reverse Linked List</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            589. N 叉树的前序遍历难度简单 114给定一个 N 叉树，返回其节点值的前序遍历。例如，给定一个 3叉树 :
-
-返回其前序遍历: [1,3,5,6,2,4]。
-class Solution &amp;#123;
-    List&lt
+                            206. Reverse Linked List     public ListNode reverseList(ListNode head) &amp;#123;
+        ListNode pre=null;
+        Li
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
                             </span>
                         <span class="publish-author">
                             
