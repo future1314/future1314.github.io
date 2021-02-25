@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="206. 反转链表, future">
-    <meta name="description" content="反转一个单链表。
-示例:输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL输出: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL进阶:你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
-">
+    <meta name="keywords" content="322. 零钱兑换, future">
+    <meta name="description" content="322. 零钱兑换动态规划    public int coinChange(int[] coins, int amount) &amp;amp;#123;
+        // 自底向上的动态规划
+        if(coins.length ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>206. 反转链表 | future</title>
+    <title>322. 零钱兑换 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -344,13 +344,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/19.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">206. 反转链表</h1>
+                    <h1 class="description center-align post-title">322. 零钱兑换</h1>
                 </div>
             </div>
         </div>
@@ -480,7 +480,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-11
+                    2021-02-25
                 </div>
                 
 
@@ -494,14 +494,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    250
+                    687
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -512,49 +512,100 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>反转一个单链表。</strong></p>
-<p>示例:<br>输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL<br>输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL<br><strong>进阶:</strong><br>你可以迭代或递归地反转链表。你能否用两种方法解决这道题？</p>
-<p>作者：力扣 (LeetCode)<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnhm6/">https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xnnhm6/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
- * Definition for singly-linked list.
- * public class ListNode &amp;#123;
- *     int val;
- *     ListNode next;
- *     ListNode(int x) &amp;#123; val = x; &amp;#125;
- * &amp;#125;
- */</span>
-<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//借鉴org</span>
-    <span class="token keyword">public</span> ListNode <span class="token function">reverseList1</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>head <span class="token operator">==</span> null<span class="token operator">||</span>head<span class="token punctuation">.</span>next<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+                <h4 id="322-零钱兑换"><a href="#322-零钱兑换" class="headerlink" title="322. 零钱兑换"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/coin-change/">322. 零钱兑换</a></h4><h4 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">coinChange</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins<span class="token punctuation">,</span> <span class="token keyword">int</span> amount<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 自底向上的动态规划</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>coins<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        ListNode p <span class="token operator">=</span> <span class="token function">reverseList</span><span class="token punctuation">(</span>head<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        head<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next <span class="token operator">=</span>head<span class="token punctuation">;</span>
-        head<span class="token punctuation">.</span>next<span class="token operator">=</span>null<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// memo[n]的值： 表示的凑成总金额为n所需的最少的硬币个数</span>
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> memo <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>amount<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 给memo赋初值，最多的硬币数就是全部使用面值1的硬币进行换</span>
+        <span class="token comment" spellcheck="true">// amount + 1 是不可能达到的换取数量，于是使用其进行填充</span>
+        Arrays<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span>memo<span class="token punctuation">,</span>amount<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        memo<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> amount<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;</span> coins<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">-</span> coins<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token comment" spellcheck="true">// memo[i]有两种实现的方式，</span>
+                    <span class="token comment" spellcheck="true">// 一种是包含当前的coins[i],那么剩余钱就是 i-coins[i],这种操作要兑换的硬币数是 memo[i-coins[j]] + 1</span>
+                    <span class="token comment" spellcheck="true">// 另一种就是不包含，要兑换的硬币数是memo[i]</span>
+                    memo<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>memo<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>memo<span class="token punctuation">[</span>i<span class="token operator">-</span>coins<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> memo<span class="token punctuation">[</span>amount<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">(</span>amount<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">:</span> memo<span class="token punctuation">[</span>amount<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//org</span>
-    <span class="token keyword">public</span> ListNode <span class="token function">reverseList</span><span class="token punctuation">(</span>ListNode head<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>head <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//作者：sugar666</span>
+<span class="token comment" spellcheck="true">//链接：https://leetcode-cn.com/problems/coin-change/solution/javadi-gui-ji-yi-hua-sou-suo-dong-tai-gui-hua-by-s/</span></code></pre>
+<h4 id="记忆法"><a href="#记忆法" class="headerlink" title="记忆法"></a>记忆法</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> memo<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">coinChange</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins<span class="token punctuation">,</span> <span class="token keyword">int</span> amount<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>coins<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        ListNode pre<span class="token operator">=</span>null<span class="token punctuation">;</span>
-        ListNode cur<span class="token operator">=</span>head<span class="token punctuation">;</span>
-        ListNode next<span class="token operator">=</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// pre.next=null;</span>
-        <span class="token comment" spellcheck="true">// cur.next=pre;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>cur <span class="token operator">!=</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//&amp;&amp; next !=null</span>
-            <span class="token comment" spellcheck="true">// pre.next=pre;</span>
-            next<span class="token operator">=</span>cur<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-            cur<span class="token punctuation">.</span>next<span class="token operator">=</span>pre<span class="token punctuation">;</span>
-            pre <span class="token operator">=</span>cur<span class="token punctuation">;</span>
-            cur <span class="token operator">=</span>next<span class="token punctuation">;</span>
-            <span class="token comment" spellcheck="true">//next=next.next;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> pre<span class="token punctuation">;</span>
+        memo <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>amount<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token function">findWay</span><span class="token punctuation">(</span>coins<span class="token punctuation">,</span>amount<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+    <span class="token comment" spellcheck="true">// memo[n] 表示钱币n可以被换取的最少的硬币数，不能换取就为-1</span>
+    <span class="token comment" spellcheck="true">// findWay函数的目的是为了找到 amount数量的零钱可以兑换的最少硬币数量，返回其值int</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">findWay</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins<span class="token punctuation">,</span><span class="token keyword">int</span> amount<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>amount <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>amount <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 记忆化的处理，memo[n]用赋予了值，就不用继续下面的循环</span>
+        <span class="token comment" spellcheck="true">// 直接的返回memo[n] 的最优值</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>memo<span class="token punctuation">[</span>amount<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> memo<span class="token punctuation">[</span>amount<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> min <span class="token operator">=</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> coins<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token function">findWay</span><span class="token punctuation">(</span>coins<span class="token punctuation">,</span>amount<span class="token operator">-</span>coins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> res <span class="token operator">&lt;</span> min<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                min <span class="token operator">=</span> res <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 加1，是为了加上得到res结果的那个步骤中，兑换的一个硬币...</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        memo<span class="token punctuation">[</span>amount<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>min <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MAX_VALUE <span class="token operator">?</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">:</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> memo<span class="token punctuation">[</span>amount<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+作者：sugar666
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>coin<span class="token operator">-</span>change<span class="token operator">/</span>solution<span class="token operator">/</span>javadi<span class="token operator">-</span>gui<span class="token operator">-</span>ji<span class="token operator">-</span>yi<span class="token operator">-</span>hua<span class="token operator">-</span>sou<span class="token operator">-</span>suo<span class="token operator">-</span>dong<span class="token operator">-</span>tai<span class="token operator">-</span>gui<span class="token operator">-</span>hua<span class="token operator">-</span>by<span class="token operator">-</span>s<span class="token operator">/</span></code></pre>
+<h4 id="递归-超时"><a href="#递归-超时" class="headerlink" title="递归 超时"></a>递归 超时</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">int</span> res <span class="token operator">=</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">coinChange</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins<span class="token punctuation">,</span> <span class="token keyword">int</span> amount<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>coins<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token function">findWay</span><span class="token punctuation">(</span>coins<span class="token punctuation">,</span>amount<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// 如果没有任何一种硬币组合能组成总金额，返回 -1。</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">findWay</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> coins<span class="token punctuation">,</span><span class="token keyword">int</span> amount<span class="token punctuation">,</span><span class="token keyword">int</span> count<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>amount <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>amount <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            res <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> coins<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">findWay</span><span class="token punctuation">(</span>coins<span class="token punctuation">,</span>amount<span class="token operator">-</span>coins<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>count<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+作者：sugar666
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>coin<span class="token operator">-</span>change<span class="token operator">/</span>solution<span class="token operator">/</span>javadi<span class="token operator">-</span>gui<span class="token operator">-</span>ji<span class="token operator">-</span>yi<span class="token operator">-</span>hua<span class="token operator">-</span>sou<span class="token operator">-</span>suo<span class="token operator">-</span>dong<span class="token operator">-</span>tai<span class="token operator">-</span>gui<span class="token operator">-</span>hua<span class="token operator">-</span>by<span class="token operator">-</span>s<span class="token operator">/</span></code></pre>
 
             </div>
             <hr/>
@@ -580,7 +631,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/11/gkr4ov/">https://github.com/future1314/2020/09/11/gkr4ov/</a>
+                    <a href="https://github.com/future1314/2021/02/25/ziumsq/">https://github.com/future1314/2021/02/25/ziumsq/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -785,30 +836,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/11/rk8asi/">
+                <a href="/2021/02/25/ziumsq/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="234. 回文链表"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="234. 回文链表">
+                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="322. 零钱兑换"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="322. 零钱兑换">
                         
-                        <span class="card-title">234. 回文链表</span>
+                        <span class="card-title">322. 零钱兑换</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            回文链表请判断一个链表是否为回文链表。示例 1:输入: 1-&gt;2输出: false示例 2:输入: 1-&gt;2-&gt;2-&gt;1输出: true进阶：你能否用  O(n) 时间复杂度和 O(1) 空间复杂度解决此题？解析：见
+                            322. 零钱兑换动态规划    public int coinChange(int[] coins, int amount) &amp;#123;
+        // 自底向上的动态规划
+        if(coins.length 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -817,6 +871,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -827,25 +882,27 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/11/sp63al/">
+                <a href="/2021/02/25/gwpq56/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="21. 合并两个有序链表"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="21. 合并两个有序链表">
+                        <!-- <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="172. 阶乘后的零"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="172. 阶乘后的零">
                         
-                        <span class="card-title">21. 合并两个有序链表</span>
+                        <span class="card-title">172. 阶乘后的零</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            合并两个有序链表将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 示例：输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4输出：1-&gt;1-&gt;2-&gt;3-&gt;4-
+                            172. 阶乘后的零     public int trailingZeroes(int n) &amp;#123;
+        int zeroCount = 0;
+        for (int i = 5; i &lt;= n;
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-25
                             </span>
                         <span class="publish-author">
                             
