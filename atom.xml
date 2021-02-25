@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2021-02-25T13:24:46.797Z</updated>
+  <updated>2021-02-25T14:13:18.157Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>206. Reverse Linked List</title>
+    <link href="https://github.com/future1314/2021/02/25/oayupi/"/>
+    <id>https://github.com/future1314/2021/02/25/oayupi/</id>
+    <published>2021-02-25T14:10:54.000Z</published>
+    <updated>2021-02-25T14:13:18.157Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;206-Reverse-Linked-List&quot;&gt;&lt;a href=&quot;#206-Reverse-Linked-List&quot; class=&quot;headerlink&quot; title=&quot;206. Reverse Linked List&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>322. 零钱兑换</title>
     <link href="https://github.com/future1314/2021/02/25/ziumsq/"/>
     <id>https://github.com/future1314/2021/02/25/ziumsq/</id>
     <published>2021-02-25T13:09:14.000Z</published>
-    <updated>2021-02-25T13:24:46.797Z</updated>
+    <updated>2021-02-25T14:13:18.169Z</updated>
     
     
       
@@ -42,7 +63,7 @@
     <link href="https://github.com/future1314/2021/02/25/gwpq56/"/>
     <id>https://github.com/future1314/2021/02/25/gwpq56/</id>
     <published>2021-02-25T08:52:18.000Z</published>
-    <updated>2021-02-25T13:24:46.801Z</updated>
+    <updated>2021-02-25T14:13:18.177Z</updated>
     
     
       
@@ -63,7 +84,7 @@
     <link href="https://github.com/future1314/2021/02/25/yy3lcg/"/>
     <id>https://github.com/future1314/2021/02/25/yy3lcg/</id>
     <published>2021-02-25T08:06:13.000Z</published>
-    <updated>2021-02-25T13:24:46.813Z</updated>
+    <updated>2021-02-25T14:13:18.185Z</updated>
     
     
       
@@ -84,7 +105,7 @@
     <link href="https://github.com/future1314/2021/02/25/btvgtg/"/>
     <id>https://github.com/future1314/2021/02/25/btvgtg/</id>
     <published>2021-02-25T06:06:48.000Z</published>
-    <updated>2021-02-25T13:24:46.821Z</updated>
+    <updated>2021-02-25T14:13:18.197Z</updated>
     
     
       
@@ -105,7 +126,7 @@
     <link href="https://github.com/future1314/2021/02/24/fn91tr/"/>
     <id>https://github.com/future1314/2021/02/24/fn91tr/</id>
     <published>2021-02-24T09:02:23.000Z</published>
-    <updated>2021-02-25T13:24:46.833Z</updated>
+    <updated>2021-02-25T14:13:18.213Z</updated>
     
     
       
@@ -126,7 +147,7 @@
     <link href="https://github.com/future1314/2021/02/24/mdfyqs/"/>
     <id>https://github.com/future1314/2021/02/24/mdfyqs/</id>
     <published>2021-02-24T08:55:01.000Z</published>
-    <updated>2021-02-25T13:24:46.845Z</updated>
+    <updated>2021-02-25T14:13:18.217Z</updated>
     
     
       
@@ -147,7 +168,7 @@
     <link href="https://github.com/future1314/2021/02/24/uibzpg/"/>
     <id>https://github.com/future1314/2021/02/24/uibzpg/</id>
     <published>2021-02-24T06:04:35.000Z</published>
-    <updated>2021-02-25T13:24:46.853Z</updated>
+    <updated>2021-02-25T14:13:18.229Z</updated>
     
     
       
@@ -168,7 +189,7 @@
     <link href="https://github.com/future1314/2020/12/09/omw1wg/"/>
     <id>https://github.com/future1314/2020/12/09/omw1wg/</id>
     <published>2020-12-09T06:34:16.000Z</published>
-    <updated>2021-02-25T13:24:46.901Z</updated>
+    <updated>2021-02-25T14:13:18.281Z</updated>
     
     
       
@@ -189,7 +210,7 @@
     <link href="https://github.com/future1314/2020/11/17/wgxn86/"/>
     <id>https://github.com/future1314/2020/11/17/wgxn86/</id>
     <published>2020-11-17T13:52:28.000Z</published>
-    <updated>2021-02-25T13:24:46.933Z</updated>
+    <updated>2021-02-25T14:13:18.313Z</updated>
     
     
       
@@ -211,7 +232,7 @@
     <link href="https://github.com/future1314/2020/11/16/ts7g1h/"/>
     <id>https://github.com/future1314/2020/11/16/ts7g1h/</id>
     <published>2020-11-16T08:16:34.000Z</published>
-    <updated>2021-02-25T13:24:46.937Z</updated>
+    <updated>2021-02-25T14:13:18.317Z</updated>
     
     
       
@@ -232,7 +253,7 @@
     <link href="https://github.com/future1314/2020/11/16/za9ktu/"/>
     <id>https://github.com/future1314/2020/11/16/za9ktu/</id>
     <published>2020-11-16T07:48:03.000Z</published>
-    <updated>2021-02-25T13:24:46.973Z</updated>
+    <updated>2021-02-25T14:13:18.345Z</updated>
     
     
       
@@ -253,7 +274,7 @@
     <link href="https://github.com/future1314/2020/11/14/mugyru/"/>
     <id>https://github.com/future1314/2020/11/14/mugyru/</id>
     <published>2020-11-14T15:55:03.000Z</published>
-    <updated>2021-02-25T13:24:46.981Z</updated>
+    <updated>2021-02-25T14:13:18.353Z</updated>
     
     
       
@@ -274,7 +295,7 @@
     <link href="https://github.com/future1314/2020/11/14/tu7xc8/"/>
     <id>https://github.com/future1314/2020/11/14/tu7xc8/</id>
     <published>2020-11-14T15:13:01.000Z</published>
-    <updated>2021-02-25T13:24:46.993Z</updated>
+    <updated>2021-02-25T14:13:18.361Z</updated>
     
     
       
@@ -295,7 +316,7 @@
     <link href="https://github.com/future1314/2020/10/23/vlc7q6/"/>
     <id>https://github.com/future1314/2020/10/23/vlc7q6/</id>
     <published>2020-10-23T15:37:24.000Z</published>
-    <updated>2021-02-25T13:24:47.001Z</updated>
+    <updated>2021-02-25T14:13:18.373Z</updated>
     
     
       
@@ -316,7 +337,7 @@
     <link href="https://github.com/future1314/2020/10/23/np31e9/"/>
     <id>https://github.com/future1314/2020/10/23/np31e9/</id>
     <published>2020-10-23T15:31:35.000Z</published>
-    <updated>2021-02-25T13:24:47.013Z</updated>
+    <updated>2021-02-25T14:13:18.381Z</updated>
     
     
       
@@ -337,7 +358,7 @@
     <link href="https://github.com/future1314/2020/10/20/lsfhh6/"/>
     <id>https://github.com/future1314/2020/10/20/lsfhh6/</id>
     <published>2020-10-20T01:42:58.000Z</published>
-    <updated>2021-02-25T13:24:47.021Z</updated>
+    <updated>2021-02-25T14:13:18.389Z</updated>
     
     
       
@@ -358,7 +379,7 @@
     <link href="https://github.com/future1314/2020/10/19/rflmac/"/>
     <id>https://github.com/future1314/2020/10/19/rflmac/</id>
     <published>2020-10-19T12:58:09.000Z</published>
-    <updated>2021-02-25T13:24:47.029Z</updated>
+    <updated>2021-02-25T14:13:18.401Z</updated>
     
     
       
@@ -379,7 +400,7 @@
     <link href="https://github.com/future1314/2020/10/18/snc9wb/"/>
     <id>https://github.com/future1314/2020/10/18/snc9wb/</id>
     <published>2020-10-18T01:13:30.000Z</published>
-    <updated>2021-02-25T13:24:47.053Z</updated>
+    <updated>2021-02-25T14:13:18.425Z</updated>
     
     
       
@@ -400,7 +421,7 @@
     <link href="https://github.com/future1314/2020/10/17/me1nv5/"/>
     <id>https://github.com/future1314/2020/10/17/me1nv5/</id>
     <published>2020-10-17T07:33:03.000Z</published>
-    <updated>2021-02-25T13:24:47.069Z</updated>
+    <updated>2021-02-25T14:13:18.437Z</updated>
     
     
       
@@ -408,28 +429,6 @@
         
         
     <summary type="html">&lt;h4 id=&quot;剑指-Offer-15-二进制中-1-的个数&quot;&gt;&lt;a href=&quot;#剑指-Offer-15-二进制中-1-的个数&quot; class=&quot;headerlink&quot; title=&quot;剑指 Offer 15. 二进制中 1 的个数&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>剑指 Offer 56 - I. 数组中数字出现的次数</title>
-    <link href="https://github.com/future1314/2020/10/17/ex2ksi/"/>
-    <id>https://github.com/future1314/2020/10/17/ex2ksi/</id>
-    <published>2020-10-17T06:32:05.000Z</published>
-    <updated>2021-02-25T13:24:47.081Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot; language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;class Solution &lt;span class=&quot;token entity&quot; title=&quot;&amp;#123;&quot;&gt;&amp;amp;#123;&lt;/span&gt;
-    public</summary>
         
       
     
