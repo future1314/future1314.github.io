@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="常用的数据结构, future">
-    <meta name="description" content="跳跃表跳跃表是基于链表扩展实现的一种特殊链表，类似于树的实现，跳跃表不仅实现了横向链表，还实现了垂直方向的分层索引。一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据，每一层由下往上依次通过一个指针指向上层">
+    <meta name="keywords" content="1143. 最长公共子序列, future">
+    <meta name="description" content="1143. 最长公共子序列一个字符串的   子序列   是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。例如，”ace” 是 “abcde” 的子序列，但 “aec”">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>常用的数据结构 | future</title>
+    <title>1143. 最长公共子序列 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">常用的数据结构</h1>
+                    <h1 class="description center-align post-title">1143. 最长公共子序列</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2021-02-24
                 </div>
                 
 
@@ -492,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    652
+                    286
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -510,12 +510,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="跳跃表"><a href="#跳跃表" class="headerlink" title="跳跃表"></a>跳跃表</h3><p><strong>跳跃表是基于链表扩展实现的一种特殊链表</strong>，类似于树的实现，跳跃表不仅实现了横向链表，还<strong>实现了垂直方向的分层索引。</strong><br><strong>一个跳跃表由若干层链表组成，每一层都实现了一个有序链表索引，只有最底层包含了所有数据</strong>，每一层由下往上依次通过一个指针指向上层相同值的元素，每层数据依次减少，等到了最顶层就只会保留部分数据了。<br><strong>跳跃表</strong>的这种结构，是利用了<strong>空间换时间</strong>的方法来提高了查询效率。<strong>程序总是从最顶层开始查询访问，通过判断元素值来缩小查询范围</strong>。</p>
-<h3 id="ConcurrentSkipListMap"><a href="#ConcurrentSkipListMap" class="headerlink" title="ConcurrentSkipListMap"></a>ConcurrentSkipListMap</h3><p><strong>ConcurrentSkipListMap</strong>是基于 TreeMap 的设计原理实现的，略有不同的是<strong>前者基于跳表实现</strong>，后者基于<strong>红黑树</strong>实现，<strong>ConcurrentSkipListMap 的特点是存取平均时间复杂度是**</strong>O（log（n））<strong>，适用于大数据量存取的场景，</strong>最常见的是基于跳跃表实现的数据量比较大的缓存。**</p>
-<h3 id="Hashtable"><a href="#Hashtable" class="headerlink" title="Hashtable"></a>Hashtable</h3><p><strong>Hashtable 使用 Synchronized 同步锁修饰了 put、get、remove 等方法。</strong></p>
-<h3 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h3><p>该容器在数据量比较大的时候，链表会转换为红黑树。<strong>红黑树在并发情况下，删除和插入过程中有个平衡的过程，会牵涉到大量节点，因此竞争锁资源的代价相对比较高。</strong><br><strong>在 JDK1.7 中，ConcurrentHashMap 就使用了分段锁 Segment 减小了锁粒度，最终优化了锁的并发操作。</strong><br><strong>JDK1.8 中 ConcurrentHashMap 做了大量的改动，摒弃了 Segment 的概念</strong>。由于 Synchronized 锁在 Java6 之后的性能已经得到了很大的提升，所以<strong>在 JDK1.8 中，Java 重新启用了 Synchronized 同步锁，通过 Synchronized 实现**</strong>HashEntry*<strong>*作为锁粒度。</strong><br>与 JDK1.7 的 put 方法一样，<strong>JDK1.8 在添加元素时</strong>，在没有哈希冲突的情况下，会使用<strong>CAS 进行添加元素操作</strong>；如果有冲突，则通过 Synchronized 将链表锁定，再执行接下来的操作。</p>
-<h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p><strong>Vector 也是基于 Synchronized 同步锁实现的线程安全</strong>，Synchronized 关键字几乎修饰了所有对外暴露的方法，所以在读远大于写的操作场景中，Vector 将会发生大量锁竞争，从而给系统带来性能开销。</p>
-<h3 id="CopyOnWriteArrayList"><a href="#CopyOnWriteArrayList" class="headerlink" title="CopyOnWriteArrayList"></a>CopyOnWriteArrayList</h3><p><strong>CopyOnWriteArrayList</strong>是 java.util.concurrent 包提供的方法，它实现了<strong>读操作无锁，写操作则通过操作底层数组的新副本来实现</strong>，是一种读写分离的并发策略。</p>
+                <h4 id="1143-最长公共子序列"><a href="#1143-最长公共子序列" class="headerlink" title="1143. 最长公共子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-subsequence/">1143. 最长公共子序列</a></h4><p>一个字符串的   子序列   是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。<br>例如，”ace” 是 “abcde” 的子序列，但 “aec” 不是 “abcde” 的子序列。两个字符串的「公共子序列」是这两个字符串所共同拥有的子序列。<br>参考：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-subsequence/solution/dong-tai-gui-hua-tu-wen-jie-xi-by-yijiaoqian/">https://leetcode-cn.com/problems/longest-common-subsequence/solution/dong-tai-gui-hua-tu-wen-jie-xi-by-yijiaoqian/</a></p>
+<pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">longestCommonSubsequence</span><span class="token punctuation">(</span>String text1<span class="token punctuation">,</span> String text2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> m <span class="token operator">=</span> text1<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> n <span class="token operator">=</span> text2<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">// 获取两个串字符</span>
+                <span class="token keyword">char</span> c1 <span class="token operator">=</span> text1<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> c2 <span class="token operator">=</span> text2<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>c1 <span class="token operator">==</span> c2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token comment" spellcheck="true">// 去找它们前面各退一格的值加1即可</span>
+                    dp<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token comment" spellcheck="true">//要么是text1往前退一格，要么是text2往前退一格，两个的最大值</span>
+                    dp<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -541,7 +554,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/04/csa1em/">https://github.com/future1314/2020/09/04/csa1em/</a>
+                    <a href="https://github.com/future1314/2021/02/24/fn91tr/">https://github.com/future1314/2021/02/24/fn91tr/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -746,34 +759,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/04/dkrt72/">
+                <a href="/2021/02/24/fn91tr/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="jvm 命令"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="jvm 命令">
+                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="1143. 最长公共子序列"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="1143. 最长公共子序列">
                         
-                        <span class="card-title">jvm 命令</span>
+                        <span class="card-title">1143. 最长公共子序列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            jstat
-S1C：年轻代中 From Survivor 的容量（单位 KB）；
-S0U：年轻代中 To Survivor 目前已使用空间（单位 KB）；
-S1U：年轻代中 From Survivor 目前已使用空间（单位 KB）；
-EC：
+                            1143. 最长公共子序列一个字符串的   子序列   是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。例如，”ace” 是 “abcde” 的子序列，但 “aec”
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -782,6 +792,7 @@ EC：
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -792,25 +803,28 @@ EC：
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/04/gc91c3/">
+                <a href="/2021/02/24/mdfyqs/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="jvm参数"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="jvm参数">
+                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="7. 整数反转"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="7. 整数反转">
                         
-                        <span class="card-title">jvm参数</span>
+                        <span class="card-title">7. 整数反转</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            -XX:+DoEscapeAnalysis 开启逃逸分析（jdk1.8 默认开启，其它版本未测试）-XX:-DoEscapeAnalysis 关闭逃逸分析-XX:+EliminateLocks 开启锁消除（jdk1.8 默认开启，其它版本未
+                            7. 整数反转 考虑溢出class Solution &amp;#123;
+    public int reverse(int x) &amp;#123;
+        int ans = 0;
+        while (x != 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
                             </span>
                         <span class="publish-author">
                             
