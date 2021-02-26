@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="语雀自动同步到hexo博客(转摘), future">
-    <meta name="description" content="yichen 的信安知识库/web 方向/语雀自动同步到 hexo 博客/
-语雀自动同步到 hexo 博客
-hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀实现">
+    <meta name="keywords" content="剑指 Offer 10- I. 斐波那契数列, future">
+    <meta name="description" content="剑指 Offer 10- I. 斐波那契数列写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：F(0) = 0,   F(1) = 1F(N) = F(N - 1) + F(N">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>语雀自动同步到hexo博客(转摘) | future</title>
+    <title>剑指 Offer 10- I. 斐波那契数列 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -344,13 +342,13 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">语雀自动同步到hexo博客(转摘)</h1>
+                    <h1 class="description center-align post-title">剑指 Offer 10- I. 斐波那契数列</h1>
                 </div>
             </div>
         </div>
@@ -480,7 +478,7 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-31
+                    2021-02-26
                 </div>
                 
 
@@ -494,14 +492,14 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    226
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    1 分
                 </div>
                 
 
@@ -512,194 +510,32 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://www.yuque.com/hxfqg9">yichen 的信安知识库</a>/<a target="_blank" rel="noopener" href="https://www.yuque.com/hxfqg9/web">web 方向</a>/<a target="_blank" rel="noopener" href="https://www.yuque.com/hxfqg9/web/gtb5ck">语雀自动同步到 hexo 博客</a>/</p>
-<h1 id="语雀自动同步到-hexo-博客"><a href="#语雀自动同步到-hexo-博客" class="headerlink" title="语雀自动同步到 hexo 博客"></a>语雀自动同步到 hexo 博客</h1><blockquote>
-<p>hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀<br>实现语雀写完文章能够自动同步到 hexo 博客</p>
-</blockquote>
-<p>本文针对已经搭建好 hexo 博客的，如果没有搭好正常的 hexo 博客的可以去网上找一下，很方便</p>
-<h1 id="hexo-同步语雀内容"><a href="#hexo-同步语雀内容" class="headerlink" title="hexo 同步语雀内容"></a>hexo 同步语雀内容</h1><p>用到了这个项目：<a href="https://github.com/x-cold/yuque-hexo">https://github.com/x-cold/yuque-hexo</a><br>安装：npm i -g yuque-hexo</p>
-<p>然后把 package.json 的内容添加上下面这些</p>
-<pre class=" language-json"><code class="language-json">  <span class="token property">"yuqueConfig"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"postPath"</span><span class="token operator">:</span> <span class="token string">"source/_posts"</span><span class="token punctuation">,</span>
-    <span class="token property">"cachePath"</span><span class="token operator">:</span> <span class="token string">"yuque.json"</span><span class="token punctuation">,</span>
-    <span class="token property">"mdNameFormat"</span><span class="token operator">:</span> <span class="token string">"slug"</span><span class="token punctuation">,</span>
-    <span class="token property">"adapter"</span><span class="token operator">:</span> <span class="token string">"hexo"</span><span class="token punctuation">,</span>
-    <span class="token property">"concurrency"</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
-    <span class="token property">"baseUrl"</span><span class="token operator">:</span> <span class="token string">"https://www.yuque.com/api/v2"</span><span class="token punctuation">,</span>
-    <span class="token property">"login"</span><span class="token operator">:</span> <span class="token string">"hxfqg9"</span><span class="token punctuation">,</span>
-    <span class="token property">"repo"</span><span class="token operator">:</span> <span class="token string">"web"</span><span class="token punctuation">,</span>
-    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"语雀token"</span><span class="token punctuation">,</span>
-    <span class="token property">"onlyPublished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token property">"onlyPublic"</span><span class="token operator">:</span> <span class="token boolean">true</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"devDependencies"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"yuque-hexo"</span><span class="token operator">:</span> <span class="token string">"^1.6.0"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"hexo"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"4.2.1"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span></code></pre>
-<p>这里说一下里面的 baseurl 是固定的<br>login 和 repo 是如下图这样对应的，个人界面和团队界面都可以</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906415602-fa6f487a-b51b-4dbc-8ee7-49cbadeb94aa.png#align=left&display=inline&height=484&margin=%5Bobject%20Object%5D&name=image.png&originHeight=968&originWidth=1920&size=217553&status=done&style=none&width=960" alt="image.png"></p>
-<p>token 是在右上角头像 -&gt; 账户设置 -&gt; Token 添加的，权限的话只给读取就可以<br>ps.公开的知识库也要设置 Token</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906494636-a353aa41-83de-478c-bd10-908e927671ad.png#align=left&display=inline&height=358&margin=%5Bobject%20Object%5D&name=image.png&originHeight=716&originWidth=1360&size=70891&status=done&style=stroke&width=680" alt="image.png"></p>
-<p>在 “scripts” 中添加</p>
-<pre class=" language-json"><code class="language-json">    <span class="token property">"sync"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo sync"</span><span class="token punctuation">,</span>
-    <span class="token property">"clean:yuque"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo clean"</span><span class="token punctuation">,</span></code></pre>
-<p>这样整体下来我的 package.json 内容如下</p>
-<pre class=" language-json"><code class="language-json">&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"hexo-site"</span><span class="token punctuation">,</span>
-  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.0.0"</span><span class="token punctuation">,</span>
-  <span class="token property">"private"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  <span class="token property">"scripts"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"hexo generate"</span><span class="token punctuation">,</span>
-    <span class="token property">"clean"</span><span class="token operator">:</span> <span class="token string">"hexo clean"</span><span class="token punctuation">,</span>
-    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"hexo deploy"</span><span class="token punctuation">,</span>
-    <span class="token property">"server"</span><span class="token operator">:</span> <span class="token string">"hexo server"</span><span class="token punctuation">,</span>
-    <span class="token property">"sync"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo sync"</span><span class="token punctuation">,</span>
-    <span class="token property">"clean:yuque"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo clean"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"yuqueConfig"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"postPath"</span><span class="token operator">:</span> <span class="token string">"source/_posts"</span><span class="token punctuation">,</span>
-    <span class="token property">"cachePath"</span><span class="token operator">:</span> <span class="token string">"yuque.json"</span><span class="token punctuation">,</span>
-    <span class="token property">"mdNameFormat"</span><span class="token operator">:</span> <span class="token string">"slug"</span><span class="token punctuation">,</span>
-    <span class="token property">"adapter"</span><span class="token operator">:</span> <span class="token string">"hexo"</span><span class="token punctuation">,</span>
-    <span class="token property">"concurrency"</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
-    <span class="token property">"baseUrl"</span><span class="token operator">:</span> <span class="token string">"https://www.yuque.com/api/v2"</span><span class="token punctuation">,</span>
-    <span class="token property">"login"</span><span class="token operator">:</span> <span class="token string">"hxfqg9"</span><span class="token punctuation">,</span>
-    <span class="token property">"repo"</span><span class="token operator">:</span> <span class="token string">"web"</span><span class="token punctuation">,</span>
-    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"语雀token"</span><span class="token punctuation">,</span>
-    <span class="token property">"onlyPublished"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token property">"onlyPublic"</span><span class="token operator">:</span> <span class="token boolean">true</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"devDependencies"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"yuque-hexo"</span><span class="token operator">:</span> <span class="token string">"^1.6.0"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"hexo"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"4.2.1"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span>
-  <span class="token property">"dependencies"</span><span class="token operator">:</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token property">"hexo"</span><span class="token operator">:</span> <span class="token string">"^4.2.1"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-deployer-git"</span><span class="token operator">:</span> <span class="token string">"^2.1.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-archive"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-baidu-sitemap"</span><span class="token operator">:</span> <span class="token string">"^0.1.6"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-category"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-feed"</span><span class="token operator">:</span> <span class="token string">"^2.2.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-index"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-json-content"</span><span class="token operator">:</span> <span class="token string">"^4.2.3"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-searchdb"</span><span class="token operator">:</span> <span class="token string">"^1.3.1"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-sitemap"</span><span class="token operator">:</span> <span class="token string">"^2.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-generator-tag"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-renderer-ejs"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-renderer-marked"</span><span class="token operator">:</span> <span class="token string">"^2.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-renderer-stylus"</span><span class="token operator">:</span> <span class="token string">"^1.1.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-server"</span><span class="token operator">:</span> <span class="token string">"^1.0.0"</span><span class="token punctuation">,</span>
-    <span class="token property">"hexo-wordcount"</span><span class="token operator">:</span> <span class="token string">"^6.0.1"</span>
-  &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
-&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>这时候用 <code>yuque-hexo sync</code> 就会把语雀的文章给下载下来，下载到 \source_posts</p>
-<p>然后 <code>hexo g &amp;&amp; hexo s</code> 就可以访问 <code>127.0.0.1:4000</code> 本地看一下了<br>手动发布是 <code>hexo g &amp;&amp; hexo d</code></p>
-<p><strong>针对语雀图片无法正常显示的解决办法</strong><br>在主题的 layout 文件夹中的 post.ejs 文件中加上一句</p>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no-referrer<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907231130-a2e3c7c0-d207-4151-9242-1f50e0d7ce7e.png#align=left&display=inline&height=195&margin=%5Bobject%20Object%5D&name=image.png&originHeight=351&originWidth=841&size=45968&status=done&style=stroke&width=468" alt="image.png"></p>
-<h1 id="github-actions-自动更新"><a href="#github-actions-自动更新" class="headerlink" title="github actions 自动更新"></a>github actions 自动更新</h1><p>在 github 上创建一个私有仓库（因为会涉及到一些 token 啥的）仓库名字无所谓<br><strong>注意</strong>：在仓库里面再放一个仓库是没法把里面那个仓库 push 到 github 的，只会传一个空文件夹，导致后期博客成了空白页面，最简单粗暴的办法就是把你 git clone 的 hexo 主题里的 <code>.git</code> 文件夹给删掉</p>
-<p>然后在 hexo 的目录下运行如下命令</p>
-<pre class=" language-git"><code class="language-git">git init
-git add .
-git commit -m <span class="token string">"first commit"</span>
-git remote add origin https://github.com/yichen115/blog.git
-git push -u origin master</code></pre>
-<p>去 github 的 settings 创建一个 token</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907389117-35b3ce5c-a92c-4aa7-92be-54649660707f.png#align=left&display=inline&height=293&margin=%5Bobject%20Object%5D&name=image.png&originHeight=585&originWidth=1620&size=86343&status=done&style=stroke&width=810" alt="image.png"></p>
-<p>只勾上这一个即可</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907459775-b583ee13-02ef-43a1-9ae4-0ca550bfafd2.png#align=left&display=inline&height=314&margin=%5Bobject%20Object%5D&name=image.png&originHeight=627&originWidth=746&size=51696&status=done&style=stroke&width=373" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907515533-450ee291-fb82-43d5-b398-6c71161fb93d.png#align=left&display=inline&height=223&margin=%5Bobject%20Object%5D&name=image.png&originHeight=445&originWidth=1015&size=45884&status=done&style=stroke&width=507.5" alt="image.png"></p>
-<p>生成了 token 之后一定要记下来，再回来就没法看了</p>
-<p>然后来到刚才创建的私有仓库的 settings</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907596811-6c001063-9e2a-4f7d-86b3-0fe426dfc794.png#align=left&display=inline&height=343&margin=%5Bobject%20Object%5D&name=image.png&originHeight=686&originWidth=1769&size=86336&status=done&style=stroke&width=884.5" alt="image.png"></p>
-<p>添加两个 secret<br><strong>GH_REF</strong> 是你博客的仓库地址 github.com/yichen115/yichen115.github.io<br>注意去掉前面 https://</p>
-<p><strong>GE_TOKEN</strong> 是刚才生成的 token</p>
-<p>然后来到 actions，点击 set up a workflow yourself</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907728538-4ded4257-da88-4361-8f2f-e8ba4d107e75.png#align=left&display=inline&height=267&margin=%5Bobject%20Object%5D&name=image.png&originHeight=534&originWidth=1023&size=70314&status=done&style=stroke&width=511.5" alt="image.png"></p>
-<p>编辑内容如下：</p>
-<pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Blog CI/CD
-
-<span class="token key atrule">on</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>push<span class="token punctuation">,</span> repository_dispatch<span class="token punctuation">]</span>
-
-<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
-  <span class="token key atrule">blog-cicd</span><span class="token punctuation">:</span>
-    <span class="token key atrule">name</span><span class="token punctuation">:</span> Hexo blog build &amp; deploy
-    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
-    <span class="token key atrule">env</span><span class="token punctuation">:</span>
-      <span class="token key atrule">TZ</span><span class="token punctuation">:</span> Asia/Shanghai
-    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Checkout codes
-        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
-
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup node
-        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
-        <span class="token key atrule">with</span><span class="token punctuation">:</span>
-          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">"12.x"</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Cache node modules
-        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/cache@v1
-        <span class="token key atrule">with</span><span class="token punctuation">:</span>
-          <span class="token key atrule">path</span><span class="token punctuation">:</span> ~/.npm
-          <span class="token key atrule">key</span><span class="token punctuation">:</span> $&amp;<span class="token comment" spellcheck="true">#123;&amp;#123; runner.os &amp;#125;&amp;#125;-node-$&amp;#123;&amp;#123; hashFiles('**/package-lock.json') &amp;#125;&amp;#125;</span>
-
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies
-        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
-          npm install hexo-cli -g
-          npm install yuque-hexo -g
-          npm install
-          yuque-hexo sync</span>
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Generate files
-        <span class="token key atrule">run</span><span class="token punctuation">:</span> hexo generate
-
-      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy blog
-        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
-          git clone "https://$&amp;#123;&amp;#123; secrets.GH_REF &amp;#125;&amp;#125;" deploy_git
-          mv ./deploy_git/.git ./public/
-          cd ./public
-          git config user.name "yichen"
-          git config user.email "1097179511@qq.com"
-          git add .
-          git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force --quiet "https://$&amp;#123;&amp;#123; secrets.GH_TOKEN &amp;#125;&amp;#125;@$&amp;#123;&amp;#123; secrets.GH_REF &amp;#125;&amp;#125;" master:master</span></code></pre>
-<p>下面那个 user.name 和 user.email 根据自己的情况改一下，注意对齐</p>
-<p>弄完之后每当 push 或 repository_dispatch 的时候都会自动的进行更新</p>
-<h1 id="配置-serverless-云函数"><a href="#配置-serverless-云函数" class="headerlink" title="配置 serverless 云函数"></a>配置 serverless 云函数</h1><p>来这里 <a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/scf/">https://console.cloud.tencent.com/scf/</a> 注册个账号<br>新建一个函数服务</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908198919-65a8454a-6c7f-423c-9f1c-8f2303dba8e1.png#align=left&display=inline&height=219&margin=%5Bobject%20Object%5D&name=image.png&originHeight=438&originWidth=1084&size=39713&status=done&style=stroke&width=542" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908241755-2c116717-6257-4157-b901-c5f815fa0746.png#align=left&display=inline&height=244&margin=%5Bobject%20Object%5D&name=image.png&originHeight=488&originWidth=776&size=31268&status=done&style=stroke&width=388" alt="image.png"></p>
-<p>内容写</p>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf8 -*-</span>
-<span class="token keyword">import</span> requests
-
-<span class="token keyword">def</span> <span class="token function">main_handler</span><span class="token punctuation">(</span>event<span class="token punctuation">,</span> context<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    r <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span><span class="token string">"https://api.github.com/repos/yichen115/blog/dispatches"</span><span class="token punctuation">,</span>
-    json <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;"event_type": "run-it"&amp;#125;,</span>
-    headers <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;"User-Agent":'curl/7.52.1',</span>
-              <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
-              <span class="token string">'Accept'</span><span class="token punctuation">:</span> <span class="token string">'application/vnd.github.everest-preview+json'</span><span class="token punctuation">,</span>
-              <span class="token string">'Authorization'</span><span class="token punctuation">:</span> <span class="token string">'token 你的GH_TOKEN'</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;)</span>
-    <span class="token keyword">if</span> r<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">204</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> <span class="token string">"This's OK!"</span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> r<span class="token punctuation">.</span>status_code</code></pre>
-<p>post 请求里只需要改用户名和仓库名（yichen115/blog）后面是固定的<br>那个 token 是带着的，完整的就是 ‘Authorization’: ‘token xxxxxxxxxxxxxx’</p>
-<p>点下面那个测试，返回 This’s OK!</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908381040-ed7eea9c-3a31-4aa9-b5bf-f52aedbc3b2c.png#align=left&display=inline&height=160&margin=%5Bobject%20Object%5D&name=image.png&originHeight=320&originWidth=582&size=13660&status=done&style=stroke&width=291" alt="image.png"></p>
-<p>同时 github actions 也会收到指令，去执行之前在 main.yml 设定好的</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908463062-3bfbcd34-0652-4de5-b222-0f0b01a8258a.png#align=left&display=inline&height=270&margin=%5Bobject%20Object%5D&name=image.png&originHeight=539&originWidth=1115&size=50764&status=done&style=stroke&width=557.5" alt="image.png"></p>
-<p>过一阵就成下面那个绿色的对号了，然后去访问一下博客，看看是否正常。可以的话就证明云函数可以了</p>
-<p>创建一个触发器</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908622171-b3d1f2e4-9e6e-4ef1-9e39-689c0ad36fef.png#align=left&display=inline&height=200&margin=%5Bobject%20Object%5D&name=image.png&originHeight=400&originWidth=730&size=32431&status=done&style=stroke&width=365" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594905642566-7df0adc3-6d78-409c-bec0-7886aefed25b.png#align=left&display=inline&height=332&margin=%5Bobject%20Object%5D&name=image.png&originHeight=663&originWidth=925&size=46379&status=done&style=stroke&width=462.5" alt="image.png"></p>
-<p>他会给你一个访问路径，记下来</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908721093-7679f975-e4c2-4386-bc3f-adae0bdc91b8.png#align=left&display=inline&height=234&margin=%5Bobject%20Object%5D&name=image.png&originHeight=467&originWidth=712&size=30610&status=done&style=stroke&width=356" alt="image.png"></p>
-<h1 id="配置语雀-webhook"><a href="#配置语雀-webhook" class="headerlink" title="配置语雀 webhook"></a>配置语雀 webhook</h1><p>在知识库中选择设置</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908818070-60085ef8-46d5-44b3-af0b-e6946125f6dd.png#align=left&display=inline&height=175&margin=%5Bobject%20Object%5D&name=image.png&originHeight=349&originWidth=473&size=13535&status=done&style=stroke&width=236.5" alt="image.png"></p>
-<p>触发规则自己定就好啦</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908880210-34a97734-e0a4-4d64-89bd-8e6976ce7a37.png#align=left&display=inline&height=280&margin=%5Bobject%20Object%5D&name=image.png&originHeight=559&originWidth=1134&size=54956&status=done&style=stroke&width=567" alt="image.png"></p>
-<p>**<br>这篇文章更新的时候发现有失败的可能<br>**<br><strong><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594909836406-93471a4a-4ea0-4417-89d3-d1230ca044f7.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=image.png&originHeight=172&originWidth=290&size=6687&status=done&style=stroke&width=262" alt="image.png"></strong><br>**<br><strong>我的博客地址：</strong><a target="_blank" rel="noopener" href="https://yichen115.github.io/"><strong>https://yichen115.github.io</strong></a></p>
+                <h4 id="剑指-Offer-10-I-斐波那契数列"><a href="#剑指-Offer-10-I-斐波那契数列" class="headerlink" title="剑指 Offer 10- I. 斐波那契数列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/">剑指 Offer 10- I. 斐波那契数列</a></h4><p>写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：<br>F(0) = 0,   F(1) = 1<br>F(N) = F(N - 1) + F(N - 2), 其中 N &gt; 1.<br>斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。<br>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">fib</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token operator">||</span>n<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> n<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> sum<span class="token operator">=</span>a<span class="token operator">+</span>b<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            a <span class="token operator">=</span> b<span class="token punctuation">;</span>
+            b <span class="token operator">=</span> sum<span class="token punctuation">;</span>
+            sum <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">1000000007</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">fib</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        dp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        dp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">%=</span> <span class="token number">1000000007</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -725,7 +561,7 @@ git push -u origin master</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/08/31/wcu8bq/">https://github.com/future1314/2020/08/31/wcu8bq/</a>
+                    <a href="https://github.com/future1314/2021/02/26/vbsq32/">https://github.com/future1314/2021/02/26/vbsq32/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -930,39 +766,31 @@ git push -u origin master</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/08/31/osop7e/">
+                <a href="/2021/02/26/vbsq32/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Mac配置.bash_profile，重启终端后配置失效"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="Mac配置.bash_profile，重启终端后配置失效">
+                        <!-- <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="剑指 Offer 10- I. 斐波那契数列"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="剑指 Offer 10- I. 斐波那契数列">
                         
-                        <span class="card-title">Mac配置.bash_profile，重启终端后配置失效</span>
+                        <span class="card-title">剑指 Offer 10- I. 斐波那契数列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原因使用的终端是 zsh，zsh 加载的是 ~/.zshrc 文件，而 ‘.zshrc’ 文件中并没有定义任务环境变量
-解决1、终端中执行命令，打开.zshrc 文件：
-
-
-
-open -e ~/.zshrc
-
-
-
-2、在~/.zshrc 
+                            剑指 Offer 10- I. 斐波那契数列写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：F(0) = 0,   F(1) = 1F(N) = F(N - 1) + F(N
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -971,6 +799,7 @@ open -e ~/.zshrc
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -981,28 +810,30 @@ open -e ~/.zshrc
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/08/30/rzt7w7/">
+                <a href="/2021/02/26/igosku/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="测试语雀--变量“无法”引用&yq 文本加密"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="测试语雀--变量“无法”引用&yq 文本加密">
+                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="110. 平衡二叉树"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="110. 平衡二叉树">
                         
-                        <span class="card-title">测试语雀--变量“无法”引用&yq 文本加密</span>
+                        <span class="card-title">110. 平衡二叉树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            测试通过！
-有的时候云函数回调用失败！
-变量需要在源 blog 里。
+                            110. 平衡二叉树给定一个二叉树，判断它是否是高度平衡的二叉树。本题中，一棵高度平衡二叉树定义为：
 
+一个二叉树*每个节点  *的左右两个子树的高度差的绝对值不超过 1 。
+
+/**
+ * Definition for a binary 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
                             </span>
                         <span class="publish-author">
                             
