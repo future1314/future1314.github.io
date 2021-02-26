@@ -4,11 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="225. 用队列实现栈, future">
-    <meta name="description" content="225. 用队列实现栈    Queue&amp;lt;Integer&gt; queue;
-
-    /** Initialize your data structure here. */
-    public MyStack() &amp;amp;#123;">
+    <meta name="keywords" content="215. 数组中的第K个最大元素, future">
+    <meta name="description" content="215. 数组中的第 K 个最大元素class Solution &amp;amp;#123;
+    public int findKthLargest(int[] nums, int k) &amp;amp;#123;
+        int heap">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>225. 用队列实现栈 | future</title>
+    <title>215. 数组中的第K个最大元素 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -345,13 +344,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/13.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">225. 用队列实现栈</h1>
+                    <h1 class="description center-align post-title">215. 数组中的第K个最大元素</h1>
                 </div>
             </div>
         </div>
@@ -495,7 +494,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    181
+                    216
                 </div>
                 
 
@@ -513,41 +512,47 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="225-用队列实现栈"><a href="#225-用队列实现栈" class="headerlink" title="225. 用队列实现栈"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/implement-stack-using-queues/">225. 用队列实现栈</a></h4><pre class=" language-java"><code class="language-java">    Queue<span class="token operator">&lt;</span>Integer<span class="token operator">></span> queue<span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">/** Initialize your data structure here. */</span>
-    <span class="token keyword">public</span> <span class="token function">MyStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <h4 id="215-数组中的第-K-个最大元素"><a href="#215-数组中的第-K-个最大元素" class="headerlink" title="215. 数组中的第 K 个最大元素"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/">215. 数组中的第 K 个最大元素</a></h4><pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">findKthLargest</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> heapSize <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        <span class="token function">buildMaxHeap</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> heapSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> k <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">swap</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">--</span>heapSize<span class="token punctuation">;</span>
+            <span class="token function">maxHeapify</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> heapSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-    <span class="token comment" spellcheck="true">/** Push element x onto stack. */</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> n <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>queue<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">///头出尾进</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">buildMaxHeap</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> heapSize<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> heapSize <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token operator">--</span>i<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">maxHeapify</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> i<span class="token punctuation">,</span> heapSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-    <span class="token comment" spellcheck="true">/** Removes the element on top of the stack and returns that element. */</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> queue<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">maxHeapify</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> i<span class="token punctuation">,</span> <span class="token keyword">int</span> heapSize<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> l <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r <span class="token operator">=</span> i <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">,</span> largest <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>l <span class="token operator">&lt;</span> heapSize <span class="token operator">&amp;&amp;</span> a<span class="token punctuation">[</span>l<span class="token punctuation">]</span> <span class="token operator">></span> a<span class="token punctuation">[</span>largest<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            largest <span class="token operator">=</span> l<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>r <span class="token operator">&lt;</span> heapSize <span class="token operator">&amp;&amp;</span> a<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">></span> a<span class="token punctuation">[</span>largest<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            largest <span class="token operator">=</span> r<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>largest <span class="token operator">!=</span> i<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> i<span class="token punctuation">,</span> largest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">maxHeapify</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> largest<span class="token punctuation">,</span> heapSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-    <span class="token comment" spellcheck="true">/** Get the top element. */</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> queue<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> i<span class="token punctuation">,</span> <span class="token keyword">int</span> j<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> temp <span class="token operator">=</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">/** Returns whether the stack is empty. */</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> queue<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
 作者：LeetCode<span class="token operator">-</span>Solution
-链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>implement<span class="token operator">-</span>stack<span class="token operator">-</span>using<span class="token operator">-</span>queues<span class="token operator">/</span>solution<span class="token operator">/</span>yong<span class="token operator">-</span>dui<span class="token operator">-</span>lie<span class="token operator">-</span>shi<span class="token operator">-</span>xian<span class="token operator">-</span>zhan<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>solution<span class="token operator">/</span>
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</code></pre>
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>kth<span class="token operator">-</span>largest<span class="token operator">-</span>element<span class="token operator">-</span>in<span class="token operator">-</span>an<span class="token operator">-</span>array<span class="token operator">/</span>solution<span class="token operator">/</span>shu<span class="token operator">-</span>zu<span class="token operator">-</span>zhong<span class="token operator">-</span>de<span class="token operator">-</span>di<span class="token operator">-</span>kge<span class="token operator">-</span>zui<span class="token operator">-</span>da<span class="token operator">-</span>yuan<span class="token operator">-</span>su<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span><span class="token operator">/</span></code></pre>
 
             </div>
             <hr/>
@@ -573,7 +578,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2021/02/26/xak9rz/">https://github.com/future1314/2021/02/26/xak9rz/</a>
+                    <a href="https://github.com/future1314/2021/02/26/vg1g4k/">https://github.com/future1314/2021/02/26/vg1g4k/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -778,32 +783,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/26/qxdw92/">
+                <a href="/2021/02/26/vg1g4k/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="剑指 Offer 48. 最长不含重复字符的子字符串"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="剑指 Offer 48. 最长不含重复字符的子字符串">
+                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="215. 数组中的第K个最大元素"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="215. 数组中的第K个最大元素">
                         
-                        <span class="card-title">剑指 Offer 48. 最长不含重复字符的子字符串</span>
+                        <span class="card-title">215. 数组中的第K个最大元素</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 48. 最长不含重复字符的子字符串        Map&lt;Character, Integer> dic = new HashMap&lt;>();
-        int i = -1, res = 0;
-    
+                            215. 数组中的第 K 个最大元素class Solution &amp;#123;
+    public int findKthLargest(int[] nums, int k) &amp;#123;
+        int heap
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -812,6 +818,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -822,20 +829,22 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/26/vnguui/">
+                <a href="/2021/02/26/inczhx/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="todo"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="todo">
+                        <!-- <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="剑指 Offer 40. 最小的k个数"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="剑指 Offer 40. 最小的k个数">
                         
-                        <span class="card-title">todo</span>
+                        <span class="card-title">剑指 Offer 40. 最小的k个数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Arrays.sort 使用的排序算法&amp;时间复杂度。
+                            剑指 Offer 40. 最小的 k 个数常规法public int[] getLeastNumbers(int[] arr, int k) &amp;#123;
+        int[] vec = new int[k];
+      
                         
                     </div>
                     <div class="publish-info">
