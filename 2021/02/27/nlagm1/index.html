@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="196. 删除重复的电子邮箱, future">
-    <meta name="description" content="196. 删除重复的电子邮箱难度简单 288编写一个 SQL 查询，来删除 Person 表中所有重复的电子邮箱，重复的邮箱里只保留 *Id **最小  *的那个。+—-+——————+| Id | Email            |+—">
+    <meta name="keywords" content="136. 只出现一次的数字, future">
+    <meta name="description" content="136. 只出现一次的数字难度简单 1712给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。说明：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？示例 1:输入: [2,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>196. 删除重复的电子邮箱 | future</title>
+    <title>136. 只出现一次的数字 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/18.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">196. 删除重复的电子邮箱</h1>
+                    <h1 class="description center-align post-title">136. 只出现一次的数字</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-17
+                    2021-02-27
                 </div>
                 
 
@@ -492,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    250
+                    165
                 </div>
                 
 
@@ -510,24 +510,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="196-删除重复的电子邮箱"><a href="#196-删除重复的电子邮箱" class="headerlink" title="196. 删除重复的电子邮箱"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/delete-duplicate-emails/">196. 删除重复的电子邮箱</a></h4><p>难度简单 288<br>编写一个 SQL 查询，来删除 <code>Person</code> 表中所有重复的电子邮箱，重复的邮箱里只保留 *<em>Id **</em>最小  *的那个。<br>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#x6a;&#111;&#x68;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x6a;&#111;&#x68;&#x6e;&#64;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a> |<br>| 2  | <a href="mailto:&#98;&#111;&#98;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;">&#98;&#111;&#98;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;</a>  |<br>| 3  | <a href="mailto:&#x6a;&#x6f;&#104;&#x6e;&#64;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x6a;&#x6f;&#104;&#x6e;&#64;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;</a> |<br>+—-+——————+<br>Id 是这个表的主键。</p>
-<p>例如，在运行你的查询语句之后，上面的 <code>Person</code> 表应返回以下几行:<br>+—-+——————+<br>| Id | Email            |<br>+—-+——————+<br>| 1  | <a href="mailto:&#106;&#111;&#104;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#111;&#109;">&#106;&#111;&#104;&#110;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#111;&#109;</a> |<br>| 2  | <a href="mailto:&#x62;&#111;&#98;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#109;">&#x62;&#111;&#98;&#64;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#111;&#109;</a>  |<br>+—-+——————+</p>
-<p><strong>提示：</strong></p>
-<ul>
-<li>执行 SQL 之后，输出是整个 <code>Person</code> 表。</li>
-<li>使用 <code>delete</code> 语句。</li>
-</ul>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span> p1<span class="token punctuation">.</span><span class="token operator">*</span>
-<span class="token keyword">FROM</span> Person p1<span class="token punctuation">,</span>
-     Person p2
-<span class="token keyword">WHERE</span>
-    p1<span class="token punctuation">.</span>Email <span class="token operator">=</span> p2<span class="token punctuation">.</span>Email <span class="token operator">AND</span> p1<span class="token punctuation">.</span>Id <span class="token operator">></span> p2<span class="token punctuation">.</span>Id
-<span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span>  <span class="token keyword">from</span> Person <span class="token keyword">where</span> id <span class="token operator">not</span> <span class="token operator">in</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">min</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> mid <span class="token keyword">from</span> Person <span class="token keyword">group</span> <span class="token keyword">by</span> email<span class="token punctuation">)</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>下面这个就报错</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">delete</span>  <span class="token keyword">from</span> Person <span class="token keyword">where</span> id <span class="token operator">not</span> <span class="token operator">in</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token function">min</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span> mid <span class="token keyword">from</span> Person  <span class="token keyword">group</span> <span class="token keyword">by</span> email<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
+                <h4 id="136-只出现一次的数字"><a href="#136-只出现一次的数字" class="headerlink" title="136. 只出现一次的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/single-number/">136. 只出现一次的数字</a></h4><p>难度简单 1712<br>给定一个<strong>非空</strong>整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。<br><strong>说明：</strong><br>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？<br><strong>示例 1:</strong><br><strong>输入:</strong> [2,2,1]<br><strong>输出:</strong> 1</p>
+<p><strong>示例  2:</strong><br><strong>输入:</strong> [4,1,2,1,2]<br><strong>输出:</strong> 4</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">singleNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> single <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            single <span class="token operator">^=</span> num<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> single<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+作者：LeetCode<span class="token operator">-</span>Solution
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>single<span class="token operator">-</span>number<span class="token operator">/</span>solution<span class="token operator">/</span>zhi<span class="token operator">-</span>chu<span class="token operator">-</span>xian<span class="token operator">-</span>yi<span class="token operator">-</span>ci<span class="token operator">-</span>de<span class="token operator">-</span>shu<span class="token operator">-</span>zi<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>solution<span class="token operator">/</span></code></pre>
 
             </div>
             <hr/>
@@ -553,7 +547,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/10/17/uux6g2/">https://github.com/future1314/2020/10/17/uux6g2/</a>
+                    <a href="https://github.com/future1314/2021/02/27/nlagm1/">https://github.com/future1314/2021/02/27/nlagm1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -762,25 +756,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/10/17/np0ndg/">
+                <a href="/2021/02/27/qg2dgc/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="182. 查找重复的电子邮箱">
+                        <!-- <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="1. 两数之和"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="1. 两数之和">
                         
-                        <span class="card-title">182. 查找重复的电子邮箱</span>
+                        <span class="card-title">1. 两数之和</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            182. 查找重复的电子邮箱难度简单 234 收藏分享切换为英文接收动态反馈SQL 架构编写一个 SQL 查询，查找 Person 表中所有重复的电子邮箱。示例：+—-+———+| Id | Email   |+—-+———+| 1  | 
+                            1. 两数之和    public int[] twoSum(int[] nums, int target) &amp;#123;
+        int n = nums.length;
+        for (int i = 0; i
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                         </span>
                         <span class="publish-author">
                             
@@ -800,25 +796,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/08/vemvga/">
+                <a href="/2021/02/27/xwp2rg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="好习惯"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="好习惯">
+                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="617. 合并二叉树"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="617. 合并二叉树">
                         
-                        <span class="card-title">好习惯</span>
+                        <span class="card-title">617. 合并二叉树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            #好习惯 1.坚持每天读书自学. 2.每天至少 30 分钟有氧运动. 3.和有成功思维的人建立人际关系. 4.追求自己设定的目标. 5.梦想先行.目标紧随其后. 6.避免浪费时间. 7.每天睡够 7-8 个小时. 8.提前起床.养成早起习惯
+                            617. 合并二叉树相应位置数字相加。输入:Tree 1                     Tree 2                           1                         2           
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                             </span>
                         <span class="publish-author">
                             
