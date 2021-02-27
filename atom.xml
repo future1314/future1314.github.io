@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2021-02-26T22:11:57.304Z</updated>
+  <updated>2021-02-27T02:40:03.771Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>559. N 叉树的最大深度</title>
+    <link href="https://github.com/future1314/2021/02/27/sk4ntf/"/>
+    <id>https://github.com/future1314/2021/02/27/sk4ntf/</id>
+    <published>2021-02-27T02:20:38.000Z</published>
+    <updated>2021-02-27T02:40:03.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;559-N-叉树的最大深度&quot;&gt;&lt;a href=&quot;#559-N-叉树的最大深度&quot; class=&quot;headerlink&quot; title=&quot;559. N 叉树的最大深度&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>剑指 Offer 09. 用两个栈实现队列</title>
     <link href="https://github.com/future1314/2021/02/26/prceu7/"/>
     <id>https://github.com/future1314/2021/02/26/prceu7/</id>
     <published>2021-02-26T10:27:13.000Z</published>
-    <updated>2021-02-26T22:11:57.304Z</updated>
+    <updated>2021-02-27T02:40:03.779Z</updated>
     
     
       
@@ -42,7 +63,7 @@
     <link href="https://github.com/future1314/2021/02/26/umnpvq/"/>
     <id>https://github.com/future1314/2021/02/26/umnpvq/</id>
     <published>2021-02-26T10:04:20.000Z</published>
-    <updated>2021-02-26T22:11:57.312Z</updated>
+    <updated>2021-02-27T02:40:03.783Z</updated>
     
     
       
@@ -63,7 +84,7 @@
     <link href="https://github.com/future1314/2021/02/26/vg1g4k/"/>
     <id>https://github.com/future1314/2021/02/26/vg1g4k/</id>
     <published>2021-02-26T09:57:05.000Z</published>
-    <updated>2021-02-26T22:11:57.320Z</updated>
+    <updated>2021-02-27T02:40:03.787Z</updated>
     
     
       
@@ -84,7 +105,7 @@
     <link href="https://github.com/future1314/2021/02/26/inczhx/"/>
     <id>https://github.com/future1314/2021/02/26/inczhx/</id>
     <published>2021-02-26T09:42:13.000Z</published>
-    <updated>2021-02-26T22:11:57.332Z</updated>
+    <updated>2021-02-27T02:40:03.803Z</updated>
     
     
       
@@ -105,7 +126,7 @@
     <link href="https://github.com/future1314/2021/02/26/vbsq32/"/>
     <id>https://github.com/future1314/2021/02/26/vbsq32/</id>
     <published>2021-02-26T08:12:57.000Z</published>
-    <updated>2021-02-26T22:11:57.344Z</updated>
+    <updated>2021-02-27T02:40:03.815Z</updated>
     
     
       
@@ -126,7 +147,7 @@
     <link href="https://github.com/future1314/2021/02/26/igosku/"/>
     <id>https://github.com/future1314/2021/02/26/igosku/</id>
     <published>2021-02-26T07:54:24.000Z</published>
-    <updated>2021-02-26T22:11:57.356Z</updated>
+    <updated>2021-02-27T02:40:03.827Z</updated>
     
     
       
@@ -147,7 +168,7 @@
     <link href="https://github.com/future1314/2021/02/26/kwfg4r/"/>
     <id>https://github.com/future1314/2021/02/26/kwfg4r/</id>
     <published>2021-02-26T07:42:19.000Z</published>
-    <updated>2021-02-26T22:11:57.360Z</updated>
+    <updated>2021-02-27T02:40:03.831Z</updated>
     
     
       
@@ -168,7 +189,7 @@
     <link href="https://github.com/future1314/2021/02/26/ovbgbc/"/>
     <id>https://github.com/future1314/2021/02/26/ovbgbc/</id>
     <published>2021-02-26T06:17:02.000Z</published>
-    <updated>2021-02-26T22:11:57.368Z</updated>
+    <updated>2021-02-27T02:40:03.839Z</updated>
     
     
       
@@ -189,7 +210,7 @@
     <link href="https://github.com/future1314/2021/02/26/qxdw92/"/>
     <id>https://github.com/future1314/2021/02/26/qxdw92/</id>
     <published>2021-02-26T05:57:54.000Z</published>
-    <updated>2021-02-26T22:11:57.372Z</updated>
+    <updated>2021-02-27T02:40:03.843Z</updated>
     
     
       
@@ -210,7 +231,7 @@
     <link href="https://github.com/future1314/2021/02/26/xak9rz/"/>
     <id>https://github.com/future1314/2021/02/26/xak9rz/</id>
     <published>2021-02-26T03:16:07.000Z</published>
-    <updated>2021-02-26T22:11:57.376Z</updated>
+    <updated>2021-02-27T02:40:03.851Z</updated>
     
     
       
@@ -231,7 +252,7 @@
     <link href="https://github.com/future1314/2021/02/26/vnguui/"/>
     <id>https://github.com/future1314/2021/02/26/vnguui/</id>
     <published>2021-02-26T03:07:33.000Z</published>
-    <updated>2021-02-26T22:11:57.380Z</updated>
+    <updated>2021-02-27T02:40:03.855Z</updated>
     
     
       
@@ -252,7 +273,7 @@
     <link href="https://github.com/future1314/2021/02/26/dp87w4/"/>
     <id>https://github.com/future1314/2021/02/26/dp87w4/</id>
     <published>2021-02-26T03:04:25.000Z</published>
-    <updated>2021-02-26T22:11:57.392Z</updated>
+    <updated>2021-02-27T02:40:03.859Z</updated>
     
     
       
@@ -273,7 +294,7 @@
     <link href="https://github.com/future1314/2021/02/25/kicvr9/"/>
     <id>https://github.com/future1314/2021/02/25/kicvr9/</id>
     <published>2021-02-25T14:41:27.000Z</published>
-    <updated>2021-02-26T22:11:57.396Z</updated>
+    <updated>2021-02-27T02:40:03.863Z</updated>
     
     
       
@@ -294,7 +315,7 @@
     <link href="https://github.com/future1314/2021/02/25/oayupi/"/>
     <id>https://github.com/future1314/2021/02/25/oayupi/</id>
     <published>2021-02-25T14:10:54.000Z</published>
-    <updated>2021-02-26T22:11:57.400Z</updated>
+    <updated>2021-02-27T02:40:03.871Z</updated>
     
     
       
@@ -315,7 +336,7 @@
     <link href="https://github.com/future1314/2021/02/25/ziumsq/"/>
     <id>https://github.com/future1314/2021/02/25/ziumsq/</id>
     <published>2021-02-25T13:09:14.000Z</published>
-    <updated>2021-02-26T22:11:57.408Z</updated>
+    <updated>2021-02-27T02:40:03.879Z</updated>
     
     
       
@@ -336,7 +357,7 @@
     <link href="https://github.com/future1314/2021/02/25/gwpq56/"/>
     <id>https://github.com/future1314/2021/02/25/gwpq56/</id>
     <published>2021-02-25T08:52:18.000Z</published>
-    <updated>2021-02-26T22:11:57.412Z</updated>
+    <updated>2021-02-27T02:40:03.883Z</updated>
     
     
       
@@ -357,7 +378,7 @@
     <link href="https://github.com/future1314/2021/02/25/yy3lcg/"/>
     <id>https://github.com/future1314/2021/02/25/yy3lcg/</id>
     <published>2021-02-25T08:06:13.000Z</published>
-    <updated>2021-02-26T22:11:57.420Z</updated>
+    <updated>2021-02-27T02:40:03.887Z</updated>
     
     
       
@@ -378,7 +399,7 @@
     <link href="https://github.com/future1314/2021/02/25/btvgtg/"/>
     <id>https://github.com/future1314/2021/02/25/btvgtg/</id>
     <published>2021-02-25T06:06:48.000Z</published>
-    <updated>2021-02-26T22:11:57.428Z</updated>
+    <updated>2021-02-27T02:40:03.895Z</updated>
     
     
       
@@ -399,7 +420,7 @@
     <link href="https://github.com/future1314/2021/02/24/fn91tr/"/>
     <id>https://github.com/future1314/2021/02/24/fn91tr/</id>
     <published>2021-02-24T09:02:23.000Z</published>
-    <updated>2021-02-26T22:11:57.440Z</updated>
+    <updated>2021-02-27T02:40:03.907Z</updated>
     
     
       
@@ -407,27 +428,6 @@
         
         
     <summary type="html">&lt;h4 id=&quot;1143-最长公共子序列&quot;&gt;&lt;a href=&quot;#1143-最长公共子序列&quot; class=&quot;headerlink&quot; title=&quot;1143. 最长公共子序列&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>7. 整数反转</title>
-    <link href="https://github.com/future1314/2021/02/24/mdfyqs/"/>
-    <id>https://github.com/future1314/2021/02/24/mdfyqs/</id>
-    <published>2021-02-24T08:55:01.000Z</published>
-    <updated>2021-02-26T22:11:57.448Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;7-整数反转-考虑溢出&quot;&gt;&lt;a href=&quot;#7-整数反转-考虑溢出&quot; class=&quot;headerlink&quot; title=&quot;7. 整数反转 考虑溢出&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
