@@ -493,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    202
+                    372
                 </div>
                 
 
@@ -534,6 +534,8 @@
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> max<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>解析：我们用  <br>f(i) 代表以第 i 个数结尾的「连续子数组的最大和」，那么很显然我们要求的答案就是：<br>0≤i≤n−1 max{f(i)}</p>
+<p>因此我们只需要求出每个位置的  f(i)，然后返回 求出 f 数组中的最大值即可。那么我们如何求  f(i) 呢 ？<br>我们可以考虑  nums[i] 单独成为一段还是加入 f(i−1) 对应的那一段，这取决于  nums[i] 和 f(i−1)+nums[i]<br>的大小，我们希望获得一个比较大的，于是可以写出这样的动态规划转移方程：<br>f(i)=max{f(i−1)+nums[i],nums[i]}</p>
 
             </div>
             <hr/>
@@ -1025,7 +1027,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">44.1k</span>&nbsp;字
             
             
             
