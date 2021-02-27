@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="7. 整数反转, future">
-    <meta name="description" content="7. 整数反转 考虑溢出class Solution &amp;amp;#123;
-    public int reverse(int x) &amp;amp;#123;
-        int ans = 0;
-        while (x != ">
+    <meta name="keywords" content="557. 反转字符串中的单词 III, future">
+    <meta name="description" content="557. 反转字符串中的单词 III难度简单 274给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。示例：输入：“Let’s take LeetCode contest”输出：“s’teL ekat e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>7. 整数反转 | future</title>
+    <title>557. 反转字符串中的单词 III | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -345,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">7. 整数反转</h1>
+                    <h1 class="description center-align post-title">557. 反转字符串中的单词 III</h1>
                 </div>
             </div>
         </div>
@@ -481,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-24
+                    2021-02-27
                 </div>
                 
 
@@ -495,7 +492,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    95
+                    322
                 </div>
                 
 
@@ -513,53 +510,92 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="7-整数反转-考虑溢出"><a href="#7-整数反转-考虑溢出" class="headerlink" title="7. 整数反转 考虑溢出"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-integer/">7. 整数反转</a> 考虑溢出</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>x <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">int</span> pop <span class="token operator">=</span> x <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>ans <span class="token operator">></span> Integer<span class="token punctuation">.</span>MAX_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">||</span> <span class="token punctuation">(</span>ans <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MAX_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> pop <span class="token operator">></span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>ans <span class="token operator">&lt;</span> Integer<span class="token punctuation">.</span>MIN_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">||</span> <span class="token punctuation">(</span>ans <span class="token operator">==</span> Integer<span class="token punctuation">.</span>MIN_VALUE <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> pop <span class="token operator">&lt;</span> <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-                <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-            ans <span class="token operator">=</span> ans <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> pop<span class="token punctuation">;</span>
-            x <span class="token operator">/=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+                <h4 id="557-反转字符串中的单词-III"><a href="#557-反转字符串中的单词-III" class="headerlink" title="557. 反转字符串中的单词 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/">557. 反转字符串中的单词 III</a></h4><p>难度简单 274<br>给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。<br><strong>示例：</strong><br><strong>输入：</strong>“Let’s take LeetCode contest”<br><strong>输出：</strong>“s’teL ekat edoCteeL tsetnoc”<br><strong>提示：</strong></p>
+<ul>
+<li>在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> String <span class="token function">reverseWords</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        StringBuffer ret <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> length <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> start <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token string">' '</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                i<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> p <span class="token operator">=</span> start<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                ret<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>start <span class="token operator">+</span> i <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                i<span class="token operator">++</span><span class="token punctuation">;</span>
+                ret<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ret<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+
+作者：LeetCode<span class="token operator">-</span>Solution
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>reverse<span class="token operator">-</span>words<span class="token operator">-</span>in<span class="token operator">-</span>a<span class="token operator">-</span>string<span class="token operator">-</span>iii<span class="token operator">/</span>solution<span class="token operator">/</span>fan<span class="token operator">-</span>zhuan<span class="token operator">-</span>zi<span class="token operator">-</span>fu<span class="token operator">-</span>chuan<span class="token operator">-</span>zhong<span class="token operator">-</span>de<span class="token operator">-</span>dan<span class="token operator">-</span>ci<span class="token operator">-</span>iii<span class="token operator">-</span>by<span class="token operator">-</span>lee<span class="token operator">-</span><span class="token number">2</span><span class="token operator">/</span>
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</code></pre>
 <table>
 <thead>
 <tr>
-<th align="left">x</th>
-<th align="left">pop</th>
-<th align="left">ans</th>
+<th>557. 反转字符串中的单词 III</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">1234</td>
-<td align="left"></td>
-<td align="left">0</td>
+<td>Let’s take LeetCode contest</td>
+<td>i</td>
+<td>start</td>
+<td>p</td>
+<td>ret</td>
+<td>start + i - 1 - p</td>
 </tr>
 <tr>
-<td align="left">123</td>
-<td align="left">4</td>
-<td align="left">4</td>
+<td></td>
+<td>0-&gt;5</td>
+<td>0</td>
+<td>0–&gt;4</td>
+<td>s’teL</td>
+<td></td>
 </tr>
 <tr>
-<td align="left">12</td>
-<td align="left">3</td>
-<td align="left">43</td>
+<td></td>
+<td>6–&gt;10</td>
+<td>6</td>
+<td>6–&gt;8</td>
+<td>s’teL</td>
+<td>6+10-1-6=9</td>
 </tr>
 <tr>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">432</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6+10-1-7=8</td>
 </tr>
 <tr>
-<td align="left">0</td>
-<td align="left">1</td>
-<td align="left">4321</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6+10-1-8=7</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>s’teL ekat</td>
+<td>6+10-1-9=6</td>
 </tr>
 </tbody></table>
 
@@ -587,7 +623,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2021/02/24/mdfyqs/">https://github.com/future1314/2021/02/24/mdfyqs/</a>
+                    <a href="https://github.com/future1314/2021/02/27/lywsgt/">https://github.com/future1314/2021/02/27/lywsgt/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -792,30 +828,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/24/fn91tr/">
+                <a href="/2021/02/27/lywsgt/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="1143. 最长公共子序列"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="1143. 最长公共子序列">
+                        <!-- <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="557. 反转字符串中的单词 III"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="557. 反转字符串中的单词 III">
                         
-                        <span class="card-title">1143. 最长公共子序列</span>
+                        <span class="card-title">557. 反转字符串中的单词 III</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1143. 最长公共子序列一个字符串的   子序列   是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。例如，”ace” 是 “abcde” 的子序列，但 “aec”
+                            557. 反转字符串中的单词 III难度简单 274给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。示例：输入：“Let’s take LeetCode contest”输出：“s’teL ekat e
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -824,6 +861,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -834,27 +872,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/24/uibzpg/">
+                <a href="/2021/02/27/mf2naa/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="19. 删除链表的倒数第 N 个结点"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="19. 删除链表的倒数第 N 个结点">
+                        <!-- <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字">
                         
-                        <span class="card-title">19. 删除链表的倒数第 N 个结点</span>
+                        <span class="card-title">268. 丢失的数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            19. 删除链表的倒数第 N 个结点链表的长度用到哑节点遍历到 L−n+1 个节点时，它的下一个节点就是我们需要删除的节点，只需要修改一次指针，就能完成删除操作。
-class Solution &amp;#123;
-    public L
+                            268. 丢失的数字给定一个包含 [0, n] 中 n 个数的数组 nums ，找出 [0, n] 这个范围内没有出现在数组中的那个数。
+进阶：
+
+你能否实现线性时间复杂度、仅使用额外常数空间的算法解决此问题?
+
+示例 1：输入：nums 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                             </span>
                         <span class="publish-author">
                             
