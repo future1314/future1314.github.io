@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="线程数大小, future">
-    <meta name="description" content="一般多线程执行的任务类型可以分为CPU 密集型和 I/O 密集型，根据不同的任务类型，我们计算线程数的方法也不一样。CPU 密集型任务**：这种任务消耗的主要是 CPU 资源，可以将线程数设置为N（CPU 核心数）+1，比 CPU 核心数多">
+    <meta name="keywords" content="543. 二叉树的直径, future">
+    <meta name="description" content="543. 二叉树的直径给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过也可能不穿过根结点。
+示例 :给定二叉树          1         /         2   ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>线程数大小 | future</title>
+    <title>543. 二叉树的直径 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +343,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/14.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">线程数大小</h1>
+                    <h1 class="description center-align post-title">543. 二叉树的直径</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-03
+                    2021-02-27
                 </div>
                 
 
@@ -492,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    374
+                    401
                 </div>
                 
 
@@ -510,7 +511,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一般多线程执行的任务类型可以分为<strong>CPU 密集型和 I/O 密集型</strong>，根据不同的任务类型，我们计算线程数的方法也不一样。<br><strong>CPU 密集型任务**</strong>：<strong>这种任务消耗的主要是 CPU 资源，可以将线程数设置为</strong>N（CPU 核心数）+1<strong>，比 CPU 核心数多出来的一个线程是为了防止线程偶发的缺页中断，或者其它原因导致的任务暂停而带来的影响。一旦任务暂停，CPU 就会处于空闲状态，而在这种情况下多出来的一个线程就可以充分利用 CPU 的空闲时间。<br>当线程数量太小，同一时间大量请求将被阻塞在线程队列中排队等待执行线程，此时 CPU 没有得到充分利用；当线程数量太大，被创建的执行线程同时在争取 CPU 资源，又会导致大量的上下文切换，从而增加线程的执行时间，影响了整体执行效率。<br>**I/O 密集型任务：</strong>这种任务应用起来，系统会用大部分的时间来处理 I/O 交互，而线程在处理 I/O 的时间段内不会占用 CPU 来处理，这时就可以将 CPU 交出给其它线程使用。因此在*<em>I/O 密集型任务的应用中，我们可以多配置一些线程，具体的计算方法是 2N。\</em>*</p>
+                <h3 id="543-二叉树的直径"><a href="#543-二叉树的直径" class="headerlink" title="543. 二叉树的直径"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/diameter-of-binary-tree/">543. 二叉树的直径</a></h3><p>给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过也可能不穿过根结点。</p>
+<p><strong>示例 :</strong><br>给定二叉树<br>          1<br>         / <br>        2   3<br>       / \     <br>      4   5</p>
+<p>返回 <strong>3</strong>, 它的长度是路径 [4,2,1,3] 或者  [5,2,1,3]。</p>
+<p><strong>注意：</strong>两结点之间的路径长度是以它们之间边的数目表示。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * Definition for a binary tree node.
+ * public class TreeNode &amp;#123;
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) &amp;#123; val = x; &amp;#125;
+ * &amp;#125;
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> ans<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">diameterOfBinaryTree</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        ans <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token function">depth</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ans <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">depth</span><span class="token punctuation">(</span>TreeNode node<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 访问到空节点了，返回0</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> L <span class="token operator">=</span> <span class="token function">depth</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 左儿子为根的子树的深度</span>
+        <span class="token keyword">int</span> R <span class="token operator">=</span> <span class="token function">depth</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 右儿子为根的子树的深度</span>
+        ans <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> L<span class="token operator">+</span>R<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算d_node即L+R+1 并更新ans</span>
+        <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> R<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 返回该节点为根的子树的深度</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//作者：LeetCode-Solution</span>
+<span class="token comment" spellcheck="true">//链接：https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h4 id="深度优先搜索"><a href="#深度优先搜索" class="headerlink" title="深度优先搜索"></a>深度优先搜索</h4><p>首先我们知道一条路径的长度为该路径经过的节点数减一，所以求直径（即求路径长度的最大值）等效于求路径经过节点数的最大值减一。<br>而任意一条路径均可以被看作由某个节点为起点，从其左儿子和右儿子向下遍历的路径拼接得到。</p>
 
             </div>
             <hr/>
@@ -536,7 +570,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/03/hogz4t/">https://github.com/future1314/2020/09/03/hogz4t/</a>
+                    <a href="https://github.com/future1314/2021/02/27/uao0bb/">https://github.com/future1314/2021/02/27/uao0bb/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -745,26 +779,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/09/03/xxtar0/">
+                <a href="/2021/02/27/mf2naa/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/10.jpg" class="responsive-img" alt="网络I/O模型优化">
+                        <!-- <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字">
                         
-                        <span class="card-title">网络I/O模型优化</span>
+                        <span class="card-title">268. 丢失的数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            网络 I/O 模型优化1.阻塞式 I/O在整个 socket 通信工作流程中，socket 的默认状态是阻塞的。当发出一个不能立即完成的套接字调用时，其进程将被阻塞，被系统挂起，进入睡眠状态，一直等待相应的操作响应。
-2.非阻塞式 I/O我
+                            268. 丢失的数字给定一个包含 [0, n] 中 n 个数的数组 nums ，找出 [0, n] 这个范围内没有出现在数组中的那个数。
+进阶：
+
+你能否实现线性时间复杂度、仅使用额外常数空间的算法解决此问题?
+
+示例 1：输入：nums 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                         </span>
                         <span class="publish-author">
                             
@@ -784,26 +822,27 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/03/lmvdl2/">
+                <a href="/2021/02/27/rq7xc6/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="助力中小企业复产复工-云服务器优惠"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="助力中小企业复产复工-云服务器优惠">
+                        <!-- <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="349. 两个数组的交集"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="349. 两个数组的交集">
                         
-                        <span class="card-title">助力中小企业复产复工-云服务器优惠</span>
+                        <span class="card-title">349. 两个数组的交集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            https://i.didiyun.com/2brfgkTahZthttps://i.didiyun.com/2brfgkTahZt
-
+                            349. 两个数组的交集给定两个数组，编写一个函数来计算它们的交集。示例 1：
+输入：nums1 = [1,2,2,1], nums2 = [2,2]输出：[2]示例 2：
+输入：nums1 = [4,9,5], nums2 = [9,4,
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                             </span>
                         <span class="publish-author">
                             
