@@ -4,12 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="121. 买卖股票的最佳时机, future">
-    <meta name="description" content="121. 买卖股票的最佳时机暴力-超时n&amp;lt;2&amp;gt;
-    public int maxProfit(int[] prices) &amp;amp;#123;
-        int res=0;
-        int cur=0;
-  ">
+    <meta name="keywords" content="617. 合并二叉树, future">
+    <meta name="description" content="617. 合并二叉树相应位置数字相加。输入:Tree 1                     Tree 2                           1                         2           ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>121. 买卖股票的最佳时机 | future</title>
+    <title>617. 合并二叉树 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -346,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/20.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">121. 买卖股票的最佳时机</h1>
+                    <h1 class="description center-align post-title">617. 合并二叉树</h1>
                 </div>
             </div>
         </div>
@@ -482,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-26
+                    2021-02-27
                 </div>
                 
 
@@ -496,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    127
+                    416
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -514,29 +510,71 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="121-买卖股票的最佳时机"><a href="#121-买卖股票的最佳时机" class="headerlink" title="121. 买卖股票的最佳时机"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/">121. 买卖股票的最佳时机</a></h3><h4 id="暴力-超时"><a href="#暴力-超时" class="headerlink" title="暴力-超时"></a>暴力-超时</h4><p>n&lt;2&gt;</p>
-<pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> res<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> cur<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>prices<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            cur<span class="token operator">=</span>prices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>prices<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                res<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>prices<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span>cur<span class="token punctuation">,</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <h3 id="617-合并二叉树"><a href="#617-合并二叉树" class="headerlink" title="617. 合并二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/merge-two-binary-trees/">617. 合并二叉树</a></h3><p><strong>相应位置数字相加。</strong><br>输入:<br>Tree 1                     Tree 2                  <br>         1                         2                            <br>        / \                       / \                            <br>       3   2                     1   3                        <br>      /                           \   \                      <br>     5                             4   7                  <br>输出:<br>合并后的树:<br>     3<br>    / <br>    4   5<br>  / \   <br> 5   4   7</p>
+<h4 id="深度遍历"><a href="#深度遍历" class="headerlink" title="深度遍历"></a>深度遍历</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> TreeNode <span class="token function">mergeTrees</span><span class="token punctuation">(</span>TreeNode t1<span class="token punctuation">,</span> TreeNode t2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>t1 <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> t2<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>t2 <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> t1<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        TreeNode merged <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>t1<span class="token punctuation">.</span>val <span class="token operator">+</span> t2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        merged<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">mergeTrees</span><span class="token punctuation">(</span>t1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> t2<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        merged<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">mergeTrees</span><span class="token punctuation">(</span>t1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> t2<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> merged<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 作者：LeetCode-Solution</span>
+<span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/merge-two-binary-trees/solution/he-bing-er-cha-shu-by-leetcode-solution/</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h4 id="广度优先遍历"><a href="#广度优先遍历" class="headerlink" title="广度优先遍历"></a>广度优先遍历</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> TreeNode <span class="token function">mergeTrees</span><span class="token punctuation">(</span>TreeNode t1<span class="token punctuation">,</span> TreeNode t2<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>t1 <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> t2<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>t2 <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> t1<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        TreeNode merged <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>t1<span class="token punctuation">.</span>val <span class="token operator">+</span> t2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Queue<span class="token operator">&lt;</span>TreeNode<span class="token operator">></span> queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>TreeNode<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Queue<span class="token operator">&lt;</span>TreeNode<span class="token operator">></span> queue1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>TreeNode<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Queue<span class="token operator">&lt;</span>TreeNode<span class="token operator">></span> queue2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>TreeNode<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>merged<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queue1<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        queue2<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>t2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span>queue1<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>queue2<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            TreeNode node <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> node1 <span class="token operator">=</span> queue1<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> node2 <span class="token operator">=</span> queue2<span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            TreeNode left1 <span class="token operator">=</span> node1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> left2 <span class="token operator">=</span> node2<span class="token punctuation">.</span>left<span class="token punctuation">,</span> right1 <span class="token operator">=</span> node1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> right2 <span class="token operator">=</span> node2<span class="token punctuation">.</span>right<span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>left1 <span class="token operator">!=</span> null <span class="token operator">||</span> left2 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>left1 <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> left2 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    TreeNode left <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>left1<span class="token punctuation">.</span>val <span class="token operator">+</span> left2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>left <span class="token operator">=</span> left<span class="token punctuation">;</span>
+                    queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    queue1<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>left1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    queue2<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>left2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>left1 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>left <span class="token operator">=</span> left1<span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>left2 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>left <span class="token operator">=</span> left2<span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>right1 <span class="token operator">!=</span> null <span class="token operator">||</span> right2 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>right1 <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> right2 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    TreeNode right <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>right1<span class="token punctuation">.</span>val <span class="token operator">+</span> right2<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>right <span class="token operator">=</span> right<span class="token punctuation">;</span>
+                    queue<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    queue1<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>right1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    queue2<span class="token punctuation">.</span><span class="token function">offer</span><span class="token punctuation">(</span>right2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>right1 <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>right <span class="token operator">=</span> right1<span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    node<span class="token punctuation">.</span>right <span class="token operator">=</span> right2<span class="token punctuation">;</span>
+                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
             <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<h4 id="一次遍历"><a href="#一次遍历" class="headerlink" title="一次遍历"></a>一次遍历</h4><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> res<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> min<span class="token operator">=</span>Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>prices<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>prices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;</span>min<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                min<span class="token operator">=</span>prices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            res<span class="token operator">=</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>prices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span>min<span class="token punctuation">,</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+        <span class="token keyword">return</span> merged<span class="token punctuation">;</span>
+   <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+作者：LeetCode<span class="token operator">-</span>Solution
+链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>merge<span class="token operator">-</span>two<span class="token operator">-</span>binary<span class="token operator">-</span>trees<span class="token operator">/</span>solution<span class="token operator">/</span>he<span class="token operator">-</span>bing<span class="token operator">-</span>er<span class="token operator">-</span>cha<span class="token operator">-</span>shu<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>solution<span class="token operator">/</span>
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</code></pre>
 
             </div>
             <hr/>
@@ -562,7 +600,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2021/02/26/ovbgbc/">https://github.com/future1314/2021/02/26/ovbgbc/</a>
+                    <a href="https://github.com/future1314/2021/02/27/xwp2rg/">https://github.com/future1314/2021/02/27/xwp2rg/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -767,32 +805,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/26/kwfg4r/">
+                <a href="/2021/02/27/xwp2rg/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="142. 环形链表 II"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="142. 环形链表 II">
+                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="617. 合并二叉树"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="617. 合并二叉树">
                         
-                        <span class="card-title">142. 环形链表 II</span>
+                        <span class="card-title">617. 合并二叉树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            142. 环形链表 II给定一个链表，返回链表开始入环的第一个节点。  如果链表无环，则返回  null。
-  public ListNode detectCycle(ListNode head) &amp;#123;
-        if
+                            617. 合并二叉树相应位置数字相加。输入:Tree 1                     Tree 2                           1                         2           
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -801,6 +838,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -811,27 +849,26 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/26/qxdw92/">
+                <a href="/2021/02/27/trdg6u/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="剑指 Offer 48. 最长不含重复字符的子字符串"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="剑指 Offer 48. 最长不含重复字符的子字符串">
+                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="242. 有效的字母异位词"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="242. 有效的字母异位词">
                         
-                        <span class="card-title">剑指 Offer 48. 最长不含重复字符的子字符串</span>
+                        <span class="card-title">242. 有效的字母异位词</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 48. 最长不含重复字符的子字符串        Map&lt;Character, Integer> dic = new HashMap&lt;>();
-        int i = -1, res = 0;
-    
+                            242. 有效的字母异位词难度简单 347给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。示例  1:输入: s = “anagram”, t = “nagaram”输出: true
+示例 2:输入: s =
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
                             </span>
                         <span class="publish-author">
                             
