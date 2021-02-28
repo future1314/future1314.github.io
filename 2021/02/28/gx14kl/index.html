@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="516. 最长回文子序列, future">
     <meta name="description" content="
-516. 最长回文子序列难度中等给定一个字符串 s ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 s 的最大长度为 1000 。
-示例 1:输入:“bbbab”输出:4一个可能的最长回文子序列为 “bbbb”。示例 2:输入:">
+516. 最长回文子序列难度中等给定一个字符串 s ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 s 的最大长度为 1000 。 示例 1:输入:“bbbab”输出:4一个可能的最长回文子序列为 “bbbb”。示例 2:输入:">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -494,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    438
+                    603
                 </div>
                 
 
@@ -513,15 +512,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h4 id="516-最长回文子序列"><a href="#516-最长回文子序列" class="headerlink" title="516. 最长回文子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-palindromic-subsequence/">516. 最长回文子序列</a></h4><p>难度中等<br>给定一个字符串 <code>s</code> ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 <code>s</code> 的最大长度为 <code>1000</code> 。</p>
-<p><strong>示例 1:</strong><br>输入:<br>“bbbab”<br>输出:<br>4<br>一个可能的最长回文子序列为 “bbbb”。<br><strong>示例 2:</strong><br>输入:<br>“cbbd”</p>
+<h4 id="516-最长回文子序列"><a href="#516-最长回文子序列" class="headerlink" title="516. 最长回文子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-palindromic-subsequence/">516. 最长回文子序列</a></h4><p>难度中等<br>给定一个字符串 <code>s</code> ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 <code>s</code> 的最大长度为 <code>1000</code> 。<br> <br><strong>示例 1:</strong><br>输入:<br>“bbbab”<br>输出:<br>4<br>一个可能的最长回文子序列为 “bbbb”。<br><strong>示例 2:</strong><br>输入:<br>“cbbd”</p>
 <p>输出:<br>2<br>一个可能的最长回文子序列为 “bb”。</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">longestPalindromeSubseq</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> f <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">//for (int i = 1; i &lt;n; i++) &amp;#123; //为什么不行？</span>
+        <span class="token comment" spellcheck="true">//for (int i = 1; i &lt;n; i++) &amp;#123; //为什么不行？   </span>
             f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
             <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">==</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -540,6 +538,9 @@
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <h4 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h4><p><strong>状态</strong><br>f[i][j] 表示 s 的第 i 个字符到第 j 个字符组成的子串中，最长的回文序列长度是多少。<br><strong>转移方程</strong><br>如果 s 的第 i 个字符和第 j 个字符相同的话<br>f[i][j] = f[i + 1][j - 1] + 2<br>如果 s 的第 i 个字符和第 j 个字符不同的话<br>f[i][j] = max(f[i + 1][j], f[i][j - 1])<br>然后注意遍历顺序，i 从最后一个字符开始往前遍历，j 从 i + 1 开始往后遍历，这样可以保证每个子问题都已经算好了。<br><strong>初始化</strong><br>f[i][i] = 1 单个字符的最长回文序列是 1<br><strong>结果</strong><br>f[0][n - 1]</p>
 <p>作者：a380922457<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/dong-tai-gui-hua-si-yao-su-by-a380922457-3/">https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/dong-tai-gui-hua-si-yao-su-by-a380922457-3/</a></p>
+<hr>
+<p>首先明确一下 base case，如果只有一个字符，显然最长回文子序列长度是 1，也就是 dp[i][j] = 1 (i == j)。<br><strong>因为 i 肯定小于等于 j，所以对于那些 i &gt; j 的位置，根本不存在什么子序列，应该初始化为 0。</strong></p>
+<p>另外，看看刚才写的状态转移方程，想求 dp[i][j] 需要知道 dp[i+1][j-1]，dp[i+1][j]，dp[i][j-1] 这三个位置；再看看我们确定的 base case，填入 dp 数组之后是这样：<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614477278076-08df0880-0805-4c61-b3e9-bf9b090efe7e.png#align=left&display=inline&height=720&margin=%5Bobject%20Object%5D&name=image.png&originHeight=720&originWidth=1280&size=685037&status=done&style=none&width=1280" alt="image.png"><br>作者：labuladong<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/zi-xu-lie-wen-ti-tong-yong-si-lu-zui-chang-hui-wen/">https://leetcode-cn.com/problems/longest-palindromic-subsequence/solution/zi-xu-lie-wen-ti-tong-yong-si-lu-zui-chang-hui-wen/</a></p>
 
             </div>
             <hr/>
@@ -789,8 +790,7 @@
                     <div class="summary block-with-text">
                         
                             
-516. 最长回文子序列难度中等给定一个字符串 s ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 s 的最大长度为 1000 。
-示例 1:输入:“bbbab”输出:4一个可能的最长回文子序列为 “bbbb”。示例 2:输入:
+516. 最长回文子序列难度中等给定一个字符串 s ，找到其中最长的回文子序列，并返回该序列的长度。可以假设 s 的最大长度为 1000 。 示例 1:输入:“bbbab”输出:4一个可能的最长回文子序列为 “bbbb”。示例 2:输入:
                         
                     </div>
                     <div class="publish-info">
@@ -1034,7 +1034,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">47.6k</span>&nbsp;字
+                class="white-color">47.7k</span>&nbsp;字
             
             
             
