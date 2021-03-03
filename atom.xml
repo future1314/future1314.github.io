@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2021-03-03T12:31:00.682Z</updated>
+  <updated>2021-03-03T15:57:03.286Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,134 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>面试题 02.01. 移除重复节点</title>
+    <link href="https://github.com/future1314/2021/03/03/rgsi0n/"/>
+    <id>https://github.com/future1314/2021/03/03/rgsi0n/</id>
+    <published>2021-03-03T15:54:07.000Z</published>
+    <updated>2021-03-03T15:57:03.286Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;面试题-02-01-移除重复节点&quot;&gt;&lt;a href=&quot;#面试题-02-01-移除重复节点&quot; class=&quot;headerlink&quot; title=&quot;面试题 02.01. 移除重复节点&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
+    
+    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>15. 三数之和--🀄️</title>
+    <link href="https://github.com/future1314/2021/03/03/ra03u8/"/>
+    <id>https://github.com/future1314/2021/03/03/ra03u8/</id>
+    <published>2021-03-03T15:26:18.000Z</published>
+    <updated>2021-03-03T15:57:03.314Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;15-三数之和&quot;&gt;&lt;a href=&quot;#15-三数之和&quot; class=&quot;headerlink&quot; title=&quot;15. 三数之和&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/3sum/&quot;&gt;15.</summary>
+        
+      
+    
+    
+    
+    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
+    
+    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>剑指 Offer 53 - II. 0～n-1中缺失的数字</title>
+    <link href="https://github.com/future1314/2021/03/03/we4l7q/"/>
+    <id>https://github.com/future1314/2021/03/03/we4l7q/</id>
+    <published>2021-03-03T14:36:32.000Z</published>
+    <updated>2021-03-03T15:57:03.334Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;剑指-Offer-53-II-0-～-n-1-中缺失的数字&quot;&gt;&lt;a href=&quot;#剑指-Offer-53-II-0-～-n-1-中缺失的数字&quot; class=&quot;headerlink&quot; title=&quot;剑指 Offer 53 - II. 0 ～ n-1</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>217. 存在重复元素</title>
+    <link href="https://github.com/future1314/2021/03/03/peaok7/"/>
+    <id>https://github.com/future1314/2021/03/03/peaok7/</id>
+    <published>2021-03-03T14:35:25.000Z</published>
+    <updated>2021-03-03T15:57:03.342Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;217-存在重复元素&quot;&gt;&lt;a href=&quot;#217-存在重复元素&quot; class=&quot;headerlink&quot; title=&quot;217. 存在重复元素&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
+    
+    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>146. LRU 缓存机制--🀄️</title>
+    <link href="https://github.com/future1314/2021/03/03/hp2vam/"/>
+    <id>https://github.com/future1314/2021/03/03/hp2vam/</id>
+    <published>2021-03-03T14:06:17.000Z</published>
+    <updated>2021-03-03T15:57:03.406Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;146-LRU-缓存机制&quot;&gt;&lt;a href=&quot;#146-LRU-缓存机制&quot; class=&quot;headerlink&quot; title=&quot;146. LRU 缓存机制&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
+    
+    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
+    
+    <category term="mid" scheme="https://github.com/future1314/categories/Blog/Algorithm/mid/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>86. 分隔链表--🀄️</title>
     <link href="https://github.com/future1314/2021/03/03/vrdxzx/"/>
     <id>https://github.com/future1314/2021/03/03/vrdxzx/</id>
     <published>2021-03-03T11:48:46.000Z</published>
-    <updated>2021-03-03T12:31:00.682Z</updated>
+    <updated>2021-03-03T15:57:03.434Z</updated>
     
     
       
@@ -46,7 +169,7 @@
     <link href="https://github.com/future1314/2021/03/03/dq0abe/"/>
     <id>https://github.com/future1314/2021/03/03/dq0abe/</id>
     <published>2021-03-03T11:48:32.000Z</published>
-    <updated>2021-03-03T12:31:00.694Z</updated>
+    <updated>2021-03-03T15:57:03.442Z</updated>
     
     
       
@@ -71,7 +194,7 @@
     <link href="https://github.com/future1314/2021/03/03/bdcgvo/"/>
     <id>https://github.com/future1314/2021/03/03/bdcgvo/</id>
     <published>2021-03-03T10:31:51.000Z</published>
-    <updated>2021-03-03T12:31:00.730Z</updated>
+    <updated>2021-03-03T15:57:03.478Z</updated>
     
     
       
@@ -96,7 +219,7 @@
     <link href="https://github.com/future1314/2021/03/03/tmfpc2/"/>
     <id>https://github.com/future1314/2021/03/03/tmfpc2/</id>
     <published>2021-03-03T09:54:42.000Z</published>
-    <updated>2021-03-03T12:31:00.746Z</updated>
+    <updated>2021-03-03T15:57:03.490Z</updated>
     
     
       
@@ -117,7 +240,7 @@
     <link href="https://github.com/future1314/2021/03/03/ho4g0u/"/>
     <id>https://github.com/future1314/2021/03/03/ho4g0u/</id>
     <published>2021-03-03T09:38:54.000Z</published>
-    <updated>2021-03-03T12:31:00.758Z</updated>
+    <updated>2021-03-03T15:57:03.502Z</updated>
     
     
       
@@ -142,7 +265,7 @@
     <link href="https://github.com/future1314/2021/03/03/opmypf/"/>
     <id>https://github.com/future1314/2021/03/03/opmypf/</id>
     <published>2021-03-03T08:01:51.000Z</published>
-    <updated>2021-03-03T12:31:00.774Z</updated>
+    <updated>2021-03-03T15:57:03.526Z</updated>
     
     
       
@@ -167,7 +290,7 @@
     <link href="https://github.com/future1314/2021/03/03/hq68kg/"/>
     <id>https://github.com/future1314/2021/03/03/hq68kg/</id>
     <published>2021-03-03T07:34:28.000Z</published>
-    <updated>2021-03-03T12:31:00.802Z</updated>
+    <updated>2021-03-03T15:57:03.546Z</updated>
     
     
       
@@ -192,7 +315,7 @@
     <link href="https://github.com/future1314/2021/03/03/xbedsg/"/>
     <id>https://github.com/future1314/2021/03/03/xbedsg/</id>
     <published>2021-03-03T07:22:37.000Z</published>
-    <updated>2021-03-03T12:31:00.822Z</updated>
+    <updated>2021-03-03T15:57:03.562Z</updated>
     
     
       
@@ -214,7 +337,7 @@
     <link href="https://github.com/future1314/2021/03/03/ulv9kz/"/>
     <id>https://github.com/future1314/2021/03/03/ulv9kz/</id>
     <published>2021-03-03T01:52:33.000Z</published>
-    <updated>2021-03-03T12:31:00.826Z</updated>
+    <updated>2021-03-03T15:57:03.570Z</updated>
     
     
       
@@ -239,7 +362,7 @@
     <link href="https://github.com/future1314/2021/03/03/gpc9sg/"/>
     <id>https://github.com/future1314/2021/03/03/gpc9sg/</id>
     <published>2021-03-03T01:50:55.000Z</published>
-    <updated>2021-03-03T12:31:00.846Z</updated>
+    <updated>2021-03-03T15:57:03.598Z</updated>
     
     
       
@@ -264,7 +387,7 @@
     <link href="https://github.com/future1314/2021/03/03/wye5f4/"/>
     <id>https://github.com/future1314/2021/03/03/wye5f4/</id>
     <published>2021-03-03T00:49:34.000Z</published>
-    <updated>2021-03-03T12:31:00.858Z</updated>
+    <updated>2021-03-03T15:57:03.610Z</updated>
     
     
       
@@ -289,7 +412,7 @@
     <link href="https://github.com/future1314/2021/03/03/miaa3f/"/>
     <id>https://github.com/future1314/2021/03/03/miaa3f/</id>
     <published>2021-03-03T00:46:52.000Z</published>
-    <updated>2021-03-03T12:31:00.858Z</updated>
+    <updated>2021-03-03T15:57:03.614Z</updated>
     
     
     
@@ -302,7 +425,7 @@
     <link href="https://github.com/future1314/2021/03/03/gk9ggn/"/>
     <id>https://github.com/future1314/2021/03/03/gk9ggn/</id>
     <published>2021-03-03T00:32:04.000Z</published>
-    <updated>2021-03-03T12:31:00.874Z</updated>
+    <updated>2021-03-03T15:57:03.630Z</updated>
     
     
       
@@ -324,7 +447,7 @@
     <link href="https://github.com/future1314/2021/03/03/nlrvsm/"/>
     <id>https://github.com/future1314/2021/03/03/nlrvsm/</id>
     <published>2021-03-02T23:56:04.000Z</published>
-    <updated>2021-03-03T12:31:00.902Z</updated>
+    <updated>2021-03-03T15:57:03.650Z</updated>
     
     
       
@@ -346,7 +469,7 @@
     <link href="https://github.com/future1314/2021/03/03/bdveck/"/>
     <id>https://github.com/future1314/2021/03/03/bdveck/</id>
     <published>2021-03-02T23:54:15.000Z</published>
-    <updated>2021-03-03T12:31:00.910Z</updated>
+    <updated>2021-03-03T15:57:03.662Z</updated>
     
     
       
@@ -355,127 +478,6 @@
         
     <summary type="html">&lt;hr&gt;
 &lt;h4 id=&quot;198-打家劫舍&quot;&gt;&lt;a href=&quot;#198-打家劫舍&quot; class=&quot;headerlink&quot; title=&quot;198. 打家劫舍&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>448. 找到所有数组中消失的数字</title>
-    <link href="https://github.com/future1314/2021/03/02/qphr1t/"/>
-    <id>https://github.com/future1314/2021/03/02/qphr1t/</id>
-    <published>2021-03-02T13:23:39.000Z</published>
-    <updated>2021-03-03T12:31:00.934Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;448-找到所有数组中消失的数字&quot;&gt;&lt;a href=&quot;#448-找到所有数组中消失的数字&quot; class=&quot;headerlink&quot; title=&quot;448. 找到所有数组中消失的数字&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>169. 多数元素</title>
-    <link href="https://github.com/future1314/2021/03/02/xzqpk0/"/>
-    <id>https://github.com/future1314/2021/03/02/xzqpk0/</id>
-    <published>2021-03-02T13:05:44.000Z</published>
-    <updated>2021-03-03T12:31:00.958Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;169-多数元素&quot;&gt;&lt;a href=&quot;#169-多数元素&quot; class=&quot;headerlink&quot; title=&quot;169. 多数元素&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>674. 最长连续递增序列</title>
-    <link href="https://github.com/future1314/2021/03/02/thkuuh/"/>
-    <id>https://github.com/future1314/2021/03/02/thkuuh/</id>
-    <published>2021-03-02T12:46:35.000Z</published>
-    <updated>2021-03-03T12:31:00.982Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;674-最长连续递增序列&quot;&gt;&lt;a href=&quot;#674-最长连续递增序列&quot; class=&quot;headerlink&quot; title=&quot;674. 最长连续递增序列&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>104. 二叉树的最大深度</title>
-    <link href="https://github.com/future1314/2021/03/02/nz0tc6/"/>
-    <id>https://github.com/future1314/2021/03/02/nz0tc6/</id>
-    <published>2021-03-02T12:36:01.000Z</published>
-    <updated>2021-03-03T12:31:00.998Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;104-二叉树的最大深度&quot;&gt;&lt;a href=&quot;#104-二叉树的最大深度&quot; class=&quot;headerlink&quot; title=&quot;104. 二叉树的最大深度&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>69. x 的平方根</title>
-    <link href="https://github.com/future1314/2021/03/02/htmhva/"/>
-    <id>https://github.com/future1314/2021/03/02/htmhva/</id>
-    <published>2021-03-02T06:57:38.000Z</published>
-    <updated>2021-03-03T12:31:01.006Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;69-x-的平方根&quot;&gt;&lt;a href=&quot;#69-x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;69. x 的平方根&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/sqrtx/&quot;&gt;69. x</summary>
         
       
     
