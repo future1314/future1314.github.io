@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="无标题, future">
-    <meta name="description" content="无标题 | future">
+    <meta name="keywords" content="168. Excel表列名称, future">
+    <meta name="description" content="168. Excel 表列名称难度简单 317给定一个正整数，返回它在 Excel 表中相对应的列名称。例如，    1 -&amp;gt; A    2 -&amp;gt; B    3 -&amp;gt; C    …    26 -&amp;gt; Z    27 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>无标题 | future</title>
+    <title>168. Excel表列名称 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +342,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">无标题</h1>
+                    <h1 class="description center-align post-title">168. Excel表列名称</h1>
                 </div>
             </div>
         </div>
@@ -471,6 +471,19 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Blog/" class="post-category">
+                                Blog
+                            </a>
+                        
+                            <a href="/categories/Blog/Algorithm/" class="post-category">
+                                Algorithm
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -492,7 +505,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    185
                 </div>
                 
 
@@ -510,7 +523,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h4 id="168-Excel-表列名称"><a href="#168-Excel-表列名称" class="headerlink" title="168. Excel 表列名称"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/excel-sheet-column-title/">168. Excel 表列名称</a></h4><p>难度简单 317<br>给定一个正整数，返回它在 Excel 表中相对应的列名称。<br>例如，<br>    1 -&gt; A<br>    2 -&gt; B<br>    3 -&gt; C<br>    …<br>    26 -&gt; Z<br>    27 -&gt; AA<br>    28 -&gt; AB <br>    …</p>
+<p><strong>示例 1:</strong><br><strong>输入:</strong> 1<br><strong>输出:</strong> “A”</p>
+<p><strong>示例  2:</strong><br><strong>输入:</strong> 28<br><strong>输出:</strong> “AB”</p>
+<p><strong>示例  3:</strong><br><strong>输入:</strong> 701<br><strong>输出:</strong> “ZY”.</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> String <span class="token function">convertToTitle</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        StringBuilder sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>n <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span> <span class="token number">26</span><span class="token punctuation">;</span>
+            sb<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token string">'A'</span> <span class="token operator">+</span> c<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            n <span class="token operator">=</span> <span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">26</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// 作者：windliang</span>
+<span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/excel-sheet-column-title/solution/xiang-xi-tong-su-de-si-lu-fen-xi-by-windliang-2/</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614736149302-e6bbb373-d5c1-4fa6-b321-66c1334a9d82.png#align=left&display=inline&height=227&margin=%5Bobject%20Object%5D&name=image.png&originHeight=454&originWidth=570&size=62731&status=done&style=none&width=285" alt="image.png"><br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/excel-sheet-column-title/solution/xiang-xi-tong-su-de-si-lu-fen-xi-by-windliang-2/">https://leetcode-cn.com/problems/excel-sheet-column-title/solution/xiang-xi-tong-su-de-si-lu-fen-xi-by-windliang-2/</a><br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/excel-sheet-column-title/solution/168-by-ikaruga/">https://leetcode-cn.com/problems/excel-sheet-column-title/solution/168-by-ikaruga/</a></p>
+
             </div>
             <hr/>
 
@@ -749,16 +780,16 @@
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="无标题"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="无标题">
+                        <!-- <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="168. Excel表列名称"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="168. Excel表列名称">
                         
-                        <span class="card-title">无标题</span>
+                        <span class="card-title">168. Excel表列名称</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            168. Excel 表列名称难度简单 317给定一个正整数，返回它在 Excel 表中相对应的列名称。例如，    1 -&gt; A    2 -&gt; B    3 -&gt; C    …    26 -&gt; Z    27 
                         
                     </div>
                     <div class="publish-info">
@@ -767,8 +798,16 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            future
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Blog/" class="post-category">
+                                    Blog
+                                </a>
+                            
+                            <a href="/categories/Blog/Algorithm/" class="post-category">
+                                    Algorithm
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -999,7 +1038,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">73.4k</span>&nbsp;字
+                class="white-color">73.7k</span>&nbsp;字
             
             
             
