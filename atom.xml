@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2021-03-03T10:13:27.039Z</updated>
+  <updated>2021-03-03T11:50:01.819Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>剑指 Offer 14- I. 剪绳子</title>
+    <link href="https://github.com/future1314/2021/03/03/bdcgvo/"/>
+    <id>https://github.com/future1314/2021/03/03/bdcgvo/</id>
+    <published>2021-03-03T10:31:51.000Z</published>
+    <updated>2021-03-03T11:50:01.819Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;剑指-Offer-14-I-剪绳子&quot;&gt;&lt;a href=&quot;#剑指-Offer-14-I-剪绳子&quot; class=&quot;headerlink&quot; title=&quot;剑指 Offer 14- I. 剪绳子&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
+    
+    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>43. 字符串相乘--🀄️</title>
+    <link href="https://github.com/future1314/2021/03/03/tmfpc2/"/>
+    <id>https://github.com/future1314/2021/03/03/tmfpc2/</id>
+    <published>2021-03-03T09:54:42.000Z</published>
+    <updated>2021-03-03T11:50:01.839Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;43-字符串相乘&quot;&gt;&lt;a href=&quot;#43-字符串相乘&quot; class=&quot;headerlink&quot; title=&quot;43. 字符串相乘&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>剑指 Offer 32 - III. 从上到下打印二叉树 III--🀄️</title>
     <link href="https://github.com/future1314/2021/03/03/ho4g0u/"/>
     <id>https://github.com/future1314/2021/03/03/ho4g0u/</id>
     <published>2021-03-03T09:38:54.000Z</published>
-    <updated>2021-03-03T10:13:27.039Z</updated>
+    <updated>2021-03-03T11:50:01.855Z</updated>
     
     
       
@@ -46,7 +92,7 @@
     <link href="https://github.com/future1314/2021/03/03/opmypf/"/>
     <id>https://github.com/future1314/2021/03/03/opmypf/</id>
     <published>2021-03-03T08:01:51.000Z</published>
-    <updated>2021-03-03T10:13:27.063Z</updated>
+    <updated>2021-03-03T11:50:01.871Z</updated>
     
     
       
@@ -71,7 +117,7 @@
     <link href="https://github.com/future1314/2021/03/03/hq68kg/"/>
     <id>https://github.com/future1314/2021/03/03/hq68kg/</id>
     <published>2021-03-03T07:34:28.000Z</published>
-    <updated>2021-03-03T10:13:27.099Z</updated>
+    <updated>2021-03-03T11:50:01.907Z</updated>
     
     
       
@@ -96,7 +142,7 @@
     <link href="https://github.com/future1314/2021/03/03/xbedsg/"/>
     <id>https://github.com/future1314/2021/03/03/xbedsg/</id>
     <published>2021-03-03T07:22:37.000Z</published>
-    <updated>2021-03-03T10:13:27.123Z</updated>
+    <updated>2021-03-03T11:50:01.923Z</updated>
     
     
       
@@ -118,7 +164,7 @@
     <link href="https://github.com/future1314/2021/03/03/ulv9kz/"/>
     <id>https://github.com/future1314/2021/03/03/ulv9kz/</id>
     <published>2021-03-03T01:52:33.000Z</published>
-    <updated>2021-03-03T10:13:27.131Z</updated>
+    <updated>2021-03-03T11:50:01.931Z</updated>
     
     
       
@@ -143,7 +189,7 @@
     <link href="https://github.com/future1314/2021/03/03/gpc9sg/"/>
     <id>https://github.com/future1314/2021/03/03/gpc9sg/</id>
     <published>2021-03-03T01:50:55.000Z</published>
-    <updated>2021-03-03T10:13:27.163Z</updated>
+    <updated>2021-03-03T11:50:01.963Z</updated>
     
     
       
@@ -168,7 +214,7 @@
     <link href="https://github.com/future1314/2021/03/03/wye5f4/"/>
     <id>https://github.com/future1314/2021/03/03/wye5f4/</id>
     <published>2021-03-03T00:49:34.000Z</published>
-    <updated>2021-03-03T10:13:27.179Z</updated>
+    <updated>2021-03-03T11:50:01.971Z</updated>
     
     
       
@@ -193,7 +239,7 @@
     <link href="https://github.com/future1314/2021/03/03/miaa3f/"/>
     <id>https://github.com/future1314/2021/03/03/miaa3f/</id>
     <published>2021-03-03T00:46:52.000Z</published>
-    <updated>2021-03-03T10:13:27.179Z</updated>
+    <updated>2021-03-03T11:50:01.975Z</updated>
     
     
     
@@ -206,7 +252,7 @@
     <link href="https://github.com/future1314/2021/03/03/gk9ggn/"/>
     <id>https://github.com/future1314/2021/03/03/gk9ggn/</id>
     <published>2021-03-03T00:32:04.000Z</published>
-    <updated>2021-03-03T10:13:27.207Z</updated>
+    <updated>2021-03-03T11:50:01.995Z</updated>
     
     
       
@@ -228,7 +274,7 @@
     <link href="https://github.com/future1314/2021/03/03/nlrvsm/"/>
     <id>https://github.com/future1314/2021/03/03/nlrvsm/</id>
     <published>2021-03-02T23:56:04.000Z</published>
-    <updated>2021-03-03T10:13:27.231Z</updated>
+    <updated>2021-03-03T11:50:02.019Z</updated>
     
     
       
@@ -250,7 +296,7 @@
     <link href="https://github.com/future1314/2021/03/03/bdveck/"/>
     <id>https://github.com/future1314/2021/03/03/bdveck/</id>
     <published>2021-03-02T23:54:15.000Z</published>
-    <updated>2021-03-03T10:13:27.239Z</updated>
+    <updated>2021-03-03T11:50:02.031Z</updated>
     
     
       
@@ -272,7 +318,7 @@
     <link href="https://github.com/future1314/2021/03/02/qphr1t/"/>
     <id>https://github.com/future1314/2021/03/02/qphr1t/</id>
     <published>2021-03-02T13:23:39.000Z</published>
-    <updated>2021-03-03T10:13:27.271Z</updated>
+    <updated>2021-03-03T11:50:02.059Z</updated>
     
     
       
@@ -297,7 +343,7 @@
     <link href="https://github.com/future1314/2021/03/02/xzqpk0/"/>
     <id>https://github.com/future1314/2021/03/02/xzqpk0/</id>
     <published>2021-03-02T13:05:44.000Z</published>
-    <updated>2021-03-03T10:13:27.307Z</updated>
+    <updated>2021-03-03T11:50:02.083Z</updated>
     
     
       
@@ -322,7 +368,7 @@
     <link href="https://github.com/future1314/2021/03/02/thkuuh/"/>
     <id>https://github.com/future1314/2021/03/02/thkuuh/</id>
     <published>2021-03-02T12:46:35.000Z</published>
-    <updated>2021-03-03T10:13:27.331Z</updated>
+    <updated>2021-03-03T11:50:02.103Z</updated>
     
     
       
@@ -347,7 +393,7 @@
     <link href="https://github.com/future1314/2021/03/02/nz0tc6/"/>
     <id>https://github.com/future1314/2021/03/02/nz0tc6/</id>
     <published>2021-03-02T12:36:01.000Z</published>
-    <updated>2021-03-03T10:13:27.351Z</updated>
+    <updated>2021-03-03T11:50:02.119Z</updated>
     
     
       
@@ -372,7 +418,7 @@
     <link href="https://github.com/future1314/2021/03/02/htmhva/"/>
     <id>https://github.com/future1314/2021/03/02/htmhva/</id>
     <published>2021-03-02T06:57:38.000Z</published>
-    <updated>2021-03-03T10:13:27.363Z</updated>
+    <updated>2021-03-03T11:50:02.131Z</updated>
     
     
       
@@ -393,7 +439,7 @@
     <link href="https://github.com/future1314/2021/03/02/axq8k3/"/>
     <id>https://github.com/future1314/2021/03/02/axq8k3/</id>
     <published>2021-03-02T06:49:27.000Z</published>
-    <updated>2021-03-03T10:13:27.383Z</updated>
+    <updated>2021-03-03T11:50:02.151Z</updated>
     
     
       
@@ -418,7 +464,7 @@
     <link href="https://github.com/future1314/2021/03/02/cin3y5/"/>
     <id>https://github.com/future1314/2021/03/02/cin3y5/</id>
     <published>2021-03-02T06:17:16.000Z</published>
-    <updated>2021-03-03T10:13:27.403Z</updated>
+    <updated>2021-03-03T11:50:02.167Z</updated>
     
     
       
@@ -426,52 +472,6 @@
         
         
     <summary type="html">&lt;h4 id=&quot;20-有效的括号&quot;&gt;&lt;a href=&quot;#20-有效的括号&quot; class=&quot;headerlink&quot; title=&quot;20. 有效的括号&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>141. 环形链表</title>
-    <link href="https://github.com/future1314/2021/03/02/nkif1o/"/>
-    <id>https://github.com/future1314/2021/03/02/nkif1o/</id>
-    <published>2021-03-02T04:13:01.000Z</published>
-    <updated>2021-03-03T10:13:27.407Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;categories-Blog-Algorithm&quot;&gt;&lt;a href=&quot;#categories-Blog-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;categories:</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>234. 回文链表</title>
-    <link href="https://github.com/future1314/2021/03/02/fh9tkz/"/>
-    <id>https://github.com/future1314/2021/03/02/fh9tkz/</id>
-    <published>2021-03-02T04:12:03.000Z</published>
-    <updated>2021-03-03T10:13:27.419Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;234-回文链表&quot;&gt;&lt;a href=&quot;#234-回文链表&quot; class=&quot;headerlink&quot; title=&quot;234. 回文链表&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
