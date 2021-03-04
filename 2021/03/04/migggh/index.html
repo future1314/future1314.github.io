@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="54. 螺旋矩阵, future">
-    <meta name="description" content="categories:[Blog,算法]
-
-54. 螺旋矩阵难度中等给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
-示例 1：输入：matrix = [[1,2,3],[4,5,6],[7,">
+    <meta name="keywords" content="无标题, future">
+    <meta name="description" content="
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>54. 螺旋矩阵 | future</title>
+    <title>无标题 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -345,13 +343,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/2.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">54. 螺旋矩阵</h1>
+                    <h1 class="description center-align post-title">无标题</h1>
                 </div>
             </div>
         </div>
@@ -481,7 +479,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-28
+                    2021-03-04
                 </div>
                 
 
@@ -495,7 +493,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    334
+                    0
                 </div>
                 
 
@@ -513,48 +511,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>categories:[Blog,算法]</p>
-<hr>
-<h4 id="54-螺旋矩阵"><a href="#54-螺旋矩阵" class="headerlink" title="54. 螺旋矩阵"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/spiral-matrix/">54. 螺旋矩阵</a></h4><p>难度中等<br>给你一个 <code>m</code> 行 <code>n</code> 列的矩阵 <code>matrix</code> ，请按照 <strong>顺时针螺旋顺序</strong> ，返回矩阵中的所有元素。</p>
-<p><strong>示例 1：</strong><br><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614491833327-4772d85c-54d0-450b-a1f6-316ef7a7dad1.jpeg#align=left&display=inline&height=242&margin=%5Bobject%20Object%5D&originHeight=242&originWidth=242&size=0&status=done&style=none&width=242"><br><strong>输入：</strong>matrix = [[1,2,3],[4,5,6],[7,8,9]]<br><strong>输出：</strong>[1,2,3,6,9,8,7,4,5]</p>
-<p><strong>示例 2：</strong><br><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614491832233-a043ddaf-9fe5-452e-8758-2848877ad1e1.jpeg#align=left&display=inline&height=242&margin=%5Bobject%20Object%5D&originHeight=242&originWidth=322&size=0&status=done&style=none&width=322"><br><strong>输入：</strong>matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]<br><strong>输出：</strong>[1,2,3,4,8,12,11,10,9,5,6,7]</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> List<span class="token operator">&lt;</span>Integer<span class="token operator">></span> <span class="token function">spiralOrder</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> matrix<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        List<span class="token operator">&lt;</span>Integer<span class="token operator">></span> order <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>matrix <span class="token operator">==</span> null <span class="token operator">||</span> matrix<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> order<span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> rows <span class="token operator">=</span> matrix<span class="token punctuation">.</span>length<span class="token punctuation">,</span> columns <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
-        <span class="token keyword">int</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> right <span class="token operator">=</span> columns <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> top <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> bottom <span class="token operator">=</span> rows <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;=</span> right <span class="token operator">&amp;&amp;</span> top <span class="token operator">&lt;=</span> bottom<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> column <span class="token operator">=</span> left<span class="token punctuation">;</span> column <span class="token operator">&lt;=</span> right<span class="token punctuation">;</span> column<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                order<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>top<span class="token punctuation">]</span><span class="token punctuation">[</span>column<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> row <span class="token operator">=</span> top <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> row <span class="token operator">&lt;=</span> bottom<span class="token punctuation">;</span> row<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                order<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right <span class="token operator">&amp;&amp;</span> top <span class="token operator">&lt;</span> bottom<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//不加一行的时候有重复问题</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> column <span class="token operator">=</span> right <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> column <span class="token operator">></span> left<span class="token punctuation">;</span> column<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                    order<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>bottom<span class="token punctuation">]</span><span class="token punctuation">[</span>column<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> row <span class="token operator">=</span> bottom<span class="token punctuation">;</span> row <span class="token operator">></span> top<span class="token punctuation">;</span> row<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                    order<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>matrix<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            left<span class="token operator">++</span><span class="token punctuation">;</span>
-            right<span class="token operator">--</span><span class="token punctuation">;</span>
-            top<span class="token operator">++</span><span class="token punctuation">;</span>
-            bottom<span class="token operator">--</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> order<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// 作者：LeetCode-Solution</span>
-<span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/spiral-matrix/solution/luo-xuan-ju-zhen-by-leetcode-solution/</span>
-<span class="token comment" spellcheck="true">// 来源：力扣（LeetCode）</span>
-<span class="token comment" spellcheck="true">// 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>解析<img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614491893279-fc0f6ed3-2223-4248-9455-19fcda9fe39f.png#align=left&display=inline&height=569&margin=%5Bobject%20Object%5D&name=image.png&originHeight=569&originWidth=1280&size=107926&status=done&style=none&width=1280" alt="image.png"></p>
+                <hr>
 
             </div>
             <hr/>
@@ -580,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2021/02/28/yaas7q/">https://github.com/future1314/2021/02/28/yaas7q/</a>
+                    <a href="https://github.com/future1314/2021/03/04/migggh/">https://github.com/future1314/2021/03/04/migggh/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -785,33 +742,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/28/nw9pbz/">
+                <a href="/2021/03/04/migggh/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="204. 计数质数"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="204. 计数质数">
+                        <!-- <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="无标题"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/17.jpg" class="responsive-img" alt="无标题">
                         
-                        <span class="card-title">204. 计数质数</span>
+                        <span class="card-title">无标题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            204. 计数质数难度简单统计所有小于非负整数 *n *的质数的数量。
-示例 1：输入：n = 10输出：4解释：小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。
-示例 2：输入：n = 0输出：0
-示例 3：输入：n 
+                            
+
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -820,6 +776,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -830,32 +787,45 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/28/avkgvh/">
+                <a href="/2021/03/04/yq5mru/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="236. 二叉树的最近公共祖先"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="236. 二叉树的最近公共祖先">
+                        <!-- <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="5. 最长回文子串"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="5. 最长回文子串">
                         
-                        <span class="card-title">236. 二叉树的最近公共祖先</span>
+                        <span class="card-title">5. 最长回文子串</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            categories:[Blog,算法]
-
-236. 二叉树的最近公共祖先难度中等给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，
+                            5. 最长回文子串难度中等 3273给你一个字符串 s，找到 s 中最长的回文子串。
+示例 1：输入：s = “babad”输出：“bab”解释：“aba” 同样是符合题意的答案。
+示例 2：输入：s = “cbbd”输出：“bb”
+示例 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            future
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Blog/" class="post-category">
+                                    Blog
+                                </a>
+                            
+                            <a href="/categories/Blog/Algorithm/" class="post-category">
+                                    Algorithm
+                                </a>
+                            
+                            <a href="/categories/Blog/Algorithm/mid/" class="post-category">
+                                    mid
+                                </a>
+                            
                             
                         </span>
                     </div>
