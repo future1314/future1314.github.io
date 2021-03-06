@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="557. 反转字符串中的单词 III, future">
-    <meta name="description" content="557. 反转字符串中的单词 III难度简单 274给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。示例：输入：“Let’s take LeetCode contest”输出：“s’teL ekat e">
+    <meta name="keywords" content="美团点评算法面试题, future">
+    <meta name="description" content="美团点评算法面试题-2020
+
+反转链表
+n 个有序数组，找出 Top k
+LeetCode11 water
+给定一个数，通过调换顺序，找到比这个数大的最小数
+leetcode55. 跳跃游戏
+leetcode153. 寻找旋转排序数组中的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>557. 反转字符串中的单词 III | future</title>
+    <title>美团点评算法面试题 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -342,13 +349,13 @@
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">557. 反转字符串中的单词 III</h1>
+                    <h1 class="description center-align post-title">美团点评算法面试题</h1>
                 </div>
             </div>
         </div>
@@ -478,7 +485,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-27
+                    2021-03-06
                 </div>
                 
 
@@ -492,7 +499,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    322
+                    519
                 </div>
                 
 
@@ -510,94 +517,34 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="557-反转字符串中的单词-III"><a href="#557-反转字符串中的单词-III" class="headerlink" title="557. 反转字符串中的单词 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/">557. 反转字符串中的单词 III</a></h4><p>难度简单 274<br>给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。<br><strong>示例：</strong><br><strong>输入：</strong>“Let’s take LeetCode contest”<br><strong>输出：</strong>“s’teL ekat edoCteeL tsetnoc”<br><strong>提示：</strong></p>
-<ul>
-<li>在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。</li>
-</ul>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> String <span class="token function">reverseWords</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        StringBuffer ret <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> length <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">int</span> start <span class="token operator">=</span> i<span class="token punctuation">;</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token string">' '</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                i<span class="token operator">++</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> p <span class="token operator">=</span> start<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> i<span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                ret<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>start <span class="token operator">+</span> i <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">-</span> p<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> length <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                i<span class="token operator">++</span><span class="token punctuation">;</span>
-                ret<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> ret<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-
-作者：LeetCode<span class="token operator">-</span>Solution
-链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>reverse<span class="token operator">-</span>words<span class="token operator">-</span>in<span class="token operator">-</span>a<span class="token operator">-</span>string<span class="token operator">-</span>iii<span class="token operator">/</span>solution<span class="token operator">/</span>fan<span class="token operator">-</span>zhuan<span class="token operator">-</span>zi<span class="token operator">-</span>fu<span class="token operator">-</span>chuan<span class="token operator">-</span>zhong<span class="token operator">-</span>de<span class="token operator">-</span>dan<span class="token operator">-</span>ci<span class="token operator">-</span>iii<span class="token operator">-</span>by<span class="token operator">-</span>lee<span class="token operator">-</span><span class="token number">2</span><span class="token operator">/</span>
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</code></pre>
-<table>
-<thead>
-<tr>
-<th>557. 反转字符串中的单词 III</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Let’s take LeetCode contest</td>
-<td>i</td>
-<td>start</td>
-<td>p</td>
-<td>ret</td>
-<td>start + i - 1 - p</td>
-</tr>
-<tr>
-<td></td>
-<td>0-&gt;5</td>
-<td>0</td>
-<td>0–&gt;4</td>
-<td>s’teL</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>6–&gt;10</td>
-<td>6</td>
-<td>6–&gt;8</td>
-<td>s’teL</td>
-<td>6+10-1-6=9</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>6+10-1-7=8</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>6+10-1-8=7</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>s’teL ekat</td>
-<td>6+10-1-9=6</td>
-</tr>
-</tbody></table>
+                <p><strong>美团点评算法面试题-2020</strong></p>
+<ol>
+<li>反转链表</li>
+<li>n 个有序数组，找出 Top k</li>
+<li>LeetCode11 water</li>
+<li>给定一个数，通过调换顺序，找到比这个数大的最小数</li>
+<li>leetcode55. 跳跃游戏</li>
+<li>leetcode153. 寻找旋转排序数组中的最小值</li>
+<li>给出一个 rand5()，实现一个分布均匀的 rand7()生成器</li>
+<li>有一个点，向北走 5 公里、东走 10km、向南走 5 公里，回到原点。这样的<br>点有几个，证明。</li>
+<li>有一个 n 克的物体、一个天平和若干砝码，这个天平没有刻度，试问最少用<br>多少个什么样的砝码可以将这个物体的质量称出。砝码的质量和个数自行指<br>定。</li>
+<li>两个有序数组，求中位数</li>
+<li>两个有序数组，求中位数</li>
+<li>阶乘后 0 的个数 leetcode 172</li>
+<li>数组的最大连续子数组和。</li>
+<li>写 topk 排序，以及分析时间复杂度</li>
+<li>输入一个字符串，判断其是否是“（”和“）”的一一配对</li>
+<li>2、合并两个排好序的链表。</li>
+<li>一维数组[1,n],n 可以认为正无穷，然后输入无数个区间[a,b],保证 b&gt;a，求所有区间长度。</li>
+<li>求 2^N 次方</li>
+<li>如何使用ｒａｎｄ７（）生成ｒａｎｄ１０（）</li>
+<li>最长递增序列</li>
+<li>五个外卖，先取后送，一共十个点，有多少种排列组合情况</li>
+<li>有一个整数数组，请你根据快速排序的思路，找出数组中第 K 大的数。<br>给定一个整数数组 a,同时给定它的大小 n 和要找的 K(K 在 1 到 n 之间)，请<br>返回第 K 大的数，保证答案存在。</li>
+<li>给出一个有 n 个整数的数组 S，在 S 中找到三个整数 a, b, c，找到所有使得<br>a + b + c = 0 的三元组。</li>
+<li>实现观察者模式。</li>
+<li>有一个机器人的位于一个 m × n 个网格左上角。<br>机器人每一时刻只能向下或者向右移动一步。机器人试图达到网格的右下角。<br>问有多少条不同的路径？</li>
+</ol>
 
             </div>
             <hr/>
@@ -623,7 +570,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2021/02/27/lywsgt/">https://github.com/future1314/2021/02/27/lywsgt/</a>
+                    <a href="https://github.com/future1314/2021/03/06/hyt4zu/">https://github.com/future1314/2021/03/06/hyt4zu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -828,30 +775,38 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/27/qo06sn/">
+                <a href="/2021/03/06/hyt4zu/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="509. 斐波那契数"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="509. 斐波那契数">
+                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="美团点评算法面试题"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="美团点评算法面试题">
                         
-                        <span class="card-title">509. 斐波那契数</span>
+                        <span class="card-title">美团点评算法面试题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            509. 斐波那契数斐波那契数，通常用 F(n) 表示，形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：F(0) = 0，F(1) = 1F(n) = F(n - 1) + F(n 
+                            美团点评算法面试题-2020
+
+反转链表
+n 个有序数组，找出 Top k
+LeetCode11 water
+给定一个数，通过调换顺序，找到比这个数大的最小数
+leetcode55. 跳跃游戏
+leetcode153. 寻找旋转排序数组中的
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -860,6 +815,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -870,35 +826,42 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/27/mf2naa/">
+                <a href="/2021/03/04/migggh/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="268. 丢失的数字">
+                        <!-- <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="200. 岛屿数量"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="200. 岛屿数量">
                         
-                        <span class="card-title">268. 丢失的数字</span>
+                        <span class="card-title">200. 岛屿数量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            268. 丢失的数字给定一个包含 [0, n] 中 n 个数的数组 nums ，找出 [0, n] 这个范围内没有出现在数组中的那个数。
-进阶：
-
-你能否实现线性时间复杂度、仅使用额外常数空间的算法解决此问题?
-
-示例 1：输入：nums 
+                            200. 岛屿数量难度中等 1006给你一个由 &#39;1&#39;（陆地）和 &#39;0&#39;（水）组成的的二维网格，请你计算网格中岛屿的数量。岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。此外，
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            future
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Blog/" class="post-category">
+                                    Blog
+                                </a>
+                            
+                            <a href="/categories/Blog/Algorithm/" class="post-category">
+                                    Algorithm
+                                </a>
+                            
+                            <a href="/categories/Blog/Algorithm/mid/" class="post-category">
+                                    mid
+                                </a>
+                            
                             
                         </span>
                     </div>
