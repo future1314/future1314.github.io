@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Happens-before规则, future">
-    <meta name="description" content="##
-
-title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias/featureimages/11.jpgtoc: truemathjax: f">
+    <meta name="keywords" content="百度内部级别和薪资待遇, future">
+    <meta name="description" content="百度内部级别和薪资待遇级别划分：不同职能分为不同序列，各个序列从  1  到  12  不等。不同序列的话语权和地位从高到低是：m(管理层)&amp;gt;t (研发)&amp;gt;p(产品)&amp;gt;p(运营)=u(设  计)&amp;gt;b(商务市场等)。只">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Happens-before规则 | future</title>
+    <title>百度内部级别和薪资待遇 | future</title>
     <!-- <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/favicon.ico">
 
@@ -344,13 +342,13 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
 
 
 
-<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')"> -->
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/8.jpg')">    
+<!-- <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')"> -->
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg')">    
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Happens-before规则</h1>
+                    <h1 class="description center-align post-title">百度内部级别和薪资待遇</h1>
                 </div>
             </div>
         </div>
@@ -480,7 +478,7 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-03
+                    2021-03-06
                 </div>
                 
 
@@ -494,14 +492,14 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    356
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -512,37 +510,9 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##</p>
-<hr>
-<p>title: Happens-before 规则<br>author: future<br>top: true<br>cover: false<br>coverImg: /medias/featureimages/11.jpg<br>toc: true<br>mathjax: false<br>summary: Happens-before 规则<br>categories:</p>
-<ul>
-<li>Hexo</li>
-</ul>
-<p>tags:</p>
-<ul>
-<li>Github Actions</li>
-<li>持续集成</li>
-<li>语雀</li>
-<li>Hexo</li>
-<li>CI/CD</li>
-</ul>
-<p>urlname: Happens-before</p>
-<p>date: 2020-03-02 23:15:33</p>
-<p>img:</p>
-<p>password:</p>
-<p>updated:</p>
-<hr>
-<h2 id="Happens-before-规则"><a href="#Happens-before-规则" class="headerlink" title="Happens-before 规则"></a>Happens-before 规则</h2><p>Happens-before 规则来规范线程的执行顺序：</p>
-<ul>
-<li>程序次序规则：在单线程中，代码的执行是有序的，虽然可能会存在运行指令的重排序，但最终执行的结果和顺序执行的结果是一致的；</li>
-<li>锁定规则：一个锁处于被一个线程锁定占用状态，那么只有当这个线程释放锁之后，其它线程才能再次获取锁操作；</li>
-<li>volatile 变量规则：如果一个线程正在写 volatile 变量，其它线程读取该变量会发生在写入之后；</li>
-<li>线程启动规则：Thread 对象的 start()方法先行发生于此线程的其它每一个动作；</li>
-<li>线程终结规则：线程中的所有操作都先行发生于对此线程的终止检测；</li>
-<li>对象终结规则：一个对象的初始化完成先行发生于它的 finalize()方法的开始；</li>
-<li>传递性：如果操作 A happens-before 操作 B，操作 B happens-before 操作 C，那么操作 A happens-before 操作 C；</li>
-<li>线程中断规则：对线程 interrupt()方法的调用先行发生于被中断线程的代码检测到中断事件的发生。</li>
-</ul>
+                <h3 id="百度内部级别和薪资待遇"><a href="#百度内部级别和薪资待遇" class="headerlink" title="百度内部级别和薪资待遇"></a>百度内部级别和薪资待遇</h3><h4 id="级别划分："><a href="#级别划分：" class="headerlink" title="级别划分："></a>级别划分：</h4><p>不同职能分为不同序列，各个序列从  1  到  12  不等。<br>不同序列的话语权和地位从高到低是：m(管理层)&gt;t (研发)&gt;p(产品)&gt;p(运营)=u(设  <br>计)&gt;b(商务市场等)。<br>只有  m  有管人的权限。每个序列内，一般应届生入职就是  3  到  5  相当于一线小领导，<br>6  就是比较<br>高级的人才，7  以上很了不起。全公司最高的  p  是  12，只有一个，跻身  est aff。<br>百度的薪资架构分成三条线：<br>第一条：P  级序列，主要针对产品经理和产品运营人员。<br>第二条：T  级序列，技术岗位。还有很奇葩的  S  级，即支持部门，级别和  T  级是一样<br>的，只不过升级非常难，主要是公共、行政、渠道等等。<br>技术岗位为  T  序列。T1-T12。<br>T1  为低端岗位，T2-助理，T3-专员，T4-高级工程师，T5-资深工程师<br>T6-技术专家，T7-高级专家，T8-资深专家，T9-研究员，T10  技术总监，T11  首席科<br>学家。<br>第三条：M  级序列，管理层。从一到五分成九级。<br>M1.1 M1.2 M2.1 M2.2 M3.1 M3.2 M4.1 M4.2 M5<br>最低的是  M1.1，至少是部门二把手了，李明远是  M3.2，以前的汤和松都是这个级别，<br>李彦宏是唯一的  M5，其实从  M3  开始就有机会加入  E-St aff ，类似于阿里的合伙人会<br>议，属于最高战略决策层。</p>
+<h4 id="薪资结构："><a href="#薪资结构：" class="headerlink" title="薪资结构："></a>薪资结构：</h4><p>*<em><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1615010976309-fd9ac210-fb8c-4f4a-8cd7-abd94955be95.png#align=left&display=inline&height=263&margin=%5Bobject%20Object%5D&name=image.png&originHeight=526&originWidth=1720&size=298568&status=done&style=none&width=860" alt="image.png"><br>月薪 ×14.6（12+0.6+2），其他岗位月薪 ×14 **薪资水平：\</em>*<br>注：关于薪酬，百度的薪酬与职级已经没“太多挂钩”。关于股票期权，T5  给的可能<br>性很小， 很少见；T6  不是全部都有。<br>入职时，起薪倒挂。这个仅限于社会招聘。这意味着，除非是公司花大力气挖你，不<br>然你基本没什么议价能力。原来有多少工资，到了这里，只要比原来的工资有一定增<br>幅(比如  10%)，那 么  hr  就基本不会再让步。<br>入职后，工资每年有一次普涨的机会，在  q1，三月调整，四月公布。一般来说，普涨<br>的幅度在  15%。<br>这就意味着，很多时候税前工资涨了，税后工资却只变了几百块。表现特别好的(如晋<br>升或绩效高)，涨幅会更高。<br>但是，老板的大盘子总数是一定的，甲涨得多，就必然会有一个乙涨得少。</p>
+<h4 id="晋升机制："><a href="#晋升机制：" class="headerlink" title="晋升机制："></a>晋升机制：</h4><p><strong>1、定期考核：</strong>每年进行两次统一的晋升计划考核；<br>入职后，每年有两次升职的机会，三月一次，九月一次。试用期(半年)未过的无法参<br>与职称评定。<br>每半年一次打绩效，由自己的直属领导打分。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1615011054108-30378b9f-b6c5-424d-bf47-6a9c0d7d9308.png#align=left&display=inline&height=329&margin=%5Bobject%20Object%5D&name=image.png&originHeight=658&originWidth=1768&size=255851&status=done&style=none&width=884" alt="image.png"><br>（决定最终奖金数的系数有很多。即使绩效看着不错，但老板和  hr  也可以通过其他系<br>数调整奖金数）<br>晋升时，除非表现特别优异且老板格外卖力，一般很少有连升两级的情况出现。<br>百度是很唯  KPI（关键绩效指标）至上的，其次部门很核心，再次老大话语权比较高，<br>相对晋升容易些。<br>试用期结束后的第一次升职机会，需要先定级，比如进来是  4，这一次要确定一下确<br>实是  4， 也算占用了一次晋级机会了。<br>3-5  的晋升都比较容易，一般管理自己的  m2  通过就  ok  了。<br>5-6  的晋升需要  m3  推动。6  以上的晋升需要在公司范围内评比。<br><strong>2、不定期考核：</strong>有特殊贡献、表现突出的员工会被晋升<br>应届生足够细致用心、能力够强，入职一年多就可以从  T1  升到  T4。<br>T5  是分水岭，再升到  T5  得花好几年时间（看绩效，如果能力超强，给公司带来的收<br>益很大，可以不用很长时间就能晋升）<br>T6  升  T7  算是一个瓶颈，非常难，往上就更困难。相对来说级别高的话语权重，晋升<br>可能也会比较容易。<br><strong>一般情况是分  2  种：</strong><br><strong>1.自己提名</strong>，当你自己觉得已经具备下一  level  的素质，可以自己提名，提名后进入考<br>察期，主管设定考察期目标，考察通过顺利晋升，考察不通过维持原层级不变；<br><strong>2.主管提名</strong>，如果是主管提名，一般都是直接通过的，但是如果你现层级已经比较高<br>了，那就不是直接提名这么简单。<br>如果能升到  T7，基本上是  TL（Team Leader）的级别，写代码/直接做业务的时间就<br>很少了。<br>在百度，老员工的职位稳定，对业务驾轻就熟，手里的期权、股票数量远超新员工；<br>相比较而言新员⼯（级别低的）基本没有期权和股票，成长空间也是被压缩的，机会<br>较少、往⾼级别上升慢。</p>
 
             </div>
             <hr/>
@@ -568,7 +538,7 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/future1314/2020/09/03/tz4aem/">https://github.com/future1314/2020/09/03/tz4aem/</a>
+                    <a href="https://github.com/future1314/2021/03/06/qk5ehk/">https://github.com/future1314/2021/03/06/qk5ehk/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -773,42 +743,31 @@ title: Happens-before 规则author: futuretop: truecover: falsecoverImg: /medias
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/03/rsals7/">
+                <a href="/2021/03/06/qk5ehk/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="内存模型"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="内存模型">
+                        <!-- <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="百度内部级别和薪资待遇"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="百度内部级别和薪资待遇">
                         
-                        <span class="card-title">内存模型</span>
+                        <span class="card-title">百度内部级别和薪资待遇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-JVM 内存模型的具体设计
-
-1. 堆（Heap）
-
-2. 程序计数器（Program Counter Register）
-
-3. 方法区（Method Area）
-
-4.虚拟机栈（VM stack）
-
-5.本地方法栈（Native M
+                            百度内部级别和薪资待遇级别划分：不同职能分为不同序列，各个序列从  1  到  12  不等。不同序列的话语权和地位从高到低是：m(管理层)&gt;t (研发)&gt;p(产品)&gt;p(运营)=u(设  计)&gt;b(商务市场等)。只
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -817,6 +776,7 @@ JVM 内存模型的具体设计
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -827,25 +787,32 @@ JVM 内存模型的具体设计
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/02/eq45ui/">
+                <a href="/2021/03/06/hyt4zu/">
                     <div class="card-image">
                         
                         
-                        <!-- <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="堆的信息"> -->
-                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="堆的信息">
+                        <!-- <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="美团点评算法面试题"> -->
+                        <img src="https://cdn.jsdelivr.net/gh/future1314/future1314.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="美团点评算法面试题">
                         
-                        <span class="card-title">堆的信息</span>
+                        <span class="card-title">美团点评算法面试题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            [root@aliyun ~]# jps1476 WrapperSimpleApp27788 halo-latest.jar25245 Jps[root@aliyun ~]#[root@aliyun ~]#** jmap -heap 277
+                            美团点评算法面试题-2020
+
+反转链表
+n 个有序数组，找出 Top k
+LeetCode11 water
+给定一个数，通过调换顺序，找到比这个数大的最小数
+leetcode55. 跳跃游戏
+leetcode153. 寻找旋转排序数组中的
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-06
                             </span>
                         <span class="publish-author">
                             
