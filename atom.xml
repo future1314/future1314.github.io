@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2021-03-06T06:29:27.237Z</updated>
+  <updated>2021-03-06T10:13:27.079Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小米面试题</title>
+    <link href="https://github.com/future1314/2021/03/06/utq0ds/"/>
+    <id>https://github.com/future1314/2021/03/06/utq0ds/</id>
+    <published>2021-03-06T06:30:09.000Z</published>
+    <updated>2021-03-06T10:13:27.079Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;小米面试题&lt;/strong&gt;&lt;br&gt;1.  二分&lt;br&gt;2.  四次挥手中的  TIME_WAIT  状态存在的意义 3. TCP  为什么可靠&lt;br&gt;4.  滑动窗口是什么 5. HTTP  和  HTTPS  的区别 6. TCP </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小米 Java 岗位面经汇总</title>
+    <link href="https://github.com/future1314/2021/03/06/ryv68p/"/>
+    <id>https://github.com/future1314/2021/03/06/ryv68p/</id>
+    <published>2021-03-06T06:28:57.000Z</published>
+    <updated>2021-03-06T10:13:27.391Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;小米 Java 岗位面经汇总&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;br&gt;小米  java  社招面试记录…………………………………………………………………………………1&lt;br&gt;小米  java </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小米</title>
+    <link href="https://github.com/future1314/2021/03/06/dgk2gr/"/>
+    <id>https://github.com/future1314/2021/03/06/dgk2gr/</id>
+    <published>2021-03-06T06:28:40.000Z</published>
+    <updated>2021-03-06T10:13:27.395Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>美团点评 2020 面经汇总-Java 工程师</title>
     <link href="https://github.com/future1314/2021/03/06/veld20/"/>
     <id>https://github.com/future1314/2021/03/06/veld20/</id>
     <published>2021-03-06T06:27:27.000Z</published>
-    <updated>2021-03-06T06:29:27.237Z</updated>
+    <updated>2021-03-06T10:13:27.627Z</updated>
     
     
       
@@ -42,7 +97,7 @@
     <link href="https://github.com/future1314/2021/03/06/fpiwe9/"/>
     <id>https://github.com/future1314/2021/03/06/fpiwe9/</id>
     <published>2021-03-06T06:26:19.000Z</published>
-    <updated>2021-03-06T06:29:27.437Z</updated>
+    <updated>2021-03-06T10:13:27.823Z</updated>
     
     
       
@@ -63,7 +118,7 @@
     <link href="https://github.com/future1314/2021/03/06/rrovdv/"/>
     <id>https://github.com/future1314/2021/03/06/rrovdv/</id>
     <published>2021-03-06T06:25:25.000Z</published>
-    <updated>2021-03-06T06:29:27.477Z</updated>
+    <updated>2021-03-06T10:13:27.859Z</updated>
     
     
       
@@ -84,7 +139,7 @@
     <link href="https://github.com/future1314/2021/03/06/zvgfoi/"/>
     <id>https://github.com/future1314/2021/03/06/zvgfoi/</id>
     <published>2021-03-06T06:24:20.000Z</published>
-    <updated>2021-03-06T06:29:27.485Z</updated>
+    <updated>2021-03-06T10:13:27.871Z</updated>
     
     
       
@@ -105,7 +160,7 @@
     <link href="https://github.com/future1314/2021/03/06/dgxcw5/"/>
     <id>https://github.com/future1314/2021/03/06/dgxcw5/</id>
     <published>2021-03-06T06:19:09.000Z</published>
-    <updated>2021-03-06T06:29:27.521Z</updated>
+    <updated>2021-03-06T10:13:27.907Z</updated>
     
     
       
@@ -126,7 +181,7 @@
     <link href="https://github.com/future1314/2021/03/06/pxie6w/"/>
     <id>https://github.com/future1314/2021/03/06/pxie6w/</id>
     <published>2021-03-06T06:18:39.000Z</published>
-    <updated>2021-03-06T06:29:27.537Z</updated>
+    <updated>2021-03-06T10:13:27.923Z</updated>
     
     
       
@@ -147,7 +202,7 @@
     <link href="https://github.com/future1314/2021/03/06/uudtih/"/>
     <id>https://github.com/future1314/2021/03/06/uudtih/</id>
     <published>2021-03-06T06:17:59.000Z</published>
-    <updated>2021-03-06T06:29:27.641Z</updated>
+    <updated>2021-03-06T10:13:28.023Z</updated>
     
     
       
@@ -168,7 +223,7 @@
     <link href="https://github.com/future1314/2021/03/06/kaz11q/"/>
     <id>https://github.com/future1314/2021/03/06/kaz11q/</id>
     <published>2021-03-06T06:15:35.000Z</published>
-    <updated>2021-03-06T06:29:27.749Z</updated>
+    <updated>2021-03-06T10:13:28.131Z</updated>
     
     
       
@@ -189,7 +244,7 @@
     <link href="https://github.com/future1314/2021/03/06/caoqe4/"/>
     <id>https://github.com/future1314/2021/03/06/caoqe4/</id>
     <published>2021-03-06T06:15:22.000Z</published>
-    <updated>2021-03-06T06:29:27.753Z</updated>
+    <updated>2021-03-06T10:13:28.131Z</updated>
     
     
     
@@ -202,7 +257,7 @@
     <link href="https://github.com/future1314/2021/03/06/iifou4/"/>
     <id>https://github.com/future1314/2021/03/06/iifou4/</id>
     <published>2021-03-06T06:14:57.000Z</published>
-    <updated>2021-03-06T06:29:27.757Z</updated>
+    <updated>2021-03-06T10:13:28.135Z</updated>
     
     
     
@@ -215,7 +270,7 @@
     <link href="https://github.com/future1314/2021/03/06/vacfrr/"/>
     <id>https://github.com/future1314/2021/03/06/vacfrr/</id>
     <published>2021-03-06T06:14:05.000Z</published>
-    <updated>2021-03-06T06:29:27.837Z</updated>
+    <updated>2021-03-06T10:13:28.207Z</updated>
     
     
       
@@ -236,7 +291,7 @@
     <link href="https://github.com/future1314/2021/03/06/gogngr/"/>
     <id>https://github.com/future1314/2021/03/06/gogngr/</id>
     <published>2021-03-06T06:13:44.000Z</published>
-    <updated>2021-03-06T06:29:27.837Z</updated>
+    <updated>2021-03-06T10:13:28.211Z</updated>
     
     
     
@@ -249,7 +304,7 @@
     <link href="https://github.com/future1314/2021/03/06/qrzqr3/"/>
     <id>https://github.com/future1314/2021/03/06/qrzqr3/</id>
     <published>2021-03-06T06:13:03.000Z</published>
-    <updated>2021-03-06T06:29:27.937Z</updated>
+    <updated>2021-03-06T10:13:28.311Z</updated>
     
     
       
@@ -270,7 +325,7 @@
     <link href="https://github.com/future1314/2021/03/06/qk5ehk/"/>
     <id>https://github.com/future1314/2021/03/06/qk5ehk/</id>
     <published>2021-03-06T06:08:06.000Z</published>
-    <updated>2021-03-06T06:29:27.985Z</updated>
+    <updated>2021-03-06T10:13:28.363Z</updated>
     
     
       
@@ -291,7 +346,7 @@
     <link href="https://github.com/future1314/2021/03/06/hyt4zu/"/>
     <id>https://github.com/future1314/2021/03/06/hyt4zu/</id>
     <published>2021-03-06T06:07:24.000Z</published>
-    <updated>2021-03-06T06:29:28.009Z</updated>
+    <updated>2021-03-06T10:13:28.391Z</updated>
     
     
       
@@ -316,7 +371,7 @@
     <link href="https://github.com/future1314/2021/03/04/migggh/"/>
     <id>https://github.com/future1314/2021/03/04/migggh/</id>
     <published>2021-03-04T07:53:05.000Z</published>
-    <updated>2021-03-06T06:29:28.033Z</updated>
+    <updated>2021-03-06T10:13:28.411Z</updated>
     
     
       
@@ -343,7 +398,7 @@
     <link href="https://github.com/future1314/2021/03/04/yq5mru/"/>
     <id>https://github.com/future1314/2021/03/04/yq5mru/</id>
     <published>2021-03-04T07:51:50.000Z</published>
-    <updated>2021-03-06T06:29:28.041Z</updated>
+    <updated>2021-03-06T10:13:28.423Z</updated>
     
     
       
@@ -351,87 +406,6 @@
         
         
     <summary type="html">&lt;h4 id=&quot;5-最长回文子串&quot;&gt;&lt;a href=&quot;#5-最长回文子串&quot; class=&quot;headerlink&quot; title=&quot;5. 最长回文子串&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    <category term="mid" scheme="https://github.com/future1314/categories/Blog/Algorithm/mid/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>199. 二叉树的右视图</title>
-    <link href="https://github.com/future1314/2021/03/04/siwpn9/"/>
-    <id>https://github.com/future1314/2021/03/04/siwpn9/</id>
-    <published>2021-03-04T07:11:56.000Z</published>
-    <updated>2021-03-06T06:29:28.053Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;199-二叉树的右视图&quot;&gt;&lt;a href=&quot;#199-二叉树的右视图&quot; class=&quot;headerlink&quot; title=&quot;199. 二叉树的右视图&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    <category term="mid" scheme="https://github.com/future1314/categories/Blog/Algorithm/mid/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>912. 排序数组</title>
-    <link href="https://github.com/future1314/2021/03/04/sxaxdm/"/>
-    <id>https://github.com/future1314/2021/03/04/sxaxdm/</id>
-    <published>2021-03-04T03:24:36.000Z</published>
-    <updated>2021-03-06T06:29:28.113Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;912-排序数组&quot;&gt;&lt;a href=&quot;#912-排序数组&quot; class=&quot;headerlink&quot; title=&quot;912. 排序数组&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Blog" scheme="https://github.com/future1314/categories/Blog/"/>
-    
-    <category term="Algorithm" scheme="https://github.com/future1314/categories/Blog/Algorithm/"/>
-    
-    <category term="mid" scheme="https://github.com/future1314/categories/Blog/Algorithm/mid/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>103. 二叉树的锯齿形层序遍历--🀄️</title>
-    <link href="https://github.com/future1314/2021/03/04/adauml/"/>
-    <id>https://github.com/future1314/2021/03/04/adauml/</id>
-    <published>2021-03-04T02:14:39.000Z</published>
-    <updated>2021-03-06T06:29:28.125Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;103-二叉树的锯齿形层序遍历&quot;&gt;&lt;a href=&quot;#103-二叉树的锯齿形层序遍历&quot; class=&quot;headerlink&quot; title=&quot;103. 二叉树的锯齿形层序遍历&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
