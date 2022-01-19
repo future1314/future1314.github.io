@@ -6,7 +6,7 @@
   <link href="https://github.com/future1314/atom.xml" rel="self"/>
   
   <link href="https://github.com/future1314/"/>
-  <updated>2022-01-18T22:18:52.268Z</updated>
+  <updated>2022-01-19T10:13:55.884Z</updated>
   <id>https://github.com/future1314/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://github.com/future1314/2021/12/03/gruhk2/"/>
     <id>https://github.com/future1314/2021/12/03/gruhk2/</id>
     <published>2021-12-03T08:51:49.000Z</published>
-    <updated>2022-01-18T22:18:52.268Z</updated>
+    <updated>2022-01-19T10:13:55.884Z</updated>
     
     
       
@@ -42,7 +42,7 @@
     <link href="https://github.com/future1314/2021/09/22/kckkzw/"/>
     <id>https://github.com/future1314/2021/09/22/kckkzw/</id>
     <published>2021-09-21T23:51:37.000Z</published>
-    <updated>2022-01-18T22:18:52.336Z</updated>
+    <updated>2022-01-19T10:13:55.948Z</updated>
     
     
       
@@ -65,7 +65,7 @@
     <link href="https://github.com/future1314/2021/09/22/fh5lku/"/>
     <id>https://github.com/future1314/2021/09/22/fh5lku/</id>
     <published>2021-09-21T23:48:17.000Z</published>
-    <updated>2022-01-18T22:18:52.484Z</updated>
+    <updated>2022-01-19T10:13:56.092Z</updated>
     
     
       
@@ -87,7 +87,7 @@
     <link href="https://github.com/future1314/2021/09/15/bi96sb/"/>
     <id>https://github.com/future1314/2021/09/15/bi96sb/</id>
     <published>2021-09-14T23:39:59.000Z</published>
-    <updated>2022-01-18T22:18:52.492Z</updated>
+    <updated>2022-01-19T10:13:56.096Z</updated>
     
     
       
@@ -104,11 +104,58 @@
   </entry>
   
   <entry>
+    <title>jmx 系统监控</title>
+    <link href="https://github.com/future1314/2021/08/17/vgafpo/"/>
+    <id>https://github.com/future1314/2021/08/17/vgafpo/</id>
+    <published>2021-08-16T23:33:58.000Z</published>
+    <updated>2022-01-19T10:13:56.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;在&lt;a href=&quot;https://time.geekbang.org/column/article/159487&quot;&gt;19 讲&lt;/a&gt;中，我提到可以&lt;strong&gt;使用 JMX 监控 Kafka</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>idea 2018.1.5</title>
+    <link href="https://github.com/future1314/2021/08/13/vc3w1q/"/>
+    <id>https://github.com/future1314/2021/08/13/vc3w1q/</id>
+    <published>2021-08-13T13:34:17.000Z</published>
+    <updated>2022-01-19T10:13:56.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre&gt;&lt;code&gt;ThisCrackLicenseId-&amp;#123;
+“licenseId”:”11011”,
+“licenseeName”:”Wechat”,
+“assigneeName”:”tree-deep-see-deer”,
+“assigneeEmail”:”237</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>源码</title>
     <link href="https://github.com/future1314/2021/06/19/ygkwfv/"/>
     <id>https://github.com/future1314/2021/06/19/ygkwfv/</id>
     <published>2021-06-19T02:38:29.000Z</published>
-    <updated>2022-01-18T22:18:52.496Z</updated>
+    <updated>2022-01-19T10:13:56.120Z</updated>
     
     
       
@@ -129,7 +176,7 @@
     <link href="https://github.com/future1314/2021/06/19/zah639/"/>
     <id>https://github.com/future1314/2021/06/19/zah639/</id>
     <published>2021-06-18T22:06:47.000Z</published>
-    <updated>2022-01-18T22:18:52.512Z</updated>
+    <updated>2022-01-19T10:13:56.132Z</updated>
     
     
       
@@ -150,7 +197,7 @@
     <link href="https://github.com/future1314/2021/03/20/mdib2d/"/>
     <id>https://github.com/future1314/2021/03/20/mdib2d/</id>
     <published>2021-03-20T07:12:16.000Z</published>
-    <updated>2022-01-18T22:18:52.516Z</updated>
+    <updated>2022-01-19T10:13:56.136Z</updated>
     
     
       
@@ -172,7 +219,7 @@
     <link href="https://github.com/future1314/2021/03/06/gegpst/"/>
     <id>https://github.com/future1314/2021/03/06/gegpst/</id>
     <published>2021-03-06T11:18:09.000Z</published>
-    <updated>2022-01-18T22:18:52.560Z</updated>
+    <updated>2022-01-19T10:13:56.176Z</updated>
     
     
       
@@ -189,11 +236,32 @@
   </entry>
   
   <entry>
+    <title>小米面试题</title>
+    <link href="https://github.com/future1314/2021/03/06/utq0ds/"/>
+    <id>https://github.com/future1314/2021/03/06/utq0ds/</id>
+    <published>2021-03-06T06:30:09.000Z</published>
+    <updated>2022-01-19T10:13:56.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;小米面试题&lt;/strong&gt;&lt;br&gt;1.  二分&lt;br&gt;2.  四次挥手中的  TIME_WAIT  状态存在的意义 3. TCP  为什么可靠&lt;br&gt;4.  滑动窗口是什么 5. HTTP  和  HTTPS  的区别 6. TCP </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>小米 Java 岗位面经汇总</title>
     <link href="https://github.com/future1314/2021/03/06/ryv68p/"/>
     <id>https://github.com/future1314/2021/03/06/ryv68p/</id>
     <published>2021-03-06T06:28:57.000Z</published>
-    <updated>2022-01-18T22:18:52.808Z</updated>
+    <updated>2022-01-19T10:13:56.408Z</updated>
     
     
       
@@ -214,7 +282,7 @@
     <link href="https://github.com/future1314/2021/03/06/dgk2gr/"/>
     <id>https://github.com/future1314/2021/03/06/dgk2gr/</id>
     <published>2021-03-06T06:28:40.000Z</published>
-    <updated>2022-01-18T22:18:52.812Z</updated>
+    <updated>2022-01-19T10:13:56.412Z</updated>
     
     
     
@@ -227,7 +295,7 @@
     <link href="https://github.com/future1314/2021/03/06/veld20/"/>
     <id>https://github.com/future1314/2021/03/06/veld20/</id>
     <published>2021-03-06T06:27:27.000Z</published>
-    <updated>2022-01-18T22:18:52.992Z</updated>
+    <updated>2022-01-19T10:13:56.580Z</updated>
     
     
       
@@ -248,7 +316,7 @@
     <link href="https://github.com/future1314/2021/03/06/fpiwe9/"/>
     <id>https://github.com/future1314/2021/03/06/fpiwe9/</id>
     <published>2021-03-06T06:26:19.000Z</published>
-    <updated>2022-01-18T22:18:53.156Z</updated>
+    <updated>2022-01-19T10:13:56.728Z</updated>
     
     
       
@@ -269,7 +337,7 @@
     <link href="https://github.com/future1314/2021/03/06/rrovdv/"/>
     <id>https://github.com/future1314/2021/03/06/rrovdv/</id>
     <published>2021-03-06T06:25:25.000Z</published>
-    <updated>2022-01-18T22:18:53.196Z</updated>
+    <updated>2022-01-19T10:13:56.764Z</updated>
     
     
       
@@ -290,7 +358,7 @@
     <link href="https://github.com/future1314/2021/03/06/zvgfoi/"/>
     <id>https://github.com/future1314/2021/03/06/zvgfoi/</id>
     <published>2021-03-06T06:24:20.000Z</published>
-    <updated>2022-01-18T22:18:53.204Z</updated>
+    <updated>2022-01-19T10:13:56.776Z</updated>
     
     
       
@@ -307,11 +375,32 @@
   </entry>
   
   <entry>
+    <title>阿里巴巴内部级别和薪资待遇</title>
+    <link href="https://github.com/future1314/2021/03/06/dgxcw5/"/>
+    <id>https://github.com/future1314/2021/03/06/dgxcw5/</id>
+    <published>2021-03-06T06:19:09.000Z</published>
+    <updated>2022-01-19T10:13:56.808Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;阿里巴巴内部级别和薪资待遇&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;级别划分：&lt;/strong&gt;&lt;br&gt;P  为  Profession  的首字母，是阿里巴巴技术岗位的序列号。&lt;br&gt;分为  P1-P12，P1、P2 </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>阿里巴巴企业文化</title>
     <link href="https://github.com/future1314/2021/03/06/pxie6w/"/>
     <id>https://github.com/future1314/2021/03/06/pxie6w/</id>
     <published>2021-03-06T06:18:39.000Z</published>
-    <updated>2022-01-18T22:18:53.224Z</updated>
+    <updated>2022-01-19T10:13:56.824Z</updated>
     
     
       
@@ -332,7 +421,7 @@
     <link href="https://github.com/future1314/2021/03/06/uudtih/"/>
     <id>https://github.com/future1314/2021/03/06/uudtih/</id>
     <published>2021-03-06T06:17:59.000Z</published>
-    <updated>2022-01-18T22:18:53.320Z</updated>
+    <updated>2022-01-19T10:13:56.908Z</updated>
     
     
       
@@ -342,66 +431,6 @@
     <summary type="html">&lt;p&gt;&lt;strong&gt;阿⾥巴巴最新 Java 笔试题汇总&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;单选题  **&lt;br&gt;**1.有个特殊的餐厅，对客⼈的要求是如果要离开餐厅⼀定要看下餐厅内有没有⽐你迟进来的</summary>
         
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>阿里巴巴面经合集</title>
-    <link href="https://github.com/future1314/2021/03/06/kaz11q/"/>
-    <id>https://github.com/future1314/2021/03/06/kaz11q/</id>
-    <published>2021-03-06T06:15:35.000Z</published>
-    <updated>2022-01-18T22:18:53.428Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;阿里巴巴面经合集&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;一、Java  研发工程师&lt;/strong&gt;&lt;br&gt;一面（1h+）&lt;br&gt;对简历进行</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>阿里</title>
-    <link href="https://github.com/future1314/2021/03/06/caoqe4/"/>
-    <id>https://github.com/future1314/2021/03/06/caoqe4/</id>
-    <published>2021-03-06T06:15:22.000Z</published>
-    <updated>2022-01-18T22:18:53.428Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>美团</title>
-    <link href="https://github.com/future1314/2021/03/06/iifou4/"/>
-    <id>https://github.com/future1314/2021/03/06/iifou4/</id>
-    <published>2021-03-06T06:14:57.000Z</published>
-    <updated>2022-01-18T22:18:53.432Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>百度</title>
-    <link href="https://github.com/future1314/2021/03/06/gogngr/"/>
-    <id>https://github.com/future1314/2021/03/06/gogngr/</id>
-    <published>2021-03-06T06:13:44.000Z</published>
-    <updated>2022-01-18T22:18:53.432Z</updated>
-    
     
     
     
