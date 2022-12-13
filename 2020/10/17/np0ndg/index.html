@@ -485,7 +485,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-13
+                    2022-12-14
                 </div>
                 
 
@@ -510,8 +510,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="182-查找重复的电子邮箱"><a href="#182-查找重复的电子邮箱" class="headerlink" title="182. 查找重复的电子邮箱"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/duplicate-emails/">182. 查找重复的电子邮箱</a></h4><p>难度简单 234 收藏分享切换为英文接收动态反馈<br><a href="">SQL 架构</a><br>编写一个 SQL 查询，查找 <code>Person</code> 表中所有重复的电子邮箱。<br><strong>示例：</strong><br>+—-+———+<br>| Id | Email   |<br>+—-+———+<br>| 1  | <a href="mailto:&#x61;&#x40;&#98;&#x2e;&#x63;&#111;&#x6d;">&#x61;&#x40;&#98;&#x2e;&#x63;&#111;&#x6d;</a> |<br>| 2  | <a href="mailto:&#x63;&#x40;&#x64;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x40;&#x64;&#x2e;&#x63;&#x6f;&#x6d;</a> |<br>| 3  | <a href="mailto:&#x61;&#x40;&#98;&#x2e;&#99;&#111;&#x6d;">&#x61;&#x40;&#98;&#x2e;&#99;&#111;&#x6d;</a> |<br>+—-+———+</p>
-<p>根据以上输入，你的查询应返回以下结果：<br>+———+<br>| Email   |<br>+———+<br>| <a href="mailto:&#x61;&#x40;&#x62;&#x2e;&#x63;&#111;&#109;">&#x61;&#x40;&#x62;&#x2e;&#x63;&#111;&#109;</a> |<br>+———+</p>
+                <h4 id="182-查找重复的电子邮箱"><a href="#182-查找重复的电子邮箱" class="headerlink" title="182. 查找重复的电子邮箱"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/duplicate-emails/">182. 查找重复的电子邮箱</a></h4><p>难度简单 234 收藏分享切换为英文接收动态反馈<br><a href="">SQL 架构</a><br>编写一个 SQL 查询，查找 <code>Person</code> 表中所有重复的电子邮箱。<br><strong>示例：</strong><br>+—-+———+<br>| Id | Email   |<br>+—-+———+<br>| 1  | <a href="mailto:&#x61;&#64;&#x62;&#46;&#x63;&#111;&#x6d;">&#x61;&#64;&#x62;&#46;&#x63;&#111;&#x6d;</a> |<br>| 2  | <a href="mailto:&#99;&#x40;&#100;&#46;&#x63;&#x6f;&#109;">&#99;&#x40;&#100;&#46;&#x63;&#x6f;&#109;</a> |<br>| 3  | <a href="mailto:&#x61;&#64;&#x62;&#46;&#x63;&#x6f;&#109;">&#x61;&#64;&#x62;&#46;&#x63;&#x6f;&#109;</a> |<br>+—-+———+</p>
+<p>根据以上输入，你的查询应返回以下结果：<br>+———+<br>| Email   |<br>+———+<br>| <a href="mailto:&#x61;&#64;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x61;&#64;&#x62;&#x2e;&#99;&#x6f;&#109;</a> |<br>+———+</p>
 <p><strong>说明：</strong>所有电子邮箱都是小写字母。<br>ok</p>
 <pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token keyword">distinct</span> p1<span class="token punctuation">.</span>email
 <span class="token keyword">FROM</span> Person p1<span class="token punctuation">,</span>
