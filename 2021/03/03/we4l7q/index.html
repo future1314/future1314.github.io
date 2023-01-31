@@ -502,7 +502,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
@@ -549,7 +549,7 @@
         <span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/solution/mian-shi-ti-53-ii-0n-1zhong-que-shi-de-shu-zi-er-f/</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p>解析</p>
-<p>排序数组中的搜索问题，首先想到 二分法 解决。<br>根据题意，数组可以按照以下规则划分为两部分。<br>左子数组： nums[i]=i ；<br>右子数组： nums[i] !=i ；<br>缺失的数字等于 “右子数组的首位元素” 对应的索引；因此考虑使用二分法查找 “右子数组的首位元素” 。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614784461729-9c5ccba0-6b00-46ff-833a-f0a21a0f18f7.png#align=left&display=inline&height=219&margin=%5Bobject%20Object%5D&name=image.png&originHeight=374&originWidth=1166&size=154745&status=done&style=none&width=684" alt="image.png"></p>
+<p>排序数组中的搜索问题，首先想到 二分法 解决。<br>根据题意，数组可以按照以下规则划分为两部分。<br>左子数组： nums[i]=i ；<br>右子数组： nums[i] !=i ；<br>缺失的数字等于 “右子数组的首位元素” 对应的索引；因此考虑使用二分法查找 “右子数组的首位元素” 。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614784461729-9c5ccba0-6b00-46ff-833a-f0a21a0f18f7.png#align=left&display=inline&height=219&name=image.png&originHeight=374&originWidth=1166&size=154745&status=done&style=none&width=684" alt="image.png"></p>
 <hr>
 <p>终于过了</p>
 <pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">missingNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">///????[0] [1] [0,2,3] [0,1,3]</span>

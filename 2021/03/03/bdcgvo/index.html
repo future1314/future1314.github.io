@@ -498,7 +498,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
@@ -538,7 +538,7 @@
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>解析</strong><br><strong>动态规划</strong></p>
 <p>这题用动态规划是比较好理解的：<br>我们想要求长度为 n 的绳子剪掉后的最大乘积，可以从前面比 n 小的绳子转移而来。<br>用一个 dp 数组记录从 0 到 n 长度的绳子剪掉后的最大乘积，也就是<strong>dp[i]表示长度为 i 的绳子剪成 m 段后的最大乘积，初始化 dp[2] = 1。</strong><br>我们先把绳子剪掉第一段（长度为 j），如果只剪掉长度为 1，对最后的乘积无任何增益，所以从长度为 2 开始剪，<br>剪了第一段后，剩下(i - j)长度可以剪也可以不剪。<strong>如果不剪的话长度乘积即为 j _ (i - j)；如果剪的话长度乘积即为 j _ dp[i - j]。取两者最大值 max(j _ (i - j), j _ dp[i - j])。</strong><br>第一段长度 j 可以取的区间为[2,i)，对所有 j 不同的情况取最大值，因此最终 dp[i]的转移方程为：<br><strong>dp[i] = max(dp[i], max(j _ (i - j), j _ dp[i - j]))。</strong><br><strong>最后返回 dp[n]即可。</strong></p>
-<p>作者：edelweisskoko<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/">https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/</a><br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614767517985-c3cc335c-77fc-43f5-afb0-63f7ffc728c4.png#align=left&display=inline&height=504&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1008&originWidth=1220&size=415103&status=done&style=none&width=610" alt="image.png"></p>
+<p>作者：edelweisskoko<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/">https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/</a><br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614767517985-c3cc335c-77fc-43f5-afb0-63f7ffc728c4.png#align=left&display=inline&height=504&name=image.png&originHeight=1008&originWidth=1220&size=415103&status=done&style=none&width=610" alt="image.png"></p>
 
             </div>
             <hr/>

@@ -485,7 +485,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
@@ -510,8 +510,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。<br>**<br>**<br>多处理器，处理器提供了<strong>总线锁定</strong>和<strong>缓存锁定</strong>两个机制来保证复杂内存操作的原子性。<br>当处理器要操作一个共享变量的时候，其在总线上会发出一个 Lock 信号，这时其它处理器就不能操作共享变量了，该处理器会独享此共享内存中的变量。但总线锁定在阻塞其它处理器获取该共享变量的操作请求时，也可能会导致大量阻塞，从而增加系统的性能开销。<br>于是，后来的<strong>处理器都提供了缓存锁定机制，也就说当某个处理器对缓存中的共享变量进行了操作，就会通知其它处理器放弃存储该共享资源或者重新读取该共享资源。</strong>目前最新的处理器都支持缓存锁定机制。<br>**<br>Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程中系统的上下文切换频率。<br>[root@aliyun ~]# vmstat 2 <strong>//时间间隔</strong><br>procs ———–memory———- —swap– —–io—- -system– ——cpu—–<br>r   b   swpd   free   buff   cache   si   so    bi    bo   in   cs us sy id wa st<br>2  0      0   82800 133624 537868    0    0     4    13   12   25  1  0 99  0  0<br><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1599227584883-fec6985f-f6f8-4ef6-86ca-5d216cc23359.png#align=left&display=inline&height=177&margin=%5Bobject%20Object%5D&name=image.png&originHeight=177&originWidth=746&size=191086&status=done&style=none&width=746" alt="image.png"><br>如果是监视某个应用的上下文切换，可以使用 pidstat 命令监控进程的 上下文切换。<br> pidstat -w -l -p <strong>26571</strong> 1 100</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/282505/1595921713500-ef983e78-c5e3-46f3-abe1-bbdc74c1f384.jpeg#align=left&display=inline&height=582&margin=%5Bobject%20Object%5D&originHeight=582&originWidth=1564&size=0&status=done&style=none&width=1564"></p>
+                <h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>线程主要有“新建”（NEW）、“就绪”（RUNNABLE）、“运行”（RUNNING）、“阻塞”（BLOCKED）、“死亡”（DEAD）五种状态。<br>**<br>**<br>多处理器，处理器提供了<strong>总线锁定</strong>和<strong>缓存锁定</strong>两个机制来保证复杂内存操作的原子性。<br>当处理器要操作一个共享变量的时候，其在总线上会发出一个 Lock 信号，这时其它处理器就不能操作共享变量了，该处理器会独享此共享内存中的变量。但总线锁定在阻塞其它处理器获取该共享变量的操作请求时，也可能会导致大量阻塞，从而增加系统的性能开销。<br>于是，后来的<strong>处理器都提供了缓存锁定机制，也就说当某个处理器对缓存中的共享变量进行了操作，就会通知其它处理器放弃存储该共享资源或者重新读取该共享资源。</strong>目前最新的处理器都支持缓存锁定机制。<br>**<br>Linux 内核提供的 vmstat 命令，来监视 Java 程序运行过程中系统的上下文切换频率。<br>[root@aliyun ~]# vmstat 2 <strong>//时间间隔</strong><br>procs ———–memory———- —swap– —–io—- -system– ——cpu—–<br>r   b   swpd   free   buff   cache   si   so    bi    bo   in   cs us sy id wa st<br>2  0      0   82800 133624 537868    0    0     4    13   12   25  1  0 99  0  0<br><img src="https://cdn.nlark.com/yuque/0/2020/png/282505/1599227584883-fec6985f-f6f8-4ef6-86ca-5d216cc23359.png#align=left&display=inline&height=177&name=image.png&originHeight=177&originWidth=746&size=191086&status=done&style=none&width=746" alt="image.png"><br>如果是监视某个应用的上下文切换，可以使用 pidstat 命令监控进程的 上下文切换。<br> pidstat -w -l -p <strong>26571</strong> 1 100</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/282505/1595921713500-ef983e78-c5e3-46f3-abe1-bbdc74c1f384.jpeg#align=left&display=inline&height=582&originHeight=582&originWidth=1564&size=0&status=done&style=none&width=1564"></p>
 <p>**</p>
 
             </div>

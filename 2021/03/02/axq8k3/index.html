@@ -503,7 +503,7 @@ g">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
@@ -584,7 +584,7 @@ g">
  * int param_4 = obj.getMin();
  */</span></code></pre>
 <p>解析</p>
-<p><strong>辅助栈</strong><br>要做出这道题目，首先要理解栈结构先进后出的性质。<br>对于栈来说，如果一个元素 a 在入栈时，栈里有其它的元素 b, c, d，那么无论这个栈在之后经历了什么操作，只要 a 在栈中，b, c, d 就一定在栈中，因为在 a 被弹出之前，b, c, d 不会被弹出。<br>因此，在操作过程中的任意一个时刻，只要栈顶的元素是 a，那么我们就可以确定栈里面现在的元素一定是 a, b, c, d。<br>那么，我们可以在每个元素 a 入栈时把当前栈的最小值 m 存储起来。在这之后无论何时，如果栈顶元素是 a，我们就可以直接返回存储的最小值 m。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614667881162-47efa23b-3e43-45a3-974c-c3361f6ceabe.png#align=left&display=inline&height=222&margin=%5Bobject%20Object%5D&name=image.png&originHeight=634&originWidth=872&size=246619&status=done&style=none&width=306" alt="image.png"></p>
+<p><strong>辅助栈</strong><br>要做出这道题目，首先要理解栈结构先进后出的性质。<br>对于栈来说，如果一个元素 a 在入栈时，栈里有其它的元素 b, c, d，那么无论这个栈在之后经历了什么操作，只要 a 在栈中，b, c, d 就一定在栈中，因为在 a 被弹出之前，b, c, d 不会被弹出。<br>因此，在操作过程中的任意一个时刻，只要栈顶的元素是 a，那么我们就可以确定栈里面现在的元素一定是 a, b, c, d。<br>那么，我们可以在每个元素 a 入栈时把当前栈的最小值 m 存储起来。在这之后无论何时，如果栈顶元素是 a，我们就可以直接返回存储的最小值 m。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614667881162-47efa23b-3e43-45a3-974c-c3361f6ceabe.png#align=left&display=inline&height=222&name=image.png&originHeight=634&originWidth=872&size=246619&status=done&style=none&width=306" alt="image.png"></p>
 
             </div>
             <hr/>

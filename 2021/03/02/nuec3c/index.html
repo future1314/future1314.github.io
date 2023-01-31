@@ -499,7 +499,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-01-31
+                    2023-02-01
                 </div>
                 
 
@@ -554,7 +554,7 @@
         <span class="token keyword">return</span> result<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>思路分析</strong></p>
-<p>1、对二进制数进行翻转，类似于整数翻转，需要先获得二进制数的末位。可以通过与运算实现（1 &amp; n）。<br>我们知道，1&amp;0=0；1&amp;1=1，因此 0 或 1 与 1 相与，都等于本身。若要求 n 的末位二进制位值，只需将 n 和 1 做与运算。<br>下图所示求 5 的最后一个二进制位值<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657463347-2c190944-c5e0-468c-a16e-17725eb97ed9.png#align=left&display=inline&height=152&margin=%5Bobject%20Object%5D&name=image.png&originHeight=304&originWidth=376&size=17796&status=done&style=none&width=188" alt="image.png"><br>类似的求<strong>最后两位二进制值</strong>需要将 n 和 3 做与运算。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657480229-ac09e79e-b6b1-4edb-a88f-0d22c085a878.png#align=left&display=inline&height=164&margin=%5Bobject%20Object%5D&name=image.png&originHeight=328&originWidth=400&size=19331&status=done&style=none&width=200" alt="image.png"><br>2、获取末位值后，需要获得倒数第二位数值，这里通过移位即可实现：n&gt;&gt;1，使倒数第二位移至末位。我们只需位移 32 次，就能获得 n 的所有二进制位值。<br>3、使用 result 对各个二进制位进行保存。</p>
+<p>1、对二进制数进行翻转，类似于整数翻转，需要先获得二进制数的末位。可以通过与运算实现（1 &amp; n）。<br>我们知道，1&amp;0=0；1&amp;1=1，因此 0 或 1 与 1 相与，都等于本身。若要求 n 的末位二进制位值，只需将 n 和 1 做与运算。<br>下图所示求 5 的最后一个二进制位值<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657463347-2c190944-c5e0-468c-a16e-17725eb97ed9.png#align=left&display=inline&height=152&name=image.png&originHeight=304&originWidth=376&size=17796&status=done&style=none&width=188" alt="image.png"><br>类似的求<strong>最后两位二进制值</strong>需要将 n 和 3 做与运算。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657480229-ac09e79e-b6b1-4edb-a88f-0d22c085a878.png#align=left&display=inline&height=164&name=image.png&originHeight=328&originWidth=400&size=19331&status=done&style=none&width=200" alt="image.png"><br>2、获取末位值后，需要获得倒数第二位数值，这里通过移位即可实现：n&gt;&gt;1，使倒数第二位移至末位。我们只需位移 32 次，就能获得 n 的所有二进制位值。<br>3、使用 result 对各个二进制位进行保存。</p>
 
             </div>
             <hr/>
