@@ -539,9 +539,9 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
     <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"4.2.1"</span>
   &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span></code></pre>
 <p>这里说一下里面的 baseurl 是固定的<br>login 和 repo 是如下图这样对应的，个人界面和团队界面都可以</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906415602-fa6f487a-b51b-4dbc-8ee7-49cbadeb94aa.png#align=left&display=inline&height=484&name=image.png&originHeight=968&originWidth=1920&size=217553&status=done&style=none&width=960" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906415602-fa6f487a-b51b-4dbc-8ee7-49cbadeb94aa.png#align=left&display=inline&height=484&originHeight=968&originWidth=1920&size=217553&status=done&style=none&width=960" alt="image.png"></p>
 <p>token 是在右上角头像 -&gt; 账户设置 -&gt; Token 添加的，权限的话只给读取就可以<br>ps.公开的知识库也要设置 Token</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906494636-a353aa41-83de-478c-bd10-908e927671ad.png#align=left&display=inline&height=358&name=image.png&originHeight=716&originWidth=1360&size=70891&status=done&style=stroke&width=680" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594906494636-a353aa41-83de-478c-bd10-908e927671ad.png#align=left&display=inline&height=358&originHeight=716&originWidth=1360&size=70891&status=done&style=stroke&width=680" alt="image.png"></p>
 <p>在 “scripts” 中添加</p>
 <pre class=" language-json"><code class="language-json">    <span class="token property">"sync"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo sync"</span><span class="token punctuation">,</span>
     <span class="token property">"clean:yuque"</span><span class="token operator">:</span> <span class="token string">"yuque-hexo clean"</span><span class="token punctuation">,</span></code></pre>
@@ -600,7 +600,7 @@ hexo+github pages+yuque-hexo 插件+github actions+serverless 云函数+语雀�
 <p>然后 <code>hexo g &amp;&amp; hexo s</code> 就可以访问 <code>127.0.0.1:4000</code> 本地看一下了<br>手动发布是 <code>hexo g &amp;&amp; hexo d</code></p>
 <p><strong>针对语雀图片无法正常显示的解决办法</strong><br>在主题的 layout 文件夹中的 post.ejs 文件中加上一句</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>referrer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no-referrer<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907231130-a2e3c7c0-d207-4151-9242-1f50e0d7ce7e.png#align=left&display=inline&height=195&name=image.png&originHeight=351&originWidth=841&size=45968&status=done&style=stroke&width=468" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907231130-a2e3c7c0-d207-4151-9242-1f50e0d7ce7e.png#align=left&display=inline&height=195&originHeight=351&originWidth=841&size=45968&status=done&style=stroke&width=468" alt="image.png"></p>
 <h1 id="github-actions-自动更新"><a href="#github-actions-自动更新" class="headerlink" title="github actions 自动更新"></a>github actions 自动更新</h1><p>在 github 上创建一个私有仓库（因为会涉及到一些 token 啥的）仓库名字无所谓<br><strong>注意</strong>：在仓库里面再放一个仓库是没法把里面那个仓库 push 到 github 的，只会传一个空文件夹，导致后期博客成了空白页面，最简单粗暴的办法就是把你 git clone 的 hexo 主题里的 <code>.git</code> 文件夹给删掉</p>
 <p>然后在 hexo 的目录下运行如下命令</p>
 <pre class=" language-git"><code class="language-git">git init
@@ -609,17 +609,17 @@ git commit -m <span class="token string">"first commit"</span>
 git remote add origin https://github.com/yichen115/blog.git
 git push -u origin master</code></pre>
 <p>去 github 的 settings 创建一个 token</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907389117-35b3ce5c-a92c-4aa7-92be-54649660707f.png#align=left&display=inline&height=293&name=image.png&originHeight=585&originWidth=1620&size=86343&status=done&style=stroke&width=810" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907389117-35b3ce5c-a92c-4aa7-92be-54649660707f.png#align=left&display=inline&height=293&originHeight=585&originWidth=1620&size=86343&status=done&style=stroke&width=810" alt="image.png"></p>
 <p>只勾上这一个即可</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907459775-b583ee13-02ef-43a1-9ae4-0ca550bfafd2.png#align=left&display=inline&height=314&name=image.png&originHeight=627&originWidth=746&size=51696&status=done&style=stroke&width=373" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907515533-450ee291-fb82-43d5-b398-6c71161fb93d.png#align=left&display=inline&height=223&name=image.png&originHeight=445&originWidth=1015&size=45884&status=done&style=stroke&width=507.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907459775-b583ee13-02ef-43a1-9ae4-0ca550bfafd2.png#align=left&display=inline&height=314&originHeight=627&originWidth=746&size=51696&status=done&style=stroke&width=373" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907515533-450ee291-fb82-43d5-b398-6c71161fb93d.png#align=left&display=inline&height=223&originHeight=445&originWidth=1015&size=45884&status=done&style=stroke&width=507.5" alt="image.png"></p>
 <p>生成了 token 之后一定要记下来，再回来就没法看了</p>
 <p>然后来到刚才创建的私有仓库的 settings</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907596811-6c001063-9e2a-4f7d-86b3-0fe426dfc794.png#align=left&display=inline&height=343&name=image.png&originHeight=686&originWidth=1769&size=86336&status=done&style=stroke&width=884.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907596811-6c001063-9e2a-4f7d-86b3-0fe426dfc794.png#align=left&display=inline&height=343&originHeight=686&originWidth=1769&size=86336&status=done&style=stroke&width=884.5" alt="image.png"></p>
 <p>添加两个 secret<br><strong>GH_REF</strong> 是你博客的仓库地址 github.com/yichen115/yichen115.github.io<br>注意去掉前面 https://</p>
 <p><strong>GE_TOKEN</strong> 是刚才生成的 token</p>
 <p>然后来到 actions，点击 set up a workflow yourself</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907728538-4ded4257-da88-4361-8f2f-e8ba4d107e75.png#align=left&display=inline&height=267&name=image.png&originHeight=534&originWidth=1023&size=70314&status=done&style=stroke&width=511.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594907728538-4ded4257-da88-4361-8f2f-e8ba4d107e75.png#align=left&display=inline&height=267&originHeight=534&originWidth=1023&size=70314&status=done&style=stroke&width=511.5" alt="image.png"></p>
 <p>编辑内容如下：</p>
 <pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Blog CI/CD
 
@@ -667,8 +667,8 @@ git push -u origin master</code></pre>
 <p>下面那个 user.name 和 user.email 根据自己的情况改一下，注意对齐</p>
 <p>弄完之后每当 push 或 repository_dispatch 的时候都会自动的进行更新</p>
 <h1 id="配置-serverless-云函数"><a href="#配置-serverless-云函数" class="headerlink" title="配置 serverless 云函数"></a>配置 serverless 云函数</h1><p>来这里 <a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/scf/">https://console.cloud.tencent.com/scf/</a> 注册个账号<br>新建一个函数服务</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908198919-65a8454a-6c7f-423c-9f1c-8f2303dba8e1.png#align=left&display=inline&height=219&name=image.png&originHeight=438&originWidth=1084&size=39713&status=done&style=stroke&width=542" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908241755-2c116717-6257-4157-b901-c5f815fa0746.png#align=left&display=inline&height=244&name=image.png&originHeight=488&originWidth=776&size=31268&status=done&style=stroke&width=388" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908198919-65a8454a-6c7f-423c-9f1c-8f2303dba8e1.png#align=left&display=inline&height=219&originHeight=438&originWidth=1084&size=39713&status=done&style=stroke&width=542" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908241755-2c116717-6257-4157-b901-c5f815fa0746.png#align=left&display=inline&height=244&originHeight=488&originWidth=776&size=31268&status=done&style=stroke&width=388" alt="image.png"></p>
 <p>内容写</p>
 <pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># -*- coding: utf8 -*-</span>
 <span class="token keyword">import</span> requests
@@ -686,20 +686,20 @@ git push -u origin master</code></pre>
         <span class="token keyword">return</span> r<span class="token punctuation">.</span>status_code</code></pre>
 <p>post 请求里只需要改用户名和仓库名（yichen115/blog）后面是固定的<br>那个 token 是带着的，完整的就是 ‘Authorization’: ‘token xxxxxxxxxxxxxx’</p>
 <p>点下面那个测试，返回 This’s OK!</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908381040-ed7eea9c-3a31-4aa9-b5bf-f52aedbc3b2c.png#align=left&display=inline&height=160&name=image.png&originHeight=320&originWidth=582&size=13660&status=done&style=stroke&width=291" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908381040-ed7eea9c-3a31-4aa9-b5bf-f52aedbc3b2c.png#align=left&display=inline&height=160&originHeight=320&originWidth=582&size=13660&status=done&style=stroke&width=291" alt="image.png"></p>
 <p>同时 github actions 也会收到指令，去执行之前在 main.yml 设定好的</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908463062-3bfbcd34-0652-4de5-b222-0f0b01a8258a.png#align=left&display=inline&height=270&name=image.png&originHeight=539&originWidth=1115&size=50764&status=done&style=stroke&width=557.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908463062-3bfbcd34-0652-4de5-b222-0f0b01a8258a.png#align=left&display=inline&height=270&originHeight=539&originWidth=1115&size=50764&status=done&style=stroke&width=557.5" alt="image.png"></p>
 <p>过一阵就成下面那个绿色的对号了，然后去访问一下博客，看看是否正常。可以的话就证明云函数可以了</p>
 <p>创建一个触发器</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908622171-b3d1f2e4-9e6e-4ef1-9e39-689c0ad36fef.png#align=left&display=inline&height=200&name=image.png&originHeight=400&originWidth=730&size=32431&status=done&style=stroke&width=365" alt="image.png"></p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594905642566-7df0adc3-6d78-409c-bec0-7886aefed25b.png#align=left&display=inline&height=332&name=image.png&originHeight=663&originWidth=925&size=46379&status=done&style=stroke&width=462.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908622171-b3d1f2e4-9e6e-4ef1-9e39-689c0ad36fef.png#align=left&display=inline&height=200&originHeight=400&originWidth=730&size=32431&status=done&style=stroke&width=365" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594905642566-7df0adc3-6d78-409c-bec0-7886aefed25b.png#align=left&display=inline&height=332&originHeight=663&originWidth=925&size=46379&status=done&style=stroke&width=462.5" alt="image.png"></p>
 <p>他会给你一个访问路径，记下来</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908721093-7679f975-e4c2-4386-bc3f-adae0bdc91b8.png#align=left&display=inline&height=234&name=image.png&originHeight=467&originWidth=712&size=30610&status=done&style=stroke&width=356" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908721093-7679f975-e4c2-4386-bc3f-adae0bdc91b8.png#align=left&display=inline&height=234&originHeight=467&originWidth=712&size=30610&status=done&style=stroke&width=356" alt="image.png"></p>
 <h1 id="配置语雀-webhook"><a href="#配置语雀-webhook" class="headerlink" title="配置语雀 webhook"></a>配置语雀 webhook</h1><p>在知识库中选择设置</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908818070-60085ef8-46d5-44b3-af0b-e6946125f6dd.png#align=left&display=inline&height=175&name=image.png&originHeight=349&originWidth=473&size=13535&status=done&style=stroke&width=236.5" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908818070-60085ef8-46d5-44b3-af0b-e6946125f6dd.png#align=left&display=inline&height=175&originHeight=349&originWidth=473&size=13535&status=done&style=stroke&width=236.5" alt="image.png"></p>
 <p>触发规则自己定就好啦</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908880210-34a97734-e0a4-4d64-89bd-8e6976ce7a37.png#align=left&display=inline&height=280&name=image.png&originHeight=559&originWidth=1134&size=54956&status=done&style=stroke&width=567" alt="image.png"></p>
-<p>**<br>这篇文章更新的时候发现有失败的可能<br>**<br><strong><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594909836406-93471a4a-4ea0-4417-89d3-d1230ca044f7.png#align=left&display=inline&height=155&name=image.png&originHeight=172&originWidth=290&size=6687&status=done&style=stroke&width=262" alt="image.png"></strong><br>**<br><strong>我的博客地址：</strong><a target="_blank" rel="noopener" href="https://yichen115.github.io/"><strong>https://yichen115.github.io</strong></a></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594908880210-34a97734-e0a4-4d64-89bd-8e6976ce7a37.png#align=left&display=inline&height=280&originHeight=559&originWidth=1134&size=54956&status=done&style=stroke&width=567" alt="image.png"></p>
+<p>**<br>这篇文章更新的时候发现有失败的可能<br>**<br><strong><img src="https://cdn.nlark.com/yuque/0/2020/png/268938/1594909836406-93471a4a-4ea0-4417-89d3-d1230ca044f7.png#align=left&display=inline&height=155&originHeight=172&originWidth=290&size=6687&status=done&style=stroke&width=262" alt="image.png"></strong><br>**<br><strong>我的博客地址：</strong><a target="_blank" rel="noopener" href="https://yichen115.github.io/"><strong>https://yichen115.github.io</strong></a></p>
 
             </div>
             <hr/>
