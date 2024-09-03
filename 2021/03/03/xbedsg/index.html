@@ -6,7 +6,11 @@
     <meta charset="utf-8">
     <meta name="keywords" content="todo 剑指 Offer 59 - I. 滑动窗口的最大值, future">
     <meta name="description" content="
-剑指 Offer 59 - I. 滑动窗口的最大值难度简单 200给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。示例:输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3**输出: ">
+剑指 Offer 59 - I. 滑动窗口的最大值难度简单 200
+给定一个数组 nums 和滑动窗口的大小 k，请找出所有滑动窗口里的最大值。
+示例:
+输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
+**">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -486,7 +490,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -512,9 +516,23 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h4 id="剑指-Offer-59-I-滑动窗口的最大值"><a href="#剑指-Offer-59-I-滑动窗口的最大值" class="headerlink" title="剑指 Offer 59 - I. 滑动窗口的最大值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/">剑指 Offer 59 - I. 滑动窗口的最大值</a></h4><p>难度简单 200<br>给定一个数组 <code>nums</code> 和滑动窗口的大小 <code>k</code>，请找出所有滑动窗口里的最大值。<br><strong>示例:</strong><br><strong>输入:</strong> <em>nums</em> = <code>[1,3,-1,-3,5,3,6,7]</code>, 和 <em>k</em> = 3<br>**输出: **<code>[3,3,5,5,6,7] </code><br>**解释: **</p>
-<p>滑动窗口的位置                 最大值<br>—————        —–<br>[1  3  -1] -3  5  3  6  7       3<br> 1 [3  -1  -3] 5  3  6  7       3<br> 1  3 [-1  -3  5] 3  6  7       5<br> 1  3  -1 [-3  5  3] 6  7       5<br> 1  3  -1  -3 [5  3  6] 7       6<br> 1  3  -1  -3  5 [3  6  7]      7</p>
-<p><strong>提示：</strong><br>你可以假设 *k *总是有效的，在输入数组不为空的情况下，1 ≤ k ≤  输入数组的大小。<br>注意：本题与主站 239 题相同：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/sliding-window-maximum/">https://leetcode-cn.com/problems/sliding-window-maximum/</a></p>
+<h4 id="剑指-Offer-59-I-滑动窗口的最大值"><a href="#剑指-Offer-59-I-滑动窗口的最大值" class="headerlink" title="剑指 Offer 59 - I. 滑动窗口的最大值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/">剑指 Offer 59 - I. 滑动窗口的最大值</a></h4><p>难度简单 200</p>
+<p>给定一个数组 <code>nums</code> 和滑动窗口的大小 <code>k</code>，请找出所有滑动窗口里的最大值。</p>
+<p><strong>示例:</strong></p>
+<p><strong>输入:</strong> <em>nums</em> = <code>[1,3,-1,-3,5,3,6,7]</code>, 和 <em>k</em> = 3</p>
+<p>**输出: **<code>[3,3,5,5,6,7] </code></p>
+<p>**解释: **</p>
+<p>滑动窗口的位置                 最大值</p>
+<p>—————        —–</p>
+<p>[1  3  -1] -3  5  3  6  7       3</p>
+<p>1 [3  -1  -3] 5  3  6  7       3</p>
+<p>1  3 [-1  -3  5] 3  6  7       5</p>
+<p>1  3  -1 [-3  5  3] 6  7       5</p>
+<p>1  3  -1  -3 [5  3  6] 7       6</p>
+<p>1  3  -1  -3  5 [3  6  7]      7</p>
+<p><strong>提示：</strong></p>
+<p>你可以假设 *k *总是有效的，在输入数组不为空的情况下，1 ≤ k ≤  输入数组的大小。</p>
+<p>注意：本题与主站 239 题相同：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/sliding-window-maximum/">https://leetcode-cn.com/problems/sliding-window-maximum/</a></p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">maxSlidingWindow</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> k <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
         Deque<span class="token operator">&lt;</span>Integer<span class="token operator">></span> deque <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -778,11 +796,19 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            530. 二叉搜索树的最小绝对差难度简单 233给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。
-示例：输入：
-1         3    /   2
-输出：1
-解释：最小绝对差为 1，其中 2 和 1 
+                            530. 二叉搜索树的最小绝对差难度简单 233
+给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。
+示例：
+输入：
+1
+\
+3
+/
+2
+输出：
+1
+解释：
+最小绝对差为 1，其中 2 和 1 的差的绝对值为
                         
                     </div>
                     <div class="publish-info">
@@ -828,7 +854,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            203. 移除链表元素难度简单 540删除链表中等于给定值 _val _的所有节点。示例:输入: 1-&gt;2-&gt;6-&gt;3-&gt;4-&gt;5-&gt;6, val = 6输出: 1-&gt;2-&gt;3-&gt;4-&
+                            203. 移除链表元素难度简单 540
+删除链表中等于给定值 *val *的所有节点。
+示例:
+输入: 1-&gt;2-&gt;6-&gt;3-&gt;4-&gt;5-&gt;6, val = 6
+输出: 1-&gt;2-&gt;3-&gt
                         
                     </div>
                     <div class="publish-info">
@@ -1038,7 +1068,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

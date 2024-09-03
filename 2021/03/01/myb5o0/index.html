@@ -5,10 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="405. 数字转换为十六进制数, future">
-    <meta name="description" content="405. 数字转换为十六进制数给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。注意:
+    <meta name="description" content="405. 数字转换为十六进制数给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
+注意:
 
 十六进制中所有字母(a-f)都必须是小写。
-十六进制字符串中不能包含多余的前导零。如果要转化的数为 0，那">
+十六进制字符串中不能包含多余的前导零。如果要转化的数为 0，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -501,14 +502,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    600
+                    624
                 </div>
                 
 
@@ -526,17 +527,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="405-数字转换为十六进制数"><a href="#405-数字转换为十六进制数" class="headerlink" title="405. 数字转换为十六进制数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/">405. 数字转换为十六进制数</a></h3><p>给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%A1%A5%E7%A0%81/6854613?fr=aladdin">补码运算</a> 方法。<br>注意:</p>
+                <h3 id="405-数字转换为十六进制数"><a href="#405-数字转换为十六进制数" class="headerlink" title="405. 数字转换为十六进制数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/">405. 数字转换为十六进制数</a></h3><p>给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%A1%A5%E7%A0%81/6854613?fr=aladdin">补码运算</a> 方法。</p>
+<p>注意:</p>
 <ol>
 <li>十六进制中所有字母(<code>a-f</code>)都必须是小写。</li>
 <li>十六进制字符串中不能包含多余的前导零。如果要转化的数为 0，那么以单个字符<code>&#39;0&#39;</code>来表示；对于其他情况，十六进制字符串中的第一个字符将不会是 0 字符。</li>
 <li>给定的数确保在 32 位有符号整数范围内。</li>
 <li><strong>不能使用任何由库提供的将数字直接转换或格式化为十六进制的方法。</strong></li>
 </ol>
-<p><strong>示例 1：</strong><br>输入:<br>26</p>
-<p>输出:<br>“1a”</p>
-<p><strong>示例 2：</strong><br>输入:<br>-1</p>
-<p>输出:<br>“ffffffff”//8 位</p>
+<p><strong>示例 1：</strong></p>
+<p>输入:</p>
+<p>26</p>
+<p>输出:</p>
+<p>“1a”</p>
+<p><strong>示例 2：</strong></p>
+<p>输入:</p>
+<p>-1</p>
+<p>输出:</p>
+<p>“ffffffff”//8 位</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> String <span class="token function">toHex</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">return</span> <span class="token string">"0"</span><span class="token punctuation">;</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">// 0特殊处理</span>
         <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> hex <span class="token operator">=</span> <span class="token string">"0123456789abcdef"</span><span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 相当于映射关系</span>
@@ -559,10 +567,40 @@
 <span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/solution/shu-zi-zhuan-huan-wei-shi-liu-jin-zhi-jie-fa-shou-/</span></code></pre>
 <hr>
 <p><strong>解题思路</strong></p>
-<p>2 进制转化 16 进制，也就是每 4 位合成一位。<br>于是，我们可以从低位存储到高位，每次移位操作 4 位，转化为对应字符，这里采用制表。<br>当 num 为 0 时，停止移位操作，于是高位 0 项被放弃。<br>最后只要把字符串反转即可。<br>这里我们用 StringBuffer，可以更加快速。因为 String 加操作会不停创建对象。</p>
-<p>作者：datedemo<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/solution/yi-wei-cao-zuo-jian-dan-yi-dong-by-datedemo/">https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/solution/yi-wei-cao-zuo-jian-dan-yi-dong-by-datedemo/</a></p>
+<p>2 进制转化 16 进制，也就是每 4 位合成一位。</p>
+<p>于是，我们可以从低位存储到高位，每次移位操作 4 位，转化为对应字符，这里采用制表。</p>
+<p>当 num 为 0 时，停止移位操作，于是高位 0 项被放弃。</p>
+<p>最后只要把字符串反转即可。</p>
+<p>这里我们用 StringBuffer，可以更加快速。因为 String 加操作会不停创建对象。</p>
+<p>作者：datedemo</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/solution/yi-wei-cao-zuo-jian-dan-yi-dong-by-datedemo/">https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/solution/yi-wei-cao-zuo-jian-dan-yi-dong-by-datedemo/</a></p>
 <hr>
-<h4 id="1"><a href="#1" class="headerlink" title="-1"></a>-1</h4><p>-1=11111111111111111111111111111111<br>-1=1111,1111,1111,1111,1111,1111,1111,1111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=1111111111111111111111111111 //1111,1111,1111,1111,1111,1111,1111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=111111111111111111111111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=11111111111111111111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=1111111111111111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=111111111111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=11111111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=1111<br>temp=1111<br>hex[temp]=f<br>num &gt;&gt;&gt;= 4=0</p>
+<h4 id="1"><a href="#1" class="headerlink" title="-1"></a>-1</h4><p><font style="color:#000000;background-color:#F7F7F7;">-1=11111111111111111111111111111111</font></p>
+<p><font style="color:#000000;background-color:#F7F7F7;">-1=1111,1111,1111,1111,1111,1111,1111,1111</font></p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=1111111111111111111111111111 //1111,1111,1111,1111,1111,1111,1111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=111111111111111111111111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=11111111111111111111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=1111111111111111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=111111111111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=11111111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=1111</p>
+<p>temp=1111</p>
+<p>hex[temp]=f</p>
+<p>num &gt;&gt;&gt;= 4=0</p>
 
             </div>
             <hr/>
@@ -810,7 +848,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 62. 圆圈中最后剩下的数字难度简单 3000,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。例如，0
+                            剑指 Offer 62. 圆圈中最后剩下的数字难度简单 300
+0,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
+例如
                         
                     </div>
                     <div class="publish-info">
@@ -856,8 +896,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            9. 回文数难度简单 1405给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。
-示例 1：输入：
+                            9. 回文数难度简单 1405
+给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
+回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。
+示例 1：
+
                         
                     </div>
                     <div class="publish-info">
@@ -1067,7 +1110,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

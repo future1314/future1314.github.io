@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="剑指 Offer 62. 圆圈中最后剩下的数字, future">
-    <meta name="description" content="剑指 Offer 62. 圆圈中最后剩下的数字难度简单 3000,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。例如，0">
+    <meta name="description" content="剑指 Offer 62. 圆圈中最后剩下的数字难度简单 300
+0,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
+例如">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -498,14 +500,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    746
+                    747
                 </div>
                 
 
@@ -523,9 +525,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="剑指-Offer-62-圆圈中最后剩下的数字"><a href="#剑指-Offer-62-圆圈中最后剩下的数字" class="headerlink" title="剑指 Offer 62. 圆圈中最后剩下的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/">剑指 Offer 62. 圆圈中最后剩下的数字</a></h3><p>难度简单 300<br>0,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。<br>例如，0、1、2、3、4 这 5 个数字组成一个圆圈，从数字 0 开始每次删除第 3 个数字，则删除的前 4 个数字依次是 2、0、4、1，因此最后剩下的数字是 3。</p>
-<p><strong>示例 1：</strong><br><strong>输入:</strong> n = 5, m = 3<br>**输出: **3</p>
-<p><strong>示例 2：</strong><br><strong>输入:</strong> n = 10, m = 17<br>**输出: **2</p>
+                <h3 id="剑指-Offer-62-圆圈中最后剩下的数字"><a href="#剑指-Offer-62-圆圈中最后剩下的数字" class="headerlink" title="剑指 Offer 62. 圆圈中最后剩下的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/">剑指 Offer 62. 圆圈中最后剩下的数字</a></h3><p>难度简单 300</p>
+<p>0,1,···,n-1 这 n 个数字排成一个圆圈，从数字 0 开始，每次从这个圆圈里删除第 m 个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。</p>
+<p>例如，0、1、2、3、4 这 5 个数字组成一个圆圈，从数字 0 开始每次删除第 3 个数字，则删除的前 4 个数字依次是 2、0、4、1，因此最后剩下的数字是 3。</p>
+<p><strong>示例 1：</strong></p>
+<p><strong>输入:</strong> n = 5, m = 3</p>
+<p>**输出: **3</p>
+<p><strong>示例 2：</strong></p>
+<p><strong>输入:</strong> n = 10, m = 17</p>
+<p>**输出: **2</p>
 <pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">lastRemaining1</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         ArrayList<span class="token operator">&lt;</span>Integer<span class="token operator">></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -543,8 +551,10 @@
 <span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/javajie-jue-yue-se-fu-huan-wen-ti-gao-su-ni-wei-sh/</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<p>假设当前删除的位置是 idx，下一个删除的数字的位置是 idx+m 。但是，由于把当前位置的数字删除了，后面的数字会前移一位，所以实际的下一个位置是 idx+m−1。由于数到末尾会从头继续数，所以最后取模一下，就是<br>(idx+m−1)(mod n)。</p>
-<p>作者：sweetieeyi<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/javajie-jue-yue-se-fu-huan-wen-ti-gao-su-ni-wei-sh/">https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/javajie-jue-yue-se-fu-huan-wen-ti-gao-su-ni-wei-sh/</a></p>
+<p>假设当前删除的位置是 idx，下一个删除的数字的位置是 idx+m 。但是，由于把当前位置的数字删除了，后面的数字会前移一位，所以实际的下一个位置是 idx+m−1。由于数到末尾会从头继续数，所以最后取模一下，就是</p>
+<p>(idx+m−1)(mod n)。</p>
+<p>作者：sweetieeyi</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/javajie-jue-yue-se-fu-huan-wen-ti-gao-su-ni-wei-sh/">https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/javajie-jue-yue-se-fu-huan-wen-ti-gao-su-ni-wei-sh/</a></p>
 <hr>
 <p><strong>动态规划</strong></p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">lastRemaining1</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -567,9 +577,14 @@
         <span class="token keyword">return</span> ans<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p>动态规划解析：</p>
-<p>状态定义： 设「i,m 问题」的解为 dp[i] ；<br>状态转移方程： 通过以下公式可从 dp[i−1] 递推得到 dp[i] ；dp[i]=(dp[i−1]+m)%i；</p>
-<p>初始状态：「1,m 问题」的解恒为 0 ，即 dp[1]=0 ；<br>返回值： 返回「n,m 问题」的解 dp[n] ；</p>
-<p>作者：jyd<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/jian-zhi-offer-62-yuan-quan-zhong-zui-ho-dcow/">https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/jian-zhi-offer-62-yuan-quan-zhong-zui-ho-dcow/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>状态定义： 设「i,m 问题」的解为 dp[i] ；</p>
+<p>状态转移方程： 通过以下公式可从 dp[i−1] 递推得到 dp[i] ；dp[i]=(dp[i−1]+m)%i；</p>
+<p>初始状态：「1,m 问题」的解恒为 0 ，即 dp[1]=0 ；</p>
+<p>返回值： 返回「n,m 问题」的解 dp[n] ；</p>
+<p>作者：jyd</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/jian-zhi-offer-62-yuan-quan-zhong-zui-ho-dcow/">https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/jian-zhi-offer-62-yuan-quan-zhong-zui-ho-dcow/</a></p>
+<p>来源：力扣（LeetCode）</p>
+<p>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 <hr>
 <p><strong>动态规划优化版</strong></p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">lastRemaining</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> m<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -830,11 +845,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            202. 快乐数难度简单 541编写一个算法来判断一个数 n 是不是快乐数。「快乐数」定义为：
+                            202. 快乐数难度简单 541
+编写一个算法来判断一个数 n 是不是快乐数。
+「快乐数」定义为：
 
 对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。
 然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。
-如
                         
                     </div>
                     <div class="publish-info">
@@ -880,10 +896,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            405. 数字转换为十六进制数给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。注意:
+                            405. 数字转换为十六进制数给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用 补码运算 方法。
+注意:
 
 十六进制中所有字母(a-f)都必须是小写。
-十六进制字符串中不能包含多余的前导零。如果要转化的数为 0，那
+十六进制字符串中不能包含多余的前导零。如果要转化的数为 0，
                         
                     </div>
                     <div class="publish-info">
@@ -1093,7 +1110,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

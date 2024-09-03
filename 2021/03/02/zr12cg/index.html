@@ -5,8 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="14. 最长公共前缀, future">
-    <meta name="description" content="14. 最长公共前缀难度简单 1479编写一个函数来查找字符串数组中的最长公共前缀。如果不存在公共前缀，返回空字符串 &amp;quot;&amp;quot;。
-示例 1：输入：strs = [“flower”,”flow”,”flight”]输出：“fl">
+    <meta name="description" content="14. 最长公共前缀难度简单 1479
+编写一个函数来查找字符串数组中的最长公共前缀。
+如果不存在公共前缀，返回空字符串 &amp;quot;&amp;quot;。
+示例 1：
+输入：strs = [“flower”,”flow”,”flight”]
+输出">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -499,7 +503,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -524,9 +528,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="14-最长公共前缀"><a href="#14-最长公共前缀" class="headerlink" title="14. 最长公共前缀"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-prefix/">14. 最长公共前缀</a></h4><p>难度简单 1479<br>编写一个函数来查找字符串数组中的最长公共前缀。<br>如果不存在公共前缀，返回空字符串 <code>&quot;&quot;</code>。</p>
-<p><strong>示例 1：</strong><br><strong>输入：</strong>strs = [“flower”,”flow”,”flight”]<br><strong>输出：</strong>“fl”</p>
-<p><strong>示例 2：</strong><br><strong>输入：</strong>strs = [“dog”,”racecar”,”car”]<br><strong>输出：</strong>“”<br><strong>解释：</strong>输入不存在公共前缀。</p>
+                <h4 id="14-最长公共前缀"><a href="#14-最长公共前缀" class="headerlink" title="14. 最长公共前缀"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-prefix/">14. 最长公共前缀</a></h4><p>难度简单 1479</p>
+<p>编写一个函数来查找字符串数组中的最长公共前缀。</p>
+<p>如果不存在公共前缀，返回空字符串 <code>&quot;&quot;</code>。</p>
+<p><strong>示例 1：</strong></p>
+<p><strong>输入：</strong>strs = [“flower”,”flow”,”flight”]</p>
+<p><strong>输出：</strong>“fl”</p>
+<p><strong>示例 2：</strong></p>
+<p><strong>输入：</strong>strs = [“dog”,”racecar”,”car”]</p>
+<p><strong>输出：</strong>“”</p>
+<p><strong>解释：</strong>输入不存在公共前缀。</p>
 <p><strong>提示：</strong></p>
 <ul>
 <li><code>0 &lt;= strs.length &lt;= 200</code></li>
@@ -581,7 +592,8 @@
 作者：LeetCode<span class="token operator">-</span>Solution
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>longest<span class="token operator">-</span>common<span class="token operator">-</span>prefix<span class="token operator">/</span>solution<span class="token operator">/</span>zui<span class="token operator">-</span>chang<span class="token operator">-</span>gong<span class="token operator">-</span>gong<span class="token operator">-</span>qian<span class="token operator">-</span>zhui<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>solution<span class="token operator">/</span></code></pre>
 <p><strong>解析</strong></p>
-<p>方法一是横向扫描，依次遍历每个字符串，更新最长公共前缀。<br>方法二是纵向扫描。纵向扫描时，从前往后遍历所有字符串的每一列，<strong>比较相同列上的字符是否相同，如果相同则继续对下一列进行比较，如果不相同则当前列不再属于公共前缀，当前列之前的部分为最长公共前缀</strong>。</p>
+<p>方法一是横向扫描，依次遍历每个字符串，更新最长公共前缀。</p>
+<p>方法二是纵向扫描。纵向扫描时，从前往后遍历所有字符串的每一列，<strong>比较相同列上的字符是否相同，如果相同则继续对下一列进行比较，如果不相同则当前列不再属于公共前缀，当前列之前的部分为最长公共前缀</strong>。</p>
 
             </div>
             <hr/>
@@ -829,7 +841,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            922. 按奇偶排序数组 II难度简单 191给定一个非负整数数组 A， A 中一半整数是奇数，一半整数是偶数。对数组进行排序，以便当 A[i] 为奇数时，i 也是奇数；当 A[i] 为偶数时， i 也是偶数。你可以返回任何满足上述条件的数
+                            922. 按奇偶排序数组 II难度简单 191
+给定一个非负整数数组 A， A 中一半整数是奇数，一半整数是偶数。
+对数组进行排序，以便当 A[i] 为奇数时，i 也是奇数；当 A[i] 为偶数时， i 也是偶数。
+你可以返回任何满足上述条
                         
                     </div>
                     <div class="publish-info">
@@ -875,7 +890,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 61. 扑克牌中的顺子难度简单 98从扑克牌中随机抽 5 张牌，判断是不是一个顺子，即这 5 张牌是不是连续的。2 ～ 10 为数字本身，A 为 1，J 为 11，Q 为 12，K 为 13，而大、小王为 0 ，可以看成任
+                            剑指 Offer 61. 扑克牌中的顺子难度简单 98
+从扑克牌中随机抽 5 张牌，判断是不是一个顺子，即这 5 张牌是不是连续的。2 ～ 10 为数字本身，A 为 1，J 为 11，Q 为 12，K 为 13，而大、小王为 0 ，可以看成
                         
                     </div>
                     <div class="publish-info">
@@ -1085,7 +1101,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

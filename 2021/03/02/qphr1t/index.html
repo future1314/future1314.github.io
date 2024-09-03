@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="448. 找到所有数组中消失的数字, future">
-    <meta name="description" content="448. 找到所有数组中消失的数字难度简单给定一个范围在   1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。找到所有在 [1, n] 范围之间没有出现在数组中的数字。您能在不">
+    <meta name="description" content="448. 找到所有数组中消失的数字难度简单
+给定一个范围在   1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
+找到所有在 [1, n] 范围之间没有出现在数组中的数字。
+您">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -498,7 +501,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -523,8 +526,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="448-找到所有数组中消失的数字"><a href="#448-找到所有数组中消失的数字" class="headerlink" title="448. 找到所有数组中消失的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/">448. 找到所有数组中消失的数字</a></h4><p>难度简单<br>给定一个范围在   1 ≤ a[i] ≤ <em>n</em> ( <em>n</em> = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。<br>找到所有在 [1, <em>n</em>] 范围之间没有出现在数组中的数字。<br>您能在不使用额外空间且时间复杂度为<em>O(n)*的情况下完成这个任务吗? 你可以假定返回的数组不算在额外空间内。<br>*</em>示例:**<br><strong>输入:</strong><br>[4,3,2,7,8,2,3,1]</p>
-<p><strong>输出:</strong><br>[5,6]</p>
+                <h4 id="448-找到所有数组中消失的数字"><a href="#448-找到所有数组中消失的数字" class="headerlink" title="448. 找到所有数组中消失的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/">448. 找到所有数组中消失的数字</a></h4><p>难度简单</p>
+<p>给定一个范围在   1 ≤ a[i] ≤ <em>n</em> ( <em>n</em> = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。</p>
+<p>找到所有在 [1, <em>n</em>] 范围之间没有出现在数组中的数字。</p>
+<p>您能在不使用额外空间且时间复杂度为*O(n)*的情况下完成这个任务吗? 你可以假定返回的数组不算在额外空间内。</p>
+<p><strong>示例:</strong></p>
+<p><strong>输入:</strong></p>
+<p>[4,3,2,7,8,2,3,1]</p>
+<p><strong>输出:</strong></p>
+<p>[5,6]</p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> List<span class="token operator">&lt;</span>Integer<span class="token operator">></span> <span class="token function">findDisappearedNumbers1</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> num <span class="token operator">:</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -539,8 +549,16 @@
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>原地修改<br>思路及解法<br>我们可以用一个哈希表记录数组<br>nums 中的数字，由于数字范围均在 [1,n] 中，记录数字后我们再利用哈希表检查 [1,n] 中的每一个数是否出现，从而找到缺失的数字。<br>由于数字范围均在 [1,n] 中，我们也可以用一个长度为 n 的数组来代替哈希表。这一做法的空间复杂度是 O(n) 的。我们的目标是优化空间复杂度到 O(1)。<br>注意到 nums 的长度恰好也为 n，能否让 nums 充当哈希表呢？<br>由于 <strong>nums 的数字范围均在 [1,n] 中</strong>，我们可以利用这一范围之外的数字，来表达「是否存在」的含义。<br>具体来说，遍历 nums，每遇到一个数 x，就让 nums[x−1] 增加 n。由于 <strong>nums 中所有数均在 [1,n] 中，增加以后，这些数必然大于 n。</strong>最后我们遍历 nums，若 nums[i] 未大于 n，就说明没有遇到过数 i+1。这样我们就找到了缺失的数字。<br>注意，当我们遍历到某个位置时，其中的数可能已经被增加过，因此需要对 n 取模来还原出它本来的值.</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614692448239-fd77ab83-a85d-4c18-b21f-24cfcab7b31b.png#align=left&display=inline&height=531&originHeight=1062&originWidth=870&size=271570&status=done&style=none&width=435" alt="image.png"></p>
+<p>原地修改</p>
+<p>思路及解法</p>
+<p>我们可以用一个哈希表记录数组</p>
+<p>nums 中的数字，由于数字范围均在 [1,n] 中，记录数字后我们再利用哈希表检查 [1,n] 中的每一个数是否出现，从而找到缺失的数字。</p>
+<p>由于数字范围均在 [1,n] 中，我们也可以用一个长度为 n 的数组来代替哈希表。这一做法的空间复杂度是 O(n) 的。我们的目标是优化空间复杂度到 O(1)。</p>
+<p>注意到 nums 的长度恰好也为 n，能否让 nums 充当哈希表呢？</p>
+<p>由于 <strong>nums 的数字范围均在 [1,n] 中</strong>，我们可以利用这一范围之外的数字，来表达「是否存在」的含义。</p>
+<p>具体来说，遍历 nums，每遇到一个数 x，就让 nums[x−1] 增加 n。由于 <strong>nums 中所有数均在 [1,n] 中，增加以后，这些数必然大于 n。</strong>最后我们遍历 nums，<font style="background-color:#52C41A;">若 nums[i] 未大于 n，就说明没有遇到过数 i+1</font>。这样我们就找到了缺失的数字。</p>
+<p>注意，当我们遍历到某个位置时，其中的数可能已经被增加过，因此需要对 n 取模来还原出它本来的值.</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614692448239-fd77ab83-a85d-4c18-b21f-24cfcab7b31b.png"></p>
 
             </div>
             <hr/>
@@ -788,7 +806,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            198. 打家劫舍难度中等 1295你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。给定一个代表每个房屋
+                            198. 打家劫舍难度中等 1295
+你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+给定一个代表每个
                         
                     </div>
                     <div class="publish-info">
@@ -838,8 +858,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            169. 多数元素难度简单给定一个大小为 n *的数组，找到其中的多数元素。多数元素是指在数组中出现次数 *大于** ⌊ n/2 ⌋ 的元素。你可以假设数组是非空的，并且给定的数组总是存在多数元素。
-示例  1：输入：[3,2,3]输出：3
+                            169. 多数元素难度简单
+给定一个大小为 n *的数组，找到其中的多数元素。多数元素是指在数组中出现次数 *大于** ⌊ n/2 ⌋ 的元素。
+你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+示例  1：
+输入：[3,2,3]
+
                         
                     </div>
                     <div class="publish-info">
@@ -1049,7 +1073,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

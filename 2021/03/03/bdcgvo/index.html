@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="剑指 Offer 14- I. 剪绳子, future">
-    <meta name="description" content="剑指 Offer 14- I. 剪绳子难度中等 168给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n 都是整数，n&amp;gt;1 并且 m&amp;gt;1），每段绳子的长度记为 k[0],k[1]...k[m-1] 。请问 k[0">
+    <meta name="description" content="剑指 Offer 14- I. 剪绳子难度中等 168
+给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n 都是整数，n&amp;gt;1 并且 m&amp;gt;1），每段绳子的长度记为 k[0],k[1]...k[m-1] 。请问 k[">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -498,7 +499,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -523,7 +524,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="剑指-Offer-14-I-剪绳子"><a href="#剑指-Offer-14-I-剪绳子" class="headerlink" title="剑指 Offer 14- I. 剪绳子"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/">剑指 Offer 14- I. 剪绳子</a></h4><p>难度中等 168<br>给你一根长度为 <code>n</code> 的绳子，请把绳子剪成整数长度的 <code>m</code> 段（m、n 都是整数，n&gt;1 并且 m&gt;1），每段绳子的长度记为 <code>k[0],k[1]...k[m-1]</code> 。请问 <code>k[0]*k[1]*...*k[m-1]</code> 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。<br><strong>示例 1：</strong><br><strong>输入: **2<br>**输出: **1<br>**解释: **2 = 1 + 1, 1 × 1 = 1<br>**示例  2:</strong><br>**输入: **10<br>**输出: **36<br>**解释: **10 = 3 + 3 + 4, 3 × 3 × 4 = 36.</p>
+                <h4 id="剑指-Offer-14-I-剪绳子"><a href="#剑指-Offer-14-I-剪绳子" class="headerlink" title="剑指 Offer 14- I. 剪绳子"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/">剑指 Offer 14- I. 剪绳子</a></h4><p>难度中等 168</p>
+<p>给你一根长度为 <code>n</code> 的绳子，请把绳子剪成整数长度的 <code>m</code> 段（m、n 都是整数，n&gt;1 并且 m&gt;1），每段绳子的长度记为 <code>k[0],k[1]...k[m-1]</code> 。请问 <code>k[0]*k[1]*...*k[m-1]</code> 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。</p>
+<p><strong>示例 1：</strong></p>
+<p>**输入: **2</p>
+<p>**输出: **1</p>
+<p>**解释: **2 = 1 + 1, 1 × 1 = 1</p>
+<p><strong>示例  2:</strong></p>
+<p>**输入: **10</p>
+<p>**输出: **36</p>
+<p>**解释: **10 = 3 + 3 + 4, 3 × 3 × 4 = 36.</p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">cuttingRope</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
         dp<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
@@ -536,9 +546,19 @@
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> dp<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p><strong>解析</strong><br><strong>动态规划</strong></p>
-<p>这题用动态规划是比较好理解的：<br>我们想要求长度为 n 的绳子剪掉后的最大乘积，可以从前面比 n 小的绳子转移而来。<br>用一个 dp 数组记录从 0 到 n 长度的绳子剪掉后的最大乘积，也就是<strong>dp[i]表示长度为 i 的绳子剪成 m 段后的最大乘积，初始化 dp[2] = 1。</strong><br>我们先把绳子剪掉第一段（长度为 j），如果只剪掉长度为 1，对最后的乘积无任何增益，所以从长度为 2 开始剪，<br>剪了第一段后，剩下(i - j)长度可以剪也可以不剪。<strong>如果不剪的话长度乘积即为 j _ (i - j)；如果剪的话长度乘积即为 j _ dp[i - j]。取两者最大值 max(j _ (i - j), j _ dp[i - j])。</strong><br>第一段长度 j 可以取的区间为[2,i)，对所有 j 不同的情况取最大值，因此最终 dp[i]的转移方程为：<br><strong>dp[i] = max(dp[i], max(j _ (i - j), j _ dp[i - j]))。</strong><br><strong>最后返回 dp[n]即可。</strong></p>
-<p>作者：edelweisskoko<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/">https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/</a><br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614767517985-c3cc335c-77fc-43f5-afb0-63f7ffc728c4.png#align=left&display=inline&height=504&originHeight=1008&originWidth=1220&size=415103&status=done&style=none&width=610" alt="image.png"></p>
+<p><strong>解析</strong></p>
+<p><strong>动态规划</strong></p>
+<p>这题用动态规划是比较好理解的：</p>
+<p>我们想要求长度为 n 的绳子剪掉后的最大乘积，可以从前面比 n 小的绳子转移而来。</p>
+<p>用一个 dp 数组记录从 0 到 n 长度的绳子剪掉后的最大乘积，也就是<strong>dp[i]表示长度为 i 的绳子剪成 m 段后的最大乘积，初始化 dp[2] = 1。</strong></p>
+<p>我们先把绳子剪掉第一段（长度为 j），如果只剪掉长度为 1，对最后的乘积无任何增益，所以从长度为 2 开始剪，</p>
+<p>剪了第一段后，剩下(i - j)长度可以剪也可以不剪。<strong>如果不剪的话长度乘积即为 j _ (i - j)；如果剪的话长度乘积即为 j _ dp[i - j]。取两者最大值 max(j _ (i - j), j _ dp[i - j])。</strong></p>
+<p>第一段长度 j 可以取的区间为[2,i)，对所有 j 不同的情况取最大值，因此最终 dp[i]的转移方程为：</p>
+<p><strong><font style="background-color:#FCFCCA;">dp[i] = max(dp[i], max(j _ (i - j), j _ dp[i - j]))。</font></strong></p>
+<p><strong>最后返回 dp[n]即可。</strong></p>
+<p>作者：edelweisskoko</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/">https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/jian-zhi-offer-14-i-jian-sheng-zi-huan-s-xopj/</a></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614767517985-c3cc335c-77fc-43f5-afb0-63f7ffc728c4.png"></p>
 
             </div>
             <hr/>
@@ -786,7 +806,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            92. 反转链表 II难度中等 690反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。说明:1 ≤ m ≤ n ≤ 链表长度。示例:输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, m = 2, n =
+                            92. 反转链表 II难度中等 690
+反转从位置 m 到 n 的链表。请使用一趟扫描完成反转。
+说明:
+1 ≤ m ≤ n ≤ 链表长度。
+示例:
+输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, m = 2
                         
                     </div>
                     <div class="publish-info">
@@ -832,7 +857,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            43. 字符串相乘难度中等 574给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。示例 1:输入: num1 = “2”, num2 = “3”输出: “6”示
+                            43. 字符串相乘难度中等 574
+给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。
+示例 1:
+输入: num1 = “2”, num2 = “3”
+输出: 
                         
                     </div>
                     <div class="publish-info">
@@ -1042,7 +1071,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

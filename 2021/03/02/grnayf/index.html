@@ -5,8 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="剑指 Offer 42. 连续子数组的最大和, future">
-    <meta name="description" content="剑指 Offer 42. 连续子数组的最大和难度简单 206输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为 O(n)。
-示例 1:输入: nums = [-2,1,-3,4,-1,2,">
+    <meta name="description" content="剑指 Offer 42. 连续子数组的最大和难度简单 206
+输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+要求时间复杂度为 O(n)。
+示例 1:
+输入: nums = [-2,1,-3,4,-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -499,7 +502,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -524,8 +527,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="剑指-Offer-42-连续子数组的最大和"><a href="#剑指-Offer-42-连续子数组的最大和" class="headerlink" title="剑指 Offer 42. 连续子数组的最大和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/">剑指 Offer 42. 连续子数组的最大和</a></h4><p>难度简单 206<br>输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。<br>要求时间复杂度为 O(n)。</p>
-<p><strong>示例 1:</strong><br><strong>输入:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]<br><strong>输出:</strong> 6<br><strong>解释:</strong> 连续子数组  [4,-1,2,1] 的和最大，为  6。</p>
+                <h4 id="剑指-Offer-42-连续子数组的最大和"><a href="#剑指-Offer-42-连续子数组的最大和" class="headerlink" title="剑指 Offer 42. 连续子数组的最大和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/">剑指 Offer 42. 连续子数组的最大和</a></h4><p>难度简单 206</p>
+<p>输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。</p>
+<p>要求时间复杂度为 O(n)。</p>
+<p><strong>示例 1:</strong></p>
+<p><strong>输入:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]</p>
+<p><strong>输出:</strong> 6</p>
+<p><strong>解释:</strong> 连续子数组  [4,-1,2,1] 的和最大，为  6。</p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxSubArray</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> res <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
         <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -537,10 +545,18 @@
 <span class="token comment" spellcheck="true">// 作者：jyd</span>
 <span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/solution/mian-shi-ti-42-lian-xu-zi-shu-zu-de-zui-da-he-do-2/</span></code></pre>
 <p>** 解析**</p>
-<p><strong>动态规划</strong>是本题的最优解法，以下按照标准流程解题。<br>动态规划解析：</p>
-<p>状态定义： 设动态规划列表 dp ，dp[i] 代表以元素 nums[i] 为结尾的连续子数组最大和。<br>为何定义最大和 dp[i] 中必须包含元素 nums[i] ：保证 dp[i] 递推到 dp[i+1] 的正确性；如果不包含 nums[i] ，递推时则不满足题目的 连续子数组 要求。<br>转移方程：<br>若 dp[i−1]≤0 ，说明 dp[i−1] 对 dp[i] 产生负贡献，即 dp[i−1]+nums[i] 还不如 nums[i] 本身大。<br>当 dp[i−1]&gt;0 时：执行 dp[i]=dp[i−1]+nums[i] ；<br>当 dp[i−1]≤0 时：执行 dp[i]=nums[i] ；<br>初始状态： dp[0]=nums[0]，即以 nums[0] 结尾的连续子数组最大和为 nums[0] 。<br>返回值： 返回 dp 列表中的最大值，代表全局最大值。</p>
+<p><strong>动态规划</strong>是本题的最优解法，以下按照标准流程解题。</p>
+<p>动态规划解析：</p>
+<p>状态定义： 设动态规划列表 dp ，dp[i] 代表以元素 nums[i] 为结尾的连续子数组最大和。</p>
+<p>为何定义最大和 dp[i] 中必须包含元素 nums[i] ：保证 dp[i] 递推到 dp[i+1] 的正确性；如果不包含 nums[i] ，递推时则不满足题目的 连续子数组 要求。</p>
+<p>转移方程：</p>
+<p>若 dp[i−1]≤0 ，说明 dp[i−1] 对 dp[i] 产生负贡献，即 dp[i−1]+nums[i] 还不如 nums[i] 本身大。</p>
+<p>当 dp[i−1]&gt;0 时：执行 dp[i]=dp[i−1]+nums[i] ；</p>
+<p>当 dp[i−1]≤0 时：执行 dp[i]=nums[i] ；</p>
+<p>初始状态： dp[0]=nums[0]，即以 nums[0] 结尾的连续子数组最大和为 nums[0] 。</p>
+<p>返回值： 返回 dp 列表中的最大值，代表全局最大值。</p>
 <hr>
-<p><strong>易错</strong></p>
+<p><strong><font style="background-color:#73D13D;">易错</font></strong></p>
 <pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxSubArray</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> max<span class="token operator">=</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//Integer.MIN_VALUE</span>
         <span class="token keyword">int</span> pre<span class="token operator">=</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//Integer.MIN_VALUE</span>
@@ -798,8 +814,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            190. 颠倒二进制位难度简单 269颠倒给定的 32 位无符号整数的二进制位。
-示例 1：输入: 00000010100101000001111010011100输出: 00111001011110000010100101000000解释
+                            190. 颠倒二进制位难度简单 269
+颠倒给定的 32 位无符号整数的二进制位。
+示例 1：
+输入: 00000010100101000001111010011100
+输出: 0011100101111000001010010100000
                         
                     </div>
                     <div class="publish-info">
@@ -845,7 +864,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            922. 按奇偶排序数组 II难度简单 191给定一个非负整数数组 A， A 中一半整数是奇数，一半整数是偶数。对数组进行排序，以便当 A[i] 为奇数时，i 也是奇数；当 A[i] 为偶数时， i 也是偶数。你可以返回任何满足上述条件的数
+                            922. 按奇偶排序数组 II难度简单 191
+给定一个非负整数数组 A， A 中一半整数是奇数，一半整数是偶数。
+对数组进行排序，以便当 A[i] 为奇数时，i 也是奇数；当 A[i] 为偶数时， i 也是偶数。
+你可以返回任何满足上述条
                         
                     </div>
                     <div class="publish-info">
@@ -1055,7 +1077,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

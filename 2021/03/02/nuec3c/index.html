@@ -5,8 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="190. 颠倒二进制位, future">
-    <meta name="description" content="190. 颠倒二进制位难度简单 269颠倒给定的 32 位无符号整数的二进制位。
-示例 1：输入: 00000010100101000001111010011100输出: 00111001011110000010100101000000解释">
+    <meta name="description" content="190. 颠倒二进制位难度简单 269
+颠倒给定的 32 位无符号整数的二进制位。
+示例 1：
+输入: 00000010100101000001111010011100
+输出: 0011100101111000001010010100000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -499,7 +502,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -524,8 +527,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="190-颠倒二进制位"><a href="#190-颠倒二进制位" class="headerlink" title="190. 颠倒二进制位"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-bits/">190. 颠倒二进制位</a></h4><p>难度简单 269<br>颠倒给定的 32 位无符号整数的二进制位。</p>
-<p><strong>示例 1：</strong><br><strong>输入:</strong> 00000010100101000001111010011100<br><strong>输出:</strong> 00111001011110000010100101000000<br><strong>解释: **输入的二进制串 **00000010100101000001111010011100 **表示无符号整数</strong> 43261596，**<br>    因此返回 964176192，其二进制表示形式为 <strong>00111001011110000010100101000000</strong>。<br><strong>示例 2：</strong><br><strong>输入：</strong>11111111111111111111111111111101<br><strong>输出：</strong>10111111111111111111111111111111<br><strong>解释：</strong>输入的二进制串 <strong>11111111111111111111111111111101</strong> 表示无符号整数 4294967293，<br>      因此返回 3221225471 其二进制表示形式为 <strong>10111111111111111111111111111111 。</strong></p>
+                <h4 id="190-颠倒二进制位"><a href="#190-颠倒二进制位" class="headerlink" title="190. 颠倒二进制位"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-bits/">190. 颠倒二进制位</a></h4><p>难度简单 269</p>
+<p>颠倒给定的 32 位无符号整数的二进制位。</p>
+<p><strong>示例 1：</strong></p>
+<p><strong>输入:</strong> 00000010100101000001111010011100</p>
+<p><strong>输出:</strong> 00111001011110000010100101000000</p>
+<p><strong>解释: **输入的二进制串 **00000010100101000001111010011100 **表示无符号整数</strong> 43261596***<em>，\</em>*</p>
+<p>因此返回 964176192，其二进制表示形式为 <strong>00111001011110000010100101000000</strong>。</p>
+<p><strong>示例 2：</strong></p>
+<p><strong>输入：</strong>11111111111111111111111111111101</p>
+<p><strong>输出：</strong>10111111111111111111111111111111</p>
+<p><strong>解释：</strong>输入的二进制串 <strong>11111111111111111111111111111101</strong> 表示无符号整数 4294967293，</p>
+<p>因此返回 3221225471 其二进制表示形式为 <strong>10111111111111111111111111111111 。</strong></p>
 <p><strong>提示：</strong></p>
 <ul>
 <li>请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。</li>
@@ -543,7 +556,9 @@
 
 作者：xiaowangku
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>reverse<span class="token operator">-</span>bits<span class="token operator">/</span>solution<span class="token operator">/</span>si<span class="token operator">-</span>lu<span class="token operator">-</span>fen<span class="token operator">-</span>xi<span class="token operator">-</span><span class="token number">190</span><span class="token operator">-</span>ti<span class="token operator">-</span>dian<span class="token operator">-</span>dao<span class="token operator">-</span>er<span class="token operator">-</span>jin<span class="token operator">-</span>zhi<span class="token operator">-</span>r3wy6<span class="token operator">/</span></code></pre>
-<p>【一个小细节】<br>由于 1 &amp; n 的值为 0 或者 1，所以返回结果 result 直接加上（1 &amp; n）以更新最后一位数值。<br>这里也可以使用或运算。参与或运算的两个元素，只要有一个为 1，那么结果就为 1，否则为 0。</p>
+<p>【一个小细节】</p>
+<p>由于 1 &amp; n 的值为 0 或者 1，所以返回结果 result 直接加上（1 &amp; n）以更新最后一位数值。</p>
+<p>这里也可以使用或运算。参与或运算的两个元素，只要有一个为 1，那么结果就为 1，否则为 0。</p>
 <pre class=" language-java"><code class="language-java">     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">reverseBits</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">32</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -554,7 +569,14 @@
         <span class="token keyword">return</span> result<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>思路分析</strong></p>
-<p>1、对二进制数进行翻转，类似于整数翻转，需要先获得二进制数的末位。可以通过与运算实现（1 &amp; n）。<br>我们知道，1&amp;0=0；1&amp;1=1，因此 0 或 1 与 1 相与，都等于本身。若要求 n 的末位二进制位值，只需将 n 和 1 做与运算。<br>下图所示求 5 的最后一个二进制位值<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657463347-2c190944-c5e0-468c-a16e-17725eb97ed9.png#align=left&display=inline&height=152&originHeight=304&originWidth=376&size=17796&status=done&style=none&width=188" alt="image.png"><br>类似的求<strong>最后两位二进制值</strong>需要将 n 和 3 做与运算。<br><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657480229-ac09e79e-b6b1-4edb-a88f-0d22c085a878.png#align=left&display=inline&height=164&originHeight=328&originWidth=400&size=19331&status=done&style=none&width=200" alt="image.png"><br>2、获取末位值后，需要获得倒数第二位数值，这里通过移位即可实现：n&gt;&gt;1，使倒数第二位移至末位。我们只需位移 32 次，就能获得 n 的所有二进制位值。<br>3、使用 result 对各个二进制位进行保存。</p>
+<p>1、对二进制数进行翻转，类似于整数翻转，需要先获得二进制数的末位。可以通过与运算实现（1 &amp; n）。</p>
+<p>我们知道，1&amp;0=0；1&amp;1=1，因此 0 或 1 与 1 相与，都等于本身。若要求 n 的末位二进制位值，只需将 n 和 1 做与运算。</p>
+<p>下图所示求 5 的最后一个二进制位值</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657463347-2c190944-c5e0-468c-a16e-17725eb97ed9.png"></p>
+<p>类似的求<strong>最后两位二进制值</strong>需要将 n 和 3 做与运算。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614657480229-ac09e79e-b6b1-4edb-a88f-0d22c085a878.png"></p>
+<p>2、获取末位值后，需要获得倒数第二位数值，这里通过移位即可实现：n&gt;&gt;1，使倒数第二位移至末位。我们只需位移 32 次，就能获得 n 的所有二进制位值。</p>
+<p>3、使用 result 对各个二进制位进行保存。</p>
 
             </div>
             <hr/>
@@ -802,7 +824,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 58 - II. 左旋转字符串难度简单 85字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串”abcdefg”和数字 2，该函数将返回左旋转两位得到
+                            剑指 Offer 58 - II. 左旋转字符串难度简单 85
+字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串”abcdefg”和数字 2，该函数将返回左旋转两位得
                         
                     </div>
                     <div class="publish-info">
@@ -848,8 +871,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 42. 连续子数组的最大和难度简单 206输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为 O(n)。
-示例 1:输入: nums = [-2,1,-3,4,-1,2,
+                            剑指 Offer 42. 连续子数组的最大和难度简单 206
+输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+要求时间复杂度为 O(n)。
+示例 1:
+输入: nums = [-2,1,-3,4,-1
                         
                     </div>
                     <div class="publish-info">
@@ -1059,7 +1085,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

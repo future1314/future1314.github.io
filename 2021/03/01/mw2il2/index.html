@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="keywords" content="122. 买卖股票的最佳时机 II, future">
     <meta name="description" content="
-122. 买卖股票的最佳时机 II难度简单1108给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。注意：你不能同时参与多笔交易（你必">
+122. 买卖股票的最佳时机 II难度简单1108
+给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
+设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
+注意：你不能同时参与多笔交易">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -486,7 +489,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -512,10 +515,15 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h4 id="122-买卖股票的最佳时机-II"><a href="#122-买卖股票的最佳时机-II" class="headerlink" title="122. 买卖股票的最佳时机 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/">122. 买卖股票的最佳时机 II</a></h4><p>难度简单1108<br>给定一个数组，它的第 <em>i</em> 个元素是一支给定股票第 <em>i</em> 天的价格。<br>设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。<br><strong>注意：</strong>你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
-<p><strong>示例 1:</strong><br><strong>输入:</strong> [7,1,5,3,6,4]<br><strong>输出:</strong> 7<br><strong>解释:</strong> 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = <strong>4 **。<br>随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = **3</strong> 。</p>
-<hr>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<h4 id="122-买卖股票的最佳时机-II"><a href="#122-买卖股票的最佳时机-II" class="headerlink" title="122. 买卖股票的最佳时机 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/">122. 买卖股票的最佳时机 II</a></h4><p>难度简单1108</p>
+<p>给定一个数组，它的第 <em>i</em> 个元素是一支给定股票第 <em>i</em> 天的价格。</p>
+<p>设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。</p>
+<p><strong>注意：</strong>你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
+<p><strong>示例 1:</strong></p>
+<p><strong>输入:</strong> [7,1,5,3,6,4]</p>
+<p><strong>输出:</strong> 7</p>
+<p><strong>解释:</strong> 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = **4 **。</p>
+<h2 id="随后，在第-4-天（股票价格-3）的时候买入，在第-5-天（股票价格-6）的时候卖出-这笔交易所能获得利润-6-3-3-。"><a href="#随后，在第-4-天（股票价格-3）的时候买入，在第-5-天（股票价格-6）的时候卖出-这笔交易所能获得利润-6-3-3-。" class="headerlink" title="随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。"></a>随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = <strong>3</strong> 。</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> prices<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
         <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
         dp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -544,7 +552,7 @@
 
 作者：LeetCode<span class="token operator">-</span>Solution
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>best<span class="token operator">-</span>time<span class="token operator">-</span>to<span class="token operator">-</span>buy<span class="token operator">-</span>and<span class="token operator">-</span>sell<span class="token operator">-</span>stock<span class="token operator">-</span>ii<span class="token operator">/</span>solution<span class="token operator">/</span>mai<span class="token operator">-</span>mai<span class="token operator">-</span>gu<span class="token operator">-</span>piao<span class="token operator">-</span>de<span class="token operator">-</span>zui<span class="token operator">-</span>jia<span class="token operator">-</span>shi<span class="token operator">-</span>ji<span class="token operator">-</span>ii<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>s<span class="token operator">/</span></code></pre>
-<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614609643345-b13ca537-3089-444f-bb92-ba8ef2cf8866.png#align=left&display=inline&height=373&originHeight=746&originWidth=1192&size=385299&status=done&style=none&width=596" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614609643345-b13ca537-3089-444f-bb92-ba8ef2cf8866.png"></p>
 <hr>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -558,7 +566,8 @@
 作者：LeetCode<span class="token operator">-</span>Solution
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>best<span class="token operator">-</span>time<span class="token operator">-</span>to<span class="token operator">-</span>buy<span class="token operator">-</span>and<span class="token operator">-</span>sell<span class="token operator">-</span>stock<span class="token operator">-</span>ii<span class="token operator">/</span>solution<span class="token operator">/</span>mai<span class="token operator">-</span>mai<span class="token operator">-</span>gu<span class="token operator">-</span>piao<span class="token operator">-</span>de<span class="token operator">-</span>zui<span class="token operator">-</span>jia<span class="token operator">-</span>shi<span class="token operator">-</span>ji<span class="token operator">-</span>ii<span class="token operator">-</span>by<span class="token operator">-</span>leetcode<span class="token operator">-</span>s<span class="token operator">/</span></code></pre>
 <p>解析</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614608654571-ce74b2c6-d38c-401f-8180-9e10e74e0e8a.png#align=left&display=inline&height=500&originHeight=1000&originWidth=1194&size=359106&status=done&style=none&width=597" alt="image.png"><br>优化易懂版</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/282505/1614608654571-ce74b2c6-d38c-401f-8180-9e10e74e0e8a.png"></p>
+<p>优化易懂版</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxProfit</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> prices<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> len <span class="token operator">=</span> prices<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span>len <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -577,9 +586,16 @@
 
 作者：liweiwei1419
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>best<span class="token operator">-</span>time<span class="token operator">-</span>to<span class="token operator">-</span>buy<span class="token operator">-</span>and<span class="token operator">-</span>sell<span class="token operator">-</span>stock<span class="token operator">-</span>ii<span class="token operator">/</span>solution<span class="token operator">/</span>tan<span class="token operator">-</span>xin<span class="token operator">-</span>suan<span class="token operator">-</span>fa<span class="token operator">-</span>by<span class="token operator">-</span>liweiwei1419<span class="token operator">-</span><span class="token number">2</span><span class="token operator">/</span></code></pre>
-<p><strong>解析</strong><br>贪心算法 在每一步总是做出在当前看来最好的选择。</p>
-<p>「贪心算法」 和 「动态规划」、「回溯搜索」 算法一样，完成一件事情，是 分步决策 的；<br>「贪心算法」 在每一步总是做出在当前看来最好的选择，我是这样理解 「最好」 这两个字的意思：<br>「最好」 的意思往往根据题目而来，可能是 「最小」，也可能是 「最大」；<br>贪心算法和动态规划相比，它既不看前面（也就是说它不需要从前面的状态转移过来），也不看后面（无后效性，后面的选择不会对前面的选择有影响），因此贪心算法时间复杂度一般是线性的，空间复杂度是常数级别的；<br>这道题 「贪心」 的地方在于，对于 「今天的股价 - 昨天的股价」，得到的结果有 3 种可能：① 正数，<br>② 0，③ 负数。贪心算法的决策是： 只加正数 。</p>
-<p>作者：liweiwei1419<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/">https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/</a></p>
+<p><strong>解析</strong></p>
+<p>贪心算法 在每一步总是做出在当前看来最好的选择。</p>
+<p>「贪心算法」 和 「动态规划」、「回溯搜索」 算法一样，完成一件事情，是 分步决策 的；</p>
+<p>「贪心算法」 在每一步总是做出在当前看来最好的选择，我是这样理解 「最好」 这两个字的意思：</p>
+<p>「最好」 的意思往往根据题目而来，可能是 「最小」，也可能是 「最大」；</p>
+<p>贪心算法和动态规划相比，它既不看前面（也就是说它不需要从前面的状态转移过来），也不看后面（无后效性，后面的选择不会对前面的选择有影响），因此贪心算法时间复杂度一般是线性的，空间复杂度是常数级别的；</p>
+<p>这道题 「贪心」 的地方在于，对于 「今天的股价 - 昨天的股价」，得到的结果有 3 种可能：① 正数，</p>
+<p>② 0，③ 负数。贪心算法的决策是： 只加正数 。</p>
+<p>作者：liweiwei1419</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/">https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/solution/tan-xin-suan-fa-by-liweiwei1419-2/</a></p>
 
             </div>
             <hr/>
@@ -827,7 +843,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            112. 路径总和难度简单 523给你二叉树的根节点 root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum 。叶子节点 是指没有子节点的
+                            112. 路径总和难度简单 523
+给你二叉树的根节点 root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum 。
+叶子节点 是指没有子节
                         
                     </div>
                     <div class="publish-info">
@@ -873,7 +891,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            572. 另一个树的子树难度简单 452给定两个非空二叉树 s 和 t，检验 s 中是否包含和 t 具有相同结构和节点值的子树。s 的一个子树包括 s 的一个节点和这个节点的所有子孙。s 也可以看做它自身的一棵子树。示例 1:给定的树 s:
+                            572. 另一个树的子树难度简单 452
+给定两个非空二叉树 s 和 t，检验 s 中是否包含和 t 具有相同结构和节点值的子树。s 的一个子树包括 s 的一个节点和这个节点的所有子孙。s 也可以看做它自身的一棵子树。
+示例 1:
+给定的树
                         
                     </div>
                     <div class="publish-info">
@@ -1083,7 +1104,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

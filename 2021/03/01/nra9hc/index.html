@@ -5,9 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="257. 二叉树的所有路径, future">
-    <meta name="description" content="257. 二叉树的所有路径难度简单 454给定一个二叉树，返回所有从根节点到叶子节点的路径。说明: 叶子节点是指没有子节点的节点。示例:输入:
-1 /   2     3   5
-输出: [“1-&amp;gt;2-&amp;gt;5”, “1-&amp;gt;3">
+    <meta name="description" content="257. 二叉树的所有路径难度简单 454
+给定一个二叉树，返回所有从根节点到叶子节点的路径。
+说明: 叶子节点是指没有子节点的节点。
+示例:
+输入:
+1
+/   \
+2     3
+\
+5
+输出: [“1-&amp;gt;2-&amp;gt;5”, “1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -500,7 +508,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -525,8 +533,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="257-二叉树的所有路径"><a href="#257-二叉树的所有路径" class="headerlink" title="257. 二叉树的所有路径"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-paths/">257. 二叉树的所有路径</a></h4><p>难度简单 454<br>给定一个二叉树，返回所有从根节点到叶子节点的路径。<br><strong>说明:</strong> 叶子节点是指没有子节点的节点。<br><strong>示例:</strong><br><strong>输入:</strong></p>
-<p>1<br> /   <br>2     3<br> <br>  5</p>
+                <h4 id="257-二叉树的所有路径"><a href="#257-二叉树的所有路径" class="headerlink" title="257. 二叉树的所有路径"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-paths/">257. 二叉树的所有路径</a></h4><p>难度简单 454</p>
+<p>给定一个二叉树，返回所有从根节点到叶子节点的路径。</p>
+<p><strong>说明:</strong> 叶子节点是指没有子节点的节点。</p>
+<p><strong>示例:</strong></p>
+<p><strong>输入:</strong></p>
+<p>1</p>
+<p>/   \</p>
+<p>2     3</p>
+<p>\</p>
+<p>5</p>
 <p><strong>输出:</strong> [“1-&gt;2-&gt;5”, “1-&gt;3”]</p>
 <p><strong>解释:</strong> 所有根节点到叶子节点的路径为: <strong>1-&gt;2-&gt;5, 1-&gt;3.</strong></p>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
@@ -578,12 +594,15 @@
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <h4 id="深度优先搜索"><a href="#深度优先搜索" class="headerlink" title="深度优先搜索"></a>深度优先搜索</h4><p>思路与算法</p>
 <p>最直观的方法是使用深度优先搜索。在深度优先搜索遍历二叉树时，我们需要考虑当前的节点以及它的孩子节点。</p>
-<p>如果当前节点不是叶子节点，则在当前的路径末尾添加该节点，并继续递归遍历该节点的每一个孩子节点。<br>如果当前节点是叶子节点，则在当前路径末尾添加该节点后我们就得到了一条从根节点到叶子节点的路径，将该路径加入到答案即可。<br>如此，当遍历完整棵二叉树以后我们就得到了所有从根节点到叶子节点的路径。当然，深度优先搜索也可以使用非递归的方式实现，这里不再赘述。</p>
+<p>如果当前节点不是叶子节点，则在当前的路径末尾添加该节点，并继续递归遍历该节点的每一个孩子节点。</p>
+<p>如果当前节点是叶子节点，则在当前路径末尾添加该节点后我们就得到了一条从根节点到叶子节点的路径，将该路径加入到答案即可。</p>
+<p>如此，当遍历完整棵二叉树以后我们就得到了所有从根节点到叶子节点的路径。当然，深度优先搜索也可以使用非递归的方式实现，这里不再赘述。</p>
 <hr>
 <p>广度优先搜索</p>
 <p>思路与算法</p>
 <p>我们也可以用广度优先搜索来实现。我们维护一个队列，存储节点以及根到该节点的路径。一开始这个队列里只有根节点。在每一步迭代中，我们取出队列中的首节点，如果它是叶子节点，则将它对应的路径加入到答案中。如果它不是叶子节点，则将它的所有孩子节点加入到队列的末尾。当队列为空时广度优先搜索结束，我们即能得到答案。</p>
-<p>作者：LeetCode-Solution<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/">https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/</a></p>
+<p>作者：LeetCode-Solution</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/">https://leetcode-cn.com/problems/binary-tree-paths/solution/er-cha-shu-de-suo-you-lu-jing-by-leetcode-solution/</a></p>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
  * Definition for a binary tree node.
  * public class TreeNode &amp;#123;
@@ -872,9 +891,15 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            680. 验证回文字符串 Ⅱ难度简单 324给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。示例 1:输入: “aba”输出: True
-示例 2:输入: “abca”输出: True解释: 你可以删除 c 字符。
-cl
+                            680. 验证回文字符串 Ⅱ难度简单 324
+给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。
+示例 1:
+输入: “aba”
+输出: True
+示例 2:
+输入: “abca”
+输出: True
+解释: 你可以删除 c
                         
                     </div>
                     <div class="publish-info">
@@ -920,8 +945,14 @@ cl
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            67. 二进制求和难度简单 568给你两个二进制字符串，返回它们的和（用二进制表示）。输入为 **非空  **字符串且只包含数字 1 和 0。
-示例  1:输入: a = “11”, b = “1”输出: “100”示例  2:输入: a 
+                            67. 二进制求和难度简单 568
+给你两个二进制字符串，返回它们的和（用二进制表示）。
+输入为 **非空  **字符串且只包含数字 1 和 0。
+示例  1:
+输入: a = “11”, b = “1”
+输出: “100”
+示例  2:
+
                         
                     </div>
                     <div class="publish-info">
@@ -1131,7 +1162,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

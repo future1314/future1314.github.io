@@ -5,8 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="113. 路径总和 II--🀄️, future">
-    <meta name="description" content="113. 路径总和 II难度中等 435给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。叶子节点 是指没有子节点的节点。
-示例 1：输入：root = [5,">
+    <meta name="description" content="113. 路径总和 II难度中等 435
+给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。
+叶子节点 是指没有子节点的节点。
+示例 1：
+
+输入：root =">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -499,7 +503,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -524,10 +528,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="113-路径总和-II"><a href="#113-路径总和-II" class="headerlink" title="113. 路径总和 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/path-sum-ii/">113. 路径总和 II</a></h4><p>难度中等 435<br>给你二叉树的根节点 <code>root</code> 和一个整数目标和 <code>targetSum</code> ，找出所有 <strong>从根节点到叶子节点</strong> 路径总和等于给定目标和的路径。<br><strong>叶子节点</strong> 是指没有子节点的节点。</p>
-<p><strong>示例 1：</strong><br><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614758699837-043f129a-befe-4813-83b4-d8c9edceb233.jpeg#align=left&display=inline&height=211&originHeight=421&originWidth=592&size=0&status=done&style=none&width=296"><br><strong>输入：</strong>root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22<br><strong>输出：</strong>[[5,4,11,2],[5,8,4,5]]</p>
-<p><strong>示例 2：</strong><br><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614758699913-93a91a5f-d392-47ff-89a1-a15ef83121d5.jpeg#align=left&display=inline&height=91&originHeight=181&originWidth=212&size=0&status=done&style=none&width=106"><br><strong>输入：</strong>root = [1,2,3], targetSum = 5<br><strong>输出：</strong>[]</p>
-<p><strong>示例 3：</strong><br><strong>输入：</strong>root = [1,2], targetSum = 0<br><strong>输出：</strong>[]</p>
+                <h4 id="113-路径总和-II"><a href="#113-路径总和-II" class="headerlink" title="113. 路径总和 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/path-sum-ii/">113. 路径总和 II</a></h4><p>难度中等 435</p>
+<p>给你二叉树的根节点 <code>root</code> 和一个整数目标和 <code>targetSum</code> ，找出所有 <strong>从根节点到叶子节点</strong> 路径总和等于给定目标和的路径。</p>
+<p><strong>叶子节点</strong> 是指没有子节点的节点。</p>
+<p><strong>示例 1：</strong></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614758699837-043f129a-befe-4813-83b4-d8c9edceb233.jpeg"></p>
+<p><strong>输入：</strong>root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22</p>
+<p><strong>输出：</strong>[[5,4,11,2],[5,8,4,5]]</p>
+<p><strong>示例 2：</strong></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/jpeg/282505/1614758699913-93a91a5f-d392-47ff-89a1-a15ef83121d5.jpeg"></p>
+<p><strong>输入：</strong>root = [1,2,3], targetSum = 5</p>
+<p><strong>输出：</strong>[]</p>
+<p><strong>示例 3：</strong></p>
+<p><strong>输入：</strong>root = [1,2], targetSum = 0</p>
+<p><strong>输出：</strong>[]</p>
 <pre class=" language-java"><code class="language-java">    List<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Integer<span class="token operator">>></span> ret <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Integer<span class="token operator">>></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     Deque<span class="token operator">&lt;</span>Integer<span class="token operator">></span> path <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token operator">&lt;</span>Integer<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -550,7 +564,9 @@
         path<span class="token punctuation">.</span><span class="token function">pollLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//不满足的路径弹出.满足的不会执行到这里(子节点为空时就返回return了)。</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>解析</strong></p>
-<p><strong>深度优先搜索</strong><br>思路及算法<br>我们可以采用深度优先搜索的方式，枚举每一条从根节点到叶子节点的路径。当我们遍历到叶子节点，且此时路径和恰为目标和时，我们就找到了一条满足条件的路径。</p>
+<p><strong>深度优先搜索</strong></p>
+<p>思路及算法</p>
+<p>我们可以采用深度优先搜索的方式，枚举每一条从根节点到叶子节点的路径。当我们遍历到叶子节点，且此时路径和恰为目标和时，我们就找到了一条满足条件的路径。</p>
 
             </div>
             <hr/>
@@ -798,8 +814,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            剑指 Offer 32 - III. 从上到下打印二叉树 III难度中等 76请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
-例如:给定
+                            剑指 Offer 32 - III. 从上到下打印二叉树 III难度中等 76
+请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
+例如:
+
                         
                     </div>
                     <div class="publish-info">
@@ -845,11 +863,19 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            530. 二叉搜索树的最小绝对差难度简单 233给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。
-示例：输入：
-1         3    /   2
-输出：1
-解释：最小绝对差为 1，其中 2 和 1 
+                            530. 二叉搜索树的最小绝对差难度简单 233
+给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。
+示例：
+输入：
+1
+\
+3
+/
+2
+输出：
+1
+解释：
+最小绝对差为 1，其中 2 和 1 的差的绝对值为
                         
                     </div>
                     <div class="publish-info">
@@ -1059,7 +1085,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

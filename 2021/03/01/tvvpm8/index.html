@@ -500,7 +500,7 @@ public class Solution &amp;amp;#123;
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -544,9 +544,12 @@ public class Solution &amp;amp;#123;
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p>复杂度分析</p>
-<p>时间复杂度：O(1) 。运行时间依赖于数字 n 的位数。由于这题中 n 是一个 32 位数，所以运行时间是 O(1) 的。<br>空间复杂度：O(1)。没有使用额外空间。</p>
+<p>时间复杂度：O(1) 。运行时间依赖于数字 n 的位数。由于这题中 n 是一个 32 位数，所以运行时间是 O(1) 的。</p>
+<p>空间复杂度：O(1)。没有使用额外空间。</p>
 <hr>
-<p>在二进制表示中，数字 n 中最低位的 1 总是对应 n−1 中的 0 。因此，将<br>n 和 n−1 与运算总是能把 n 中最低位的 1 变成 0 ，并保持其他位不变。<br>使用这个小技巧，代码变得非常简单。</p>
+<p>在二进制表示中，数字 n 中最低位的 1 总是对应 n−1 中的 0 。因此，将</p>
+<p>n 和 n−1 与运算总是能把 n 中最低位的 1 变成 0 ，并保持其他位不变。</p>
+<p>使用这个小技巧，代码变得非常简单。</p>
 <p>Java</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// you need to treat n as an unsigned value</span>
@@ -560,60 +563,61 @@ public class Solution &amp;amp;#123;
         <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>作者：LeetCode<br>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-1-bits/solution/wei-1de-ge-shu-by-leetcode/">https://leetcode-cn.com/problems/number-of-1-bits/solution/wei-1de-ge-shu-by-leetcode/</a></p>
+<p>作者：LeetCode</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-1-bits/solution/wei-1de-ge-shu-by-leetcode/">https://leetcode-cn.com/problems/number-of-1-bits/solution/wei-1de-ge-shu-by-leetcode/</a></p>
 <p>二进制</p>
 <table>
 <thead>
 <tr>
 <th>N</th>
 <th>N-1</th>
-<th align="right">N&amp;(N-1)</th>
+<th>N&amp;(N-1)</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>11</td>
 <td>10</td>
-<td align="right">10</td>
+<td>10</td>
 </tr>
 <tr>
 <td>10</td>
 <td>1</td>
-<td align="right">0</td>
+<td>0</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td align="right"></td>
+<td></td>
 </tr>
 <tr>
 <td>1100</td>
 <td>1011</td>
-<td align="right">1000</td>
+<td>1000</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>111</td>
-<td align="right">0</td>
+<td>0</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td align="right"></td>
+<td></td>
 </tr>
 <tr>
 <td>1011</td>
 <td>1010</td>
-<td align="right">1010</td>
+<td>1010</td>
 </tr>
 <tr>
 <td>1010</td>
 <td>1001</td>
-<td align="right">1000</td>
+<td>1000</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>111</td>
-<td align="right">0</td>
+<td>0</td>
 </tr>
 </tbody></table>
 
@@ -863,7 +867,9 @@ public class Solution &amp;amp;#123;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            108. 将有序数组转换为二叉搜索树难度简单 705给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 高度平衡 二叉搜索树。**高度平衡  **二叉树是一棵满足「每个节点的左右两个子树的高度差的绝对值不超过 1 
+                            108. 将有序数组转换为二叉搜索树难度简单 705
+给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 高度平衡 二叉搜索树。
+**高度平衡  **二叉树是一棵满足「每个节点的左右两个子树的高度差的绝对值不超过 
                         
                     </div>
                     <div class="publish-info">
@@ -909,7 +915,10 @@ public class Solution &amp;amp;#123;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1047. 删除字符串中的所有相邻重复项难度简单 122给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。在 S 上反复执行重复项删除操作，直到无法继续删除。在完成所有重复项删除操作后返回最终的字符串。答
+                            1047. 删除字符串中的所有相邻重复项难度简单 122
+给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。
+在 S 上反复执行重复项删除操作，直到无法继续删除。
+在完成所有重复项删除操作后返回最终的字符
                         
                     </div>
                     <div class="publish-info">
@@ -1119,7 +1128,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

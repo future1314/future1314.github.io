@@ -5,9 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="680. 验证回文字符串 Ⅱ, future">
-    <meta name="description" content="680. 验证回文字符串 Ⅱ难度简单 324给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。示例 1:输入: “aba”输出: True
-示例 2:输入: “abca”输出: True解释: 你可以删除 c 字符。
-cl">
+    <meta name="description" content="680. 验证回文字符串 Ⅱ难度简单 324
+给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。
+示例 1:
+输入: “aba”
+输出: True
+示例 2:
+输入: “abca”
+输出: True
+解释: 你可以删除 c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -500,7 +506,7 @@ cl">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -525,8 +531,15 @@ cl">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="680-验证回文字符串-Ⅱ"><a href="#680-验证回文字符串-Ⅱ" class="headerlink" title="680. 验证回文字符串 Ⅱ"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/valid-palindrome-ii/">680. 验证回文字符串 Ⅱ</a></h3><p>难度简单 324<br>给定一个非空字符串 <code>s</code>，<strong>最多</strong>删除一个字符。判断是否能成为回文字符串。<br><strong>示例 1:</strong><br><strong>输入:</strong> “aba”<br><strong>输出:</strong> True</p>
-<p><strong>示例 2:</strong><br><strong>输入:</strong> “abca”<br><strong>输出:</strong> True<br><strong>解释:</strong> 你可以删除 c 字符。</p>
+                <h3 id="680-验证回文字符串-Ⅱ"><a href="#680-验证回文字符串-Ⅱ" class="headerlink" title="680. 验证回文字符串 Ⅱ"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/valid-palindrome-ii/">680. 验证回文字符串 Ⅱ</a></h3><p>难度简单 324</p>
+<p>给定一个非空字符串 <code>s</code>，<strong>最多</strong>删除一个字符。判断是否能成为回文字符串。</p>
+<p><strong>示例 1:</strong></p>
+<p><strong>输入:</strong> “aba”</p>
+<p><strong>输出:</strong> True</p>
+<p><strong>示例 2:</strong></p>
+<p><strong>输入:</strong> “abca”</p>
+<p><strong>输出:</strong> True</p>
+<p><strong>解释:</strong> 你可以删除 c 字符。</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">validPalindrome</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> low <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> high <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
@@ -556,7 +569,9 @@ cl">
 <span class="token comment" spellcheck="true">// 链接：https://leetcode-cn.com/problems/valid-palindrome-ii/solution/yan-zheng-hui-wen-zi-fu-chuan-ii-by-leetcode-solut/</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>复杂度分析</strong></p>
-<p>时间复杂度：O(n)，其中 n 是字符串的长度。判断整个字符串是否是回文字符串的时间复杂度是<br>O(n)，遇到不同字符时，判断两个子串是否是回文字符串的时间复杂度也都是 O(n)。<br>空间复杂度：O(1)。只需要维护有限的常量空间。</p>
+<p>时间复杂度：O(n)，其中 n 是字符串的长度。判断整个字符串是否是回文字符串的时间复杂度是</p>
+<p>O(n)，遇到不同字符时，判断两个子串是否是回文字符串的时间复杂度也都是 O(n)。</p>
+<p>空间复杂度：O(1)。只需要维护有限的常量空间。</p>
 
             </div>
             <hr/>
@@ -804,9 +819,16 @@ cl">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            404. 左叶子之和难度简单 286计算给定二叉树的所有左叶子之和。示例：    3   /   9  20    /      15   7
+                            404. 左叶子之和难度简单 286
+计算给定二叉树的所有左叶子之和。
+示例：
+3
+/ \
+9  20
+/   \
+15   7
 在这个二叉树中，有两个左叶子，分别是 9 和 15，所以返回 24.
-一个节点为「左叶子」节点，
+一个节点为「左叶子」节点，当且仅当它是某
                         
                     </div>
                     <div class="publish-info">
@@ -852,9 +874,17 @@ cl">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            257. 二叉树的所有路径难度简单 454给定一个二叉树，返回所有从根节点到叶子节点的路径。说明: 叶子节点是指没有子节点的节点。示例:输入:
-1 /   2     3   5
-输出: [“1-&gt;2-&gt;5”, “1-&gt;3
+                            257. 二叉树的所有路径难度简单 454
+给定一个二叉树，返回所有从根节点到叶子节点的路径。
+说明: 叶子节点是指没有子节点的节点。
+示例:
+输入:
+1
+/   \
+2     3
+\
+5
+输出: [“1-&gt;2-&gt;5”, “1
                         
                     </div>
                     <div class="publish-info">
@@ -1064,7 +1094,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

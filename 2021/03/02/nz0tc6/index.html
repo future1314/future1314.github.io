@@ -5,7 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="104. 二叉树的最大深度, future">
-    <meta name="description" content="104. 二叉树的最大深度难度简单 806给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明: 叶子节点是指没有子节点的节点。示例：给定二叉树 [3,9,20,null,null,15,7]，   ">
+    <meta name="description" content="104. 二叉树的最大深度难度简单 806
+给定一个二叉树，找出其最大深度。
+二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+说明: 叶子节点是指没有子节点的节点。
+示例：
+给定二叉树 [3,9,20,null,null,15,7">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -498,7 +503,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -523,7 +528,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="104-二叉树的最大深度"><a href="#104-二叉树的最大深度" class="headerlink" title="104. 二叉树的最大深度"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">104. 二叉树的最大深度</a></h4><p>难度简单 806<br>给定一个二叉树，找出其最大深度。<br>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。<br><strong>说明:</strong> 叶子节点是指没有子节点的节点。<br><strong>示例：</strong><br>给定二叉树 <code>[3,9,20,null,null,15,7]</code>，<br>    3<br>   / <br>  9  20<br>    /  <br>   15   7<br>返回它的最大深度  3 。</p>
+                <h4 id="104-二叉树的最大深度"><a href="#104-二叉树的最大深度" class="headerlink" title="104. 二叉树的最大深度"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">104. 二叉树的最大深度</a></h4><p>难度简单 806</p>
+<p>给定一个二叉树，找出其最大深度。</p>
+<p>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。</p>
+<p><strong>说明:</strong> 叶子节点是指没有子节点的节点。</p>
+<p><strong>示例：</strong></p>
+<p>给定二叉树 <code>[3,9,20,null,null,15,7]</code>，</p>
+<p>3</p>
+<p>/ \</p>
+<p>9  20</p>
+<p>/  \</p>
+<p>15   7</p>
+<p>返回它的最大深度  3 。</p>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
  * Definition for a binary tree node.
  * public class TreeNode &amp;#123;
@@ -594,7 +610,8 @@
 
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <p><strong>广度优先搜索</strong></p>
-<p>思路与算法<br>我们也可以用「广度优先搜索」的方法来解决这道题目，但我们需要对其进行一些修改，此时我们广度优先搜索的队列里存放的是「当前层的所有节点」。每次拓展下一层的时候，不同于广度优先搜索的每次只从队列里拿出一个节点，我们需要将队列里的所有节点都拿出来进行拓展，这样能保证每次拓展完的时候队列里存放的是当前层的所有节点，即我们是一层一层地进行拓展，最后我们用一个变量 ans 来维护拓展的次数，该二叉树的最大深度即为 ans。</p>
+<p>思路与算法</p>
+<p>我们也可以用「广度优先搜索」的方法来解决这道题目，但我们需要对其进行一些修改，此时我们广度优先搜索的队列里存放的是「当前层的所有节点」。每次拓展下一层的时候，不同于广度优先搜索的每次只从队列里拿出一个节点，我们需要将队列里的所有节点都拿出来进行拓展，这样能保证每次拓展完的时候队列里存放的是当前层的所有节点，即我们是一层一层地进行拓展，最后我们用一个变量 ans 来维护拓展的次数，该二叉树的最大深度即为 ans。</p>
 
             </div>
             <hr/>
@@ -842,7 +859,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            674. 最长连续递增序列难度简单 172给定一个未经排序的整数数组，找到最长且**  连续递增的子序列，并返回该序列的长度。**连续递增的子序列 可以由两个下标 l 和 r（l &lt; r）确定，如果对于每个 l &lt;= i &lt
+                            674. 最长连续递增序列难度简单 172
+给定一个未经排序的整数数组，找到最长且**  连续递增的子序列**，并返回该序列的长度。
+连续递增的子序列 可以由两个下标 l 和 r（l &lt; r）确定，如果对于每个 l &lt;= i &
                         
                     </div>
                     <div class="publish-info">
@@ -888,8 +907,14 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            69. x 的平方根难度简单 605实现 int sqrt(int x) 函数。计算并返回 x 的平方根，其中 x *是非负整数。由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。*示例 1:**输入: 4输出: 2
-示例 2:输
+                            69. x 的平方根难度简单 605
+实现 int sqrt(int x) 函数。
+计算并返回 x 的平方根，其中 *x *是非负整数。
+由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。
+示例 1:
+输入: 4
+输出: 2
+示例
                         
                     </div>
                     <div class="publish-info">
@@ -1099,7 +1124,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

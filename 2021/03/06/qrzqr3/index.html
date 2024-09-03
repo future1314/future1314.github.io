@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="美团点评高频面试题 150 道, future">
-    <meta name="description" content="美团点评高频面试题 150 道 – Java 工程师目录一、Java 集合 22 题 ………………………………………………………………………………………………………………………….1二、JVM 与调优 21 题………………………………………">
+    <meta name="description" content="美团点评高频面试题 150 道 – Java 工程师
+目录
+一、Java 集合 22 题 ………………………………………………………………………………………………………………………….1
+二、JVM 与调优 21 题………………………………">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -485,21 +488,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    9 分
                 </div>
                 
 
@@ -510,156 +513,182 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>美团点评高频面试题 150 道 – Java 工程师</strong><br><strong>目录</strong><br>一、Java 集合 22 题 ………………………………………………………………………………………………………………………….1<br>二、JVM 与调优 21 题………………………………………………………………………………………………………………………2<br>三、并发编程 28 题…………………………………………………………………………………………………………………………..3<br>四、Spring 面试专题 ………………………………………………………………………………………………………………………..5<br>五、设计模式 …………………………………………………………………………………………………………………………………….6<br>六、Springboot 面试专题………………………………………………………………………………………………………………..7<br>七、Netty10 题 ………………………………………………………………………………………………………………………………….8<br>八、Redis ……………………………………………………………………………………………………………………………………………9<br><strong>一、Java 集合 22 题</strong></p>
-<ol>
-<li>ArrayList 和 Vector 的区别。</li>
-<li>说说 ArrayList,Vector, LinkedList 的存储性能和特性。</li>
-<li>快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？</li>
-<li>hashmap 的数据结构。</li>
-<li>HashMap 的工作原理是什么?</li>
-<li>Hashmap 什么时候进行扩容呢？</li>
-<li>List、Map、Set 三个接口，存取元素时，各有什么特点？</li>
-<li>Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用 == <br>还是 equals()? 它们有何区别?</li>
-<li>两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话<br>对不对?10. heap 和 stack 有什么区别。</li>
-<li>Java 集合类框架的基本接口有哪些？</li>
-<li>HashSet 和 TreeSet 有什么区别？</li>
-<li>HashSet 的底层实现是什么?</li>
-<li>LinkedHashMap 的实现原理?</li>
-<li>为什么集合类没有实现 Cloneable 和 Serializable 接口？</li>
-<li>什么是迭代器 (Iterator)？</li>
-<li>Iterator 和 ListIterator 的区别是什么？</li>
-<li>数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而<br>不是 ArrayList？</li>
-<li>Java 集合类框架的最佳实践有哪些？</li>
-<li>Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == <br>还是 equals()？它们有何区别？</li>
-<li>Comparable 和 Comparator 接口是干什么的？列出它们的区别</li>
-<li>Collection 和 Collections 的区别。<br><strong>二、JVM 与调优 21 题</strong></li>
-<li>Java 类加载过程？</li>
-<li>描述一下 JVM 加载 Class 文件的原理机制?</li>
-<li>Java 内存分配。</li>
-<li>GC 是什么? 为什么要有 GC？5. 简述 Java 垃圾回收机制</li>
-<li>如何判断一个对象是否存活？（或者 GC 对象的判定方法）</li>
-<li>垃圾回收的优点和原理。并考虑 2 种回收机制</li>
-<li>垃圾回收器的基本原理是什么？垃圾回收器可以马上回收内存吗？有什么<br>办法主动通知虚拟机进行垃圾回收？</li>
-<li>Java 中会存在内存泄漏吗，请简单描述</li>
-<li>深拷贝和浅拷贝。</li>
-<li>System.gc() 和 Runtime.gc() 会做什么事情？</li>
-<li>finalize() 方法什么时候被调用？析构函数 (finalization) 的目的是什么？</li>
-<li>如果对象的引用被置为 null，垃圾收集器是否会立即释放对象占用的内存？</li>
-<li>什么是分布式垃圾回收（DGC）？它是如何工作的？</li>
-<li>串行（serial）收集器和吞吐量（throughput）收集器的区别是什么？</li>
-<li>在 Java 中，对象什么时候可以被垃圾回收？</li>
-<li>简述 Java 内存分配与回收策率以及 Minor GC 和 Major GC。</li>
-<li>JVM 的永久代中会发生垃圾回收么？</li>
-<li>Java 中垃圾收集的方法有哪些？</li>
-<li>什么是类加载器，类加载器有哪些？</li>
-<li>类加载器双亲委派模型机制？<br><strong>三、并发编程 28 题</strong></li>
-<li>Synchronized 用过吗，其原理是什么？2. 你刚才提到获取对象的锁，这个“锁”到底是什么？如何确定对象的锁？</li>
-<li>什么是可重入性，为什么说 Synchronized 是可重入锁？</li>
-<li>JVM 对 Java 的原生锁做了哪些优化？48</li>
-<li>为什么说 Synchronized 是非公平锁？49</li>
-<li>什么是锁消除和锁粗化？49</li>
-<li>为什么说 Synchronized 是一个悲观锁？乐观锁的实现原理又是什么？什么<br>是 CAS，它有什么特性？</li>
-<li>乐观锁一定就是好的吗？</li>
-<li>跟 Synchronized 相比，可重入锁 ReentrantLock 其实现原理有什么不同？</li>
-<li>那么请谈谈 AQS 框架是怎么回事儿？</li>
-<li>请尽可能详尽地对比下 Synchronized 和 ReentrantLock 的异同。</li>
-<li>ReentrantLock 是如何实现可重入性的？</li>
-<li>除了 ReetrantLock，你还接触过 JUC 中的哪些并发工具？</li>
-<li>请谈谈 ReadWriteLock 和 StampedLock。</li>
-<li>如何让 Java 的线程彼此同步？你了解过哪些同步器？请分别介绍下。</li>
-<li>CyclicBarrier 和 CountDownLatch 看起来很相似，请对比下呢？</li>
-<li>Java 线程池相关问题</li>
-<li>Java 中的线程池是如何实现的？</li>
-<li>创建线程池的几个核心构造参数？</li>
-<li>线程池中的线程是怎么创建的？是一开始就随着线程池的启动创建好的吗？</li>
-<li>既然提到可以通过配置不同参数创建出不同的线程池，那么 Java 中默认实<br>现好的线程池又有哪些呢？请比较它们的异同 22. 如何在 Java 线程池中提交线程？</li>
-<li>什么是 Java 的内存模型，Java 中各个线程是怎么彼此看到对方的变量的？</li>
-<li>请谈谈 volatile 有什么特点，为什么它能保证变量对所有线程的可见性？</li>
-<li>既然 volatile 能够保证线程间的变量可见性，是不是就意味着基于 volatile <br>变量的运算就是并发安全的？</li>
-<li>请对比下 volatile 对比 Synchronized 的异同。</li>
-<li>请谈谈 ThreadLocal 是怎么解决并发安全的？</li>
-<li>很多人都说要慎用 ThreadLocal，谈谈你的理解，使用 ThreadLocal 需要注<br>意些什么？<br><strong>四、Spring 面试专题</strong></li>
-<li>什么是 Spring 框架？Spring 框架有哪些主要模块？</li>
-<li>使用 Spring 框架能带来哪些好处？</li>
-<li>什么是控制反转(IOC)？什么是依赖注入？</li>
-<li>请解释下 Spring 框架中的 IoC？</li>
-<li>BeanFactory 和 ApplicationContext 有什么区别？</li>
-<li>Spring 有几种配置方式？</li>
-<li>如何用基于 XML 配置的方式配置 Spring？</li>
-<li>如何用基于 Java 配置的方式配置 Spring？</li>
-<li>怎样用注解的方式配置 Spring？</li>
-<li>请解释 Spring Bean 的生命周期？11. Spring Bean 的作用域之间有什么区别？</li>
-<li>什么是 Spring inner beans？</li>
-<li>Spring 框架中的单例 Beans 是线程安全的么？</li>
-<li>请举例说明如何在 Spring 中注入一个 Java Collection？</li>
-<li>如何向 Spring Bean 中注入一个 Java.util.Properties？</li>
-<li>请解释 Spring Bean 的自动装配？</li>
-<li>请解释自动装配模式的区别？</li>
-<li>如何开启基于注解的自动装配？</li>
-<li>请举例解释@Required 注解？</li>
-<li>请举例解释@Autowired 注解？</li>
-<li>请举例说明@Qualifier 注解？</li>
-<li>构造方法注入和设值注入有什么区别？</li>
-<li>Spring 框架中有哪些不同类型的事件？</li>
-<li>FileSystemResource 和 ClassPathResource 有何区别？</li>
-<li>Spring 框架中都用到了哪些设计模式？<br><strong>五、设计模式</strong></li>
-<li>请列举出在 JDK 中几个常用的设计模式？</li>
-<li>什么是设计模式？你是否在你的代码里面使用过任何设计模式？</li>
-<li>Java 中什么叫单例设计模式？请用 Java 写出线程安全的单例模式</li>
-<li>在 Java 中，什么叫观察者设计模式（observer design pattern）？5. 使用工厂模式最主要的好处是什么？在哪里使用？</li>
-<li>举一个用 Java 实现的装饰模式(decorator design pattern)？它是作用于对<br>象层次还是类</li>
-<li>层次？</li>
-<li>在 Java 中，为什么不允许从静态方法中访问非静态变量？</li>
-<li>设计一个 ATM 机，请说出你的设计思路？</li>
-<li>在 Java 中，什么时候用重载，什么时候用重写？</li>
-<li>举例说明什么情况下会更倾向于使用抽象类而不是接口<br><strong>六、Springboot 面试专题</strong></li>
-<li>什么是 Spring Boot？</li>
-<li>Spring Boot 有哪些优点？</li>
-<li>什么是 JavaConfig？</li>
-<li>如何重新加载 Spring Boot 上的更改，而无需重新启动服务器？</li>
-<li>Spring Boot 中的监视器是什么？</li>
-<li>如何在 Spring Boot 中禁用 Actuator 端点安全性？</li>
-<li>如何在自定义端口上运行 Spring Boot 应用程序？</li>
-<li>什么是 YAML？</li>
-<li>如何实现 Spring Boot 应用程序的安全性？</li>
-<li>如何集成 Spring Boot 和 ActiveMQ？</li>
-<li>如何使用 Spring Boot 实现分页和排序？12. 什么是 Swagger？你用 Spring Boot 实现了它吗？</li>
-<li>什么是 Spring Profiles？</li>
-<li>什么是 Spring Batch？</li>
-<li>什么是 FreeMarker 模板？</li>
-<li>如何使用 Spring Boot 实现异常处理？</li>
-<li>您使用了哪些 starter maven 依赖项？</li>
-<li>什么是 CSRF 攻击？</li>
-<li>什么是 WebSockets？</li>
-<li>什么是 AOP？</li>
-<li>什么是 Apache Kafka？</li>
-<li>我们如何监视所有 Spring Boot 微服务？<br><strong>七、Netty10 题</strong></li>
-<li>BIO、NIO 和 AIO 的区别？</li>
-<li>NIO 的组成？</li>
-<li>Netty 的特点？</li>
-<li>Netty 的线程模型？</li>
-<li>TCP 粘包/拆包的原因及解决方法？</li>
-<li>了解哪几种序列化协议？</li>
-<li>如何选择序列化协议？</li>
-<li>Netty 的零拷贝实现？9. Netty 的高性能表现在哪些方面？</li>
-<li>NIOEventLoopGroup 源码？<br><strong>八、Redis</strong></li>
-<li>什么是 redis?</li>
-<li>Reids 的特点</li>
-<li>Redis 支持的数据类型</li>
-<li>Redis 是单进程单线程的</li>
-<li>虚拟内存</li>
-<li>Redis 锁</li>
-<li>读写分离模型</li>
-<li>数据分片模型</li>
-<li>Redis 的回收策略</li>
-<li>使用 Redis 有哪些好处？</li>
-<li>redis 相比 memcached 有哪些优势？4</li>
-<li>redis 常见性能问题和解决方案</li>
-<li>MySQL 里有 2000w 数据，redis 中只存 20w 的数据，如何保证 redis 中的数<br>据都是热点数据 245</li>
-<li>Memcache 与 Redis 的区别都有哪些？</li>
-<li>Redis 常见的性能问题都有哪些？如何解决？</li>
-<li>Redis 最适合的场景</li>
-</ol>
+                <p><strong>美团点评高频面试题 150 道 – Java 工程师</strong></p>
+<p><strong>目录</strong></p>
+<p><font style="color:#000000;">一、Java 集合 22 题 ………………………………………………………………………………………………………………………….1</font></p>
+<p><font style="color:#000000;">二、JVM 与调优 21 题………………………………………………………………………………………………………………………2</font></p>
+<p><font style="color:#000000;">三、并发编程 28 题…………………………………………………………………………………………………………………………..3</font></p>
+<p><font style="color:#000000;">四、Spring 面试专题 ………………………………………………………………………………………………………………………..5</font></p>
+<p><font style="color:#000000;">五、设计模式 …………………………………………………………………………………………………………………………………….6</font></p>
+<p><font style="color:#000000;">六、Springboot 面试专题………………………………………………………………………………………………………………..7</font></p>
+<p><font style="color:#000000;">七、Netty10 题 ………………………………………………………………………………………………………………………………….8</font></p>
+<p><font style="color:#000000;">八、Redis ……………………………………………………………………………………………………………………………………………9</font></p>
+<p><strong>一、Java 集合 22 题</strong></p>
+<p><font style="color:#000000;">1. ArrayList 和 Vector 的区别。</font></p>
+<p><font style="color:#000000;">2. 说说 ArrayList,Vector, LinkedList 的存储性能和特性。</font></p>
+<p><font style="color:#000000;">3. 快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？</font></p>
+<p><font style="color:#000000;">4. hashmap 的数据结构。</font></p>
+<p><font style="color:#000000;">5. HashMap 的工作原理是什么?</font></p>
+<p><font style="color:#000000;">6. Hashmap 什么时候进行扩容呢？</font></p>
+<p><font style="color:#000000;">7. List、Map、Set 三个接口，存取元素时，各有什么特点？</font></p>
+<p><font style="color:#000000;">8. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用 == </font></p>
+<p><font style="color:#000000;">还是 equals()? 它们有何区别?</font></p>
+<p><font style="color:#000000;">9. 两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话</font></p>
+<p><font style="color:#000000;">对不对?</font><font style="color:#000000;">10. heap 和 stack 有什么区别。</font></p>
+<p><font style="color:#000000;">11. Java 集合类框架的基本接口有哪些？</font></p>
+<p><font style="color:#000000;">12. HashSet 和 TreeSet 有什么区别？</font></p>
+<p><font style="color:#000000;">13. HashSet 的底层实现是什么?</font></p>
+<p><font style="color:#000000;">14. LinkedHashMap 的实现原理?</font></p>
+<p><font style="color:#000000;">15. 为什么集合类没有实现 Cloneable 和 Serializable 接口？</font></p>
+<p><font style="color:#000000;">16. 什么是迭代器 (Iterator)？</font></p>
+<p><font style="color:#000000;">17. Iterator 和 ListIterator 的区别是什么？</font></p>
+<p><font style="color:#000000;">18. 数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而</font></p>
+<p><font style="color:#000000;">不是 ArrayList？</font></p>
+<p><font style="color:#000000;">19. Java 集合类框架的最佳实践有哪些？</font></p>
+<p><font style="color:#000000;">20. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == </font></p>
+<p><font style="color:#000000;">还是 equals()？它们有何区别？</font></p>
+<p><font style="color:#000000;">21. Comparable 和 Comparator 接口是干什么的？列出它们的区别</font></p>
+<p><font style="color:#000000;">22. Collection 和 Collections 的区别。</font></p>
+<p><strong>二、JVM 与调优 21 题</strong></p>
+<p><font style="color:#000000;">1. Java 类加载过程？</font></p>
+<p><font style="color:#000000;">2. 描述一下 JVM 加载 Class 文件的原理机制?</font></p>
+<p><font style="color:#000000;">3. Java 内存分配。</font></p>
+<p><font style="color:#000000;">4. GC 是什么? 为什么要有 GC？</font><font style="color:#000000;">5. 简述 Java 垃圾回收机制</font></p>
+<p><font style="color:#000000;">6. 如何判断一个对象是否存活？（或者 GC 对象的判定方法）</font></p>
+<p><font style="color:#000000;">7. 垃圾回收的优点和原理。并考虑 2 种回收机制</font></p>
+<p><font style="color:#000000;">8. 垃圾回收器的基本原理是什么？垃圾回收器可以马上回收内存吗？有什么</font></p>
+<p><font style="color:#000000;">办法主动通知虚拟机进行垃圾回收？</font></p>
+<p><font style="color:#000000;">9. Java 中会存在内存泄漏吗，请简单描述</font></p>
+<p><font style="color:#000000;">10. 深拷贝和浅拷贝。</font></p>
+<p><font style="color:#000000;">11. System.gc() 和 Runtime.gc() 会做什么事情？</font></p>
+<p><font style="color:#000000;">12. finalize() 方法什么时候被调用？析构函数 (finalization) 的目的是什么？</font></p>
+<p><font style="color:#000000;">13. 如果对象的引用被置为 null，垃圾收集器是否会立即释放对象占用的内存？</font></p>
+<p><font style="color:#000000;">14. 什么是分布式垃圾回收（DGC）？它是如何工作的？</font></p>
+<p><font style="color:#000000;">15. 串行（serial）收集器和吞吐量（throughput）收集器的区别是什么？</font></p>
+<p><font style="color:#000000;">16. 在 Java 中，对象什么时候可以被垃圾回收？</font></p>
+<p><font style="color:#000000;">17. 简述 Java 内存分配与回收策率以及 Minor GC 和 Major GC。</font></p>
+<p><font style="color:#000000;">18. JVM 的永久代中会发生垃圾回收么？</font></p>
+<p><font style="color:#000000;">19. Java 中垃圾收集的方法有哪些？</font></p>
+<p><font style="color:#000000;">20. 什么是类加载器，类加载器有哪些？</font></p>
+<p><font style="color:#000000;">21. 类加载器双亲委派模型机制？</font></p>
+<p><strong>三、并发编程 28 题</strong></p>
+<p><font style="color:#000000;">1. Synchronized 用过吗，其原理是什么？</font><font style="color:#000000;">2. 你刚才提到获取对象的锁，这个“锁”到底是什么？如何确定对象的锁？</font></p>
+<p><font style="color:#000000;">3. 什么是可重入性，为什么说 Synchronized 是可重入锁？</font></p>
+<p><font style="color:#000000;">4. JVM 对 Java 的原生锁做了哪些优化？48</font></p>
+<p><font style="color:#000000;">5. 为什么说 Synchronized 是非公平锁？49</font></p>
+<p><font style="color:#000000;">6. 什么是锁消除和锁粗化？49</font></p>
+<p><font style="color:#000000;">7. 为什么说 Synchronized 是一个悲观锁？乐观锁的实现原理又是什么？什么</font></p>
+<p><font style="color:#000000;">是 CAS，它有什么特性？</font></p>
+<p><font style="color:#000000;">8. 乐观锁一定就是好的吗？</font></p>
+<p><font style="color:#000000;">9. 跟 Synchronized 相比，可重入锁 ReentrantLock 其实现原理有什么不同？</font></p>
+<p><font style="color:#000000;">10. 那么请谈谈 AQS 框架是怎么回事儿？</font></p>
+<p><font style="color:#000000;">11. 请尽可能详尽地对比下 Synchronized 和 ReentrantLock 的异同。</font></p>
+<p><font style="color:#000000;">12. ReentrantLock 是如何实现可重入性的？</font></p>
+<p><font style="color:#000000;">13. 除了 ReetrantLock，你还接触过 JUC 中的哪些并发工具？</font></p>
+<p><font style="color:#000000;">14. 请谈谈 ReadWriteLock 和 StampedLock。</font></p>
+<p><font style="color:#000000;">15. 如何让 Java 的线程彼此同步？你了解过哪些同步器？请分别介绍下。</font></p>
+<p><font style="color:#000000;">16. CyclicBarrier 和 CountDownLatch 看起来很相似，请对比下呢？</font></p>
+<p><font style="color:#000000;">17. Java 线程池相关问题</font></p>
+<p><font style="color:#000000;">18. Java 中的线程池是如何实现的？</font></p>
+<p><font style="color:#000000;">19. 创建线程池的几个核心构造参数？</font></p>
+<p><font style="color:#000000;">20. 线程池中的线程是怎么创建的？是一开始就随着线程池的启动创建好的吗？</font></p>
+<p><font style="color:#000000;">21. 既然提到可以通过配置不同参数创建出不同的线程池，那么 Java 中默认实</font></p>
+<p><font style="color:#000000;">现好的线程池又有哪些呢？请比较它们的异同</font><font style="color:#000000;">22. 如何在 Java 线程池中提交线程？</font></p>
+<p><font style="color:#000000;">23. 什么是 Java 的内存模型，Java 中各个线程是怎么彼此看到对方的变量的？</font></p>
+<p><font style="color:#000000;">24. 请谈谈 volatile 有什么特点，为什么它能保证变量对所有线程的可见性？</font></p>
+<p><font style="color:#000000;">25. 既然 volatile 能够保证线程间的变量可见性，是不是就意味着基于 volatile </font></p>
+<p><font style="color:#000000;">变量的运算就是并发安全的？</font></p>
+<p><font style="color:#000000;">26. 请对比下 volatile 对比 Synchronized 的异同。</font></p>
+<p><font style="color:#000000;">27. 请谈谈 ThreadLocal 是怎么解决并发安全的？</font></p>
+<p><font style="color:#000000;">28. 很多人都说要慎用 ThreadLocal，谈谈你的理解，使用 ThreadLocal 需要注</font></p>
+<p><font style="color:#000000;">意些什么？</font></p>
+<p><strong>四、Spring 面试专题</strong></p>
+<p><font style="color:#000000;">1. 什么是 Spring 框架？Spring 框架有哪些主要模块？</font></p>
+<p><font style="color:#000000;">2. 使用 Spring 框架能带来哪些好处？</font></p>
+<p><font style="color:#000000;">3. 什么是控制反转(IOC)？什么是依赖注入？</font></p>
+<p><font style="color:#000000;">4. 请解释下 Spring 框架中的 IoC？</font></p>
+<p><font style="color:#000000;">5. BeanFactory 和 ApplicationContext 有什么区别？</font></p>
+<p><font style="color:#000000;">6. Spring 有几种配置方式？</font></p>
+<p><font style="color:#000000;">7. 如何用基于 XML 配置的方式配置 Spring？</font></p>
+<p><font style="color:#000000;">8. 如何用基于 Java 配置的方式配置 Spring？</font></p>
+<p><font style="color:#000000;">9. 怎样用注解的方式配置 Spring？</font></p>
+<p><font style="color:#000000;">10. 请解释 Spring Bean 的生命周期？</font><font style="color:#000000;">11. Spring Bean 的作用域之间有什么区别？</font></p>
+<p><font style="color:#000000;">12. 什么是 Spring inner beans？</font></p>
+<p><font style="color:#000000;">13. Spring 框架中的单例 Beans 是线程安全的么？</font></p>
+<p><font style="color:#000000;">14. 请举例说明如何在 Spring 中注入一个 Java Collection？</font></p>
+<p><font style="color:#000000;">15. 如何向 Spring Bean 中注入一个 Java.util.Properties？</font></p>
+<p><font style="color:#000000;">16. 请解释 Spring Bean 的自动装配？</font></p>
+<p><font style="color:#000000;">17. 请解释自动装配模式的区别？</font></p>
+<p><font style="color:#000000;">18. 如何开启基于注解的自动装配？</font></p>
+<p><font style="color:#000000;">19. 请举例解释@Required 注解？</font></p>
+<p><font style="color:#000000;">20. 请举例解释@Autowired 注解？</font></p>
+<p><font style="color:#000000;">21. 请举例说明@Qualifier 注解？</font></p>
+<p><font style="color:#000000;">22. 构造方法注入和设值注入有什么区别？</font></p>
+<p><font style="color:#000000;">23. Spring 框架中有哪些不同类型的事件？</font></p>
+<p><font style="color:#000000;">24. FileSystemResource 和 ClassPathResource 有何区别？</font></p>
+<p><font style="color:#000000;">25. Spring 框架中都用到了哪些设计模式？</font></p>
+<p><strong>五、设计模式</strong></p>
+<p><font style="color:#000000;">1. 请列举出在 JDK 中几个常用的设计模式？</font></p>
+<p><font style="color:#000000;">2. 什么是设计模式？你是否在你的代码里面使用过任何设计模式？</font></p>
+<p><font style="color:#000000;">3. Java 中什么叫单例设计模式？请用 Java 写出线程安全的单例模式</font></p>
+<p><font style="color:#000000;">4. 在 Java 中，什么叫观察者设计模式（observer design pattern）？</font><font style="color:#000000;">5. 使用工厂模式最主要的好处是什么？在哪里使用？</font></p>
+<p><font style="color:#000000;">6. 举一个用 Java 实现的装饰模式(decorator design pattern)？它是作用于对</font></p>
+<p><font style="color:#000000;">象层次还是类</font></p>
+<p><font style="color:#000000;">7. 层次？</font></p>
+<p><font style="color:#000000;">8. 在 Java 中，为什么不允许从静态方法中访问非静态变量？</font></p>
+<p><font style="color:#000000;">9. 设计一个 ATM 机，请说出你的设计思路？</font></p>
+<p><font style="color:#000000;">10. 在 Java 中，什么时候用重载，什么时候用重写？</font></p>
+<p><font style="color:#000000;">11. 举例说明什么情况下会更倾向于使用抽象类而不是接口</font></p>
+<p><strong>六、Springboot 面试专题</strong></p>
+<p><font style="color:#000000;">1. 什么是 Spring Boot？</font></p>
+<p><font style="color:#000000;">2. Spring Boot 有哪些优点？</font></p>
+<p><font style="color:#000000;">3. 什么是 JavaConfig？</font></p>
+<p><font style="color:#000000;">4. 如何重新加载 Spring Boot 上的更改，而无需重新启动服务器？</font></p>
+<p><font style="color:#000000;">5. Spring Boot 中的监视器是什么？</font></p>
+<p><font style="color:#000000;">6. 如何在 Spring Boot 中禁用 Actuator 端点安全性？</font></p>
+<p><font style="color:#000000;">7. 如何在自定义端口上运行 Spring Boot 应用程序？</font></p>
+<p><font style="color:#000000;">8. 什么是 YAML？</font></p>
+<p><font style="color:#000000;">9. 如何实现 Spring Boot 应用程序的安全性？</font></p>
+<p><font style="color:#000000;">10. 如何集成 Spring Boot 和 ActiveMQ？</font></p>
+<p><font style="color:#000000;">11. 如何使用 Spring Boot 实现分页和排序？</font><font style="color:#000000;">12. 什么是 Swagger？你用 Spring Boot 实现了它吗？</font></p>
+<p><font style="color:#000000;">13. 什么是 Spring Profiles？</font></p>
+<p><font style="color:#000000;">14. 什么是 Spring Batch？</font></p>
+<p><font style="color:#000000;">15. 什么是 FreeMarker 模板？</font></p>
+<p><font style="color:#000000;">16. 如何使用 Spring Boot 实现异常处理？</font></p>
+<p><font style="color:#000000;">17. 您使用了哪些 starter maven 依赖项？</font></p>
+<p><font style="color:#000000;">18. 什么是 CSRF 攻击？</font></p>
+<p><font style="color:#000000;">19. 什么是 WebSockets？</font></p>
+<p><font style="color:#000000;">20. 什么是 AOP？</font></p>
+<p><font style="color:#000000;">21. 什么是 Apache Kafka？</font></p>
+<p><font style="color:#000000;">22. 我们如何监视所有 Spring Boot 微服务？</font></p>
+<p><strong>七、Netty10 题</strong></p>
+<p><font style="color:#000000;">1. BIO、NIO 和 AIO 的区别？</font></p>
+<p><font style="color:#000000;">2. NIO 的组成？</font></p>
+<p><font style="color:#000000;">3. Netty 的特点？</font></p>
+<p><font style="color:#000000;">4. Netty 的线程模型？</font></p>
+<p><font style="color:#000000;">5. TCP 粘包/拆包的原因及解决方法？</font></p>
+<p><font style="color:#000000;">6. 了解哪几种序列化协议？</font></p>
+<p><font style="color:#000000;">7. 如何选择序列化协议？</font></p>
+<p><font style="color:#000000;">8. Netty 的零拷贝实现？</font><font style="color:#000000;">9. Netty 的高性能表现在哪些方面？</font></p>
+<p><font style="color:#000000;">10. NIOEventLoopGroup 源码？</font></p>
+<p><strong>八、Redis</strong></p>
+<p><font style="color:#000000;">1. 什么是 redis?</font></p>
+<p><font style="color:#000000;">2. Reids 的特点</font></p>
+<p><font style="color:#000000;">3. Redis 支持的数据类型</font></p>
+<p><font style="color:#000000;">4. Redis 是单进程单线程的</font></p>
+<p><font style="color:#000000;">5. 虚拟内存</font></p>
+<p><font style="color:#000000;">6. Redis 锁</font></p>
+<p><font style="color:#000000;">7. 读写分离模型</font></p>
+<p><font style="color:#000000;">8. 数据分片模型</font></p>
+<p><font style="color:#000000;">9. Redis 的回收策略</font></p>
+<p><font style="color:#000000;">10. 使用 Redis 有哪些好处？</font></p>
+<p><font style="color:#000000;">11. redis 相比 memcached 有哪些优势？4</font></p>
+<p><font style="color:#000000;">12. redis 常见性能问题和解决方案</font></p>
+<p><font style="color:#000000;">13. MySQL 里有 2000w 数据，redis 中只存 20w 的数据，如何保证 redis 中的数</font></p>
+<p><font style="color:#000000;">据都是热点数据 245</font></p>
+<p><font style="color:#000000;">14. Memcache 与 Redis 的区别都有哪些？</font></p>
+<p><font style="color:#000000;">15. Redis 常见的性能问题都有哪些？如何解决？</font></p>
+<p><font style="color:#000000;">16. Redis 最适合的场景</font></p>
 
             </div>
             <hr/>
@@ -945,7 +974,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            百度内部级别和薪资待遇级别划分：不同职能分为不同序列，各个序列从  1  到  12  不等。不同序列的话语权和地位从高到低是：m(管理层)&gt;t (研发)&gt;p(产品)&gt;p(运营)=u(设  计)&gt;b(商务市场等)。只
+                            百度内部级别和薪资待遇级别划分：不同职能分为不同序列，各个序列从  1 到  12 不等。
+不同序列的话语权和地位从高到低是：m(管理层)&gt;t (研发)&gt;p(产品)&gt;p(运营)=u(设  
+计)&gt;b(商务市场等)。
+
                         
                     </div>
                     <div class="publish-info">
@@ -1147,7 +1179,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

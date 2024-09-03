@@ -5,7 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="437. 路径总和 III--🀄️, future">
-    <meta name="description" content="437. 路径总和 III难度中等 763给定一个二叉树，它的每个结点都存放着一个整数值。找出路径和等于给定数值的路径总数。路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。二叉树不超过 10">
+    <meta name="description" content="437. 路径总和 III难度中等 763
+给定一个二叉树，它的每个结点都存放着一个整数值。
+找出路径和等于给定数值的路径总数。
+路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。
+二叉树不超">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -498,7 +502,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -523,13 +527,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="437-路径总和-III"><a href="#437-路径总和-III" class="headerlink" title="437. 路径总和 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/path-sum-iii/">437. 路径总和 III</a></h4><p>难度中等 763<br>给定一个二叉树，它的每个结点都存放着一个整数值。<br>找出路径和等于给定数值的路径总数。<br>路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。<br>二叉树不超过 1000 个节点，且节点数值范围是 [-1000000,1000000] 的整数。<br><strong>示例：</strong><br>root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8</p>
-<p>10<br>     /  <br>    <strong>5</strong>   <strong>-3</strong><br>   <strong>/</strong> <strong>**    *<em>\</em>*<br>  **3</strong>   <strong>2</strong>   <strong>11</strong><br> / \   *<em>\</em>*<br>3  -2   *<em>1\</em>*</p>
+                <h4 id="437-路径总和-III"><a href="#437-路径总和-III" class="headerlink" title="437. 路径总和 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/path-sum-iii/">437. 路径总和 III</a></h4><p>难度中等 763</p>
+<p>给定一个二叉树，它的每个结点都存放着一个整数值。</p>
+<p>找出路径和等于给定数值的路径总数。</p>
+<p>路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。</p>
+<p>二叉树不超过 1000 个节点，且节点数值范围是 [-1000000,1000000] 的整数。</p>
+<p><strong>示例：</strong></p>
+<p>root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8</p>
+<p>10</p>
+<p>/  \</p>
+<p><strong>5</strong>   <strong>-3</strong></p>
+<p><strong>/</strong> *<em>\</em>*    *<em>\</em>*</p>
+<p><strong>3</strong>   <strong>2</strong>   <strong>11</strong></p>
+<p>/ \   ****</p>
+<p>3  -2   <strong>1</strong></p>
 <p>返回 3。和等于 8 的路径有:</p>
 <ol>
-<li>5 -&gt; 3</li>
-<li>5 -&gt; 2 -&gt; 1</li>
-<li>-3 -&gt; 11.</li>
+<li><p>5 -&gt; 3</p>
+</li>
+<li><p>5 -&gt; 2 -&gt; 1</p>
+</li>
+<li><p>-3 -&gt; 11.</p>
+</li>
 </ol>
 <pre class=" language-java"><code class="language-java"> <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pathSum</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">,</span> <span class="token keyword">int</span> sum<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -553,7 +572,12 @@
 作者：Geralt_U
 链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>leetcode<span class="token operator">-</span>cn<span class="token punctuation">.</span>com<span class="token operator">/</span>problems<span class="token operator">/</span>path<span class="token operator">-</span>sum<span class="token operator">-</span>iii<span class="token operator">/</span>solution<span class="token operator">/</span>437lu<span class="token operator">-</span>jing<span class="token operator">-</span>zong<span class="token operator">-</span>he<span class="token operator">-</span>iii<span class="token operator">-</span>di<span class="token operator">-</span>gui<span class="token operator">-</span>fang<span class="token operator">-</span>shi<span class="token operator">-</span>by<span class="token operator">-</span>ming<span class="token operator">-</span>zhi<span class="token operator">/</span></code></pre>
 <p>解析</p>
-<p>路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点） 。这就要求我们只需要去求三部分即可：<br>以当前节点作为头结点的路径数量<br>以当前节点的左孩子作为头结点的路径数量<br>以当前节点的右孩子作为头结点啊路径数量<br>将这三部分之和作为最后结果即可。<br>最后的问题是：我们应该如何去求以当前节点作为头结点的路径的数量？这里依旧是按照树的遍历方式模板，每到一个节点让 sum-root.val，并判断 sum 是否为 0，如果为零的话，则找到满足条件的一条路径。</p>
+<p>路径不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点） 。这就要求我们只需要去求三部分即可：</p>
+<p>以当前节点作为头结点的路径数量</p>
+<p>以当前节点的左孩子作为头结点的路径数量</p>
+<p>以当前节点的右孩子作为头结点啊路径数量</p>
+<p>将这三部分之和作为最后结果即可。</p>
+<p>最后的问题是：我们应该如何去求以当前节点作为头结点的路径的数量？这里依旧是按照树的遍历方式模板，每到一个节点让 sum-root.val，并判断 sum 是否为 0，如果为零的话，则找到满足条件的一条路径。</p>
 
             </div>
             <hr/>
@@ -801,7 +825,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            203. 移除链表元素难度简单 540删除链表中等于给定值 _val _的所有节点。示例:输入: 1-&gt;2-&gt;6-&gt;3-&gt;4-&gt;5-&gt;6, val = 6输出: 1-&gt;2-&gt;3-&gt;4-&
+                            203. 移除链表元素难度简单 540
+删除链表中等于给定值 *val *的所有节点。
+示例:
+输入: 1-&gt;2-&gt;6-&gt;3-&gt;4-&gt;5-&gt;6, val = 6
+输出: 1-&gt;2-&gt;3-&gt
                         
                     </div>
                     <div class="publish-info">
@@ -847,7 +875,16 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            168. Excel 表列名称难度简单 317给定一个正整数，返回它在 Excel 表中相对应的列名称。例如，    1 -&gt; A    2 -&gt; B    3 -&gt; C    …    26 -&gt; Z    27 
+                            168. Excel 表列名称难度简单 317
+给定一个正整数，返回它在 Excel 表中相对应的列名称。
+例如，
+1 -&gt; A
+2 -&gt; B
+3 -&gt; C
+…
+26 -&gt; Z
+27 -&gt; AA
+28 -&gt
                         
                     </div>
                     <div class="publish-info">
@@ -1057,7 +1094,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             

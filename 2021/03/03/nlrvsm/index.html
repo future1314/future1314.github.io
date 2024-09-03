@@ -6,9 +6,14 @@
     <meta charset="utf-8">
     <meta name="keywords" content="283. 移动零, future">
     <meta name="description" content="
-283. 移动零难度简单968给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。示例:输入: [0,1,0,3,12]输出: [1,3,12,0,0]说明:
+283. 移动零难度简单968
+给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+示例:
+输入: [0,1,0,3,12]
+输出: [1,3,12,0,0]
+说明:
 
-必须在原数组上操作，不能拷贝额外的">
+必须在原数组上操作，不能">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -488,7 +493,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-09-03
+                    2024-09-04
                 </div>
                 
 
@@ -514,12 +519,17 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h4 id="283-移动零"><a href="#283-移动零" class="headerlink" title="283. 移动零"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/move-zeroes/">283. 移动零</a></h4><p>难度简单968<br>给定一个数组 <code>nums</code>，编写一个函数将所有 <code>0</code> 移动到数组的末尾，同时保持非零元素的相对顺序。<br><strong>示例:</strong><br><strong>输入:</strong> <code>[0,1,0,3,12]</code><br><strong>输出:</strong> <code>[1,3,12,0,0]</code><br><strong>说明</strong>:</p>
+<h4 id="283-移动零"><a href="#283-移动零" class="headerlink" title="283. 移动零"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/move-zeroes/">283. 移动零</a></h4><p>难度简单968</p>
+<p>给定一个数组 <code>nums</code>，编写一个函数将所有 <code>0</code> 移动到数组的末尾，同时保持非零元素的相对顺序。</p>
+<p><strong>示例:</strong></p>
+<p><strong>输入:</strong> <code>[0,1,0,3,12]</code></p>
+<p><strong>输出:</strong> <code>[1,3,12,0,0]</code></p>
+<p><strong>说明</strong>:</p>
 <ol>
 <li>必须在原数组上操作，不能拷贝额外的数组。</li>
 <li>尽量减少操作次数。</li>
 </ol>
-<p>不太好理解</p>
+<p><font style="background-color:#FADB14;">不太好理解</font></p>
 <pre class=" language-java"><code class="language-java"> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">moveZeroes</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">,</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
         <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;</span> n<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -537,8 +547,14 @@
         nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<p><strong>双指针</strong></p>
-<p>思路及解法<br>使用双指针，左指针指向当前已经处理好的序列的尾部，右指针指向待处理序列的头部。<br>右指针不断向右移动，每次右指针指向非零数，则将左右指针对应的数交换，同时左指针右移。<br>注意到以下性质：<br>左指针左边均为非零数；<br>右指针左边直到左指针处均为零。<br>因此每次交换，都是将左指针的零与右指针的非零数交换，且非零数的相对顺序并未改变。</p>
+<p><strong><font style="background-color:#FADB14;">双指针</font></strong></p>
+<p>思路及解法</p>
+<p>使用双指针，左指针指向当前已经处理好的序列的尾部，右指针指向待处理序列的头部。</p>
+<p>右指针不断向右移动，每次右指针指向非零数，则将左右指针对应的数交换，同时左指针右移。</p>
+<p>注意到以下性质：</p>
+<p>左指针左边均为非零数；</p>
+<p>右指针左边直到左指针处均为零。</p>
+<p>因此每次交换，都是将左指针的零与右指针的非零数交换，且非零数的相对顺序并未改变。</p>
 <hr>
 <p><strong>易理解</strong></p>
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">moveZeroes1</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
@@ -557,7 +573,8 @@
             nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
         <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>都知道是 0，还换啥？覆盖，后面补 0 就行了.</p>
+<p><font style="color:#595959;">都知道是 0，还换啥？覆盖，后面补 0 就行了.</font></p>
+<p><font style="color:#595959;"></font></p>
 
             </div>
             <hr/>
@@ -806,11 +823,12 @@
                     <div class="summary block-with-text">
                         
                             
-189. 旋转数组难度中等 893给定一个数组，将数组中的元素向右移动 k_ 个位置，其中 k _是非负数。
+189. 旋转数组难度中等 893
+给定一个数组，将数组中的元素向右移动 k_ 个位置，其中 k _是非负数。
 进阶：
 
 尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。
-你可以使用空间复杂度为  O(1) 的 **原地  
+你可以使用空间复杂度为  O(1) 的 **原地 
                         
                     </div>
                     <div class="publish-info">
@@ -848,7 +866,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            198. 打家劫舍难度中等 1295你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。给定一个代表每个房屋
+                            198. 打家劫舍难度中等 1295
+你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+给定一个代表每个
                         
                     </div>
                     <div class="publish-info">
@@ -1062,7 +1082,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;总字数:&nbsp;<span
-                class="white-color">66.1k</span>&nbsp;字
+                class="white-color">66.7k</span>&nbsp;字
             
             
             
